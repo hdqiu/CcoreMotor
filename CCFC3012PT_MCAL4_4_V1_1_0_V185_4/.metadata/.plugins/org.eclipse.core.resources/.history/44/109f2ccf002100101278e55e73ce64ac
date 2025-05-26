@@ -1,0 +1,36 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../CDD/GTM_LLD/gtm4_atom_lld.c \
+../CDD/GTM_LLD/gtm4_cmu_lld.c \
+../CDD/GTM_LLD/gtm4_lld.c \
+../CDD/GTM_LLD/gtm4_tim_lld.c \
+../CDD/GTM_LLD/gtm4_tom_lld.c 
+
+OBJS += \
+./CDD/GTM_LLD/gtm4_atom_lld.o \
+./CDD/GTM_LLD/gtm4_cmu_lld.o \
+./CDD/GTM_LLD/gtm4_lld.o \
+./CDD/GTM_LLD/gtm4_tim_lld.o \
+./CDD/GTM_LLD/gtm4_tom_lld.o 
+
+C_DEPS += \
+./CDD/GTM_LLD/gtm4_atom_lld.d \
+./CDD/GTM_LLD/gtm4_cmu_lld.d \
+./CDD/GTM_LLD/gtm4_lld.d \
+./CDD/GTM_LLD/gtm4_tim_lld.d \
+./CDD/GTM_LLD/gtm4_tom_lld.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+CDD/GTM_LLD/%.o: ../CDD/GTM_LLD/%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@CDD/GTM_LLD/gtm4_atom_lld.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

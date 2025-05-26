@@ -1,0 +1,44 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Port_ARCH3D12M10I1R0/source/Port.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Port_ARCH3D12M10I1R0/source/Port_AutoSar_Wrapper.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Port_ARCH3D12M10I1R0/source/Port_LLDrivers.c 
+
+OBJS += \
+./Source_FLASH/mcal/eclipse/plugins/Port_ARCH3D12M10I1R0/source/Port.o \
+./Source_FLASH/mcal/eclipse/plugins/Port_ARCH3D12M10I1R0/source/Port_AutoSar_Wrapper.o \
+./Source_FLASH/mcal/eclipse/plugins/Port_ARCH3D12M10I1R0/source/Port_LLDrivers.o 
+
+C_DEPS += \
+./Source_FLASH/mcal/eclipse/plugins/Port_ARCH3D12M10I1R0/source/Port.d \
+./Source_FLASH/mcal/eclipse/plugins/Port_ARCH3D12M10I1R0/source/Port_AutoSar_Wrapper.d \
+./Source_FLASH/mcal/eclipse/plugins/Port_ARCH3D12M10I1R0/source/Port_LLDrivers.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+Source_FLASH/mcal/eclipse/plugins/Port_ARCH3D12M10I1R0/source/Port.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Port_ARCH3D12M10I1R0/source/Port.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Port_ARCH3D12M10I1R0/source/Port.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Port_ARCH3D12M10I1R0/source/Port_AutoSar_Wrapper.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Port_ARCH3D12M10I1R0/source/Port_AutoSar_Wrapper.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Port_ARCH3D12M10I1R0/source/Port_AutoSar_Wrapper.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Port_ARCH3D12M10I1R0/source/Port_LLDrivers.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Port_ARCH3D12M10I1R0/source/Port_LLDrivers.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Port_ARCH3D12M10I1R0/source/Port_LLDrivers.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

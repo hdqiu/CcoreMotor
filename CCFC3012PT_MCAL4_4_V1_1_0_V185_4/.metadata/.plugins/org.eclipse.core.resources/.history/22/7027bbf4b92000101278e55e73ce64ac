@@ -1,0 +1,157 @@
+/*
+ * PiIoHwAbCSGetRslvrSw_C_PiIoHwAbRslvrSw_lGetDmaNxtIdx.c
+ *
+ *  Created on: 2020Äê1ÔÂ29ÈÕ
+ *      Author: tedwa
+ */
+#include "mbd_const.h"
+#include "SDAdc_LLDriver.h"
+#include "eDma_LLDriver.h"
+//#include "Adc_Dma_LLD.h"
+#include "gtm4_demo.h"
+#include "Resolver.h"
+
+#if 0
+#include "sdadc_dma_handler.h"
+#include "spc5_edma.h"
+#include "gtm_tim_dma_handler.h"
+#endif
+
+void PiIoHwAbCSGetRslvrSw_C_PiIoHwAbRslvrSw_lGetDmaNxtIdx(IOHWAB_UINT8
+  *rty_IoHwAbOpArg_RslvrSw_lGetDmaNxtIdx, Std_ReturnType_redef *rty_ERR);
+
+uint8 g_dma_index_exc=0;
+uint8 g_dma_index_sin=0;
+uint8 g_dma_index_cos=0;
+uint8 g_dma_index_time=0;
+uint8 whlindex[256]={0};
+uint8 hh;
+uint8 min_dma_index=0;
+struct DMA_CONFIG_TAG{
+	 /**
+	   * @brief   DMA Channel associated to Driver
+	   */
+	 uint8 dma_channel;
+
+	 uint16* dma_buffer;
+};
+
+extern struct DMA_CONFIG_TAG dma_c3;
+extern struct DMA_CONFIG_TAG dma_c4;
+extern struct DMA_CONFIG_TAG dma_c6;
+//extern eDMATransferConfigType Gelu_dmaConfigforsdadc0;
+//extern eDMATransferConfigType Gelu_dmaConfigforsdadc2;
+//extern eDMATransferConfigType Gelu_dmaConfigforsdadc3;
+extern Sdadc_ConfigType Sdadc_Config_0;
+extern Sdadc_ConfigType Sdadc_Config_2;
+extern Sdadc_ConfigType Sdadc_Config_3;
+extern Sdadc_ConfigType Sdadc_Config_1;
+extern Sdadc_ConfigType Sdadc_Config_4;
+extern Sdadc_ConfigType Sdadc_Config_5;
+static DMA_Type * const s_edmabaseAddr[2] = DMA_BASE_PTRS;
+
+void PiIoHwAbCSGetRslvrSw_C_PiIoHwAbRslvrSw_lGetDmaNxtIdx(IOHWAB_UINT8
+  *rty_IoHwAbOpArg_RslvrSw_lGetDmaNxtIdx, Std_ReturnType_redef *rty_ERR)
+{
+
+#if 0
+	*rty_IoHwAbOpArg_RslvrSw_lGetDmaNxtIdx=(g_dma_index-1);
+
+	g_dma_index-=100;
+	if(g_dma_index<1)
+	{
+
+		g_dma_index=RESOLVER_SDADC_DATA_BUF_LEN;
+	}
+#endif
+
+
+	uint32 src_addr = 0;
+	uint32 cur_add = 0;
+#if 1
+	DMA_Type * const baseAddr = s_edmabaseAddr[0];
+#if(MOTOR_LEFT_EN == MOTOR_ENABLE)
+//	if(id == 0)
+	{
+	src_addr= (uint32)(Sdadc_Config_3.DmaCfg.DmaConfigPtr.destAddr);
+	cur_add=baseAddr->TCD[2].DADDR.R;//get_DmaDst_Addr(2) ;//  SPC5_EDMA1.TCD[49].word[4];
+	}
+#endif	//(MOTOR_LEFT_EN == MOTOR_ENABLE)
+#if(MOTOR_RIGHT_EN == MOTOR_ENABLE)
+//	if(id == 1)
+//	{
+//	src_addr= (uint32)(Sdadc_Config_5.DmaCfg.DmaConfigPtr.destAddr);
+//	cur_add=baseAddr->TCD[37].DADDR.R;
+//	}
+#endif	//(MOTOR_RIGHT_EN == MOTOR_ENABLE)
+
+	uint8 dma_index=(cur_add-src_addr)/4;
+
+	(void)rty_ERR;
+
+	g_dma_index_exc=dma_index;
+
+
+#if(MOTOR_LEFT_EN == MOTOR_ENABLE)
+//	if(id == 0)
+	{
+	src_addr=(uint32)( Sdadc_Config_0.DmaCfg.DmaConfigPtr.destAddr);
+	cur_add=baseAddr->TCD[1].DADDR.R;//get_DmaDst_Addr(1) ;//SPC5_EDMA1.TCD[48].word[4];
+	}
+#endif	//(MOTOR_LEFT_EN == MOTOR_ENABLE)
+#if(MOTOR_RIGHT_EN == MOTOR_ENABLE)
+//	if(id == 1)
+//	{
+//	src_addr=(uint32)( Sdadc_Config_1.DmaCfg.DmaConfigPtr.destAddr);
+//	cur_add=baseAddr->TCD[19].DADDR.R;
+//	}
+#endif	//(MOTOR_RIGHT_EN == MOTOR_ENABLE)
+
+	g_dma_index_cos=(cur_add-src_addr)/4;
+
+#if(MOTOR_LEFT_EN == MOTOR_ENABLE)
+//	if(id == 0)
+	{
+	src_addr=(uint32)( Sdadc_Config_2.DmaCfg.DmaConfigPtr.destAddr);
+	cur_add=baseAddr->TCD[17].DADDR.R;//get_DmaDst_Addr(17) ;//SPC5_EDMA1.TCD[16].word[4];
+	}
+#endif	//(MOTOR_LEFT_EN == MOTOR_ENABLE)
+#if(MOTOR_RIGHT_EN == MOTOR_ENABLE)
+//	if(id == 1)
+//	{
+//	src_addr=(uint32)( Sdadc_Config_4.DmaCfg.DmaConfigPtr.destAddr);
+//	cur_add=baseAddr->TCD[52].DADDR.R;
+//	}
+#endif	//(MOTOR_RIGHT_EN == MOTOR_ENABLE)
+
+	g_dma_index_sin=(cur_add-src_addr)/4;
+
+
+	if((g_dma_index_sin!=g_dma_index_exc)||(g_dma_index_cos!=g_dma_index_exc))
+		g_dma_index_sin = g_dma_index_exc;
+//whl	src_addr=(uint32)(&TIM_CH2_DMA_Driver.dma_buffer[0]);
+//whl	cur_add=SPC5_EDMA0.TCD[0].word[4];
+
+	g_dma_index_time=(cur_add-src_addr)/4;
+#endif
+
+#if 0
+	if(dma_index>0)
+	{
+	dma_index--;
+	}else
+	{
+		dma_index=RESOLVER_SDADC_DATA_BUF_LEN;
+
+	}
+#endif
+//	g_dma_index_time+=10;
+	if(hh<255)//TODO
+		whlindex[hh++]=g_dma_index_time;
+	else{
+		hh=0;
+		whlindex[hh++]=g_dma_index_time;
+	}
+	*rty_IoHwAbOpArg_RslvrSw_lGetDmaNxtIdx=g_dma_index_time;
+}
+

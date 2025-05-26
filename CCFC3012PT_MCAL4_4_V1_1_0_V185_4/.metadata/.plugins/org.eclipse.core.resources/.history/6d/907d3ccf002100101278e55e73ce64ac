@@ -1,0 +1,33 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../Pmsm/MotB/Pmsm_Foc_MotB.c \
+../Pmsm/MotB/Pmsm_PhasCurrCalc_MotB.c \
+../Pmsm/MotB/Pmsm_RdcCalcThetaSpeed_MotB.c \
+../Pmsm/MotB/Pmsm_SpdLpFlxWkn_MotB.c 
+
+OBJS += \
+./Pmsm/MotB/Pmsm_Foc_MotB.o \
+./Pmsm/MotB/Pmsm_PhasCurrCalc_MotB.o \
+./Pmsm/MotB/Pmsm_RdcCalcThetaSpeed_MotB.o \
+./Pmsm/MotB/Pmsm_SpdLpFlxWkn_MotB.o 
+
+C_DEPS += \
+./Pmsm/MotB/Pmsm_Foc_MotB.d \
+./Pmsm/MotB/Pmsm_PhasCurrCalc_MotB.d \
+./Pmsm/MotB/Pmsm_RdcCalcThetaSpeed_MotB.d \
+./Pmsm/MotB/Pmsm_SpdLpFlxWkn_MotB.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+Pmsm/MotB/%.o: ../Pmsm/MotB/%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Pmsm/MotB/Pmsm_Foc_MotB.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

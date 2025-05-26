@@ -1,0 +1,48 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../CDD/_sharedutils/SinCosTab.c \
+../CDD/_sharedutils/intrp2d_s16ffu32fl_pw.c \
+../CDD/_sharedutils/look1_iflf_binlxpw.c \
+../CDD/_sharedutils/plook_u32ff_evenx.c \
+../CDD/_sharedutils/rtGetInf.c \
+../CDD/_sharedutils/rtGetNaN.c \
+../CDD/_sharedutils/rt_modf_snf.c \
+../CDD/_sharedutils/rt_nonfinite.c \
+../CDD/_sharedutils/rt_roundf_snf.c 
+
+OBJS += \
+./CDD/_sharedutils/SinCosTab.o \
+./CDD/_sharedutils/intrp2d_s16ffu32fl_pw.o \
+./CDD/_sharedutils/look1_iflf_binlxpw.o \
+./CDD/_sharedutils/plook_u32ff_evenx.o \
+./CDD/_sharedutils/rtGetInf.o \
+./CDD/_sharedutils/rtGetNaN.o \
+./CDD/_sharedutils/rt_modf_snf.o \
+./CDD/_sharedutils/rt_nonfinite.o \
+./CDD/_sharedutils/rt_roundf_snf.o 
+
+C_DEPS += \
+./CDD/_sharedutils/SinCosTab.d \
+./CDD/_sharedutils/intrp2d_s16ffu32fl_pw.d \
+./CDD/_sharedutils/look1_iflf_binlxpw.d \
+./CDD/_sharedutils/plook_u32ff_evenx.d \
+./CDD/_sharedutils/rtGetInf.d \
+./CDD/_sharedutils/rtGetNaN.d \
+./CDD/_sharedutils/rt_modf_snf.d \
+./CDD/_sharedutils/rt_nonfinite.d \
+./CDD/_sharedutils/rt_roundf_snf.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+CDD/_sharedutils/%.o: ../CDD/_sharedutils/%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@CDD/_sharedutils/SinCosTab.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

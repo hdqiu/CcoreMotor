@@ -1,0 +1,84 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_AutoSar_Wrapper.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_Emios_LLDriver.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_Etpu_LLDriver.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_HAL_Wrapper.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_Irq.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_LLDriver.c 
+
+OBJS += \
+./Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm.o \
+./Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_AutoSar_Wrapper.o \
+./Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_Emios_LLDriver.o \
+./Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_Etpu_LLDriver.o \
+./Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_HAL_Wrapper.o \
+./Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_Irq.o \
+./Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_LLDriver.o 
+
+C_DEPS += \
+./Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm.d \
+./Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_AutoSar_Wrapper.d \
+./Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_Emios_LLDriver.d \
+./Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_Etpu_LLDriver.d \
+./Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_HAL_Wrapper.d \
+./Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_Irq.d \
+./Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_LLDriver.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_AutoSar_Wrapper.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_AutoSar_Wrapper.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_AutoSar_Wrapper.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_Emios_LLDriver.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_Emios_LLDriver.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_Emios_LLDriver.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_Etpu_LLDriver.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_Etpu_LLDriver.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_Etpu_LLDriver.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_HAL_Wrapper.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_HAL_Wrapper.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_HAL_Wrapper.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_Irq.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_Irq.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_Irq.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_LLDriver.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_LLDriver.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/Pwm_LLDriver.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

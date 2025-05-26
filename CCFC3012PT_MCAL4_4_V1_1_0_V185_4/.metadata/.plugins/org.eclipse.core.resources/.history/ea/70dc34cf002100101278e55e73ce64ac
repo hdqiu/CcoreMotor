@@ -1,0 +1,32 @@
+CDD/mbd_api_b/src/PiIoHwAbCSGetPhaseCur_C_PiIoHwAb_W_Cur_GetPhaseCur_b.o: \
+ ../CDD/mbd_api_b/src/PiIoHwAbCSGetPhaseCur_C_PiIoHwAb_W_Cur_GetPhaseCur_b.c \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/lib_c99.prefix \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/common.prefix \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/ewl_c_version.h \
+ D:/Project/Guoxin3011/src/MCAL/CCFC3012PT_MCAL4_4_V1_1_0/Project/CCFC3012PT_S32DS_SMP/ARCH3D12_M10I1R0/CDD/mbd_api/include/mbd_const.h \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/stdbool.h \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/ansi_parms.h \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/ewlGlobals.h \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/pa/ansi_prefix.PA_EABI.bare.h \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/os_enum.h \
+ D:/Project/Guoxin3011/src/MCAL/CCFC3012PT_MCAL4_4_V1_1_0/Source/mcal/eclipse/plugins/Base_ARCH3D12M10I1R0/include/Platform_Types.h
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/lib_c99.prefix:
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/common.prefix:
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/ewl_c_version.h:
+
+D:/Project/Guoxin3011/src/MCAL/CCFC3012PT_MCAL4_4_V1_1_0/Project/CCFC3012PT_S32DS_SMP/ARCH3D12_M10I1R0/CDD/mbd_api/include/mbd_const.h:
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/stdbool.h:
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/ansi_parms.h:
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/ewlGlobals.h:
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/pa/ansi_prefix.PA_EABI.bare.h:
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/os_enum.h:
+
+D:/Project/Guoxin3011/src/MCAL/CCFC3012PT_MCAL4_4_V1_1_0/Source/mcal/eclipse/plugins/Base_ARCH3D12M10I1R0/include/Platform_Types.h:

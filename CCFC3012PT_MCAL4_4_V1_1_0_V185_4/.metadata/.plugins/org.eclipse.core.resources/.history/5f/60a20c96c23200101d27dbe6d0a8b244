@@ -1,0 +1,36 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../MotorControl/MotorControl.c \
+../MotorControl/MotorControl_Itf.c \
+../MotorControl/motor_main.c \
+../MotorControl/pospe_sensor.c \
+../MotorControl/state_machine.c 
+
+OBJS += \
+./MotorControl/MotorControl.o \
+./MotorControl/MotorControl_Itf.o \
+./MotorControl/motor_main.o \
+./MotorControl/pospe_sensor.o \
+./MotorControl/state_machine.o 
+
+C_DEPS += \
+./MotorControl/MotorControl.d \
+./MotorControl/MotorControl_Itf.d \
+./MotorControl/motor_main.d \
+./MotorControl/pospe_sensor.d \
+./MotorControl/state_machine.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+MotorControl/%.o: ../MotorControl/%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@MotorControl/MotorControl.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

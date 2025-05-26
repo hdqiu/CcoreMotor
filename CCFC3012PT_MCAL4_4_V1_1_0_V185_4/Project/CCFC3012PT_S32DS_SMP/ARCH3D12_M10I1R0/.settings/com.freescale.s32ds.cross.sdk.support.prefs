@@ -1,0 +1,3 @@
+FILTER_SDKs_SHOW_LATEST_VERSIONS=false
+com.freescale.s32ds.cross.sdk.support.attachedSDKs=MPC577xM_AMMCLIB_z4_1.1.15_PATH|CCFC3012PT_DEBUG_FLASH
+eclipse.preferences.version=1

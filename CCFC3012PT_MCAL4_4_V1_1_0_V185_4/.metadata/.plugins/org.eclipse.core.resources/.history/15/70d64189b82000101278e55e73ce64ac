@@ -1,0 +1,345 @@
+/**
+ * \file IfxDsadc_Rdc.c
+ * \brief DSADC-based resolver-to-digital converter (RDC) support function
+ *
+ *
+ * \copyright Copyright (c) 2012 Infineon Technologies AG. All rights reserved.
+ *
+ * $Revision: 1559 $
+ * $Date: 2013-06-24 14:20:02 +0200 (Mon, 24 Jun 2013) $
+ *
+ *                                 IMPORTANT NOTICE
+ *
+ *
+ * Infineon Technologies AG (Infineon) is supplying this file for use
+ * exclusively with Infineon's microcontroller products. This file can be freely
+ * distributed within development tools that are supporting such microcontroller
+ * products.
+ *
+ * THIS SOFTWARE IS PROVIDED "AS IS".  NO WARRANTIES, WHETHER EXPRESS, IMPLIED
+ * OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE APPLY TO THIS SOFTWARE.
+ * INFINEON SHALL NOT, IN ANY CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL,
+ * OR CONSEQUENTIAL DAMAGES, FOR ANY REASON WHATSOEVER.
+ *
+ * \author Dian Tresna Nugraha <Dian.Nugraha@Infineon.com>
+ */
+
+#include "IfxDsadc_Rdc.h"
+
+
+extern inline void SineCalib_init(SineCalib *sc);
+//const Ifx_GTM_TIM_CH_CTRL_Bits IfxDsadc_Rdc_GtmTimCfg = {
+//    .TIM_EN   = 1,
+//    .TIM_MODE = IfxGtm_Tim_Mode_inputEvent,
+//    .GPR0_SEL = IfxGtm_Tim_GprSel_tbuTs0,
+//    .GPR1_SEL = IfxGtm_Tim_GprSel_tbuTs0,
+//    .CNTS_SEL = IfxGtm_Tim_CntsSel_cntReg,
+//    //.EGPR0_SEL= 0, //not available in A-step
+//    .DSL      = 0, // 0 = falling or low
+//    .ISL      = 0, // 1 = both edges, ignore DSL
+//};
+
+//Ifx_GTM_TIM_CH *IfxGtm_Tim_getChannelPtr(Ifx_GTM *gtm, IfxGtm_Tim tim, IfxGtm_Tim_Ch timCh)
+//{
+//    uint32 incr = ((uint32)&gtm->TIM[0].CH1 - (uint32)(uint32)&gtm->TIM[0].CH0);
+//    return (Ifx_GTM_TIM_CH*) ((uint32)&gtm->TIM[tim].CH0 + (incr * timCh));
+//}
+
+//IFX_INLINE
+//Ifx_GTM_TIM_CH *IfxDsadc_Rdc_initGtmTim(Ifx_GTM *gtm, IfxGtm_Tim tim, IfxGtm_Tim_Ch timCh, boolean risingEdge)
+//{
+//    Ifx_GTM_TIM_CH     *pTimCh = IfxGtm_Tim_getChannelPtr(gtm, tim, timCh);
+//    Ifx_GTM_TIM_CH_CTRL ctrl;
+//    ctrl.B         = IfxDsadc_Rdc_GtmTimCfg;
+//    ctrl.B.DSL     = (risingEdge != FALSE) ? 1 : 0;
+//    pTimCh->CTRL.U = ctrl.U;
+//    return pTimCh;
+//}
+
+
+float32 IfxGtm_Tbu_getClockFrequency()
+{
+    float32 result = 200*1000*1000.0F;
+    return result;
+}
+
+
+void IfxDsadc_Rdc_setupElAngleConst(IfxDsadc_Rdc *handle, sint32 motorPolePairs)
+{
+    AngleTrk_setupElAngleConst(&handle->angleTrk, motorPolePairs);
+}
+
+void IfxDsadc_Rdc_initHwTimestamp(IfxDsadc_Rdc_Hw *hwHandle, const IfxDsadc_Rdc_ConfigHw *config)
+{
+    {
+    	GTM4.GLS[0].TBU.CHEN.B.ENDIS_CH0 = 0x1;
+    	GTM4.GLS[0].TBU.CH0_CTRL.B.CH_CLK_SRC = 0;
+
+		const IfxDsadc_GtmTimestamp *tsConfig = &config->gtmTimestamp;
+		{
+			// TIM channel, PWM triggered:
+			GTM4.GLS[tsConfig->rdcTim].CCM.TIM_AUX_IN_SRC.R |= 1 << tsConfig->rdcTimChannel;
+			GTM4.GLS[tsConfig->rdcTim].TIM.IN_SRC.R |= (0x6 << (tsConfig->rdcTimChannel*4));
+
+			//rising GPR0 captureTBU0
+			GTM4.GLS[tsConfig->rdcTim].TIM.CH[tsConfig->rdcTimChannel].CTRL.R = 0x00000005|(0 << 14)|(1 << 13);
+			hwHandle->rdcTimCh = &GTM4.GLS[tsConfig->rdcTim].TIM.CH[tsConfig->rdcTimChannel];
+
+		}
+		{
+			GTM4.GLS[tsConfig->pwmTim].CCM.TIM_AUX_IN_SRC.R |= 1 << tsConfig->pwmTimChannel;
+			GTM4.GLS[tsConfig->pwmTim].TIM.IN_SRC.R |= (0x6 << (tsConfig->pwmTimChannel*4));
+
+			//rising GPR0 captureTBU0
+			GTM4.GLS[tsConfig->pwmTim].TIM.CH[tsConfig->pwmTimChannel].CTRL.R = 0x00000005|(0 << 14)|(1 << 13);
+			hwHandle->pwmTimCh = &GTM4.GLS[tsConfig->pwmTim].TIM.CH[tsConfig->pwmTimChannel];
+
+		}
+        GTM4.GLS[0].TBU.CHEN.B.ENDIS_CH0 = 0x2;
+    }
+}
+
+volatile uint32_t time_base[1000]= {0};
+volatile uint32_t g_cnt = 0;
+
+
+/** Return timestamp in seconds */
+float32 IfxDsadc_Rdc_getTimeStamp(IfxDsadc_Rdc *handle)
+{
+    IfxDsadc_Rdc_Ts *timestamp = &handle->timestamp;
+    IfxDsadc_Rdc_Hw *hwHandle = &handle->hardware;
+
+    uint32 tsPwm = hwHandle->pwmTimCh->GPR0.B.GPR0;
+
+    uint32 clockTicks = (tsPwm + GTM_TBU0_MAX_VALUE - timestamp->rdc)%GTM_TBU0_MAX_VALUE; //% timestamp->maxTicks;
+//    if(tsPwm < timestamp->rdc)
+//    {
+//    	clockTicks = tsPwm + GTM_TBU0_MAX_VALUE - timestamp->rdc;
+//    }
+    if(g_cnt < 1000)
+    {
+    	time_base[g_cnt] =  clockTicks;
+    	g_cnt++;
+    }
+
+    #if IFXDSADC_RDC_DEBUG
+    timestamp->inTicks = clockTicks;
+    timestamp->pwm = tsPwm;
+    #endif
+    timestamp->inSeconds = timestamp->clockPeriod * (float32)clockTicks;
+
+    return timestamp->inSeconds;
+}
+
+/** Return the update period in [seconds], i.e. the period of new result (and interrupt)*/
+float32 IfxDsadc_Rdc_getUpdatePeriod(IfxDsadc_Rdc_Hw *hwHandle)
+{
+    (void) hwHandle;
+	return 1.0F * 48.0F / 16000000 * 32;
+}
+
+
+
+boolean IfxDsadc_Rdc_initHwChannels(IfxDsadc_Rdc_Hw *hwHandle, const IfxDsadc_Rdc_ConfigHw *config)
+{
+	  (void) hwHandle;
+	  (void) config;
+//    Ifx_DSADC *module = config->inputConfig->module;
+//    boolean    result = (module != NULL_PTR) ? TRUE : FALSE;
+//
+//    if (result != FALSE)
+//    {
+//        IfxDsadc_Dsadc dsadc;
+//        if (IfxDsadc_isModuleEnabled(module) == FALSE)
+//        {
+//            IfxDsadc_Dsadc_Config modCfg;
+//            IfxDsadc_Dsadc_initModuleConfig(&modCfg, &MODULE_DSADC);
+//            IfxDsadc_Dsadc_initModule(&dsadc, &modCfg);
+//        }
+//
+//        {   /* Initialise input channels */
+//            IfxDsadc_Dsadc_ChannelConfig channelConfig = *config->inputConfig;
+//            channelConfig.channelId       = config->inputCos;
+//            IfxDsadc_Dsadc_initChannel(&hwHandle->inputCos, &channelConfig);
+//
+//            channelConfig.channelId       = config->inputSin;
+//            IfxDsadc_Dsadc_initChannel(&hwHandle->inputSin, &channelConfig);
+//
+//            if (config->servReqPriority != 0)
+//            {
+//                IfxDsadc_ChannelId ch = channelConfig.channelId;
+//                volatile Ifx_SRC_SRCR *srcr = &MODULE_SRC.DSADC.DSADC[ch].SRM;
+//                IfxSrc_init(srcr, config->servReqProvider, config->servReqPriority);
+//                IfxSrc_enable(srcr);
+//            }
+//        }
+//
+//        if (config->carrierGen != NULL_PTR)
+//        {   /* Initialise excitation channel */
+//            IfxDsadc_Dsadc_initCarrierGen(&dsadc, config->carrierGen);
+//        }
+//
+//        if (config->startScan != FALSE)
+//        {
+//            uint32 mask = (1U << config->inputCos) | (1U << config->inputSin);
+//            IfxDsadc_startScan(module, mask, mask);
+//        }
+//
+//        if (config->outputClock != NULL_PTR)
+//        {
+//            const IfxPort_Pin *clkPin = &(config->outputClock->pin);
+//            IfxPort_setPinModeOutput(clkPin->port, clkPin->pinIndex, config->carrierGen->pinMode, config->outputClock->select);
+//            IfxPort_setPinPadDriver(clkPin->port, clkPin->pinIndex, IfxPort_PadDriver_cmosAutomotiveSpeed1);
+//        }
+//    }
+
+//    return result;
+	return 0;
+}
+
+/**
+ * Initialise the DSADC RDC driver by initialising:
+ * - Two DSADC hardware channel resources
+ * - Carrier generation hardware resources
+ * - Time-stamp hardware resources
+ * - Driver's run-time data (RAM): tracking observer, fault-detection, interface layer etc.
+ *
+ * \param handle Driver's handle, i.e. pointer to \ref IfxDsadc_Rdc RAM location
+ * \param config Pointer to the driver's configuration
+ */
+void IfxDsadc_Rdc_init(IfxDsadc_Rdc *handle, const IfxDsadc_Rdc_Config *config)
+{
+    /* Initialise the hardware channels */
+//    IfxDsadc_Rdc_initHwChannels(&(handle->hardware), config->hardware);
+
+    /* Initialise the hardware timestamp resources */
+    IfxDsadc_Rdc_initHwTimestamp(&(handle->hardware), config->hardware);
+
+    /* Initialise the software resources */
+//    Ifx_DSADC *dsadc = handle->hardware.inputSin.module;
+    handle->tSample  = IfxDsadc_Rdc_getUpdatePeriod(&(handle->hardware));
+    handle->grpDelay = 0;
+    handle->timestamp.enabled = TRUE;
+//
+//    Ifx_GTM *gtm = config->hardware->gtmTimestamp.gtm;
+    handle->timestamp.clockPeriod = 1.0F / IfxGtm_Tbu_getClockFrequency();
+    handle->timestamp.maxTicks    = handle->tSample / handle->timestamp.clockPeriod;
+
+    {   /* Initialise angle-tracking observer */
+        AngleTrk_Config atoConfig;
+        atoConfig.sinIn             = &(handle->sinIn);
+        atoConfig.cosIn             = &(handle->cosIn);
+
+        atoConfig.offset            = config->offset;
+        atoConfig.speedLpfFc        = config->speedLpfFc;
+        atoConfig.reversed          = config->reversed;
+        atoConfig.errorThreshold    = config->errorThreshold;
+        atoConfig.sqrAmplMax        = config->sqrAmplMax;
+        atoConfig.sqrAmplMin        = config->sqrAmplMin;
+
+        atoConfig.Kp                = config->Kp;
+        atoConfig.Ki                = config->Ki;
+        atoConfig.Kd                = config->Kd;
+
+#if IFXDSADC_RDC_PRE_OBSERVER_CORRECTION
+        AngleTrk_init(&(handle->angleTrk), &atoConfig, config->userTs);
+#else
+        AngleTrk_init(&(handle->angleTrk), &atoConfig, handle->tSample);
+#endif
+
+        SineCalib_init(&handle->sinCal);
+        SineCalib_init(&handle->cosCal);
+    }
+}
+
+
+/** Function to be executed on DSADC channel interrupt.
+ * \param handle Driver's handle, i.e. pointer to \ref IfxDsadc_Rdc RAM location
+ */
+void IfxDsadc_Rdc_updateStep1(IfxDsadc_Rdc *handle)
+{
+//    handle->timestamp.rdc = handle->hardware.rdcTimCh->GPR0.B.GPR0;
+
+#if EMOTOR_SIMULATION == 0
+//    Ifx_DSADC *dsadc = handle->hardware.inputSin.module;
+//    handle->sinIn = IfxDsadc_getMainResult(dsadc, handle->hardware.inputSin.channelId);
+//    handle->cosIn = IfxDsadc_getMainResult(dsadc, handle->hardware.inputCos.channelId);
+#endif
+#if IFXDSADC_RDC_PRE_OBSERVER_CORRECTION == 0
+    {   // expand to 32-bit data
+        sint32 sinIn = (handle->sinIn << 16) / (1 << 16);
+        sint32 cosIn = (handle->cosIn << 16) / (1 << 16);
+        // tracking observer (note: atan2 lookup function is available inside)
+        AngleTrk_step(&(handle->angleTrk), sinIn, cosIn, 0);
+        AngleTrk_updateStatus(&(handle->angleTrk), sinIn, cosIn);
+    }
+#endif
+}
+
+
+/** Function to be executed at user's application interrupt or task, e.g. motor control
+ * task.
+ * \param handle Driver's handle, i.e. pointer to \ref IfxDsadc_Rdc RAM location
+ * */
+PosIf_Raw IfxDsadc_Rdc_updateStep2(IfxDsadc_Rdc *handle)
+{
+    PosIf  *base = &(handle->angleTrk).base;
+    float32 groupDelayAngle;
+    float32 timeStampAngle;
+    float32 angleOut, speedEst, angleCorrection;
+
+    speedEst = AngleTrk_getLoopSpeed(&(handle->angleTrk));
+
+    // group delay angle
+    groupDelayAngle = handle->grpDelay * speedEst;
+
+    // time stamp angle
+    if (handle->timestamp.enabled != FALSE)
+    {
+        timeStampAngle = IfxDsadc_Rdc_getTimeStamp(handle) * speedEst;
+    }
+    else
+    {
+        timeStampAngle = 0;
+    }
+
+    angleCorrection = groupDelayAngle + timeStampAngle;
+
+#if IFXDSADC_RDC_PRE_OBSERVER_CORRECTION != 0
+    //handle->sinIn = (sint16)handle->hardware.sinTStmp.B.RESULT;
+    //handle->cosIn = (sint16)handle->hardware.cosTStmp.B.RESULT;
+    {   // expand to 32-bit data
+        sint32 sinIn = (handle->sinIn << 16) / (1 << 16);
+        sint32 cosIn = (handle->cosIn << 16) / (1 << 16);
+        //sint32 sinIn = SineCalib_update(&handle->sinCal, handle->sinIn);
+        //sint32 cosIn = SineCalib_update(&handle->cosCal, handle->cosIn);
+        // tracking observer (note: atan2 lookup function is available inside)
+        AngleTrk_step(&(handle->angleTrk), sinIn, cosIn, angleCorrection);
+        AngleTrk_updateStatus(&(handle->angleTrk), sinIn, cosIn);
+    }
+    angleOut = handle->angleTrk.angleEst;
+#else
+    angleOut = handle->angleTrk.angleEst + angleCorrection;
+#endif
+
+    {   // final output angle estimation
+        PosIf_Raw newPosition = (PosIf_Raw)(angleOut * (ANGLETRK_RESOLUTION / 2) / PI);
+        newPosition    = (newPosition + base->offset) & (ANGLETRK_RESOLUTION - 1);
+        base->position = newPosition;
+        return newPosition;
+    }
+}
+
+
+/** Synchronously start of both DSADC H/W channels.
+ * \param handle Driver's handle, i.e. pointer to \ref IfxDsadc_Rdc RAM location
+ */
+void IfxDsadc_Rdc_startConversion(IfxDsadc_Rdc *handle)
+{
+//    Ifx_DSADC *module = handle->hardware.inputSin.module;
+//    uint32     mask   =
+//        (1U << handle->hardware.inputCos.channelId) |
+//        (1U << handle->hardware.inputSin.channelId);
+//    IfxDsadc_startScan(module, mask, mask);
+}

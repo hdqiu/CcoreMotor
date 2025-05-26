@@ -1,0 +1,64 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/Can.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/Can_AutoSar_Wrapper.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/Can_HAL_Wrapper.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/Can_Irq.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/Can_LLDriver.c 
+
+OBJS += \
+./Source_FLASH/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/Can.o \
+./Source_FLASH/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/Can_AutoSar_Wrapper.o \
+./Source_FLASH/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/Can_HAL_Wrapper.o \
+./Source_FLASH/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/Can_Irq.o \
+./Source_FLASH/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/Can_LLDriver.o 
+
+C_DEPS += \
+./Source_FLASH/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/Can.d \
+./Source_FLASH/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/Can_AutoSar_Wrapper.d \
+./Source_FLASH/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/Can_HAL_Wrapper.d \
+./Source_FLASH/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/Can_Irq.d \
+./Source_FLASH/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/Can_LLDriver.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+Source_FLASH/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/Can.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/Can.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/Can.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/Can_AutoSar_Wrapper.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/Can_AutoSar_Wrapper.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/Can_AutoSar_Wrapper.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/Can_HAL_Wrapper.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/Can_HAL_Wrapper.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/Can_HAL_Wrapper.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/Can_Irq.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/Can_Irq.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/Can_Irq.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/Can_LLDriver.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/Can_LLDriver.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/Can_LLDriver.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

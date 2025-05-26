@@ -1,0 +1,121 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+-include ../makefile.init
+
+RM := rm -rf
+
+# All of the sources participating in the build are defined here
+-include sources.mk
+-include Source_FLASH/tester/eDma/src/subdir.mk
+-include Source_FLASH/tester/Wdg/src/subdir.mk
+-include Source_FLASH/tester/Spi/src/subdir.mk
+-include Source_FLASH/tester/Sent/src/subdir.mk
+-include Source_FLASH/tester/SDAdc/src/subdir.mk
+-include Source_FLASH/tester/Pwm/src/subdir.mk
+-include Source_FLASH/tester/Port/src/subdir.mk
+-include Source_FLASH/tester/Mcu/src/subdir.mk
+-include Source_FLASH/tester/Lin/src/subdir.mk
+-include Source_FLASH/tester/Icu/src/subdir.mk
+-include Source_FLASH/tester/Gpt/src/subdir.mk
+-include Source_FLASH/tester/Fls/src/subdir.mk
+-include Source_FLASH/tester/Fee/src/subdir.mk
+-include Source_FLASH/tester/Eth/src/subdir.mk
+-include Source_FLASH/tester/Dio/src/subdir.mk
+-include Source_FLASH/tester/CanFD/src/subdir.mk
+-include Source_FLASH/tester/Can/src/subdir.mk
+-include Source_FLASH/tester/Adc/src/subdir.mk
+-include Source_FLASH/shell/subdir.mk
+-include Source_FLASH/mcal_cfg/src/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/eMIOS_ARCH3D12M10I1R0/source/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/WdgIf_ARCH3D12M10I1R0/src/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/Spi_ARCH3D12M10I1R0/source/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/Sent_ARCH3D12M10I1R0/source/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/SDAdc_ARCH3D12M10I1R0/source/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/Port_ARCH3D12M10I1R0/source/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/Os_ARCH3D12M10I1R0/src/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/Mcu_ARCH3D12M10I1R0/source/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/Mcl_ARCH3D12M10I1R0/source/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/source/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/LinIf_ARCH3D12M10I1R0/src/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/Intc_ARCH3D12M10I1R0/source/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/Icu_ARCH3D12M10I1R0/source/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/Fee_ARCH3D12M10I1R0/source/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/EthTrcv_ARCH3D12M10I1R0/source/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/EthSwt_ARCH3D12M10I1R0/source/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/EthIf_ARCH3D12M10I1R0/source/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/EcuM_ARCH3D12M10I1R0/src/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/Dio_ARCH3D12M10I1R0/source/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/Det_ARCH3D12M10I1R0/src/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/Dem_ARCH3D12M10I1R0/src/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/Can_176_CanFD_ARCH3D12M10I1R0/source/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/CanIf_ARCH3D12M10I1R0/source/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/Base_ARCH3D12M10I1R0/source/subdir.mk
+-include Source_FLASH/mcal/eclipse/plugins/Adc_ARCH3D12M10I1R0/source/subdir.mk
+-include Source_FLASH/common/src/subdir.mk
+-include Source_FLASH/subdir.mk
+-include Project_Settings/Linker_Files/subdir.mk
+-include Pmsm/Rtw/subdir.mk
+-include Pmsm/MotB/subdir.mk
+-include Pmsm/MotA/subdir.mk
+-include Pmsm/subdir.mk
+-include CDD/resolver_app_b/subdir.mk
+-include CDD/resolver_app/subdir.mk
+-include CDD/mbd_api_b/src/subdir.mk
+-include CDD/mbd_api/src/subdir.mk
+-include CDD/_sharedutils/subdir.mk
+-include CDD/GTM_LLD/subdir.mk
+-include CDD/CDD_HE9285/subdir.mk
+-include CDD/CDD_A4911/src/subdir.mk
+-include CDD/subdir.mk
+-include subdir.mk
+-include objects.mk
+
+ifneq ($(MAKECMDGOALS),clean)
+ifneq ($(strip $(C_DEPS)),)
+-include $(C_DEPS)
+endif
+endif
+
+-include ../makefile.defs
+
+# Add inputs and outputs from these tool invocations to the build variables 
+SECONDARY_SIZE += \
+ARCH3D12_M10I1R0.siz \
+
+
+# All Target
+all: ARCH3D12_M10I1R0.elf secondary-outputs
+
+# Tool invocations
+ARCH3D12_M10I1R0.elf: $(OBJS) D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Project/CCFC3012PT_S32DS_SMP/ARCH3D12_M10I1R0/Project_Settings/Linker_Files/CCFC3012PT_flash.ld $(OSPT) $(USER_OBJS)
+	@echo 'Building target: $@'
+	@echo 'Invoking: Standard S32DS C Linker'
+	powerpc-eabivle-gcc -o "ARCH3D12_M10I1R0.elf" "@ARCH3D12_M10I1R0.args"  $(USER_OBJS)  $(OSPT)
+	@echo 'Finished building target: $@'
+	@echo ' '
+
+ARCH3D12_M10I1R0.siz: ARCH3D12_M10I1R0.elf
+	@echo 'Invoking: Standard S32DS Print Size'
+	powerpc-eabivle-size --format=berkeley ARCH3D12_M10I1R0.elf
+	@echo 'Finished building: $@'
+	@echo ' '
+
+# Other Targets
+clean:
+	-$(RM) ./*
+	-@echo ' '
+
+secondary-outputs: $(SECONDARY_SIZE)
+
+.PHONY: all clean dependents
+
+-include ../makefile.targets

@@ -1,0 +1,34 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/tester/Gpt/src/tester_gpt.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/tester/Gpt/src/tester_gpt_multi.c 
+
+OBJS += \
+./Source_FLASH/tester/Gpt/src/tester_gpt.o \
+./Source_FLASH/tester/Gpt/src/tester_gpt_multi.o 
+
+C_DEPS += \
+./Source_FLASH/tester/Gpt/src/tester_gpt.d \
+./Source_FLASH/tester/Gpt/src/tester_gpt_multi.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+Source_FLASH/tester/Gpt/src/tester_gpt.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/tester/Gpt/src/tester_gpt.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/tester/Gpt/src/tester_gpt.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/tester/Gpt/src/tester_gpt_multi.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/tester/Gpt/src/tester_gpt_multi.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/tester/Gpt/src/tester_gpt_multi.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

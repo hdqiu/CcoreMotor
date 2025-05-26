@@ -1,0 +1,27 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../CDD/resolver_app_b/Resolver_b.c \
+../CDD/resolver_app_b/Resolver_data_b.c 
+
+OBJS += \
+./CDD/resolver_app_b/Resolver_b.o \
+./CDD/resolver_app_b/Resolver_data_b.o 
+
+C_DEPS += \
+./CDD/resolver_app_b/Resolver_b.d \
+./CDD/resolver_app_b/Resolver_data_b.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+CDD/resolver_app_b/%.o: ../CDD/resolver_app_b/%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@CDD/resolver_app_b/Resolver_b.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

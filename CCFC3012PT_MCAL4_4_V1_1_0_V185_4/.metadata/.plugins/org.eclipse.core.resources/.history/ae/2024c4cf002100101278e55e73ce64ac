@@ -1,0 +1,92 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+ELF_SRCS := 
+LD_SRCS := 
+TODISASSEMBLE_SRCS := 
+OBJ_SRCS := 
+S_SRCS := 
+ASM_UPPER_SRCS := 
+TOPREPROCESS_SRCS := 
+ASM_SRCS := 
+C_SRCS := 
+OSPT_SRCS := 
+O_SRCS := 
+S_UPPER_SRCS := 
+EXECUTABLES := 
+OBJS := 
+SECONDARY_SIZE := 
+C_DEPS := 
+
+# Every subdirectory with source files must be described here
+SUBDIRS := \
+CDD/CDD_A4911/src \
+CDD/CDD_HE9285 \
+CDD/GTM_LLD \
+CDD/_sharedutils \
+CDD \
+CDD/mbd_api/src \
+CDD/mbd_api_b/src \
+CDD/resolver_app \
+CDD/resolver_app_b \
+Pmsm/MotA \
+Pmsm/MotB \
+Pmsm \
+Pmsm/Rtw \
+Project_Settings/Linker_Files \
+Source_FLASH/common/src \
+Source_FLASH \
+Source_FLASH/mcal/eclipse/plugins/Adc_ARCH3D12M10I1R0/source \
+Source_FLASH/mcal/eclipse/plugins/Base_ARCH3D12M10I1R0/source \
+Source_FLASH/mcal/eclipse/plugins/CanIf_ARCH3D12M10I1R0/source \
+Source_FLASH/mcal/eclipse/plugins/Can_176_CanFD_ARCH3D12M10I1R0/source \
+Source_FLASH/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/source \
+Source_FLASH/mcal/eclipse/plugins/Dem_ARCH3D12M10I1R0/src \
+Source_FLASH/mcal/eclipse/plugins/Det_ARCH3D12M10I1R0/src \
+Source_FLASH/mcal/eclipse/plugins/Dio_ARCH3D12M10I1R0/source \
+Source_FLASH/mcal/eclipse/plugins/EcuM_ARCH3D12M10I1R0/src \
+Source_FLASH/mcal/eclipse/plugins/EthIf_ARCH3D12M10I1R0/source \
+Source_FLASH/mcal/eclipse/plugins/EthSwt_ARCH3D12M10I1R0/source \
+Source_FLASH/mcal/eclipse/plugins/EthTrcv_ARCH3D12M10I1R0/source \
+Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source \
+Source_FLASH/mcal/eclipse/plugins/Fee_ARCH3D12M10I1R0/source \
+Source_FLASH/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source \
+Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source \
+Source_FLASH/mcal/eclipse/plugins/Icu_ARCH3D12M10I1R0/source \
+Source_FLASH/mcal/eclipse/plugins/Intc_ARCH3D12M10I1R0/source \
+Source_FLASH/mcal/eclipse/plugins/LinIf_ARCH3D12M10I1R0/src \
+Source_FLASH/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/source \
+Source_FLASH/mcal/eclipse/plugins/Mcl_ARCH3D12M10I1R0/source \
+Source_FLASH/mcal/eclipse/plugins/Mcu_ARCH3D12M10I1R0/source \
+Source_FLASH/mcal/eclipse/plugins/Os_ARCH3D12M10I1R0/src \
+Source_FLASH/mcal/eclipse/plugins/Port_ARCH3D12M10I1R0/source \
+Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/source \
+Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source \
+Source_FLASH/mcal/eclipse/plugins/SDAdc_ARCH3D12M10I1R0/source \
+Source_FLASH/mcal/eclipse/plugins/Sent_ARCH3D12M10I1R0/source \
+Source_FLASH/mcal/eclipse/plugins/Spi_ARCH3D12M10I1R0/source \
+Source_FLASH/mcal/eclipse/plugins/WdgIf_ARCH3D12M10I1R0/src \
+Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source \
+Source_FLASH/mcal/eclipse/plugins/eMIOS_ARCH3D12M10I1R0/source \
+Source_FLASH/mcal_cfg/src \
+Source_FLASH/shell \
+Source_FLASH/tester/Adc/src \
+Source_FLASH/tester/Can/src \
+Source_FLASH/tester/CanFD/src \
+Source_FLASH/tester/Dio/src \
+Source_FLASH/tester/Eth/src \
+Source_FLASH/tester/Fee/src \
+Source_FLASH/tester/Fls/src \
+Source_FLASH/tester/Gpt/src \
+Source_FLASH/tester/Icu/src \
+Source_FLASH/tester/Lin/src \
+Source_FLASH/tester/Mcu/src \
+Source_FLASH/tester/Port/src \
+Source_FLASH/tester/Pwm/src \
+Source_FLASH/tester/SDAdc/src \
+Source_FLASH/tester/Sent/src \
+Source_FLASH/tester/Spi/src \
+Source_FLASH/tester/Wdg/src \
+Source_FLASH/tester/eDma/src \
+

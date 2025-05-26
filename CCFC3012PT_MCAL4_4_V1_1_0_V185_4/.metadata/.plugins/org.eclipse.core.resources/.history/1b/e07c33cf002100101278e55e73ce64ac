@@ -1,0 +1,42 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../CDD/mbd_api/src/PiIoHwAbCSGetPhaseCur_C_PiIoHwAb_U_Cur_GetPhaseCur.c \
+../CDD/mbd_api/src/PiIoHwAbCSGetPhaseCur_C_PiIoHwAb_V_Cur_GetPhaseCur.c \
+../CDD/mbd_api/src/PiIoHwAbCSGetPhaseCur_C_PiIoHwAb_W_Cur_GetPhaseCur.c \
+../CDD/mbd_api/src/PiIoHwAbCSGetResolver_C_PiIoHwAbResolver.c \
+../CDD/mbd_api/src/PiIoHwAbCSGetRslvrSw_C_PiIoHwAbRslvrSw_lCalctiDifPwmStrtCnvn.c \
+../CDD/mbd_api/src/PiIoHwAbCSGetRslvrSw_C_PiIoHwAbRslvrSw_lGetDmaNxtIdx.c \
+../CDD/mbd_api/src/PpIoHwAbCSSetPWM_C_SetPWM.c 
+
+OBJS += \
+./CDD/mbd_api/src/PiIoHwAbCSGetPhaseCur_C_PiIoHwAb_U_Cur_GetPhaseCur.o \
+./CDD/mbd_api/src/PiIoHwAbCSGetPhaseCur_C_PiIoHwAb_V_Cur_GetPhaseCur.o \
+./CDD/mbd_api/src/PiIoHwAbCSGetPhaseCur_C_PiIoHwAb_W_Cur_GetPhaseCur.o \
+./CDD/mbd_api/src/PiIoHwAbCSGetResolver_C_PiIoHwAbResolver.o \
+./CDD/mbd_api/src/PiIoHwAbCSGetRslvrSw_C_PiIoHwAbRslvrSw_lCalctiDifPwmStrtCnvn.o \
+./CDD/mbd_api/src/PiIoHwAbCSGetRslvrSw_C_PiIoHwAbRslvrSw_lGetDmaNxtIdx.o \
+./CDD/mbd_api/src/PpIoHwAbCSSetPWM_C_SetPWM.o 
+
+C_DEPS += \
+./CDD/mbd_api/src/PiIoHwAbCSGetPhaseCur_C_PiIoHwAb_U_Cur_GetPhaseCur.d \
+./CDD/mbd_api/src/PiIoHwAbCSGetPhaseCur_C_PiIoHwAb_V_Cur_GetPhaseCur.d \
+./CDD/mbd_api/src/PiIoHwAbCSGetPhaseCur_C_PiIoHwAb_W_Cur_GetPhaseCur.d \
+./CDD/mbd_api/src/PiIoHwAbCSGetResolver_C_PiIoHwAbResolver.d \
+./CDD/mbd_api/src/PiIoHwAbCSGetRslvrSw_C_PiIoHwAbRslvrSw_lCalctiDifPwmStrtCnvn.d \
+./CDD/mbd_api/src/PiIoHwAbCSGetRslvrSw_C_PiIoHwAbRslvrSw_lGetDmaNxtIdx.d \
+./CDD/mbd_api/src/PpIoHwAbCSSetPWM_C_SetPWM.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+CDD/mbd_api/src/%.o: ../CDD/mbd_api/src/%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@CDD/mbd_api/src/PiIoHwAbCSGetPhaseCur_C_PiIoHwAb_U_Cur_GetPhaseCur.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

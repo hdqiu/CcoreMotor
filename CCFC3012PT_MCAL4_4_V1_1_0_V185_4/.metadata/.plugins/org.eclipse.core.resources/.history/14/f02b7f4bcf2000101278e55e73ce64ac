@@ -1,0 +1,86 @@
+/****************************************************************************
+*
+* Copyright (c) 2023  C*Core -   All Rights Reserved
+*
+* THIS SOFTWARE IS DISTRIBUTED "AS IS, " AND ALL WARRANTIES ARE DISCLAIMED,
+* INCLUDING MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+*
+* @file     SDAdc_Cfg.h
+* @version  1.0
+* @date     2024 - 03 - 06
+* @brief    Initial version.
+*
+*****************************************************************************/
+
+#ifndef SDADC_CFG_H
+#define SDADC_CFG_H
+
+#include "Compiler.h"
+#include "StandardTypes.h"
+#include "eDma_LLDriver.h"
+#include "Mcal.h"
+#ifdef RESOURCE_SUPPORT_SDADC_IP
+#define SDADC_CFG_H_VENDOR_ID                       176
+#define SDADC_MODULE_ID                             252
+#define SDADC_CFG_H_AR_REL_MAJOR_VER                4
+#define SDADC_CFG_H_AR_REL_MINOR_VER                4
+#define SDADC_CFG_H_AR_REL_REV_VER                  0
+#define SDADC_CFG_H_SW_MAJOR_VER                    1
+#define SDADC_CFG_H_SW_MINOR_VER                    0
+#define SDADC_CFG_H_SW_PATCH_VER                    1
+
+#if (MCAL_VENDOR_ID               != SDADC_CFG_H_VENDOR_ID)
+    #error " NON-MATCHED DATA : SDADC_CFG_H_VENDOR_ID "
+#endif
+#if (MCAL_AR_RELEASE_MAJOR_VERSION    != SDADC_CFG_H_AR_REL_MAJOR_VER)
+    #error " NON-MATCHED DATA : SDADC_CFG_H_AR_REL_MAJOR_VER "
+#endif
+#if (MCAL_AR_RELEASE_MINOR_VERSION    != SDADC_CFG_H_AR_REL_MINOR_VER)
+    #error " NON-MATCHED DATA : SDADC_CFG_H_AR_REL_MINOR_VER "
+#endif
+#if (MCAL_AR_RELEASE_REVISION_VERSION != SDADC_CFG_H_AR_REL_REV_VER)
+    #error " NON-MATCHED DATA : SDADC_CFG_H_AR_REL_REV_VER "
+#endif
+#if (MCAL_SW_MAJOR_VERSION        != SDADC_CFG_H_SW_MAJOR_VER)
+    #error " NON-MATCHED DATA : SDADC_CFG_H_SW_MAJOR_VER "
+#endif
+#if (MCAL_SW_MINOR_VERSION        != SDADC_CFG_H_SW_MINOR_VER)
+    #error " NON-MATCHED DATA : SDADC_CFG_H_SW_MINOR_VER "
+#endif
+#if (MCAL_SW_PATCH_VERSION        != SDADC_CFG_H_SW_PATCH_VER)
+    #error " NON-MATCHED DATA : SDADC_CFG_H_SW_PATCH_VER "
+#endif
+
+#define SDADC_PRECOMPILE_SUPPORT     (STD_OFF)
+
+#define SDADC_DEV_ERROR_DETECT     (STD_ON)
+#define SDADC_ENABLE_MULTICORE     (STD_OFF)
+#define SDADC_DEFAULT_COREID 0U
+
+#define SDADC_INSTANCE_CDG_NUM 6U
+#define SDADC_CFG_CHANNEL_ID_0   0U
+/* SDADC_CFG_CHANNEL_ID_0: EDMA_CHN1_NUMBER_CallBack */
+extern FUNC(void, SDADC_CODE) SDadc_ResultCallback_Ins0(const void *parameter, eDMAChnStatusType status, uint8 mappedChannel);
+#define SDADC_CFG_CHANNEL_ID_1   1U
+/* SDADC_CFG_CHANNEL_ID_1: EDMA_CHN19_NUMBER_CallBack */
+extern FUNC(void, SDADC_CODE) SDadc_ResultCallback_Ins1(const void *parameter, eDMAChnStatusType status, uint8 mappedChannel);
+#define SDADC_CFG_CHANNEL_ID_2   2U
+/* SDADC_CFG_CHANNEL_ID_2: EDMA_CHN17_NUMBER_CallBack */
+extern FUNC(void, SDADC_CODE) SDadc_ResultCallback_Ins2(const void *parameter, eDMAChnStatusType status, uint8 mappedChannel);
+#define SDADC_CFG_CHANNEL_ID_3   3U
+/* SDADC_CFG_CHANNEL_ID_3: EDMA_CHN2_NUMBER_CallBack */
+extern FUNC(void, SDADC_CODE) SDadc_ResultCallback_Ins3(const void *parameter, eDMAChnStatusType status, uint8 mappedChannel);
+#define SDADC_CFG_CHANNEL_ID_4   4U
+/* SDADC_CFG_CHANNEL_ID_4: EDMA_CHN52_NUMBER_CallBack */
+extern FUNC(void, SDADC_CODE) SDadc_ResultCallback_Ins4(const void *parameter, eDMAChnStatusType status, uint8 mappedChannel);
+#define SDADC_CFG_CHANNEL_ID_5   5U
+/* SDADC_CFG_CHANNEL_ID_5: EDMA_CHN37_NUMBER_CallBack */
+extern FUNC(void, SDADC_CODE) SDadc_ResultCallback_Ins5(const void *parameter, eDMAChnStatusType status, uint8 mappedChannel);
+
+
+#endif /*RESOURCE_SUPPORT_SDADC_IP*/
+
+#endif /* SDADC_CFG_H */
+
+/** @} */
+

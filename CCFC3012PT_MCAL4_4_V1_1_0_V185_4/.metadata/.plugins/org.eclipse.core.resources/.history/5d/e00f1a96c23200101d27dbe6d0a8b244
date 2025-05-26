@@ -1,0 +1,84 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/common/src/boot_header.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/common/src/console.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/common/src/mpu_lldriver.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/common/src/vector_entry.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/common/src/vector_table.c 
+
+S_UPPER_SRCS += \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/common/src/irq_handle.S \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/common/src/startup.S 
+
+OBJS += \
+./Source_FLASH/common/src/boot_header.o \
+./Source_FLASH/common/src/console.o \
+./Source_FLASH/common/src/irq_handle.o \
+./Source_FLASH/common/src/mpu_lldriver.o \
+./Source_FLASH/common/src/startup.o \
+./Source_FLASH/common/src/vector_entry.o \
+./Source_FLASH/common/src/vector_table.o 
+
+C_DEPS += \
+./Source_FLASH/common/src/boot_header.d \
+./Source_FLASH/common/src/console.d \
+./Source_FLASH/common/src/mpu_lldriver.d \
+./Source_FLASH/common/src/vector_entry.d \
+./Source_FLASH/common/src/vector_table.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+Source_FLASH/common/src/boot_header.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/common/src/boot_header.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/common/src/boot_header.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/common/src/console.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/common/src/console.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/common/src/console.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/common/src/irq_handle.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/common/src/irq_handle.S
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS Assembler'
+	powerpc-eabivle-gcc "@Source_FLASH/common/src/irq_handle.args" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/common/src/mpu_lldriver.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/common/src/mpu_lldriver.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/common/src/mpu_lldriver.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/common/src/startup.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/common/src/startup.S
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS Assembler'
+	powerpc-eabivle-gcc "@Source_FLASH/common/src/startup.args" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/common/src/vector_entry.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/common/src/vector_entry.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/common/src/vector_entry.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/common/src/vector_table.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/common/src/vector_table.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/common/src/vector_table.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

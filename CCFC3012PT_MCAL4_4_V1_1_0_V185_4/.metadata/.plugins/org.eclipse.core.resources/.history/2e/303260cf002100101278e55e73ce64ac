@@ -1,0 +1,64 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/Fls.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/Fls_AutoSar_Wrapper.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/Fls_HAL_Wrapper.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/Fls_LLDriver.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/Fls_ac.c 
+
+OBJS += \
+./Source_FLASH/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/Fls.o \
+./Source_FLASH/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/Fls_AutoSar_Wrapper.o \
+./Source_FLASH/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/Fls_HAL_Wrapper.o \
+./Source_FLASH/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/Fls_LLDriver.o \
+./Source_FLASH/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/Fls_ac.o 
+
+C_DEPS += \
+./Source_FLASH/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/Fls.d \
+./Source_FLASH/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/Fls_AutoSar_Wrapper.d \
+./Source_FLASH/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/Fls_HAL_Wrapper.d \
+./Source_FLASH/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/Fls_LLDriver.d \
+./Source_FLASH/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/Fls_ac.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+Source_FLASH/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/Fls.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/Fls.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/Fls.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/Fls_AutoSar_Wrapper.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/Fls_AutoSar_Wrapper.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/Fls_AutoSar_Wrapper.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/Fls_HAL_Wrapper.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/Fls_HAL_Wrapper.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/Fls_HAL_Wrapper.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/Fls_LLDriver.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/Fls_LLDriver.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/Fls_LLDriver.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/Fls_ac.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/Fls_ac.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/source/Fls_ac.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

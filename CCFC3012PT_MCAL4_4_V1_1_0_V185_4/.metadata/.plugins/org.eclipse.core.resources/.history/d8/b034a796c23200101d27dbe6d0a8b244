@@ -1,0 +1,294 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Adc_Cfg.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Can_176_CanFD_Cfg.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Can_Cfg.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Dio_Cfg.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Eth_Cfg.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Fee_Cfg.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Fls_Cfg.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Gpt_cfg.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Icu_Cfg.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Lin_cfg.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Mcu_Cfg.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Port_Cfg.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Pwm_Cfg.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/SDAdc_Cfg.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Sent_Cfg.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Spi_Cfg.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Wdg_CfgExt.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Wdg_instance0_Cfg.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Wdg_instance1_Cfg.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Wdg_instance2_Cfg.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Wdg_instance3_Cfg.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Wdg_instance4_Cfg.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Wdg_instance5_Cfg.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Wdg_instance6_Cfg.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Wdg_instance7_Cfg.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/cmpu_cfg.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/eDma_Cfg.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/eMIOS_Cfg.c 
+
+OBJS += \
+./Source_FLASH/mcal_cfg/src/Adc_Cfg.o \
+./Source_FLASH/mcal_cfg/src/Can_176_CanFD_Cfg.o \
+./Source_FLASH/mcal_cfg/src/Can_Cfg.o \
+./Source_FLASH/mcal_cfg/src/Dio_Cfg.o \
+./Source_FLASH/mcal_cfg/src/Eth_Cfg.o \
+./Source_FLASH/mcal_cfg/src/Fee_Cfg.o \
+./Source_FLASH/mcal_cfg/src/Fls_Cfg.o \
+./Source_FLASH/mcal_cfg/src/Gpt_cfg.o \
+./Source_FLASH/mcal_cfg/src/Icu_Cfg.o \
+./Source_FLASH/mcal_cfg/src/Lin_cfg.o \
+./Source_FLASH/mcal_cfg/src/Mcu_Cfg.o \
+./Source_FLASH/mcal_cfg/src/Port_Cfg.o \
+./Source_FLASH/mcal_cfg/src/Pwm_Cfg.o \
+./Source_FLASH/mcal_cfg/src/SDAdc_Cfg.o \
+./Source_FLASH/mcal_cfg/src/Sent_Cfg.o \
+./Source_FLASH/mcal_cfg/src/Spi_Cfg.o \
+./Source_FLASH/mcal_cfg/src/Wdg_CfgExt.o \
+./Source_FLASH/mcal_cfg/src/Wdg_instance0_Cfg.o \
+./Source_FLASH/mcal_cfg/src/Wdg_instance1_Cfg.o \
+./Source_FLASH/mcal_cfg/src/Wdg_instance2_Cfg.o \
+./Source_FLASH/mcal_cfg/src/Wdg_instance3_Cfg.o \
+./Source_FLASH/mcal_cfg/src/Wdg_instance4_Cfg.o \
+./Source_FLASH/mcal_cfg/src/Wdg_instance5_Cfg.o \
+./Source_FLASH/mcal_cfg/src/Wdg_instance6_Cfg.o \
+./Source_FLASH/mcal_cfg/src/Wdg_instance7_Cfg.o \
+./Source_FLASH/mcal_cfg/src/cmpu_cfg.o \
+./Source_FLASH/mcal_cfg/src/eDma_Cfg.o \
+./Source_FLASH/mcal_cfg/src/eMIOS_Cfg.o 
+
+C_DEPS += \
+./Source_FLASH/mcal_cfg/src/Adc_Cfg.d \
+./Source_FLASH/mcal_cfg/src/Can_176_CanFD_Cfg.d \
+./Source_FLASH/mcal_cfg/src/Can_Cfg.d \
+./Source_FLASH/mcal_cfg/src/Dio_Cfg.d \
+./Source_FLASH/mcal_cfg/src/Eth_Cfg.d \
+./Source_FLASH/mcal_cfg/src/Fee_Cfg.d \
+./Source_FLASH/mcal_cfg/src/Fls_Cfg.d \
+./Source_FLASH/mcal_cfg/src/Gpt_cfg.d \
+./Source_FLASH/mcal_cfg/src/Icu_Cfg.d \
+./Source_FLASH/mcal_cfg/src/Lin_cfg.d \
+./Source_FLASH/mcal_cfg/src/Mcu_Cfg.d \
+./Source_FLASH/mcal_cfg/src/Port_Cfg.d \
+./Source_FLASH/mcal_cfg/src/Pwm_Cfg.d \
+./Source_FLASH/mcal_cfg/src/SDAdc_Cfg.d \
+./Source_FLASH/mcal_cfg/src/Sent_Cfg.d \
+./Source_FLASH/mcal_cfg/src/Spi_Cfg.d \
+./Source_FLASH/mcal_cfg/src/Wdg_CfgExt.d \
+./Source_FLASH/mcal_cfg/src/Wdg_instance0_Cfg.d \
+./Source_FLASH/mcal_cfg/src/Wdg_instance1_Cfg.d \
+./Source_FLASH/mcal_cfg/src/Wdg_instance2_Cfg.d \
+./Source_FLASH/mcal_cfg/src/Wdg_instance3_Cfg.d \
+./Source_FLASH/mcal_cfg/src/Wdg_instance4_Cfg.d \
+./Source_FLASH/mcal_cfg/src/Wdg_instance5_Cfg.d \
+./Source_FLASH/mcal_cfg/src/Wdg_instance6_Cfg.d \
+./Source_FLASH/mcal_cfg/src/Wdg_instance7_Cfg.d \
+./Source_FLASH/mcal_cfg/src/cmpu_cfg.d \
+./Source_FLASH/mcal_cfg/src/eDma_Cfg.d \
+./Source_FLASH/mcal_cfg/src/eMIOS_Cfg.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+Source_FLASH/mcal_cfg/src/Adc_Cfg.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Adc_Cfg.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal_cfg/src/Adc_Cfg.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal_cfg/src/Can_176_CanFD_Cfg.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Can_176_CanFD_Cfg.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal_cfg/src/Can_176_CanFD_Cfg.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal_cfg/src/Can_Cfg.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Can_Cfg.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal_cfg/src/Can_Cfg.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal_cfg/src/Dio_Cfg.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Dio_Cfg.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal_cfg/src/Dio_Cfg.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal_cfg/src/Eth_Cfg.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Eth_Cfg.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal_cfg/src/Eth_Cfg.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal_cfg/src/Fee_Cfg.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Fee_Cfg.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal_cfg/src/Fee_Cfg.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal_cfg/src/Fls_Cfg.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Fls_Cfg.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal_cfg/src/Fls_Cfg.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal_cfg/src/Gpt_cfg.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Gpt_cfg.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal_cfg/src/Gpt_cfg.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal_cfg/src/Icu_Cfg.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Icu_Cfg.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal_cfg/src/Icu_Cfg.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal_cfg/src/Lin_cfg.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Lin_cfg.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal_cfg/src/Lin_cfg.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal_cfg/src/Mcu_Cfg.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Mcu_Cfg.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal_cfg/src/Mcu_Cfg.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal_cfg/src/Port_Cfg.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Port_Cfg.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal_cfg/src/Port_Cfg.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal_cfg/src/Pwm_Cfg.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Pwm_Cfg.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal_cfg/src/Pwm_Cfg.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal_cfg/src/SDAdc_Cfg.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/SDAdc_Cfg.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal_cfg/src/SDAdc_Cfg.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal_cfg/src/Sent_Cfg.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Sent_Cfg.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal_cfg/src/Sent_Cfg.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal_cfg/src/Spi_Cfg.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Spi_Cfg.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal_cfg/src/Spi_Cfg.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal_cfg/src/Wdg_CfgExt.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Wdg_CfgExt.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal_cfg/src/Wdg_CfgExt.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal_cfg/src/Wdg_instance0_Cfg.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Wdg_instance0_Cfg.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal_cfg/src/Wdg_instance0_Cfg.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal_cfg/src/Wdg_instance1_Cfg.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Wdg_instance1_Cfg.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal_cfg/src/Wdg_instance1_Cfg.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal_cfg/src/Wdg_instance2_Cfg.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Wdg_instance2_Cfg.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal_cfg/src/Wdg_instance2_Cfg.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal_cfg/src/Wdg_instance3_Cfg.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Wdg_instance3_Cfg.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal_cfg/src/Wdg_instance3_Cfg.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal_cfg/src/Wdg_instance4_Cfg.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Wdg_instance4_Cfg.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal_cfg/src/Wdg_instance4_Cfg.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal_cfg/src/Wdg_instance5_Cfg.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Wdg_instance5_Cfg.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal_cfg/src/Wdg_instance5_Cfg.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal_cfg/src/Wdg_instance6_Cfg.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Wdg_instance6_Cfg.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal_cfg/src/Wdg_instance6_Cfg.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal_cfg/src/Wdg_instance7_Cfg.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/Wdg_instance7_Cfg.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal_cfg/src/Wdg_instance7_Cfg.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal_cfg/src/cmpu_cfg.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/cmpu_cfg.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal_cfg/src/cmpu_cfg.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal_cfg/src/eDma_Cfg.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/eDma_Cfg.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal_cfg/src/eDma_Cfg.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal_cfg/src/eMIOS_Cfg.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal_cfg/src/eMIOS_Cfg.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal_cfg/src/eMIOS_Cfg.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

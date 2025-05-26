@@ -1,0 +1,39 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../CDD/resolver_app/AngleTrk.c \
+../CDD/resolver_app/Cfg_Pos_RdcDs.c \
+../CDD/resolver_app/LowPassPt1.c \
+../CDD/resolver_app/Res_SoftAngleCalc.c \
+../CDD/resolver_app/Sdadc_Rdc.c \
+../CDD/resolver_app/Std_Pos.c 
+
+OBJS += \
+./CDD/resolver_app/AngleTrk.o \
+./CDD/resolver_app/Cfg_Pos_RdcDs.o \
+./CDD/resolver_app/LowPassPt1.o \
+./CDD/resolver_app/Res_SoftAngleCalc.o \
+./CDD/resolver_app/Sdadc_Rdc.o \
+./CDD/resolver_app/Std_Pos.o 
+
+C_DEPS += \
+./CDD/resolver_app/AngleTrk.d \
+./CDD/resolver_app/Cfg_Pos_RdcDs.d \
+./CDD/resolver_app/LowPassPt1.d \
+./CDD/resolver_app/Res_SoftAngleCalc.d \
+./CDD/resolver_app/Sdadc_Rdc.d \
+./CDD/resolver_app/Std_Pos.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+CDD/resolver_app/%.o: ../CDD/resolver_app/%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@CDD/resolver_app/AngleTrk.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

@@ -1,0 +1,24 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Dem_ARCH3D12M10I1R0/src/Dem.c 
+
+OBJS += \
+./Source_FLASH/mcal/eclipse/plugins/Dem_ARCH3D12M10I1R0/src/Dem.o 
+
+C_DEPS += \
+./Source_FLASH/mcal/eclipse/plugins/Dem_ARCH3D12M10I1R0/src/Dem.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+Source_FLASH/mcal/eclipse/plugins/Dem_ARCH3D12M10I1R0/src/Dem.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Dem_ARCH3D12M10I1R0/src/Dem.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Dem_ARCH3D12M10I1R0/src/Dem.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

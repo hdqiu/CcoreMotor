@@ -1,0 +1,27 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../CDD/CarSigGen.c \
+../CDD/motor_gtm4.c 
+
+OBJS += \
+./CDD/CarSigGen.o \
+./CDD/motor_gtm4.o 
+
+C_DEPS += \
+./CDD/CarSigGen.d \
+./CDD/motor_gtm4.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+CDD/%.o: ../CDD/%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@CDD/CarSigGen.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

@@ -1,0 +1,144 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId0.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId1.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId2.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId3.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId4.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId5.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId6.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId7.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_AutoSar_Wrapper.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_HAL_Wrapper.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_LLDriver.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_Module.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_irq.c 
+
+OBJS += \
+./Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId0.o \
+./Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId1.o \
+./Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId2.o \
+./Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId3.o \
+./Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId4.o \
+./Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId5.o \
+./Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId6.o \
+./Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId7.o \
+./Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_AutoSar_Wrapper.o \
+./Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_HAL_Wrapper.o \
+./Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_LLDriver.o \
+./Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_Module.o \
+./Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_irq.o 
+
+C_DEPS += \
+./Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId0.d \
+./Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId1.d \
+./Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId2.d \
+./Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId3.d \
+./Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId4.d \
+./Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId5.d \
+./Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId6.d \
+./Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId7.d \
+./Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_AutoSar_Wrapper.d \
+./Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_HAL_Wrapper.d \
+./Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_LLDriver.d \
+./Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_Module.d \
+./Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_irq.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId0.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId0.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId0.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId1.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId1.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId1.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId2.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId2.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId2.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId3.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId3.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId3.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId4.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId4.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId4.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId5.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId5.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId5.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId6.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId6.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId6.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId7.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId7.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_176_ModId7.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_AutoSar_Wrapper.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_AutoSar_Wrapper.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_AutoSar_Wrapper.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_HAL_Wrapper.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_HAL_Wrapper.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_HAL_Wrapper.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_LLDriver.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_LLDriver.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_LLDriver.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_Module.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_Module.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_Module.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_irq.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_irq.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/source/Wdg_irq.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

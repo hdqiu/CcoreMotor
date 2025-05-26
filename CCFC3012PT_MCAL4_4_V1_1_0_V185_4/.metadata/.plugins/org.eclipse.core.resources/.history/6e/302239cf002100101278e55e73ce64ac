@@ -1,0 +1,27 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../CDD/gelu_gtm.c \
+../CDD/gtm4_demo.c 
+
+OBJS += \
+./CDD/gelu_gtm.o \
+./CDD/gtm4_demo.o 
+
+C_DEPS += \
+./CDD/gelu_gtm.d \
+./CDD/gtm4_demo.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+CDD/%.o: ../CDD/%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@CDD/gelu_gtm.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

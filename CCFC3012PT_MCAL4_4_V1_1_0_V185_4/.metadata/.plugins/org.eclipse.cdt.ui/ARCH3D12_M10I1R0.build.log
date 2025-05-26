@@ -1,0 +1,51 @@
+12:43:23 **** Incremental Build of configuration CCFC3012PT_DEBUG_FLASH for project ARCH3D12_M10I1R0 ****
+make -j16 all 
+Building file: ../Pmsm/Pmsm_main.c
+Invoking: Standard S32DS C Compiler
+powerpc-eabivle-gcc "@Pmsm/Pmsm_If.args" -MMD -MP -MF"Pmsm/Pmsm_main.d" -MT"Pmsm/Pmsm_main.o" -o "Pmsm/Pmsm_main.o" "../Pmsm/Pmsm_main.c"
+In file included from D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Project/CCFC3012PT_S32DS_SMP/ARCH3D12_M10I1R0/CDD/resolver_app/Sdadc_Rdc.h:45:0,
+                 from D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Project/CCFC3012PT_S32DS_SMP/ARCH3D12_M10I1R0/CDD/resolver_app/Res_SoftAngleCalc.h:4,
+                 from ../Pmsm/Pmsm_main.c:18:
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Project/CCFC3012PT_S32DS_SMP/ARCH3D12_M10I1R0/CDD/resolver_app/SineCalib.h:34:13: warning: no previous declaration for 'SineCalib_init' [-Wmissing-declarations]
+ inline void SineCalib_init(SineCalib *sc)
+             ^
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Project/CCFC3012PT_S32DS_SMP/ARCH3D12_M10I1R0/CDD/resolver_app/SineCalib.h:46:15: warning: no previous declaration for 'SineCalib_update' [-Wmissing-declarations]
+ inline sint32 SineCalib_update(SineCalib *sc, sint32 input)
+               ^
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Project/CCFC3012PT_S32DS_SMP/ARCH3D12_M10I1R0/CDD/resolver_app/SineCalib.h: In function 'SineCalib_update':
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Project/CCFC3012PT_S32DS_SMP/ARCH3D12_M10I1R0/CDD/resolver_app/SineCalib.h:50:9: warning: implicit declaration of function '__max' [-Wimplicit-function-declaration]
+         sc->maxv = __max(sc->maxv, input);
+         ^
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Project/CCFC3012PT_S32DS_SMP/ARCH3D12_M10I1R0/CDD/resolver_app/SineCalib.h:51:9: warning: implicit declaration of function '__min' [-Wimplicit-function-declaration]
+         sc->minv = __min(sc->minv, input);
+         ^
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Project/CCFC3012PT_S32DS_SMP/ARCH3D12_M10I1R0/CDD/resolver_app/SineCalib.h:70:9: warning: implicit declaration of function '__maxX' [-Wimplicit-function-declaration]
+         sc->maxv = __maxX(sc->maxv, input);
+         ^
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Project/CCFC3012PT_S32DS_SMP/ARCH3D12_M10I1R0/CDD/resolver_app/SineCalib.h:71:9: warning: implicit declaration of function '__minX' [-Wimplicit-function-declaration]
+         sc->minv = __minX(sc->minv, input);
+         ^
+Finished building: ../Pmsm/Pmsm_main.c
+ 
+Building target: ARCH3D12_M10I1R0.elf
+Invoking: Standard S32DS C Linker
+powerpc-eabivle-gcc -o "ARCH3D12_M10I1R0.elf" "@ARCH3D12_M10I1R0.args"    
+Finished building target: ARCH3D12_M10I1R0.elf
+ 
+Invoking: Standard S32DS Create Flash Image
+powerpc-eabivle-objcopy -O srec ARCH3D12_M10I1R0.elf  "ARCH3D12_M10I1R0.srec"
+Invoking: Standard S32DS Create Listing
+powerpc-eabivle-objdump --source --all-headers --demangle --line-numbers --wide ARCH3D12_M10I1R0.elf > "ARCH3D12_M10I1R0.lst"
+Invoking: Standard S32DS Print Size
+powerpc-eabivle-size --format=berkeley ARCH3D12_M10I1R0.elf
+   text	   data	    bss	    dec	    hex	filename
+ 443234	  65138	 148936	 657308	  a079c	ARCH3D12_M10I1R0.elf
+Finished building: ARCH3D12_M10I1R0.srec
+Finished building: ARCH3D12_M10I1R0.siz
+ 
+ 
+Finished building: ARCH3D12_M10I1R0.lst
+ 
+
+12:43:38 Build Finished (took 15s.320ms)
+

@@ -1,0 +1,4864 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stg format="2.0">
+	<OriginalWsp type="string">Motor.wsx</OriginalWsp>
+	<BackupWspFlag type="flag">0</BackupWspFlag>
+	<ProdInfo type="bin" size="52">vQTv/gAAAQAFAOgH9E8AAAUA6Af0TwAAPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAA==</ProdInfo>
+	<ProdInfoString type="string">2024.5.0</ProdInfoString>
+	<CreationDate type="string">24.04.2025 18:46:29:000</CreationDate>
+	<LastWriteDate type="string">17.05.2025 13:12:59:000</LastWriteDate>
+	<UseWspCnt type="int">0</UseWspCnt>
+	<MainFrame type="key">
+		<NETPlacementRoot type="key">
+			<UserInterface type="innerxml">
+				<UserInterface xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+					<Frame>
+						<Left>0</Left>
+						<Top>0</Top>
+						<Height>757.71428571428567</Height>
+						<Width>1200</Width>
+						<WindowState>Maximized</WindowState>
+					</Frame>
+					<CurrentPerspectiveId>default</CurrentPerspectiveId>
+					<Perspectives>
+						<Perspective>
+							<MainMenu>
+								<canAutoInsert>false</canAutoInsert>
+								<isControl>false</isControl>
+								<SubItems>
+									<MenuItem>
+										<canAutoInsert>false</canAutoInsert>
+										<isControl>false</isControl>
+										<SubItems>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>NewWorkspace</Id>
+												<Label>_New Workspace</Label>
+												<Tooltip>New Workspace</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>OpenWorkspace</Id>
+												<Label>_Open Workspace...</Label>
+												<Tooltip>Open workspace</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>SaveWorkspace</Id>
+												<Label>_Save Workspace</Label>
+												<Tooltip>Save workspace</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>SaveWorkspaceAs</Id>
+												<Label>Save Workspace _As...</Label>
+												<Tooltip>Save workspace as</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>SaveWorkspaceasTemplate</Id>
+												<Label>Save Workspace as _Template...</Label>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>SaveViewContentAs</Id>
+												<Label>Save _View Content As..</Label>
+												<Tooltip>Export view content</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>CloseWorkspace</Id>
+												<Label>_Close Workspace</Label>
+												<Tooltip>Close workspace</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>DisconnectTargetSystem</Id>
+												<Label>_Disconnect Target System..</Label>
+												<Tooltip>Disconnect Target</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>ConnectTargetSystem</Id>
+												<Label>_Connect Target System..</Label>
+												<Tooltip>Connect Target</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>LoadProgram</Id>
+												<Label>_Load Program</Label>
+												<Tooltip>Load Program</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>PrintSetup</Id>
+												<Label>Print Setup</Label>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>Print</Id>
+												<Label>_Print</Label>
+												<Tooltip>Print</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>true</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>RecentFiles</Id>
+												<Label>Recent _Files</Label>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>true</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>1DTricore_projectARCH3D12_M10I1R0ProjectCCFC3012PT_GHS_SMPFOCwsx</Id>
+														<Label>_1 D:\Tricore_project\ARCH3D12_M10I1R0\Project\CCFC3012PT_GHS_SMP\FOC.wsx</Label>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>2DCCFC3011PT_MOTORCCFC3012PT_MCAL4_4_V1_1_0_V185_4_for_test_with_TC387Motorwsx</Id>
+														<Label>_2 D:\CCFC3011PT_MOTOR\CCFC3012PT_MCAL4_4_V1_1_0_V185_4_for_test_with_TC387\Motor.wsx</Label>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>3DCCFC3011PT_MOTORCCFC3012PT_MCAL4_4_V1_1_0_V185_4Motorwsx</Id>
+														<Label>_3 D:\CCFC3011PT_MOTOR\CCFC3012PT_MCAL4_4_V1_1_0_V185_4\Motor.wsx</Label>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>4DCCFC3011PT_MOTORCCFC3012PT_MCAL4_4_V1_1_0_V185_41111wsx</Id>
+														<Label>_4 D:\CCFC3011PT_MOTOR\CCFC3012PT_MCAL4_4_V1_1_0_V185_4\1111.wsx</Label>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>5DMotor_ProjectCCFC3007PT_292_DMBoost_V0P2_20250506testwsx</Id>
+														<Label>_5 D:\Motor_Project\CCFC3007PT_292_DMBoost_V0P2_20250506\test.wsx</Label>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>6DCCFC3011PT_MOTORCCFC3012PT_MCAL4_4_V1_1_0_V190_IRQHandlerMotorwsx</Id>
+														<Label>_6 D:\CCFC3011PT_MOTOR\CCFC3012PT_MCAL4_4_V1_1_0_V190_IRQHandler\Motor.wsx</Label>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>7DCCFC3011PT_MOTORCCFC3012PT_MOTOR_3wsx</Id>
+														<Label>_7 D:\CCFC3011PT_MOTOR\CCFC3012PT_MOTOR_3.wsx</Label>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>8DCCFC3011PT_MOTORCCFC3012PT_MOTOR_1wsx</Id>
+														<Label>_8 D:\CCFC3011PT_MOTOR\CCFC3012PT_MOTOR_1.wsx</Label>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>9DCCFC3011PT_MOTORCCFC3012PT_MOTORwsx</Id>
+														<Label>_9 D:\CCFC3011PT_MOTOR\CCFC3012PT_MOTOR.wsx</Label>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>10DCCFC3008PTCCFC3008PT_TESTwsx</Id>
+														<Label>_10 D:\CCFC3008PT\CCFC3008PT_TEST.wsx</Label>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+												</SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>RecentWorkspaces</Id>
+												<Label>Recent _Workspaces</Label>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>Exit</Id>
+												<Label>_Exit</Label>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+										</SubItems>
+										<Band>0</Band>
+										<BandIndex>0</BandIndex>
+										<Id>FileMenu</Id>
+										<Label>_File</Label>
+										<ItemType>Command</ItemType>
+										<isVisible>true</isVisible>
+									</MenuItem>
+									<MenuItem>
+										<canAutoInsert>false</canAutoInsert>
+										<isControl>false</isControl>
+										<SubItems>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>Undo</Id>
+												<Label>_Undo</Label>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>Cut</Id>
+												<Label>Cu_t</Label>
+												<Tooltip>Cut</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>Copy</Id>
+												<Label>_Copy</Label>
+												<Tooltip>Copy</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>Paste</Id>
+												<Label>_Paste</Label>
+												<Tooltip>Paste</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>PasteSpecial</Id>
+												<Label>Paste _Special...</Label>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>SelectAll</Id>
+												<Label>Select A_ll</Label>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+										</SubItems>
+										<Band>0</Band>
+										<BandIndex>0</BandIndex>
+										<Id>EditMenu</Id>
+										<Label>_Edit</Label>
+										<ItemType>Command</ItemType>
+										<isVisible>true</isVisible>
+									</MenuItem>
+									<MenuItem>
+										<canAutoInsert>false</canAutoInsert>
+										<isControl>false</isControl>
+										<SubItems>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>Rotatecorefocus</Id>
+												<Label>Rotate _core focus</Label>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>StartProgramExecution</Id>
+												<Label>_Start Program Execution</Label>
+												<Tooltip>Start Program</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>StepoverSubroutine</Id>
+												<Label>S_tep over Subroutine</Label>
+												<Tooltip>Step Over</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>StepintoSubroutine</Id>
+												<Label>Step _into Subroutine</Label>
+												<Tooltip>Step Into</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>StepoutofSubroutine</Id>
+												<Label>Step _out of Subroutine</Label>
+												<Tooltip>Step Out</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>RunProgramtoCursor</Id>
+												<Label>_Run Program to Cursor</Label>
+												<Tooltip>Run Cursor</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>BreakProgramExecution</Id>
+												<Label>_Break Program Execution</Label>
+												<Tooltip>Break Program</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>Resettarget</Id>
+												<Label>Reset _target</Label>
+												<Tooltip>Reset</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>RestartProgramExecution</Id>
+												<Label>Restart Program _Execution</Label>
+												<Tooltip>Restart Program</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>Setuptriggerunit</Id>
+												<Label>_Setup trigger unit</Label>
+												<Tooltip>Trigger setup</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+										</SubItems>
+										<Band>0</Band>
+										<BandIndex>0</BandIndex>
+										<Id>DebugMenu</Id>
+										<Label>_Debug</Label>
+										<ItemType>Command</ItemType>
+										<isVisible>true</isVisible>
+									</MenuItem>
+									<MenuItem>
+										<canAutoInsert>false</canAutoInsert>
+										<isControl>false</isControl>
+										<SubItems>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>ShowIP</Id>
+												<Label>Show _IP</Label>
+												<Tooltip>Show IP</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>ShowCode</Id>
+												<Label>Show _Code</Label>
+												<Tooltip>Show Code</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>ShowMMUSettings</Id>
+												<Label>Show MMU Settings</Label>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+										</SubItems>
+										<Band>0</Band>
+										<BandIndex>0</BandIndex>
+										<Id>ShowMenu</Id>
+										<Label>_Show</Label>
+										<ItemType>Command</ItemType>
+										<isVisible>true</isVisible>
+									</MenuItem>
+									<MenuItem>
+										<canAutoInsert>false</canAutoInsert>
+										<isControl>false</isControl>
+										<SubItems>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>Breakpoints</Id>
+												<Label>_Breakpoints</Label>
+												<Tooltip>Breakpoints</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>CallStack</Id>
+												<Label>_Call Stack</Label>
+												<Tooltip>Call Stack</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>CoreRegisters</Id>
+												<Label>_Core Registers</Label>
+												<Tooltip>Core Registers</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>Disassembly</Id>
+												<Label>Disassembl_y</Label>
+												<Tooltip>Disassembly</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>Disassemblycompleterange</Id>
+												<Label>Disassembly (complete range)</Label>
+												<Tooltip>Disassembly (complete range)</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>Locals</Id>
+												<Label>_Locals</Label>
+												<Tooltip>Locals</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>Memory</Id>
+												<Label>_Memory</Label>
+												<Tooltip>Memory</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>PeripheralRegisters</Id>
+												<Label>_Peripheral Registers</Label>
+												<Tooltip>Peripheral Registers</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>SourceCode</Id>
+												<Label>_Source Code</Label>
+												<Tooltip>Source Code</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>Symbols</Id>
+												<Label>_Symbols</Label>
+												<Tooltip>Symbols</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>TargetManager</Id>
+												<Label>_Target Manager</Label>
+												<Tooltip>Target Manager</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>Watches</Id>
+												<Label>_Watches</Label>
+												<Tooltip>Watches</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>µCOSAwareness</Id>
+														<Label>_µC/OS Awareness</Label>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>A2LFileSupport</Id>
+														<Label>A2L File Support</Label>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>CANRecords</Id>
+														<Label>_CAN Records</Label>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>CMXAwareness</Id>
+														<Label>_CMX Awareness</Label>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>OSEKAwareness</Id>
+														<Label>_OSEK Awareness</Label>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>PXROSAwareness</Id>
+														<Label>P_XROS Awareness</Label>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>PXROSHRAwareness</Id>
+														<Label>PXROS-HR Awareness</Label>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>rcXAwareness</Id>
+														<Label>rcX Awareness</Label>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>RTXAwareness</Id>
+														<Label>RTX Awareness</Label>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>SAFERTOSFreeRTOSAwareness</Id>
+														<Label>SAFERTOS/FreeRTOS Awareness</Label>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>TTFRecords</Id>
+														<Label>_TTF Records</Label>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+												</SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>AddInWindows</Id>
+												<Label>_Add-In Windows</Label>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>ArrayChart</Id>
+														<Label>_Array Chart</Label>
+														<Tooltip>Array Chart</Tooltip>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>CallGraph</Id>
+														<Label>Call Graph</Label>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>CodeCoveragetrace</Id>
+														<Label>Code Coverage (trace)</Label>
+														<Tooltip>Code Coverage (trace)</Tooltip>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>DataSequences</Id>
+														<Label>_Data Sequences</Label>
+														<Tooltip>Data Sequences</Tooltip>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>ExecutionSequenceChart</Id>
+														<Label>_Execution Sequence Chart</Label>
+														<Tooltip>Execution Sequence Chart</Tooltip>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>Markers</Id>
+														<Label>Markers</Label>
+														<Tooltip>Markers</Tooltip>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>PersistentTraces</Id>
+														<Label>_Persistent Traces</Label>
+														<Tooltip>Persistent Traces</Tooltip>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>Profilingstats</Id>
+														<Label>_Profiling (stats)</Label>
+														<Tooltip>Profiling (stats)</Tooltip>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>TimeValueChart</Id>
+														<Label>_Time / Value Chart</Label>
+														<Tooltip>Time / Value Chart</Tooltip>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+												</SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>TraceAnalyzeWindows</Id>
+												<Label>_Trace &amp; Analyze Windows</Label>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>Console</Id>
+														<Label>_Console</Label>
+														<Tooltip>Console</Tooltip>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>HTMLDocument</Id>
+														<Label>_HTML Document</Label>
+														<Tooltip>HTML Document</Tooltip>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>Messages</Id>
+														<Label>_Messages</Label>
+														<Tooltip>Messages</Tooltip>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>Progress</Id>
+														<Label>_Progress</Label>
+														<Tooltip>Progress</Tooltip>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>PythonScriptConsole</Id>
+														<Label>P_ython Script Console</Label>
+														<Tooltip>Python Script Console</Tooltip>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Id>SimulatedIO</Id>
+														<Label>_Simulated I/O</Label>
+														<Tooltip>Simulated I/O</Tooltip>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+												</SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>OtherWindows</Id>
+												<Label>_Other Windows</Label>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>SimplyTrace</Id>
+												<Label>_SimplyTrace</Label>
+												<Tooltip>SimplyTrace</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>GlobalTime</Id>
+												<Label>Global _Time</Label>
+												<Tooltip>Global Time</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>ArchitectureSupport</Id>
+												<Label>_Architecture Support</Label>
+												<Tooltip>Architecture Support</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+										</SubItems>
+										<Band>0</Band>
+										<BandIndex>0</BandIndex>
+										<Id>ViewsMenu</Id>
+										<Label>_Views</Label>
+										<ItemType>Command</ItemType>
+										<isVisible>true</isVisible>
+									</MenuItem>
+									<MenuItem>
+										<canAutoInsert>false</canAutoInsert>
+										<isControl>false</isControl>
+										<SubItems>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>SaveTraceStream</Id>
+												<Label>Save Trace Stream ...</Label>
+												<Tooltip>Save Trace Stream ...</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>LoadTraceStream</Id>
+												<Label>Load Trace Stream ...</Label>
+												<Tooltip>Load Trace Stream ...</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>SaveTraceStreamAs</Id>
+												<Label>Save Trace Stream As ...</Label>
+												<Tooltip>Save Trace Stream As...</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>AnalyzeExecutionSequence</Id>
+												<Label>Analyze Execution Sequence</Label>
+												<Tooltip>Analyze Execution Sequence</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>ConfigureDataSequences</Id>
+												<Label>_Configure Data Sequences...</Label>
+												<Tooltip>Configure Data Sequences</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>StartAnalyzingDataSequences</Id>
+												<Label>_Start Analyzing Data Sequences</Label>
+												<Tooltip>Start Analyzing Data Sequences</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>StopAnalyzingDataSequences</Id>
+												<Label>_Stop Analyzing Data Sequences</Label>
+												<Tooltip>Stop Analyzing Data Sequences</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>Macros</Id>
+												<Label>Macros...</Label>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>ManageMacroStorage</Id>
+												<Label>Manage Macro Storage...</Label>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>RunselectedMacro</Id>
+												<Label>_Run selected Macro</Label>
+												<Tooltip>Run Macro</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>DebugselectedMacro</Id>
+												<Label>_Debug selected Macro</Label>
+												<Tooltip>Debug Macro</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>BreakMacro</Id>
+												<Label>Break Macro</Label>
+												<Tooltip>Break Macro</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>ReloadselectedMacro</Id>
+												<Label>Re_load selected Macro</Label>
+												<Tooltip>Reload Macro</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>FLASHProgramming</Id>
+												<Label>FLASH Programming ...</Label>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>ExecutionTimeSetup</Id>
+												<Label>_Execution Time Setup</Label>
+												<Tooltip>Execution Time Setup</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+										</SubItems>
+										<Band>0</Band>
+										<BandIndex>0</BandIndex>
+										<Id>ToolsMenu</Id>
+										<Label>_Tools</Label>
+										<ItemType>Command</ItemType>
+										<isVisible>true</isVisible>
+									</MenuItem>
+									<MenuItem>
+										<canAutoInsert>false</canAutoInsert>
+										<isControl>false</isControl>
+										<SubItems>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>TargetConfiguration</Id>
+												<Label>Target Configuration</Label>
+												<Tooltip>Target Configuration</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>SetupHTMLBrowser</Id>
+												<Label>Setup _HTML Browser</Label>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>ArchitectureSupportSetup</Id>
+												<Label>_Architecture Support Setup ...</Label>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>PythonScriptInterpreterSetup</Id>
+												<Label>_Python Script Interpreter Setup ...</Label>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>AddInComponents</Id>
+												<Label>_Add-In Components</Label>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>DebugServerConfiguration</Id>
+												<Label>_Debug Server Configuration</Label>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>TargetInterface</Id>
+												<Label>_Target Interface...</Label>
+												<Tooltip>Setup Target Interface</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>MultiCoreRunControlConfiguration</Id>
+												<Label>MultiCore Run Control Configuration</Label>
+												<Tooltip>MCU Run Control</Tooltip>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+										</SubItems>
+										<Band>0</Band>
+										<BandIndex>0</BandIndex>
+										<Id>ConfigMenu</Id>
+										<Label>_Config</Label>
+										<ItemType>Command</ItemType>
+										<isVisible>true</isVisible>
+									</MenuItem>
+									<MenuItem>
+										<canAutoInsert>false</canAutoInsert>
+										<isControl>false</isControl>
+										<SubItems></SubItems>
+										<Band>0</Band>
+										<BandIndex>0</BandIndex>
+										<Id>WindowMenu</Id>
+										<Label>_Window</Label>
+										<ItemType>Command</ItemType>
+										<isVisible>true</isVisible>
+									</MenuItem>
+									<MenuItem>
+										<canAutoInsert>false</canAutoInsert>
+										<isControl>false</isControl>
+										<SubItems></SubItems>
+										<Band>0</Band>
+										<BandIndex>0</BandIndex>
+										<Id>MacroMenu</Id>
+										<Label>_Macro</Label>
+										<ItemType>Command</ItemType>
+										<isVisible>true</isVisible>
+									</MenuItem>
+									<MenuItem>
+										<canAutoInsert>false</canAutoInsert>
+										<isControl>false</isControl>
+										<SubItems>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>HelpIndex</Id>
+												<Label>Help _Index</Label>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>LicenseManager</Id>
+												<Label>_License Manager</Label>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>AboutUDE</Id>
+												<Label>_About UDE...</Label>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>UDELicenseKeyRequestForm</Id>
+												<Label>UDE _License Key Request Form</Label>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+											<MenuItem>
+												<canAutoInsert>false</canAutoInsert>
+												<isControl>false</isControl>
+												<SubItems></SubItems>
+												<Band>0</Band>
+												<BandIndex>0</BandIndex>
+												<Id>UDESupportRequestForm</Id>
+												<Label>UDE _Support Request Form</Label>
+												<ItemType>Command</ItemType>
+												<isVisible>true</isVisible>
+											</MenuItem>
+										</SubItems>
+										<Band>0</Band>
+										<BandIndex>0</BandIndex>
+										<Id>HelpMenu</Id>
+										<Label>_Help</Label>
+										<ItemType>Command</ItemType>
+										<isVisible>true</isVisible>
+									</MenuItem>
+								</SubItems>
+								<Band>0</Band>
+								<BandIndex>0</BandIndex>
+								<Id>mainmenu</Id>
+								<Label>_Main</Label>
+								<ItemType>Command</ItemType>
+								<isVisible>true</isVisible>
+							</MainMenu>
+							<Id>default</Id>
+							<Label>Default</Label>
+							<Toolbars>
+								<MenuItem>
+									<canAutoInsert>false</canAutoInsert>
+									<isControl>false</isControl>
+									<SubItems>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>customizeToolbar</Id>
+											<Label>Customize Toolbar</Label>
+											<ItemType>PlatformCommand</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>NewWorkspace</Id>
+											<Label>_New Workspace</Label>
+											<Tooltip>New Workspace</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>OpenWorkspace</Id>
+											<Label>_Open Workspace...</Label>
+											<Tooltip>Open workspace</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>SaveWorkspace</Id>
+											<Label>_Save Workspace</Label>
+											<Tooltip>Save workspace</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>SaveWorkspaceAs</Id>
+											<Label>Save Workspace _As...</Label>
+											<Tooltip>Save workspace as</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>SaveViewContentAs</Id>
+											<Label>Save _View Content As..</Label>
+											<Tooltip>Export view content</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>CloseWorkspace</Id>
+											<Label>_Close Workspace</Label>
+											<Tooltip>Close workspace</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>false</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>Print</Id>
+											<Tooltip>Print</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>false</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>LoadProgram</Id>
+											<Label>_Load Program</Label>
+											<Tooltip>Load Program</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+									</SubItems>
+									<Band>0</Band>
+									<BandIndex>0</BandIndex>
+									<Id>FileToolbar</Id>
+									<Label>_File</Label>
+									<ItemType>Command</ItemType>
+									<isVisible>true</isVisible>
+								</MenuItem>
+								<MenuItem>
+									<canAutoInsert>false</canAutoInsert>
+									<isControl>false</isControl>
+									<SubItems>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>customizeToolbar</Id>
+											<Label>Customize Toolbar</Label>
+											<ItemType>PlatformCommand</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>Cut</Id>
+											<Label>Cu_t</Label>
+											<Tooltip>Cut</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>Copy</Id>
+											<Label>_Copy</Label>
+											<Tooltip>Copy</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>Paste</Id>
+											<Label>_Paste</Label>
+											<Tooltip>Paste</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+									</SubItems>
+									<Band>0</Band>
+									<BandIndex>1</BandIndex>
+									<Id>EditToolbar</Id>
+									<Label>Edit</Label>
+									<ItemType>Command</ItemType>
+									<isVisible>true</isVisible>
+								</MenuItem>
+								<MenuItem>
+									<canAutoInsert>false</canAutoInsert>
+									<isControl>false</isControl>
+									<SubItems>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>customizeToolbar</Id>
+											<Label>Customize Toolbar</Label>
+											<ItemType>PlatformCommand</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>ShowIP</Id>
+											<Label>Show _IP</Label>
+											<Tooltip>Show IP</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>ShowCode</Id>
+											<Label>Show _Code</Label>
+											<Tooltip>Show Code</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>StartProgramExecution</Id>
+											<Label>_Start Program Execution</Label>
+											<Tooltip>Start Program</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>StepoverSubroutine</Id>
+											<Label>S_tep over Subroutine</Label>
+											<Tooltip>Step Over</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>StepintoSubroutine</Id>
+											<Label>Step _into Subroutine</Label>
+											<Tooltip>Step Into</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>StepoutofSubroutine</Id>
+											<Label>Step _out of Subroutine</Label>
+											<Tooltip>Step Out</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>RunProgramtoCursor</Id>
+											<Label>_Run Program to Cursor</Label>
+											<Tooltip>Run Cursor</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>BreakProgramExecution</Id>
+											<Label>_Break Program Execution</Label>
+											<Tooltip>Break Program</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>Resettarget</Id>
+											<Label>Reset _target</Label>
+											<Tooltip>Reset</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>RestartProgramExecution</Id>
+											<Label>Restart Program _Execution</Label>
+											<Tooltip>Restart Program</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>true</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>UDE_Ctrl_5DFC159A9ACA4B30939C46671D257225_Core0</Id>
+											<Tooltip>Core0 Target Status</Tooltip>
+											<ItemType>Control</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>Setuptriggerunit</Id>
+											<Label>_Setup trigger unit</Label>
+											<Tooltip>Trigger setup</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>true</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>UDE_Ctrl_5DFC159A9ACA4B30939C46671D257225_Core1</Id>
+											<Tooltip>Core1 Target Status</Tooltip>
+											<ItemType>Control</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>true</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>UDE_Ctrl_5DFC159A9ACA4B30939C46671D257225_Core2</Id>
+											<Tooltip>Core2 Target Status</Tooltip>
+											<ItemType>Control</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>true</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>UDE_Ctrl_5DFC159A9ACA4B30939C46671D257225_Core3</Id>
+											<Tooltip>Core3 Target Status</Tooltip>
+											<ItemType>Control</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>true</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>UDE_Ctrl_5DFC159A9ACA4B30939C46671D257225_Core4</Id>
+											<Tooltip>Core4 Target Status</Tooltip>
+											<ItemType>Control</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>true</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>UDE_Ctrl_5DFC159A9ACA4B30939C46671D257225_Core5</Id>
+											<Tooltip>Core5 Target Status</Tooltip>
+											<ItemType>Control</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+									</SubItems>
+									<Band>1</Band>
+									<BandIndex>0</BandIndex>
+									<Id>DebugToolbar</Id>
+									<Label>Debug</Label>
+									<ItemType>Command</ItemType>
+									<isVisible>true</isVisible>
+								</MenuItem>
+								<MenuItem>
+									<canAutoInsert>false</canAutoInsert>
+									<isControl>false</isControl>
+									<SubItems>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>customizeToolbar</Id>
+											<Label>Customize Toolbar</Label>
+											<ItemType>PlatformCommand</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>TargetManager</Id>
+											<Label>_Target Manager</Label>
+											<Tooltip>Target Manager</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>Messages</Id>
+											<Label>_Messages</Label>
+											<Tooltip>Messages</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>Console</Id>
+											<Label>_Console</Label>
+											<Tooltip>Console</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>Progress</Id>
+											<Label>_Progress</Label>
+											<Tooltip>Progress</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>ExecutionSequenceChart</Id>
+											<Label>_Execution Sequence Chart</Label>
+											<Tooltip>Execution Sequence Chart</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>Breakpoints</Id>
+											<Label>_Breakpoints</Label>
+											<Tooltip>Breakpoints</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>SimplyTrace</Id>
+											<Label>_SimplyTrace</Label>
+											<Tooltip>SimplyTrace</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>GlobalTime</Id>
+											<Label>Global _Time</Label>
+											<Tooltip>Global Time</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>Trace</Id>
+											<Label>_Trace</Label>
+											<Tooltip>Trace</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>PersistentTraces</Id>
+											<Label>_Persistent Traces</Label>
+											<Tooltip>Persistent Traces</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>DataSequences</Id>
+											<Label>_Data Sequences</Label>
+											<Tooltip>Data Sequences</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>ArchitectureSupport</Id>
+											<Label>_Architecture Support</Label>
+											<Tooltip>Architecture Support</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>PythonScriptConsole</Id>
+											<Label>P_ython Script Console</Label>
+											<Tooltip>Python Script Console</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>Markers</Id>
+											<Label>Markers</Label>
+											<Tooltip>Markers</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>CoreRegisters</Id>
+											<Label>Core Registers</Label>
+											<Tooltip>Core Registers</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>Symbols</Id>
+											<Label>_Symbols</Label>
+											<Tooltip>Symbols</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>SourceCode</Id>
+											<Label>_Source Code</Label>
+											<Tooltip>Source Code</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>Disassemblycompleterange</Id>
+											<Label>Disassembly (complete range)</Label>
+											<Tooltip>Disassembly (complete range)</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>Disassembly</Id>
+											<Label>Disassembl_y</Label>
+											<Tooltip>Disassembly</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>Locals</Id>
+											<Label>_Locals</Label>
+											<Tooltip>Locals</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>Watches</Id>
+											<Label>_Watches</Label>
+											<Tooltip>Watches</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>SimulatedIO</Id>
+											<Label>_Simulated I/O</Label>
+											<Tooltip>Simulated I/O</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>HTMLDocument</Id>
+											<Label>_HTML Document</Label>
+											<Tooltip>HTML Document</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>ArrayChart</Id>
+											<Label>_Array Chart</Label>
+											<Tooltip>Array Chart</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>TimeValueChart</Id>
+											<Label>_Time / Value Chart</Label>
+											<Tooltip>Time / Value Chart</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>Profilingstats</Id>
+											<Label>_Profiling (stats)</Label>
+											<Tooltip>Profiling (stats)</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>Memory</Id>
+											<Label>_Memory</Label>
+											<Tooltip>Memory</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>CodeCoveragetrace</Id>
+											<Label>Code Coverage (trace)</Label>
+											<Tooltip>Code Coverage (trace)</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>DataTraceChart</Id>
+											<Label>_Data Trace Chart</Label>
+											<Tooltip>Data Trace Chart</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>Profilingtrace</Id>
+											<Label>Profiling (trace)</Label>
+											<Tooltip>Profiling (trace)</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>CallStack</Id>
+											<Label>_Call Stack</Label>
+											<Tooltip>Call Stack</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>PeripheralRegisters</Id>
+											<Label>_Peripheral Registers</Label>
+											<Tooltip>Peripheral Registers</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+									</SubItems>
+									<Band>2</Band>
+									<BandIndex>0</BandIndex>
+									<Id>ViewsToolbar</Id>
+									<Label>Views</Label>
+									<ItemType>Command</ItemType>
+									<isVisible>true</isVisible>
+								</MenuItem>
+								<MenuItem>
+									<canAutoInsert>false</canAutoInsert>
+									<isControl>false</isControl>
+									<SubItems>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>customizeToolbar</Id>
+											<Label>Customize Toolbar</Label>
+											<ItemType>PlatformCommand</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>SaveTraceStream</Id>
+											<Label>Save Trace Stream ...</Label>
+											<Tooltip>Save Trace Stream ...</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>LoadTraceStream</Id>
+											<Label>Load Trace Stream ...</Label>
+											<Tooltip>Load Trace Stream ...</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>SaveTraceStreamAs</Id>
+											<Label>Save Trace Stream As ...</Label>
+											<Tooltip>Save Trace Stream As...</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>AnalyzeExecutionSequence</Id>
+											<Label>Analyze Execution Sequence</Label>
+											<Tooltip>Analyze Execution Sequence</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>ConfigureDataSequences</Id>
+											<Label>_Configure Data Sequences...</Label>
+											<Tooltip>Configure Data Sequences</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>StartAnalyzingDataSequences</Id>
+											<Label>_Start Analyzing Data Sequences</Label>
+											<Tooltip>Start Analyzing Data Sequences</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>StopAnalyzingDataSequences</Id>
+											<Label>_Stop Analyzing Data Sequences</Label>
+											<Tooltip>Stop Analyzing Data Sequences</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>Starttrace</Id>
+											<Label>Start trace...</Label>
+											<Tooltip>Start trace</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>Stoptrace</Id>
+											<Label>Stop trace...</Label>
+											<Tooltip>Stop trace</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>Cleartrace</Id>
+											<Label>Clear trace...</Label>
+											<Tooltip>Clear trace data</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>Configuretrace</Id>
+											<Label>Configure trace...</Label>
+											<Tooltip>Configure trace</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>Traceusecasemananger</Id>
+											<Label>Trace use case mananger...</Label>
+											<Tooltip>Trace use cases</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>true</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>UDE_Ctrl_603C4C839BC9407AB1C49F08E466A7F1_Core0</Id>
+											<Tooltip>Core0 Execution Time</Tooltip>
+											<ItemType>Control</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>ExecutionTimeSetup</Id>
+											<Label>_Execution Time Setup</Label>
+											<Tooltip>Execution Time Setup</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>true</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>UDE_Ctrl_603C4C839BC9407AB1C49F08E466A7F1_Core1</Id>
+											<Tooltip>Core1 Execution Time</Tooltip>
+											<ItemType>Control</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>true</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>UDE_Ctrl_603C4C839BC9407AB1C49F08E466A7F1_Core2</Id>
+											<Tooltip>Core2 Execution Time</Tooltip>
+											<ItemType>Control</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>true</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>UDE_Ctrl_603C4C839BC9407AB1C49F08E466A7F1_Core3</Id>
+											<Tooltip>Core3 Execution Time</Tooltip>
+											<ItemType>Control</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>true</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>UDE_Ctrl_603C4C839BC9407AB1C49F08E466A7F1_Core4</Id>
+											<Tooltip>Core4 Execution Time</Tooltip>
+											<ItemType>Control</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>true</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>UDE_Ctrl_603C4C839BC9407AB1C49F08E466A7F1_Core5</Id>
+											<Tooltip>Core5 Execution Time</Tooltip>
+											<ItemType>Control</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+									</SubItems>
+									<Band>2</Band>
+									<BandIndex>1</BandIndex>
+									<Id>ToolsToolbar</Id>
+									<Label>Tools</Label>
+									<ItemType>Command</ItemType>
+									<isVisible>true</isVisible>
+								</MenuItem>
+								<MenuItem>
+									<canAutoInsert>false</canAutoInsert>
+									<isControl>false</isControl>
+									<SubItems>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>customizeToolbar</Id>
+											<Label>Customize Toolbar</Label>
+											<ItemType>PlatformCommand</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>TargetConfiguration</Id>
+											<Label>Target Configuration</Label>
+											<Tooltip>Target Configuration</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>ConnectTargetSystem</Id>
+											<Label>_Connect Target System..</Label>
+											<Tooltip>Connect Target</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>DisconnectTargetSystem</Id>
+											<Label>_Disconnect Target System..</Label>
+											<Tooltip>Disconnect Target</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>TargetInterface</Id>
+											<Label>_Target Interface...</Label>
+											<Tooltip>Setup Target Interface</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>MultiCoreRunControlConfiguration</Id>
+											<Label>MultiCore Run Control Configuration</Label>
+											<Tooltip>MCU Run Control</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+									</SubItems>
+									<Band>2</Band>
+									<BandIndex>2</BandIndex>
+									<Id>ConfigToolbar</Id>
+									<Label>Config</Label>
+									<ItemType>Command</ItemType>
+									<isVisible>true</isVisible>
+								</MenuItem>
+								<MenuItem>
+									<canAutoInsert>false</canAutoInsert>
+									<isControl>false</isControl>
+									<SubItems>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>customizeToolbar</Id>
+											<Label>Customize Toolbar</Label>
+											<ItemType>PlatformCommand</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>RunselectedMacro</Id>
+											<Label>_Run selected Macro</Label>
+											<Tooltip>Run Macro</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>DebugselectedMacro</Id>
+											<Label>_Debug selected Macro</Label>
+											<Tooltip>Debug Macro</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>BreakMacro</Id>
+											<Label>Break Macro</Label>
+											<Tooltip>Break Macro</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>ReloadselectedMacro</Id>
+											<Label>Re_load selected Macro</Label>
+											<Tooltip>Reload Macro</Tooltip>
+											<ItemType>Command</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>true</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>UDE_Ctrl_665DDE1D2B264DC7A0FE8BFEAD469107_UDEWorkspace</Id>
+											<Tooltip>Select executed macro</Tooltip>
+											<ItemType>Control</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+									</SubItems>
+									<Band>3</Band>
+									<BandIndex>0</BandIndex>
+									<Id>MacroToolbar</Id>
+									<Label>Macro</Label>
+									<ItemType>Command</ItemType>
+									<isVisible>true</isVisible>
+								</MenuItem>
+								<MenuItem>
+									<canAutoInsert>false</canAutoInsert>
+									<isControl>false</isControl>
+									<SubItems>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>customizeToolbar</Id>
+											<Label>Customize Toolbar</Label>
+											<ItemType>PlatformCommand</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+									</SubItems>
+									<Band>4</Band>
+									<BandIndex>0</BandIndex>
+									<Id>ShowToolbar</Id>
+									<Label>Show</Label>
+									<ItemType>Command</ItemType>
+									<isVisible>true</isVisible>
+								</MenuItem>
+								<MenuItem>
+									<canAutoInsert>false</canAutoInsert>
+									<isControl>false</isControl>
+									<SubItems>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>customizeToolbar</Id>
+											<Label>Customize Toolbar</Label>
+											<ItemType>PlatformCommand</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+									</SubItems>
+									<Band>4</Band>
+									<BandIndex>1</BandIndex>
+									<Id>WindowToolbar</Id>
+									<Label>Window</Label>
+									<ItemType>Command</ItemType>
+									<isVisible>true</isVisible>
+								</MenuItem>
+								<MenuItem>
+									<canAutoInsert>false</canAutoInsert>
+									<isControl>false</isControl>
+									<SubItems>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>customizeToolbar</Id>
+											<Label>Customize Toolbar</Label>
+											<ItemType>PlatformCommand</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+									</SubItems>
+									<Band>4</Band>
+									<BandIndex>2</BandIndex>
+									<Id>WorkspaceToolbar</Id>
+									<Label>Workspace</Label>
+									<ItemType>Command</ItemType>
+									<isVisible>true</isVisible>
+								</MenuItem>
+								<MenuItem>
+									<canAutoInsert>false</canAutoInsert>
+									<isControl>false</isControl>
+									<SubItems>
+										<MenuItem>
+											<canAutoInsert>false</canAutoInsert>
+											<isControl>false</isControl>
+											<SubItems></SubItems>
+											<Band>0</Band>
+											<BandIndex>0</BandIndex>
+											<Id>customizeToolbar</Id>
+											<Label>Customize Toolbar</Label>
+											<ItemType>PlatformCommand</ItemType>
+											<isVisible>true</isVisible>
+										</MenuItem>
+									</SubItems>
+									<Band>4</Band>
+									<BandIndex>3</BandIndex>
+									<Id>HelpToolbar</Id>
+									<Label>Help</Label>
+									<ItemType>Command</ItemType>
+									<isVisible>true</isVisible>
+								</MenuItem>
+							</Toolbars>
+							<Views>
+								<View>
+									<ContentId>Core0.ViewSrv.StdUDESymbolExplWin.OPEN_VIEW</ContentId>
+								</View>
+								<View>
+									<ContentId>Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW00</ContentId>
+								</View>
+								<View>
+									<ContentId>Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW01</ContentId>
+								</View>
+								<View>
+									<ContentId>Core0.ViewSrv.StdUDEWatchWin.OPEN_VIEW00</ContentId>
+								</View>
+								<View>
+									<ContentId>Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW02</ContentId>
+								</View>
+								<View>
+									<ContentId>Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW03</ContentId>
+								</View>
+								<View>
+									<ContentId>Core1.ViewSrv.StdUDEProgWin.OPEN_VIEW00</ContentId>
+								</View>
+								<View>
+									<ContentId>Core3.ViewSrv.StdUDEProgWin.OPEN_VIEW00</ContentId>
+								</View>
+								<View>
+									<ContentId>Core5.ViewSrv.StdUDEProgWin.OPEN_VIEW00</ContentId>
+								</View>
+								<View>
+									<ContentId>Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW04</ContentId>
+								</View>
+								<View>
+									<ContentId>Core4.ViewSrv.StdUDEProgWin.OPEN_VIEW00</ContentId>
+								</View>
+								<View>
+									<ContentId>Core2.ViewSrv.StdUDEProgWin.OPEN_VIEW00</ContentId>
+								</View>
+								<View>
+									<ContentId>Core2.ViewSrv.StdUDEProgWin.OPEN_VIEW01</ContentId>
+								</View>
+								<View>
+									<ContentId>Core5.ViewSrv.StdUDEProgWin.OPEN_VIEW01</ContentId>
+								</View>
+								<View>
+									<ContentId>Core3.ViewSrv.StdUDEProgWin.OPEN_VIEW01</ContentId>
+								</View>
+								<View>
+									<ContentId>Core4.ViewSrv.StdUDEProgWin.OPEN_VIEW01</ContentId>
+								</View>
+								<View>
+									<ContentId>Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW05</ContentId>
+								</View>
+								<View>
+									<ContentId>Core1.ViewSrv.StdUDEProgWin.OPEN_VIEW01</ContentId>
+								</View>
+								<View>
+									<ContentId>Core2.ViewSrv.StdUDEProgWin.OPEN_VIEW02</ContentId>
+								</View>
+								<View>
+									<ContentId>Core4.ViewSrv.StdUDEProgWin.OPEN_VIEW02</ContentId>
+								</View>
+								<View>
+									<ContentId>Core2.ViewSrv.StdUDEProgWin.OPEN_VIEW03</ContentId>
+								</View>
+								<View>
+									<ContentId>Core2.ViewSrv.StdUDEProgWin.OPEN_VIEW04</ContentId>
+								</View>
+								<View>
+									<ContentId>Core3.ViewSrv.StdUDEProgWin.OPEN_VIEW02</ContentId>
+								</View>
+								<View>
+									<ContentId>Core1.ViewSrv.StdUDEProgWin.OPEN_VIEW02</ContentId>
+								</View>
+								<View>
+									<ContentId>Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW06</ContentId>
+								</View>
+							</Views>
+							<Layout>
+								<RootPanel Orientation="Horizontal">
+									<LayoutAnchorablePane DockWidth="200" DockHeight="200">
+										<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Core0 Symbols" IsSelected="True" ContentId="Core0.ViewSrv.StdUDESymbolExplWin.OPEN_VIEW" CanClose="True" LastActivationTimeStamp="05/17/2025 13:04:42"></LayoutAnchorable>
+									</LayoutAnchorablePane>
+									<LayoutPanel Orientation="Horizontal">
+										<LayoutDocumentPaneGroup Orientation="Horizontal">
+											<LayoutDocumentPane Id="b45b69d7-077f-4e18-8b3d-854c763d79a3" DockWidth="0.571338512662377*">
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\main.c" ContentId="Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW00" CanClose="True" LastActivationTimeStamp="05/17/2025 13:04:42"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\common\src\startup.S" ContentId="Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW01" CanClose="True" LastActivationTimeStamp="05/17/2025 13:04:42"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Watches 1" IsSelected="True" IsLastFocusedDocument="True" ContentId="Core0.ViewSrv.StdUDEWatchWin.OPEN_VIEW00" CanClose="True" LastActivationTimeStamp="05/17/2025 13:04:47"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\main.c" ContentId="Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW02" CanClose="True" LastActivationTimeStamp="04/24/2025 20:35:12"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\common\src\startup.S" ContentId="Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW03" CanClose="True" LastActivationTimeStamp="04/24/2025 20:35:12"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\main.c" ContentId="Core1.ViewSrv.StdUDEProgWin.OPEN_VIEW00" CanClose="True" LastActivationTimeStamp="05/13/2025 19:22:20"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\shell\shell.c" ContentId="Core3.ViewSrv.StdUDEProgWin.OPEN_VIEW00" CanClose="True" LastActivationTimeStamp="04/24/2025 20:35:09"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\shell\shell.c" ContentId="Core5.ViewSrv.StdUDEProgWin.OPEN_VIEW00" CanClose="True" LastActivationTimeStamp="04/24/2025 20:35:09"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\resolver_app\Resolver.c" ContentId="Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW04" CanClose="True" LastActivationTimeStamp="04/24/2025 20:35:10"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\shell\shell.c" ContentId="Core4.ViewSrv.StdUDEProgWin.OPEN_VIEW00" CanClose="True" LastActivationTimeStamp="04/24/2025 20:35:10"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\main.c" ContentId="Core2.ViewSrv.StdUDEProgWin.OPEN_VIEW00" CanClose="True" LastActivationTimeStamp="04/24/2025 20:35:10"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\main.c" ContentId="Core2.ViewSrv.StdUDEProgWin.OPEN_VIEW01" CanClose="True" LastActivationTimeStamp="04/25/2025 11:56:21"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\shell\shell.c" ContentId="Core5.ViewSrv.StdUDEProgWin.OPEN_VIEW01" CanClose="True" LastActivationTimeStamp="04/25/2025 11:56:21"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\shell\shell.c" ContentId="Core3.ViewSrv.StdUDEProgWin.OPEN_VIEW01" CanClose="True" LastActivationTimeStamp="04/25/2025 11:56:21"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\main.c" ContentId="Core4.ViewSrv.StdUDEProgWin.OPEN_VIEW01" CanClose="True" LastActivationTimeStamp="04/25/2025 11:57:57"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\resolver_app\AngleTrk.c" ContentId="Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW05" CanClose="True" LastActivationTimeStamp="04/25/2025 11:59:20"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\resolver_app\AngleTrk.c" ContentId="Core1.ViewSrv.StdUDEProgWin.OPEN_VIEW01" CanClose="True" LastActivationTimeStamp="04/25/2025 11:56:22"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\common\src\irq_handle.S" ContentId="Core2.ViewSrv.StdUDEProgWin.OPEN_VIEW02" CanClose="True" LastActivationTimeStamp="04/25/2025 11:56:57"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\shell\shell.c" ContentId="Core4.ViewSrv.StdUDEProgWin.OPEN_VIEW02" CanClose="True" LastActivationTimeStamp="04/25/2025 11:56:57"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\source\Gpt_Irq.c" ContentId="Core2.ViewSrv.StdUDEProgWin.OPEN_VIEW03" CanClose="True" LastActivationTimeStamp="04/25/2025 11:58:53"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\source\Gpt_Pit_LLDriver.c" ContentId="Core2.ViewSrv.StdUDEProgWin.OPEN_VIEW04" CanClose="True" LastActivationTimeStamp="04/25/2025 11:58:55"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\main.c" ContentId="Core3.ViewSrv.StdUDEProgWin.OPEN_VIEW02" CanClose="True" LastActivationTimeStamp="04/25/2025 18:51:18"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\main.c" ContentId="Core1.ViewSrv.StdUDEProgWin.OPEN_VIEW02" CanClose="True" LastActivationTimeStamp="04/25/2025 18:51:18"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\common\src\startup.S" ContentId="Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW06" CanClose="True" LastActivationTimeStamp="05/15/2025 13:07:14"></LayoutAnchorable>
+											</LayoutDocumentPane>
+										</LayoutDocumentPaneGroup>
+									</LayoutPanel>
+								</RootPanel>
+								<TopSide></TopSide>
+								<RightSide></RightSide>
+								<LeftSide></LeftSide>
+								<BottomSide></BottomSide>
+								<FloatingWindows></FloatingWindows>
+								<Hidden></Hidden>
+							</Layout>
+						</Perspective>
+					</Perspectives>
+					<Shortcuts>
+						<Shortcut>
+							<Gesture>Ctrl+N</Gesture>
+							<CommandId>NewWorkspace</CommandId>
+						</Shortcut>
+						<Shortcut>
+							<Gesture>Ctrl+O</Gesture>
+							<CommandId>OpenWorkspace</CommandId>
+						</Shortcut>
+						<Shortcut>
+							<Gesture>Ctrl+S</Gesture>
+							<CommandId>SaveWorkspace</CommandId>
+						</Shortcut>
+						<Shortcut>
+							<Gesture>Ctrl+Alt+S</Gesture>
+							<CommandId>SaveViewContentAs</CommandId>
+						</Shortcut>
+						<Shortcut>
+							<Gesture>Ctrl+F4</Gesture>
+							<CommandId>CloseWorkspace</CommandId>
+						</Shortcut>
+						<Shortcut>
+							<Gesture>Alt+F4</Gesture>
+							<CommandId>Exit</CommandId>
+						</Shortcut>
+						<Shortcut>
+							<Gesture>Shift+F1</Gesture>
+							<CommandId>HelpIndex</CommandId>
+						</Shortcut>
+						<Shortcut>
+							<Gesture>Alt+Back</Gesture>
+							<CommandId>Undo</CommandId>
+						</Shortcut>
+						<Shortcut>
+							<Gesture>Shift+Delete</Gesture>
+							<CommandId>Cut</CommandId>
+						</Shortcut>
+						<Shortcut>
+							<Gesture>Ctrl+Insert</Gesture>
+							<CommandId>Copy</CommandId>
+						</Shortcut>
+						<Shortcut>
+							<Gesture>Shift+Insert</Gesture>
+							<CommandId>Paste</CommandId>
+						</Shortcut>
+						<Shortcut>
+							<Gesture>Ctrl+A</Gesture>
+							<CommandId>SelectAll</CommandId>
+						</Shortcut>
+						<Shortcut>
+							<Gesture>Ctrl+F12</Gesture>
+							<CommandId>Rotatecorefocus</CommandId>
+						</Shortcut>
+						<Shortcut>
+							<Gesture>Ctrl+Shift+O</Gesture>
+							<CommandId>SourceCode</CommandId>
+						</Shortcut>
+						<Shortcut>
+							<Gesture>F5</Gesture>
+							<CommandId>StartProgramExecution</CommandId>
+						</Shortcut>
+						<Shortcut>
+							<Gesture>F9</Gesture>
+							<CommandId>StepoverSubroutine</CommandId>
+						</Shortcut>
+						<Shortcut>
+							<Gesture>F8</Gesture>
+							<CommandId>StepintoSubroutine</CommandId>
+						</Shortcut>
+						<Shortcut>
+							<Gesture>F4</Gesture>
+							<CommandId>RunProgramtoCursor</CommandId>
+						</Shortcut>
+						<Shortcut>
+							<Gesture>Ctrl+F5</Gesture>
+							<CommandId>BreakProgramExecution</CommandId>
+						</Shortcut>
+						<Shortcut>
+							<Gesture>Ctrl+F7</Gesture>
+							<CommandId>Resettarget</CommandId>
+						</Shortcut>
+						<Shortcut>
+							<Gesture>F7</Gesture>
+							<CommandId>RestartProgramExecution</CommandId>
+						</Shortcut>
+					</Shortcuts>
+				</UserInterface>
+			</UserInterface>
+		</NETPlacementRoot>
+		<StdTargetManagerWin type="key">
+			<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+		</StdTargetManagerWin>
+		<StdUDEMessageWin type="key">
+			<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+		</StdUDEMessageWin>
+		<StdUDECmdWin type="key">
+			<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+		</StdUDECmdWin>
+		<UDEProgressWin type="key">
+			<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+		</UDEProgressWin>
+		<StdUDEWspHTMLView type="key">
+			<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+		</StdUDEWspHTMLView>
+		<DataGraphWin type="key">
+			<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+		</DataGraphWin>
+		<BreakpointWin type="key">
+			<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+		</BreakpointWin>
+		<UDEAbstractTraceView type="key">
+			<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+		</UDEAbstractTraceView>
+		<UDEGlobalTimeView type="key">
+			<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+		</UDEGlobalTimeView>
+		<UDETraceWin2 type="key"></UDETraceWin2>
+		<UDEUECViewServer type="key"></UDEUECViewServer>
+		<PersistentTracesView type="key">
+			<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+		</PersistentTracesView>
+		<TraceFrameworkGraphWin type="key">
+			<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+		</TraceFrameworkGraphWin>
+		<ArchSupportWin type="key">
+			<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+		</ArchSupportWin>
+		<PythonAddOnView type="key">
+			<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+		</PythonAddOnView>
+		<UDEMarkerView type="key">
+			<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+		</UDEMarkerView>
+		<UDEUECUseCaseParameterView type="key">
+			<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+		</UDEUECUseCaseParameterView>
+		<TraceFramework type="key">
+			<Controller0_NexusTrace type="key">
+				<Additions type="key"></Additions>
+			</Controller0_NexusTrace>
+		</TraceFramework>
+		<SelectedPrinter type="string">Phantom Print to Evernote</SelectedPrinter>
+		<GlobalTimeSetup type="key">
+			<TimeFormat type="string">Microseconds</TimeFormat>
+		</GlobalTimeSetup>
+		<perspective type="key">
+			<autoSwitchOnDebuggerChange type="flag">0</autoSwitchOnDebuggerChange>
+			<autoSwitchMap type="key">
+				<collectionStr type="string"></collectionStr>
+				<collection type="key"></collection>
+			</autoSwitchMap>
+		</perspective>
+	</MainFrame>
+	<INI_SECTION type="key">
+		<Macro type="key">
+			<MacroLib type="string">C:\Program Files\pls\UDE 2024\StdLibrary.mso</MacroLib>
+		</Macro>
+		<PLACEMENT type="key">
+			<MULTICORELOADERDLG type="string">499,1741,434,882</MULTICORELOADERDLG>
+			<EnumSelectDlg type="string">807,1433,364,953</EnumSelectDlg>
+		</PLACEMENT>
+		<EXTRAVALUE type="key">
+			<MULTICORELOADERDLG type="int">0</MULTICORELOADERDLG>
+			<EnumSelectDlg type="int">0</EnumSelectDlg>
+		</EXTRAVALUE>
+		<Loader type="key">
+			<LOADER_REGKEY_WSP type="string">{fd6e6ad8-f4a1-4122-8e21-2262293e14bb}</LOADER_REGKEY_WSP>
+		</Loader>
+	</INI_SECTION>
+	<AddOns type="key">
+		<UDE.ArchSupportAddOn type="key"></UDE.ArchSupportAddOn>
+		<UDE.PythonAddOn type="key">
+			<PythonDllPath type="string"></PythonDllPath>
+			<AltPythonHome type="string"></AltPythonHome>
+			<AddPythonPath type="string"></AddPythonPath>
+			<AddWspDirToPythonPath type="flag">0</AddWspDirToPythonPath>
+			<AddMacroDirToPythonPath type="flag">0</AddMacroDirToPythonPath>
+			<RunScriptFiles type="flag">0</RunScriptFiles>
+			<RunScriptTimeout type="int">60000</RunScriptTimeout>
+			<OnUDETargetStateChange type="flag">0</OnUDETargetStateChange>
+			<OnUDETargetIPChange type="flag">0</OnUDETargetIPChange>
+			<OnUDETargetIPInvalid type="flag">0</OnUDETargetIPInvalid>
+			<OnUDEProgramLoadStart type="flag">0</OnUDEProgramLoadStart>
+			<OnUDEProgramLoaded type="flag">0</OnUDEProgramLoaded>
+			<OnUDEProgramPatternChanged type="flag">0</OnUDEProgramPatternChanged>
+			<OnUDETargetResetOccur type="flag">0</OnUDETargetResetOccur>
+			<UsePythonHost type="flag">1</UsePythonHost>
+			<ScriptDebuggerPath type="string"></ScriptDebuggerPath>
+			<DontPrepPythonDbgEnv type="flag">0</DontPrepPythonDbgEnv>
+			<LoadScriptFiles type="key"></LoadScriptFiles>
+		</UDE.PythonAddOn>
+		<UDE.HypervisorSupport type="key"></UDE.HypervisorSupport>
+		<UDE.Script type="key">
+			<MacroGuiEntries type="key">
+				<LastScriptFilePath type="string">C:\Users\ccore\Documents\pls\UDE 2024</LastScriptFilePath>
+				<Macro_16_05_25_08_59_28_0 type="key">
+					<ScriptDescription type="string"></ScriptDescription>
+					<ScriptPath type="string">U:\ude_work\2022\ude\Ude\AddOns\Macro\MacroLibrary\StdMacros1.dsm</ScriptPath>
+					<ScriptSource type="string">'	
+'	$Header: /Ude/AddOns/Macro/MacroLibrary/StdMacros.dsm 3     30.04.04 9:34 Weisses $
+'_______________________________________________________
+'
+'	universal debug engine
+'	 
+'	Standard command line macros - part 1 
+'
+'	pls Development Tools 1999-2004
+'
+'   28.04.04    SW     correction for UDE 1.10
+'   03.06.03    SW     initial version
+'_______________________________________________________
+
+'_______________________________________________________
+'
+'	UnAss command line function
+' 
+'	generates disassembly file 
+'
+'	command line UnAss output-file range1 [range2] [range3] .....
+'	range description:
+'		C:&lt;startaddress&gt;,&lt;length&gt; or	- code
+'		DB:&lt;startaddress&gt;,&lt;length&gt; or	- data byte
+'		DW:&lt;startaddress&gt;,&lt;length&gt; or	- data word
+'		DD:&lt;startaddress&gt;,&lt;length&gt; or	- data dword
+'_______________________________________________________
+
+Sub UnAss(File,ParameterObj)
+
+	set debugger = workspace.Coredebugger(0)
+	set DisASMObj = debugger.DisASMObj
+	If Not IsObject(ParameterObj) Then
+	  	MsgBox "Number of parameters wrong"
+		Exit Sub 		
+	End If
+	If IsNumeric(File) Then
+	  	MsgBox "File parameter wrong - " &amp; File
+		Exit Sub 		
+	End If
+	DisASMObj.OutputPath = CStr(File)
+	bRetVal = DisASMObj.CreateStream(True,"UDE Disassembler output of current Program",False)
+	If bRetVal = True Then
+		ParmeterCnt = ParameterObj.ParameterCount
+		If ParmeterCnt = 0 Then
+	  		MsgBox "Number of parameters wrong " &amp; ParmeterCnt
+			Exit Sub 		
+		End If
+		If ( ParmeterCnt Mod 3 ) &lt;&gt; 0 Then
+	  		MsgBox "Number of parameters wrong " &amp; ParmeterCnt
+			Exit Sub 		
+		End If
+		RangeCnt = ParmeterCnt/3
+		ParamIndex = 0
+		For Range = 0 To RangeCnt -1 
+			KindOfRange = CStr(ParameterObj.Parameter(ParamIndex)) 
+			KindOfRange = UCase(KindOfRange)
+			Address = CLng(ParameterObj.Parameter(ParamIndex +1))		
+			Length = CLng(ParameterObj.Parameter(ParamIndex +2))
+			ParamIndex = ParamIndex +3
+			If IsNumeric(KindOfRange) Then
+				If KindOfRange = 12 Then
+ 					DisASMObj.AddRange Address,Length,1
+				ElseIf KindOfRange = 219 Then
+ 					DisASMObj.AddRange Address,Length,2
+				ElseIf KindOfRange = 221 Then
+ 					DisASMObj.AddRange Address,Length,4
+				Else
+	  				MsgBox "Invalid range type " &amp; KindOfRange &amp;  "of range " &amp; Range +1
+					Exit Sub 		
+			 	End If
+			Else
+				If KindOfRange = "C" Then
+ 					DisASMObj.AddRange Address,Length,1
+				ElseIf KindOfRange = "DB" Then
+ 					DisASMObj.AddRange Address,Length,2
+				ElseIf KindOfRange = "DW" Then
+ 					DisASMObj.AddRange Address,Length,3
+				ElseIf KindOfRange = "DD" Then
+ 					DisASMObj.AddRange Address,Length,4
+				Else
+	  				MsgBox "Invalid range type " &amp; KindOfRange &amp;  "of range " &amp; Range +1
+					Exit Sub 		
+				End If
+			End If
+		Next
+		DisASMObj.HexFileModeFlag = False
+		DisASMObj.ListModeFlag = False
+		DisASMObj.WriteAllRanges(False)
+	End If
+
+End Sub
+
+'_______________________________________________________
+'
+'	SaveHEX command line function
+' 
+'	generates intel-HEX file 
+'
+'	command line SaveHex output-file range1 [range2] [range3] .....
+'	range description:
+'		&lt;startaddress&gt;,&lt;length&gt; 
+'_______________________________________________________
+
+Sub SaveHEX(File,ParameterObj)
+
+	set debugger = workspace.Coredebugger(0)
+	set DisASMObj = debugger.DisASMObj
+	If Not IsObject(ParameterObj) Then
+	  	MsgBox "Number of parameters wrong"
+		Exit Sub 		
+	End If
+	If IsNumeric(File) Then
+	  	MsgBox "File parameter wrong - " &amp; File
+		Exit Sub 		
+	End If
+	DisASMObj.OutputPath = CStr(File)
+	bRetVal = DisASMObj.CreateStream(True,"UDE generated intel-Hex file of current Program",False)
+	If bRetVal = True Then
+		ParmeterCnt = ParameterObj.ParameterCount
+		If ParmeterCnt = 0 Then
+	  		MsgBox "Number of parameters wrong " &amp; ParmeterCnt
+			Exit Sub 		
+		End If
+		If ( ParmeterCnt Mod 2 ) &lt;&gt; 0 Then
+	  		MsgBox "Number of parameters wrong " &amp; ParmeterCnt
+			Exit Sub 		
+		End If
+		RangeCnt = ParmeterCnt/2
+		ParamIndex = 0
+		For Range = 0 To RangeCnt -1 
+			Address = CLng(ParameterObj.Parameter(ParamIndex))		
+			Length = CLng(ParameterObj.Parameter(ParamIndex +1))
+			ParamIndex = ParamIndex +2
+ 			DisASMObj.AddRange Address,Length,0
+		Next
+		DisASMObj.HexFileModeFlag = True
+		DisASMObj.Timeout = 120000
+		DisASMObj.WriteAllRanges(False)
+	End If
+
+End Sub
+
+'_______________________________________________________
+'
+'	FillByte command line function
+' 
+'	fills memory range with byte pattern 
+'
+'	command line FillByte range1,pattern1 [range2,pattern2] [range3,pattern3] .....
+'	range description:
+'		&lt;startaddress&gt;,&lt;length&gt; 
+'_______________________________________________________
+
+Sub FillByte(ParameterObj)
+
+	set debugger = workspace.Coredebugger(0)
+	set DisASMObj = debugger.DisASMObj
+	If Not IsObject(ParameterObj) Then
+	  	MsgBox "Number of parameters wrong"
+		Exit Sub 		
+	End If
+	ParmeterCnt = ParameterObj.ParameterCount
+	If ParmeterCnt = 0 Then
+	  	MsgBox "Number of parameters wrong " &amp; ParmeterCnt
+		Exit Sub 		
+	End If
+	If ( ParmeterCnt Mod 3 ) &lt;&gt; 0 Then
+	  	MsgBox "Number of parameters wrong " &amp; ParmeterCnt
+		Exit Sub 		
+	End If
+	RangeCnt = ParmeterCnt/3
+	ParamIndex = 0
+	set udearrayobj = debugger.ByteArrayObj(1)
+	For Range = 0 To RangeCnt -1 
+		Address = CLng(ParameterObj.Parameter(ParamIndex))		
+		Length = CLng(ParameterObj.Parameter(ParamIndex +1))
+		Pattern = CLng(ParameterObj.Parameter(ParamIndex +2))
+		ParamIndex = ParamIndex +3
+		udearrayobj.Resize(Length)
+		udearrayobj.Fill(Pattern)
+		debugger.Write Address,udearrayobj
+	Next
+
+End Sub
+
+'_______________________________________________________
+'
+'	FillWord command line function
+' 
+'	fills memory range with word pattern 
+'
+'	command line FillWord range1,pattern1 [range2,pattern2] [range3,pattern3] .....
+'	range description:
+'		&lt;startaddress&gt;,&lt;length&gt; 
+'_______________________________________________________
+
+Sub FillWord(ParameterObj)
+
+	set debugger = workspace.Coredebugger(0)
+	set DisASMObj = debugger.DisASMObj
+	If Not IsObject(ParameterObj) Then
+	  	MsgBox "Number of parameters wrong"
+		Exit Sub 		
+	End If
+	ParmeterCnt = ParameterObj.ParameterCount
+	If ParmeterCnt = 0 Then
+	  	MsgBox "Number of parameters wrong " &amp; ParmeterCnt
+		Exit Sub 		
+	End If
+	If ( ParmeterCnt Mod 3 ) &lt;&gt; 0 Then
+	  	MsgBox "Number of parameters wrong " &amp; ParmeterCnt
+		Exit Sub 		
+	End If
+	RangeCnt = ParmeterCnt/3
+	ParamIndex = 0
+	set udearrayobj = debugger.WordArrayObj(1)
+	For Range = 0 To RangeCnt -1 
+		Address = CLng(ParameterObj.Parameter(ParamIndex))		
+		Length = CLng(ParameterObj.Parameter(ParamIndex +1)/2)
+		Pattern = CLng(ParameterObj.Parameter(ParamIndex +2))
+		ParamIndex = ParamIndex +3
+		udearrayobj.Resize(Length)
+		udearrayobj.Fill(Pattern)
+		debugger.Write Address,udearrayobj
+	Next
+
+End Sub
+
+'_______________________________________________________
+'
+'	FillDWord command line function
+' 
+'	fills memory range with dword pattern 
+'
+'	command line FillDWord range1,pattern1 [range2,pattern2] [range3,pattern3] .....
+'	range description:
+'		&lt;startaddress&gt;,&lt;length&gt; 
+'_______________________________________________________
+
+Sub FillDWord(ParameterObj)
+
+	set debugger = workspace.Coredebugger(0)
+	set DisASMObj = debugger.DisASMObj
+	If Not IsObject(ParameterObj) Then
+	  	MsgBox "Number of parameters wrong"
+		Exit Sub 		
+	End If
+	ParmeterCnt = ParameterObj.ParameterCount
+	If ParmeterCnt = 0 Then
+	  	MsgBox "Number of parameters wrong " &amp; ParmeterCnt
+		Exit Sub 		
+	End If
+	If ( ParmeterCnt Mod 3 ) &lt;&gt; 0 Then
+	  	MsgBox "Number of parameters wrong " &amp; ParmeterCnt
+		Exit Sub 		
+	End If
+	RangeCnt = ParmeterCnt/3
+	ParamIndex = 0
+	set udearrayobj = debugger.DWordArrayObj(1)
+	For Range = 0 To RangeCnt -1 
+		Address = CLng(ParameterObj.Parameter(ParamIndex))		
+		Length = CLng(ParameterObj.Parameter(ParamIndex +1)/4)
+		Pattern = CLng(ParameterObj.Parameter(ParamIndex +2))
+		ParamIndex = ParamIndex +3
+		udearrayobj.Resize(Length)
+		udearrayobj.Fill(Pattern)
+		debugger.Write Address,udearrayobj
+	Next
+
+End Sub</ScriptSource>
+					<ScriptArchitecture type="int">63</ScriptArchitecture>
+					<ScriptEngine type="string">VBScript</ScriptEngine>
+					<MacroFileTime type="string">23.11.2022 11:23:46:000</MacroFileTime>
+					<ScriptFromStg type="flag">1</ScriptFromStg>
+					<LocalComputerName type="string">TG-WORK6</LocalComputerName>
+					<ExternalScriptPath type="string"></ExternalScriptPath>
+					<NextNodeName type="string">Macro_17_05_25_13_12_59_0</NextNodeName>
+					<UnAss type="key">
+						<FuncParameterCnt type="int">2</FuncParameterCnt>
+						<GUIEntryDescription type="string"></GUIEntryDescription>
+					</UnAss>
+					<SaveHEX type="key">
+						<FuncParameterCnt type="int">2</FuncParameterCnt>
+						<GUIEntryDescription type="string"></GUIEntryDescription>
+					</SaveHEX>
+					<FillByte type="key">
+						<FuncParameterCnt type="int">1</FuncParameterCnt>
+						<GUIEntryDescription type="string"></GUIEntryDescription>
+					</FillByte>
+					<FillWord type="key">
+						<FuncParameterCnt type="int">1</FuncParameterCnt>
+						<GUIEntryDescription type="string"></GUIEntryDescription>
+					</FillWord>
+					<FillDWord type="key">
+						<FuncParameterCnt type="int">1</FuncParameterCnt>
+						<GUIEntryDescription type="string"></GUIEntryDescription>
+					</FillDWord>
+					<NoOfFunctions type="int">5</NoOfFunctions>
+				</Macro_16_05_25_08_59_28_0>
+			</MacroGuiEntries>
+			<LastSelectedMacro type="string"></LastSelectedMacro>
+		</UDE.Script>
+	</AddOns>
+	<MemtoolManager type="key"></MemtoolManager>
+	<MultiCoreRunControl type="key">
+		<NoOfRunCtrlGroups type="int">1</NoOfRunCtrlGroups>
+		<RunCtrlGroup_0 type="key">
+			<GroupName type="string">Run Control Group Core0 Core1 Core2 Core3 Core4 Core5 HSM GTM</GroupName>
+			<GroupEnabled type="flag">1</GroupEnabled>
+			<NoOfRunCtrlElements type="int">6</NoOfRunCtrlElements>
+			<RunCtrlElement_0 type="string">Controller0.Core0</RunCtrlElement_0>
+			<RunCtrlElement_1 type="string">Controller0.Core1</RunCtrlElement_1>
+			<RunCtrlElement_2 type="string">Controller0.Core2</RunCtrlElement_2>
+			<RunCtrlElement_3 type="string">Controller0.Core3</RunCtrlElement_3>
+			<RunCtrlElement_4 type="string">Controller0.Core4</RunCtrlElement_4>
+			<RunCtrlElement_5 type="string">Controller0.Core5</RunCtrlElement_5>
+		</RunCtrlGroup_0>
+	</MultiCoreRunControl>
+	<TraceFramework type="key"></TraceFramework>
+	<Controller0 type="key"></Controller0>
+	<NexusTrace type="key"></NexusTrace>
+	<Core0 type="key">
+		<ViewSrv type="key">
+			<UDECpuWin2 type="key">
+				<OPEN_VIEW type="key">
+					<FrameCreated type="string">25.04.2025 11:58:31:464</FrameCreated>
+					<ViewSrv type="key">
+						<UDECpuWin2 type="key">
+							<LayoutFile type="key">
+								<IsUserFile type="flag">0</IsUserFile>
+								<Path type="string">CpuWin.LayoutFile.XML.PowerPC.e200z7.xml</Path>
+							</LayoutFile>
+							<SelectedLayout type="string">Classic</SelectedLayout>
+							<CpuViewModel type="key">
+								<CpuWinLayoutFileXMLPowerPCe200z7xml type="key">
+									<Page_GPR type="key">
+										<Group_0 type="key">
+											<Reg_R6_R6 type="key">
+												<Format type="string">FloatingPoint</Format>
+											</Reg_R6_R6>
+											<ColumnWidth type="key"></ColumnWidth>
+										</Group_0>
+										<Group_1 type="key">
+											<ColumnWidth type="key"></ColumnWidth>
+										</Group_1>
+										<Group_2 type="key">
+											<ColumnWidth type="key"></ColumnWidth>
+										</Group_2>
+									</Page_GPR>
+									<Page_Status type="key">
+										<Group_0 type="key"></Group_0>
+										<Group_1 type="key"></Group_1>
+										<Group_2 type="key"></Group_2>
+									</Page_Status>
+								</CpuWinLayoutFileXMLPowerPCe200z7xml>
+							</CpuViewModel>
+						</UDECpuWin2>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+				</OPEN_VIEW>
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</UDECpuWin2>
+			<StdUDESymbolExplWin type="key">
+				<OPEN_VIEW type="key">
+					<FrameCreated type="string">24.04.2025 19:52:44:172</FrameCreated>
+					<ViewSrv type="key"></ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+				</OPEN_VIEW>
+				<SAVED_VIEW_OBJS type="int">1</SAVED_VIEW_OBJS>
+				<SAVED_VIEW type="int">0</SAVED_VIEW>
+			</StdUDESymbolExplWin>
+			<StdUDEProgWin type="key">
+				<OPEN_VIEW00 type="key">
+					<FrameCreated type="string">24.04.2025 19:53:20:422</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">Source\main.c</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW00>
+				<OPEN_VIEW01 type="key">
+					<FrameCreated type="string">24.04.2025 19:53:20:560</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">Source\common\src\startup.S</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW01>
+				<OPEN_VIEW02 type="key">
+					<FrameCreated type="string">24.04.2025 19:57:35:909</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">..\CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI\Source\main.c</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW02>
+				<OPEN_VIEW03 type="key">
+					<FrameCreated type="string">24.04.2025 19:57:36:025</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">..\CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI\Source\common\src\startup.S</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW03>
+				<OPEN_VIEW04 type="key">
+					<FrameCreated type="string">24.04.2025 20:35:09:776</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">..\CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI\Project\CCFC3012PT_S32DS_SMP\ARCH3D12_M10I1R0\CDD\resolver_app\Resolver.c</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW04>
+				<OPEN_VIEW05 type="key">
+					<FrameCreated type="string">25.04.2025 11:56:22:117</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">Project\CCFC3012PT_S32DS_SMP\ARCH3D12_M10I1R0\CDD\resolver_app\AngleTrk.c</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW05>
+				<SAVED_VIEW_OBJS type="int">7</SAVED_VIEW_OBJS>
+				<SAVED_VIEW00 type="int">0</SAVED_VIEW00>
+				<SAVED_VIEW01 type="int">1</SAVED_VIEW01>
+				<SAVED_VIEW02 type="int">2</SAVED_VIEW02>
+				<SAVED_VIEW03 type="int">3</SAVED_VIEW03>
+				<SAVED_VIEW04 type="int">4</SAVED_VIEW04>
+				<SAVED_VIEW05 type="int">5</SAVED_VIEW05>
+				<OPEN_VIEW06 type="key">
+					<FrameCreated type="string">15.05.2025 11:42:50:036</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">..\CCFC3012PT_MCAL4_4_V1_1_0_V185_4\Source\common\src\startup.S</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW06>
+				<SAVED_VIEW06 type="int">6</SAVED_VIEW06>
+			</StdUDEProgWin>
+			<StdUDELocalsWin type="key">
+				<OPEN_VIEW type="key">
+					<FrameCreated type="string">25.04.2025 11:56:32:620</FrameCreated>
+					<ViewSrv type="key">
+						<NameWidth type="int">550</NameWidth>
+						<AddressWidth type="int">0</AddressWidth>
+						<ValueWidth type="int">367</ValueWidth>
+						<Value2Width type="int">0</Value2Width>
+						<MinMaxWidth type="int">0</MinMaxWidth>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+				</OPEN_VIEW>
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDELocalsWin>
+			<StdUDEWatchWin type="key">
+				<OPEN_VIEW00 type="key">
+					<FrameCreated type="string">24.04.2025 19:54:01:162</FrameCreated>
+					<ViewSrv type="key">
+						<TopIndex type="int">0</TopIndex>
+						<CaretIndex type="int">10</CaretIndex>
+						<ExportContentFlags type="int">139</ExportContentFlags>
+						<LastSelectedPropPage type="string"></LastSelectedPropPage>
+						<NameWidth type="int">610</NameWidth>
+						<AddressWidth type="int">0</AddressWidth>
+						<ValueWidth type="int">610</ValueWidth>
+						<Value2Width type="int">0</Value2Width>
+						<MinMaxWidth type="int">610</MinMaxWidth>
+						<Watches type="key">
+							<IntegralFormatForValue1 type="int">3</IntegralFormatForValue1>
+							<IntegralFormatForValue2 type="int">3</IntegralFormatForValue2>
+							<ASCIIForValue1 type="int">0</ASCIIForValue1>
+							<ASCIIForValue2 type="int">0</ASCIIForValue2>
+							<FloatFormatForValue1 type="int">3</FloatFormatForValue1>
+							<FloatFormatForValue2 type="int">3</FloatFormatForValue2>
+							<RefreshPeriodGlobalEnable type="int">1</RefreshPeriodGlobalEnable>
+							<Watch1 type="key">
+								<Name type="string">Pmsm_u8_MotCmdSelIn (global) @1</Name>
+								<RunningPeriod1 type="int">25</RunningPeriod1>
+								<HoldedPeriod1 type="int">0</HoldedPeriod1>
+							</Watch1>
+							<Watch2 type="key">
+								<Name type="string">Pmsm_f32_DbgIqRef (global) @1</Name>
+								<RunningPeriod2 type="int">25</RunningPeriod2>
+								<HoldedPeriod2 type="int">0</HoldedPeriod2>
+							</Watch2>
+							<Watch3 type="key">
+								<Name type="string">Pmsm_u8_MotCmdSelIn_B (global) @1</Name>
+								<RunningPeriod3 type="int">25</RunningPeriod3>
+								<HoldedPeriod3 type="int">0</HoldedPeriod3>
+							</Watch3>
+							<Watch4 type="key">
+								<Name type="string">Pmsm_f32_DbgIqRef_B (global) @1</Name>
+								<RunningPeriod4 type="int">25</RunningPeriod4>
+								<HoldedPeriod4 type="int">0</HoldedPeriod4>
+							</Watch4>
+							<Watch5 type="key">
+								<Name type="string">Pmsm_f32_SpdRef_B (global) @1</Name>
+								<RunningPeriod5 type="int">25</RunningPeriod5>
+								<HoldedPeriod5 type="int">0</HoldedPeriod5>
+							</Watch5>
+							<Watch6 type="key">
+								<Name type="string">Pmsm_f32_SpdRef (global) @1</Name>
+								<RunningPeriod6 type="int">25</RunningPeriod6>
+								<HoldedPeriod6 type="int">0</HoldedPeriod6>
+							</Watch6>
+							<Watch7 type="key">
+								<Name type="string">g_RdcSdadc_a (global) @1</Name>
+								<RunningPeriod7 type="int">25</RunningPeriod7>
+								<HoldedPeriod7 type="int">0</HoldedPeriod7>
+							</Watch7>
+							<Watch8 type="key">
+								<Name type="string">g_RdcSdadc_b (global) @1</Name>
+								<RunningPeriod8 type="int">25</RunningPeriod8>
+								<HoldedPeriod8 type="int">0</HoldedPeriod8>
+							</Watch8>
+							<Watch9 type="key">
+								<Name type="string">ResXBPare_a (global) @1</Name>
+								<Status type="string">#0#</Status>
+								<RunningPeriod9 type="int">25</RunningPeriod9>
+								<HoldedPeriod9 type="int">0</HoldedPeriod9>
+							</Watch9>
+							<Watch10 type="key">
+								<Name type="string">Pmsm_f32_RdcMSpd_Radps (global) @1</Name>
+								<RunningPeriod10 type="int">25</RunningPeriod10>
+								<HoldedPeriod10 type="int">0</HoldedPeriod10>
+							</Watch10>
+							<Watch11 type="key">
+								<Name type="string">Pmsm_f32_RdcMSpd (global) @1</Name>
+								<RunningPeriod11 type="int">25</RunningPeriod11>
+								<HoldedPeriod11 type="int">0</HoldedPeriod11>
+							</Watch11>
+							<Watch12 type="key">
+								<Name type="string">Pmsm_f32_RdcEAng2MSpd (global) @1</Name>
+								<RunningPeriod12 type="int">25</RunningPeriod12>
+								<HoldedPeriod12 type="int">0</HoldedPeriod12>
+							</Watch12>
+							<Watch13 type="key">
+								<Name type="string">Pmsm_f32_RdcEAng2MSpd_B (global) @1</Name>
+								<RunningPeriod13 type="int">25</RunningPeriod13>
+								<HoldedPeriod13 type="int">0</HoldedPeriod13>
+							</Watch13>
+							<Watch14 type="key">
+								<Name type="string">Pmsm_f32_MotSpdFdb_B (global) @1</Name>
+								<RunningPeriod14 type="int">25</RunningPeriod14>
+								<HoldedPeriod14 type="int">0</HoldedPeriod14>
+							</Watch14>
+							<Watch15 type="key">
+								<Name type="string">Pmsm_f32_DbgIdRef_B (global) @1</Name>
+								<RunningPeriod15 type="int">25</RunningPeriod15>
+								<HoldedPeriod15 type="int">0</HoldedPeriod15>
+							</Watch15>
+							<Watch16 type="key">
+								<Name type="string">FOC_P1 (global) @1</Name>
+								<RunningPeriod16 type="int">25</RunningPeriod16>
+								<HoldedPeriod16 type="int">0</HoldedPeriod16>
+							</Watch16>
+							<Watch17 type="key">
+								<Name type="string">ResXBPare_b (global) @1</Name>
+								<Status type="string">#0#</Status>
+								<RunningPeriod17 type="int">25</RunningPeriod17>
+								<HoldedPeriod17 type="int">0</HoldedPeriod17>
+							</Watch17>
+							<Watch18 type="key">
+								<Name type="string">FOC_P3 (global) @1</Name>
+								<RunningPeriod18 type="int">25</RunningPeriod18>
+								<HoldedPeriod18 type="int">0</HoldedPeriod18>
+							</Watch18>
+							<Watch19 type="key">
+								<Name type="string">Pmsm_f32_MotSpdFdb (global) @1</Name>
+								<RunningPeriod19 type="int">25</RunningPeriod19>
+								<HoldedPeriod19 type="int">0</HoldedPeriod19>
+							</Watch19>
+							<Watch20 type="key">
+								<Name type="string">Pmsm_f32_FlxWknMotSpd (global) @1</Name>
+								<RunningPeriod20 type="int">25</RunningPeriod20>
+								<HoldedPeriod20 type="int">0</HoldedPeriod20>
+							</Watch20>
+							<Watch21 type="key">
+								<Name type="string">Pmsm_f32_SpdLpfCoeff_C (global) @1</Name>
+								<RunningPeriod21 type="int">25</RunningPeriod21>
+								<HoldedPeriod21 type="int">0</HoldedPeriod21>
+							</Watch21>
+							<Watch22 type="key">
+								<Name type="string">Pmsm_f32_SpdLpfCoeff_C_B (global) @1</Name>
+								<RunningPeriod22 type="int">25</RunningPeriod22>
+								<HoldedPeriod22 type="int">0</HoldedPeriod22>
+							</Watch22>
+						</Watches>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+				</OPEN_VIEW00>
+				<SAVED_VIEW_OBJS type="int">1</SAVED_VIEW_OBJS>
+				<SAVED_VIEW00 type="int">0</SAVED_VIEW00>
+			</StdUDEWatchWin>
+			<StdUDESimIOWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDESimIOWin>
+			<StdUDEHtmlDocWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDEHtmlDocWin>
+			<StdUDEGraphWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDEGraphWin>
+			<StdUDETimeSampleGraphWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDETimeSampleGraphWin>
+			<UDEProfilingWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</UDEProfilingWin>
+			<StdUDEMemWin type="key">
+				<OPEN_VIEW00 type="key">
+					<FrameCreated type="string">25.04.2025 13:18:33:981</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+						<version type="int">0x00000001</version>
+						<Mode type="string">hex32bit</Mode>
+						<ASCII type="flag">1</ASCII>
+						<AutoSize type="flag">0</AutoSize>
+						<Dec type="flag">0</Dec>
+						<AutoWrite type="flag">1</AutoWrite>
+						<VerifyAfterWrite type="flag">1</VerifyAfterWrite>
+						<Width type="int">0x00000004</Width>
+						<Address type="int">1073751824</Address>
+						<AddressMin type="int">0</AddressMin>
+						<AddressMax type="int">4294967295</AddressMax>
+						<AddressWidth type="int">0x00000020</AddressWidth>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+				</OPEN_VIEW00>
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDEMemWin>
+			<CodeCoverageView type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</CodeCoverageView>
+			<StdUDEDataTraceGraphWin type="key"></StdUDEDataTraceGraphWin>
+			<UDETraceProfilingWin type="key"></UDETraceProfilingWin>
+			<UDEStackWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</UDEStackWin>
+			<StdUDESFRView type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDESFRView>
+		</ViewSrv>
+		<UDE.StdDbgSrv type="key">
+			<INI_SECTION type="key">
+				<System type="key">
+					<VIRTUAL_PATTERN_HANDLING type="int">0</VIRTUAL_PATTERN_HANDLING>
+					<DEFAULT_HW_BREAKPOINT type="string">ON</DEFAULT_HW_BREAKPOINT>
+				</System>
+			</INI_SECTION>
+			<UDE.PowerPcArchSrv type="key">
+				<UDE.PpcJtagTargIntf type="key">
+					<Setup type="key">
+						<PortType type="string">Default</PortType>
+						<CommDevSel type="string"></CommDevSel>
+						<JtagViaPod type="flag">0</JtagViaPod>
+						<TargetPort type="string">Default</TargetPort>
+						<JtagTapNumber type="int">0</JtagTapNumber>
+						<JtagNumOfTaps type="int">1</JtagNumOfTaps>
+						<JtagNumIrBefore type="int">0</JtagNumIrBefore>
+						<JtagNumIrAfter type="int">0</JtagNumIrAfter>
+						<UseExtendedCanId type="flag">0</UseExtendedCanId>
+						<JtagOverCanIdA type="int">0x00000001</JtagOverCanIdA>
+						<JtagOverCanIdB type="int">0x00000002</JtagOverCanIdB>
+						<JtagOverCanIdC type="int">0x00000003</JtagOverCanIdC>
+						<JtagOverCanIdD type="int">0x00000004</JtagOverCanIdD>
+						<JtagOverCanIdE type="int">0x00000005</JtagOverCanIdE>
+						<JtagmTckSel type="int">3</JtagmTckSel>
+						<JtagmInterFrameTimer type="int">0</JtagmInterFrameTimer>
+						<MaxJtagClk type="int">5000</MaxJtagClk>
+						<AdaptiveJtagPhaseShift type="flag">1</AdaptiveJtagPhaseShift>
+						<JtagIoType type="string">Jtag</JtagIoType>
+						<EtksArbiterMode type="string">None</EtksArbiterMode>
+						<CheckJtagId type="flag">1</CheckJtagId>
+						<ConnOption type="string">Default</ConnOption>
+						<UseExtReset type="flag">1</UseExtReset>
+						<SetDebugEnableAb1DisablePin type="flag">0</SetDebugEnableAb1DisablePin>
+						<OpenDrainReset type="flag">0</OpenDrainReset>
+						<ResetWaitTime type="int">50</ResetWaitTime>
+						<HaltAfterReset type="flag">1</HaltAfterReset>
+						<ChangeJtagClk type="int">4294967295</ChangeJtagClk>
+						<ExecInitCmds type="flag">1</ExecInitCmds>
+						<InvalidateCache type="flag">1</InvalidateCache>
+						<ChangeMsr type="flag">0</ChangeMsr>
+						<ChangeMsrValue type="int">0x00000000</ChangeMsrValue>
+						<InitScript type="string">// disable watchdog
+SET 0xFC058010 0x0000C520
+SET 0xFC058010 0x0000D928
+SET 0xFC058000 0xFFFF000A
+
+// set magic value to allow slave core wakeup by debugger
+//SET 0xFFFF8058 0x00068A6A
+
+// cache invalidate
+SETSPR 0x3F2 0x00000003 0x00000003
+SETSPR 0x3F3 0x00000003 0x00000003
+SETSPR 0x3F2 0x00000000 0x00000003
+SETSPR 0x3F3 0x00000000 0x00000003
+
+// setup IVOPR
+// points to internal memory at 0x40000000
+SETSPR 0x3F 0x40000000 0xFFFFFFFF
+
+// enable SIUL to be visible with SSCM_ERROR=3
+SET8 ME_PCTL15 0x07
+// execute mode change to make enable active
+SET ME_RUN_PC7 0xFE
+SET ME_MCTL 0x5AF0 0xFFFF
+SET ME_MCTL 0xA50F 0xFFFF
+// reset registers to reset values
+SET8 ME_PCTL15 0x0
+SET ME_RUN_PC7 0x0
+
+// setup SSCM error cfg for debug
+//SET16 0xFFFF8006 0x3
+
+// reset CGM_AC0_SC to reset value because ESR0/PORST do not do so
+// CGM_AC0_SC must provide a valid clock in order to allow GTM debugging
+SET CGM_AC0_SC 0x00000000
+
+// disable reset escalation
+SET8 RGM_FRET 0x00
+SET8 RGM_DRET 0x00
+
+// reset HSM flags
+//SET HSM_HSM2HTF 0xFFFFFFFF
+
+// make HSM trusted -&gt; for HSM flash programming
+//SET PBRIDGE_A_MPRB 0x77777777
+</InitScript>
+						<ExecOnConnectCmds type="flag">0</ExecOnConnectCmds>
+						<OnConnectScript type="string"></OnConnectScript>
+						<SimioAddr type="string">g_JtagSimioAccess</SimioAddr>
+						<FreezeTimers type="flag">1</FreezeTimers>
+						<AllowMmuSetup type="flag">0</AllowMmuSetup>
+						<ExecOnStartCmds type="flag">0</ExecOnStartCmds>
+						<OnStartScript type="string"></OnStartScript>
+						<ExecOnHaltCmds type="flag">0</ExecOnHaltCmds>
+						<ExecOnHaltCmdsWhileHalted type="flag">0</ExecOnHaltCmdsWhileHalted>
+						<OnHaltScript type="string"></OnHaltScript>
+						<EnableProgramTimeMeasurement type="flag">1</EnableProgramTimeMeasurement>
+						<TimerForPTM type="string">Default</TimerForPTM>
+						<AllowBreakOnUpdateBreakpoints type="flag">0</AllowBreakOnUpdateBreakpoints>
+						<ClearDebugStatusOnHalt type="flag">1</ClearDebugStatusOnHalt>
+						<TargetAppHandshakeMode type="string">None</TargetAppHandshakeMode>
+						<TargetAppHandshakeTimeout type="int">100</TargetAppHandshakeTimeout>
+						<TargetAppHandshakeParameter0 type="int">0x00000000</TargetAppHandshakeParameter0>
+						<TargetAppHandshakeParameter1 type="int">0x00000000</TargetAppHandshakeParameter1>
+						<TargetAppHandshakeParameter2 type="int">0x00000000</TargetAppHandshakeParameter2>
+						<TargetAppHandshakeParameter3 type="int">0x00000000</TargetAppHandshakeParameter3>
+						<UseNexus type="flag">1</UseNexus>
+						<DoSramInit type="flag">1</DoSramInit>
+						<ForceCacheFlush type="flag">0</ForceCacheFlush>
+						<IgnoreLockedLines type="flag">0</IgnoreLockedLines>
+						<IgnoreCacheInvalidateAborts type="flag">1</IgnoreCacheInvalidateAborts>
+						<HandleWdtBug type="flag">0</HandleWdtBug>
+						<ForceEndOfReset type="flag">0</ForceEndOfReset>
+						<UseHwResetMode type="flag">0</UseHwResetMode>
+						<HwResetMode type="string">Execute</HwResetMode>
+						<WaitForEndOfBootCode type="flag">0</WaitForEndOfBootCode>
+						<HandleNexusAccessBug type="flag">1</HandleNexusAccessBug>
+						<UseMasterNexusIfResetState type="flag">1</UseMasterNexusIfResetState>
+						<UseLocalAddressTranslation type="flag">1</UseLocalAddressTranslation>
+						<Use64BitNexus type="flag">0</Use64BitNexus>
+						<InitSramOnlyWhenNotInitialized type="flag">0</InitSramOnlyWhenNotInitialized>
+						<AllowHarrForUpdateDebugRegs type="flag">0</AllowHarrForUpdateDebugRegs>
+						<HaltOnDnh type="flag">1</HaltOnDnh>
+						<AlwaysHaltOnDni type="flag">1</AlwaysHaltOnDni>
+						<EnableLowPowerDebugHandshake type="flag">0</EnableLowPowerDebugHandshake>
+						<EnableLockstepDebug type="flag">1</EnableLockstepDebug>
+						<AddBranchBeforeGo type="flag">0</AddBranchBeforeGo>
+						<InvalidTlbOnReset type="flag">0</InvalidTlbOnReset>
+						<DoNotEnableTrapSwBrp type="flag">0</DoNotEnableTrapSwBrp>
+						<AllowResetOnCheck type="flag">0</AllowResetOnCheck>
+						<BootPasswd0 type="int">0xFEEDFACE</BootPasswd0>
+						<BootPasswd1 type="int">0xCAFEBEEF</BootPasswd1>
+						<BootPasswd2 type="int">0xFFFFFFFF</BootPasswd2>
+						<BootPasswd3 type="int">0xFFFFFFFF</BootPasswd3>
+						<BootPasswd4 type="int">0xFFFFFFFF</BootPasswd4>
+						<BootPasswd5 type="int">0xFFFFFFFF</BootPasswd5>
+						<BootPasswd6 type="int">0xFFFFFFFF</BootPasswd6>
+						<BootPasswd7 type="int">0xFFFFFFFF</BootPasswd7>
+						<PasswordFile type="string"></PasswordFile>
+						<UsePasswordForUnlockDevice type="flag">1</UsePasswordForUnlockDevice>
+						<DisableE2EECC type="flag">0</DisableE2EECC>
+						<UseCore0ForNexusMemoryAccessWhileRunning type="flag">0</UseCore0ForNexusMemoryAccessWhileRunning>
+						<HandleOvRamInitViaNarWorkaround type="flag">0</HandleOvRamInitViaNarWorkaround>
+					</Setup>
+					<SetupSaveMode type="int">1</SetupSaveMode>
+					<NewWorkspace type="flag">0</NewWorkspace>
+				</UDE.PpcJtagTargIntf>
+			</UDE.PowerPcArchSrv>
+			<UDE.UDESymbol type="key">
+				<BinaryFiles type="key">
+					<Number type="int">1</Number>
+					<BinaryFile1 type="key">
+						<FullPath type="string">Project\CCFC3012PT_S32DS_SMP\ARCH3D12_M10I1R0\CCFC3012PT_DEBUG_FLASH\ARCH3D12_M10I1R0.elf</FullPath>
+					</BinaryFile1>
+				</BinaryFiles>
+				<ExpressionClipboard type="key">
+					<Number type="int">0</Number>
+				</ExpressionClipboard>
+				<MultiCoreLoader type="key">
+					<TargetFile1 type="string">Project\CCFC3012PT_S32DS_SMP\ARCH3D12_M10I1R0\CCFC3012PT_DEBUG_FLASH\ARCH3D12_M10I1R0.elf</TargetFile1>
+					<TargetFileActive1 type="string">1</TargetFileActive1>
+					<TargetLoadBin1 type="string">Controller0.Core0</TargetLoadBin1>
+					<TargetLoadSym1 type="string">Controller0.Core0,Controller0.Core1,Controller0.Core2,Controller0.Core3,Controller0.Core4,Controller0.Core5</TargetLoadSym1>
+					<TargetFileMapping1 type="string">3,1,1,1,1,1</TargetFileMapping1>
+					<TargetFileOptions1 type="string">0x00000000</TargetFileOptions1>
+					<TargetFileCodeRelocation1 type="string">0x14</TargetFileCodeRelocation1>
+					<TargetFileCodeRelocSecs1 type="string"></TargetFileCodeRelocSecs1>
+					<TargetFileDataRelocation1 type="string">0x14</TargetFileDataRelocation1>
+					<Number type="int">1</Number>
+				</MultiCoreLoader>
+				<SourcePathManagement type="key">
+					<ExcludeAllNotFounds type="int">0</ExcludeAllNotFounds>
+				</SourcePathManagement>
+			</UDE.UDESymbol>
+			<STG_ADDON_PROF type="key">
+				<UDE_Code_Coverage type="key" name="UDE Code Coverage">
+					<LOAD_STATE type="flag">1</LOAD_STATE>
+				</UDE_Code_Coverage>
+				<UDE_Graphwin_Trace_AddOn type="key" name="UDE Graphwin Trace AddOn">
+					<LOAD_STATE type="flag">0</LOAD_STATE>
+				</UDE_Graphwin_Trace_AddOn>
+				<UDELicense_Server type="key" name="UDELicense Server">
+					<LOAD_STATE type="flag">1</LOAD_STATE>
+				</UDELicense_Server>
+				<UDEMemtool type="key">
+					<LOAD_STATE type="flag">1</LOAD_STATE>
+					<FlashMod_PFLASH type="key"></FlashMod_PFLASH>
+					<FlashMod_PFLASH0 type="key"></FlashMod_PFLASH0>
+					<FlashMod_PFLASH1 type="key"></FlashMod_PFLASH1>
+					<FlashMod_PFLASH2 type="key"></FlashMod_PFLASH2>
+					<FlashMod_PFLASH3 type="key"></FlashMod_PFLASH3>
+					<FlashMod_PFLASH4 type="key"></FlashMod_PFLASH4>
+					<FlashMod_PFLASH5 type="key"></FlashMod_PFLASH5>
+					<FlashMod_DFLASH type="key"></FlashMod_DFLASH>
+					<FlashMod_HSMPFLASH type="key"></FlashMod_HSMPFLASH>
+					<FlashMod_HSMDFLASH type="key"></FlashMod_HSMDFLASH>
+					<FlashMod_UTEST type="key"></FlashMod_UTEST>
+					<FlashMod_BAF type="key"></FlashMod_BAF>
+					<Frontend type="key">
+						<LastModule type="int">0</LastModule>
+						<VerifyProt type="flag">0</VerifyProt>
+						<VerifyProtFile type="string">verify.txt</VerifyProtFile>
+						<VerifyOnExit type="flag">0</VerifyOnExit>
+						<StoreLoadedSections type="flag">0</StoreLoadedSections>
+						<IgnoreProgramWarning type="flag">0</IgnoreProgramWarning>
+						<AutoStartProgAfterDownload type="flag">0</AutoStartProgAfterDownload>
+						<AutoStartVerifyAfterDownload type="flag">0</AutoStartVerifyAfterDownload>
+						<AutoCloseExecCmdDialog type="flag">0</AutoCloseExecCmdDialog>
+						<AllowOverwrite type="flag">0</AllowOverwrite>
+						<ResetAfterFlashProgOnExit type="flag">0</ResetAfterFlashProgOnExit>
+						<NoResetCheck type="flag">0</NoResetCheck>
+						<ShowEraseAllButton type="flag">0</ShowEraseAllButton>
+					</Frontend>
+				</UDEMemtool>
+				<ADD_ON_DEL_FLAG type="flag">0</ADD_ON_DEL_FLAG>
+			</STG_ADDON_PROF>
+			<CommQueueHndlStg type="key">
+				<Beep type="flag">0</Beep>
+				<Retry type="flag">0</Retry>
+				<RetryPeriod type="int">0</RetryPeriod>
+			</CommQueueHndlStg>
+			<TargetStateHndlStg type="key"></TargetStateHndlStg>
+			<breakpointsV3 type="key">
+				<collectionStr type="string"></collectionStr>
+				<collection type="key"></collection>
+			</breakpointsV3>
+		</UDE.StdDbgSrv>
+	</Core0>
+	<Core1 type="key">
+		<ViewSrv type="key">
+			<UDECpuWin2 type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</UDECpuWin2>
+			<StdUDESymbolExplWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDESymbolExplWin>
+			<StdUDEProgWin type="key">
+				<OPEN_VIEW00 type="key">
+					<FrameCreated type="string">24.04.2025 20:35:09:063</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">..\CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI\Source\main.c</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW00>
+				<OPEN_VIEW01 type="key">
+					<FrameCreated type="string">25.04.2025 11:56:22:323</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">Project\CCFC3012PT_S32DS_SMP\ARCH3D12_M10I1R0\CDD\resolver_app\AngleTrk.c</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW01>
+				<OPEN_VIEW02 type="key">
+					<FrameCreated type="string">25.04.2025 18:51:18:082</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">Source\main.c</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW02>
+				<SAVED_VIEW_OBJS type="int">3</SAVED_VIEW_OBJS>
+				<SAVED_VIEW00 type="int">0</SAVED_VIEW00>
+				<SAVED_VIEW01 type="int">1</SAVED_VIEW01>
+				<SAVED_VIEW02 type="int">2</SAVED_VIEW02>
+			</StdUDEProgWin>
+			<StdUDELocalsWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDELocalsWin>
+			<StdUDEWatchWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDEWatchWin>
+			<StdUDESimIOWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDESimIOWin>
+			<StdUDEHtmlDocWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDEHtmlDocWin>
+			<StdUDEGraphWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDEGraphWin>
+			<StdUDETimeSampleGraphWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDETimeSampleGraphWin>
+			<UDEProfilingWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</UDEProfilingWin>
+			<StdUDEMemWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDEMemWin>
+			<CodeCoverageView type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</CodeCoverageView>
+			<StdUDEDataTraceGraphWin type="key"></StdUDEDataTraceGraphWin>
+			<UDETraceProfilingWin type="key"></UDETraceProfilingWin>
+			<UDEStackWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</UDEStackWin>
+			<StdUDESFRView type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDESFRView>
+		</ViewSrv>
+		<UDE.StdDbgSrv type="key">
+			<INI_SECTION type="key">
+				<System type="key">
+					<VIRTUAL_PATTERN_HANDLING type="int">0</VIRTUAL_PATTERN_HANDLING>
+					<DEFAULT_HW_BREAKPOINT type="string">ON</DEFAULT_HW_BREAKPOINT>
+					<PROGRAM1_SERVICE_MODE type="int">2</PROGRAM1_SERVICE_MODE>
+				</System>
+				<Monitor type="key">
+					<PROGRAM1_CRC_CHECK type="int">1</PROGRAM1_CRC_CHECK>
+				</Monitor>
+			</INI_SECTION>
+			<UDE.PowerPcArchSrv type="key">
+				<UDE.PpcJtagTargIntf type="key">
+					<NewWorkspace type="flag">0</NewWorkspace>
+				</UDE.PpcJtagTargIntf>
+			</UDE.PowerPcArchSrv>
+			<UDE.UDESymbol type="key">
+				<BinaryFiles type="key">
+					<Number type="int">1</Number>
+					<BinaryFile1 type="key">
+						<FullPath type="string">Project\CCFC3012PT_S32DS_SMP\ARCH3D12_M10I1R0\CCFC3012PT_DEBUG_FLASH\ARCH3D12_M10I1R0.elf</FullPath>
+					</BinaryFile1>
+				</BinaryFiles>
+				<ExpressionClipboard type="key">
+					<Number type="int">0</Number>
+				</ExpressionClipboard>
+			</UDE.UDESymbol>
+			<STG_ADDON_PROF type="key">
+				<UDE_Code_Coverage type="key" name="UDE Code Coverage">
+					<LOAD_STATE type="flag">1</LOAD_STATE>
+				</UDE_Code_Coverage>
+				<UDE_Graphwin_Trace_AddOn type="key" name="UDE Graphwin Trace AddOn">
+					<LOAD_STATE type="flag">0</LOAD_STATE>
+				</UDE_Graphwin_Trace_AddOn>
+				<UDELicense_Server type="key" name="UDELicense Server">
+					<LOAD_STATE type="flag">1</LOAD_STATE>
+				</UDELicense_Server>
+				<ADD_ON_DEL_FLAG type="flag">0</ADD_ON_DEL_FLAG>
+			</STG_ADDON_PROF>
+			<CommQueueHndlStg type="key">
+				<Beep type="flag">0</Beep>
+				<Retry type="flag">0</Retry>
+				<RetryPeriod type="int">0</RetryPeriod>
+			</CommQueueHndlStg>
+			<TargetStateHndlStg type="key"></TargetStateHndlStg>
+			<breakpointsV3 type="key">
+				<collectionStr type="string"></collectionStr>
+				<collection type="key"></collection>
+			</breakpointsV3>
+		</UDE.StdDbgSrv>
+	</Core1>
+	<Core2 type="key">
+		<ViewSrv type="key">
+			<UDECpuWin2 type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</UDECpuWin2>
+			<StdUDESymbolExplWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDESymbolExplWin>
+			<StdUDEProgWin type="key">
+				<OPEN_VIEW00 type="key">
+					<FrameCreated type="string">24.04.2025 20:35:10:271</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">..\CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI\Source\main.c</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW00>
+				<OPEN_VIEW01 type="key">
+					<FrameCreated type="string">25.04.2025 11:56:21:075</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">Source\main.c</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW01>
+				<OPEN_VIEW02 type="key">
+					<FrameCreated type="string">25.04.2025 11:56:57:210</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">Source\common\src\irq_handle.S</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW02>
+				<OPEN_VIEW03 type="key">
+					<FrameCreated type="string">25.04.2025 11:58:53:119</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">Source\mcal\eclipse\plugins\Gpt_ARCH3D12M10I1R0\source\Gpt_Irq.c</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW03>
+				<OPEN_VIEW04 type="key">
+					<FrameCreated type="string">25.04.2025 11:58:55:138</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">Source\mcal\eclipse\plugins\Gpt_ARCH3D12M10I1R0\source\Gpt_Pit_LLDriver.c</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW04>
+				<SAVED_VIEW_OBJS type="int">5</SAVED_VIEW_OBJS>
+				<SAVED_VIEW00 type="int">0</SAVED_VIEW00>
+				<SAVED_VIEW01 type="int">1</SAVED_VIEW01>
+				<SAVED_VIEW02 type="int">2</SAVED_VIEW02>
+				<SAVED_VIEW03 type="int">3</SAVED_VIEW03>
+				<SAVED_VIEW04 type="int">4</SAVED_VIEW04>
+			</StdUDEProgWin>
+			<StdUDELocalsWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDELocalsWin>
+			<StdUDEWatchWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDEWatchWin>
+			<StdUDESimIOWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDESimIOWin>
+			<StdUDEHtmlDocWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDEHtmlDocWin>
+			<StdUDEGraphWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDEGraphWin>
+			<StdUDETimeSampleGraphWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDETimeSampleGraphWin>
+			<UDEProfilingWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</UDEProfilingWin>
+			<StdUDEMemWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDEMemWin>
+			<CodeCoverageView type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</CodeCoverageView>
+			<StdUDEDataTraceGraphWin type="key"></StdUDEDataTraceGraphWin>
+			<UDETraceProfilingWin type="key"></UDETraceProfilingWin>
+			<UDEStackWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</UDEStackWin>
+			<StdUDESFRView type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDESFRView>
+		</ViewSrv>
+		<UDE.StdDbgSrv type="key">
+			<INI_SECTION type="key">
+				<System type="key">
+					<VIRTUAL_PATTERN_HANDLING type="int">0</VIRTUAL_PATTERN_HANDLING>
+					<DEFAULT_HW_BREAKPOINT type="string">ON</DEFAULT_HW_BREAKPOINT>
+					<PROGRAM1_SERVICE_MODE type="int">2</PROGRAM1_SERVICE_MODE>
+				</System>
+				<Monitor type="key">
+					<PROGRAM1_CRC_CHECK type="int">1</PROGRAM1_CRC_CHECK>
+				</Monitor>
+			</INI_SECTION>
+			<UDE.PowerPcArchSrv type="key">
+				<UDE.PpcJtagTargIntf type="key">
+					<NewWorkspace type="flag">0</NewWorkspace>
+				</UDE.PpcJtagTargIntf>
+			</UDE.PowerPcArchSrv>
+			<UDE.UDESymbol type="key">
+				<BinaryFiles type="key">
+					<Number type="int">1</Number>
+					<BinaryFile1 type="key">
+						<FullPath type="string">Project\CCFC3012PT_S32DS_SMP\ARCH3D12_M10I1R0\CCFC3012PT_DEBUG_FLASH\ARCH3D12_M10I1R0.elf</FullPath>
+					</BinaryFile1>
+				</BinaryFiles>
+				<ExpressionClipboard type="key">
+					<Number type="int">0</Number>
+				</ExpressionClipboard>
+			</UDE.UDESymbol>
+			<STG_ADDON_PROF type="key">
+				<UDE_Code_Coverage type="key" name="UDE Code Coverage">
+					<LOAD_STATE type="flag">1</LOAD_STATE>
+				</UDE_Code_Coverage>
+				<UDE_Graphwin_Trace_AddOn type="key" name="UDE Graphwin Trace AddOn">
+					<LOAD_STATE type="flag">0</LOAD_STATE>
+				</UDE_Graphwin_Trace_AddOn>
+				<UDELicense_Server type="key" name="UDELicense Server">
+					<LOAD_STATE type="flag">1</LOAD_STATE>
+				</UDELicense_Server>
+				<ADD_ON_DEL_FLAG type="flag">0</ADD_ON_DEL_FLAG>
+			</STG_ADDON_PROF>
+			<CommQueueHndlStg type="key">
+				<Beep type="flag">0</Beep>
+				<Retry type="flag">0</Retry>
+				<RetryPeriod type="int">0</RetryPeriod>
+			</CommQueueHndlStg>
+			<TargetStateHndlStg type="key"></TargetStateHndlStg>
+			<breakpointsV3 type="key">
+				<collectionStr type="string"></collectionStr>
+				<collection type="key"></collection>
+			</breakpointsV3>
+		</UDE.StdDbgSrv>
+	</Core2>
+	<Core3 type="key">
+		<ViewSrv type="key">
+			<UDECpuWin2 type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</UDECpuWin2>
+			<StdUDESymbolExplWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDESymbolExplWin>
+			<StdUDEProgWin type="key">
+				<OPEN_VIEW00 type="key">
+					<FrameCreated type="string">24.04.2025 20:35:09:414</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">..\CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI\Source\shell\shell.c</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW00>
+				<OPEN_VIEW01 type="key">
+					<FrameCreated type="string">25.04.2025 11:56:21:767</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">Source\shell\shell.c</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW01>
+				<OPEN_VIEW02 type="key">
+					<FrameCreated type="string">25.04.2025 18:51:17:785</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">Source\main.c</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW02>
+				<SAVED_VIEW_OBJS type="int">3</SAVED_VIEW_OBJS>
+				<SAVED_VIEW00 type="int">0</SAVED_VIEW00>
+				<SAVED_VIEW01 type="int">1</SAVED_VIEW01>
+				<SAVED_VIEW02 type="int">2</SAVED_VIEW02>
+			</StdUDEProgWin>
+			<StdUDELocalsWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDELocalsWin>
+			<StdUDEWatchWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDEWatchWin>
+			<StdUDESimIOWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDESimIOWin>
+			<StdUDEHtmlDocWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDEHtmlDocWin>
+			<StdUDEGraphWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDEGraphWin>
+			<StdUDETimeSampleGraphWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDETimeSampleGraphWin>
+			<UDEProfilingWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</UDEProfilingWin>
+			<StdUDEMemWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDEMemWin>
+			<CodeCoverageView type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</CodeCoverageView>
+			<StdUDEDataTraceGraphWin type="key"></StdUDEDataTraceGraphWin>
+			<UDETraceProfilingWin type="key"></UDETraceProfilingWin>
+			<UDEStackWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</UDEStackWin>
+			<StdUDESFRView type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDESFRView>
+		</ViewSrv>
+		<UDE.StdDbgSrv type="key">
+			<INI_SECTION type="key">
+				<System type="key">
+					<VIRTUAL_PATTERN_HANDLING type="int">0</VIRTUAL_PATTERN_HANDLING>
+					<DEFAULT_HW_BREAKPOINT type="string">ON</DEFAULT_HW_BREAKPOINT>
+					<PROGRAM1_SERVICE_MODE type="int">2</PROGRAM1_SERVICE_MODE>
+				</System>
+				<Monitor type="key">
+					<PROGRAM1_CRC_CHECK type="int">1</PROGRAM1_CRC_CHECK>
+				</Monitor>
+			</INI_SECTION>
+			<UDE.PowerPcArchSrv type="key">
+				<UDE.PpcJtagTargIntf type="key">
+					<NewWorkspace type="flag">0</NewWorkspace>
+				</UDE.PpcJtagTargIntf>
+			</UDE.PowerPcArchSrv>
+			<UDE.UDESymbol type="key">
+				<BinaryFiles type="key">
+					<Number type="int">1</Number>
+					<BinaryFile1 type="key">
+						<FullPath type="string">Project\CCFC3012PT_S32DS_SMP\ARCH3D12_M10I1R0\CCFC3012PT_DEBUG_FLASH\ARCH3D12_M10I1R0.elf</FullPath>
+					</BinaryFile1>
+				</BinaryFiles>
+				<ExpressionClipboard type="key">
+					<Number type="int">0</Number>
+				</ExpressionClipboard>
+			</UDE.UDESymbol>
+			<STG_ADDON_PROF type="key">
+				<UDE_Code_Coverage type="key" name="UDE Code Coverage">
+					<LOAD_STATE type="flag">1</LOAD_STATE>
+				</UDE_Code_Coverage>
+				<UDE_Graphwin_Trace_AddOn type="key" name="UDE Graphwin Trace AddOn">
+					<LOAD_STATE type="flag">0</LOAD_STATE>
+				</UDE_Graphwin_Trace_AddOn>
+				<UDELicense_Server type="key" name="UDELicense Server">
+					<LOAD_STATE type="flag">1</LOAD_STATE>
+				</UDELicense_Server>
+				<ADD_ON_DEL_FLAG type="flag">0</ADD_ON_DEL_FLAG>
+			</STG_ADDON_PROF>
+			<CommQueueHndlStg type="key">
+				<Beep type="flag">0</Beep>
+				<Retry type="flag">0</Retry>
+				<RetryPeriod type="int">0</RetryPeriod>
+			</CommQueueHndlStg>
+			<TargetStateHndlStg type="key"></TargetStateHndlStg>
+			<breakpointsV3 type="key">
+				<collectionStr type="string"></collectionStr>
+				<collection type="key"></collection>
+			</breakpointsV3>
+		</UDE.StdDbgSrv>
+	</Core3>
+	<Core4 type="key">
+		<ViewSrv type="key">
+			<UDECpuWin2 type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</UDECpuWin2>
+			<StdUDESymbolExplWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDESymbolExplWin>
+			<StdUDEProgWin type="key">
+				<OPEN_VIEW00 type="key">
+					<FrameCreated type="string">24.04.2025 20:35:09:949</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">..\CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI\Source\shell\shell.c</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW00>
+				<OPEN_VIEW01 type="key">
+					<FrameCreated type="string">25.04.2025 11:56:21:946</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">Source\main.c</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW01>
+				<OPEN_VIEW02 type="key">
+					<FrameCreated type="string">25.04.2025 11:56:57:402</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">Source\shell\shell.c</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW02>
+				<SAVED_VIEW_OBJS type="int">3</SAVED_VIEW_OBJS>
+				<SAVED_VIEW00 type="int">0</SAVED_VIEW00>
+				<SAVED_VIEW01 type="int">1</SAVED_VIEW01>
+				<SAVED_VIEW02 type="int">2</SAVED_VIEW02>
+			</StdUDEProgWin>
+			<StdUDELocalsWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDELocalsWin>
+			<StdUDEWatchWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDEWatchWin>
+			<StdUDESimIOWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDESimIOWin>
+			<StdUDEHtmlDocWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDEHtmlDocWin>
+			<StdUDEGraphWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDEGraphWin>
+			<StdUDETimeSampleGraphWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDETimeSampleGraphWin>
+			<UDEProfilingWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</UDEProfilingWin>
+			<StdUDEMemWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDEMemWin>
+			<CodeCoverageView type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</CodeCoverageView>
+			<StdUDEDataTraceGraphWin type="key"></StdUDEDataTraceGraphWin>
+			<UDETraceProfilingWin type="key"></UDETraceProfilingWin>
+			<UDEStackWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</UDEStackWin>
+			<StdUDESFRView type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDESFRView>
+		</ViewSrv>
+		<UDE.StdDbgSrv type="key">
+			<INI_SECTION type="key">
+				<System type="key">
+					<VIRTUAL_PATTERN_HANDLING type="int">0</VIRTUAL_PATTERN_HANDLING>
+					<DEFAULT_HW_BREAKPOINT type="string">ON</DEFAULT_HW_BREAKPOINT>
+					<PROGRAM1_SERVICE_MODE type="int">2</PROGRAM1_SERVICE_MODE>
+				</System>
+				<Monitor type="key">
+					<PROGRAM1_CRC_CHECK type="int">1</PROGRAM1_CRC_CHECK>
+				</Monitor>
+			</INI_SECTION>
+			<UDE.PowerPcArchSrv type="key">
+				<UDE.PpcJtagTargIntf type="key">
+					<NewWorkspace type="flag">0</NewWorkspace>
+				</UDE.PpcJtagTargIntf>
+			</UDE.PowerPcArchSrv>
+			<UDE.UDESymbol type="key">
+				<BinaryFiles type="key">
+					<Number type="int">1</Number>
+					<BinaryFile1 type="key">
+						<FullPath type="string">Project\CCFC3012PT_S32DS_SMP\ARCH3D12_M10I1R0\CCFC3012PT_DEBUG_FLASH\ARCH3D12_M10I1R0.elf</FullPath>
+					</BinaryFile1>
+				</BinaryFiles>
+				<ExpressionClipboard type="key">
+					<Number type="int">0</Number>
+				</ExpressionClipboard>
+			</UDE.UDESymbol>
+			<STG_ADDON_PROF type="key">
+				<UDE_Code_Coverage type="key" name="UDE Code Coverage">
+					<LOAD_STATE type="flag">1</LOAD_STATE>
+				</UDE_Code_Coverage>
+				<UDE_Graphwin_Trace_AddOn type="key" name="UDE Graphwin Trace AddOn">
+					<LOAD_STATE type="flag">0</LOAD_STATE>
+				</UDE_Graphwin_Trace_AddOn>
+				<UDELicense_Server type="key" name="UDELicense Server">
+					<LOAD_STATE type="flag">1</LOAD_STATE>
+				</UDELicense_Server>
+				<ADD_ON_DEL_FLAG type="flag">0</ADD_ON_DEL_FLAG>
+			</STG_ADDON_PROF>
+			<CommQueueHndlStg type="key">
+				<Beep type="flag">0</Beep>
+				<Retry type="flag">0</Retry>
+				<RetryPeriod type="int">0</RetryPeriod>
+			</CommQueueHndlStg>
+			<TargetStateHndlStg type="key"></TargetStateHndlStg>
+			<breakpointsV3 type="key">
+				<collectionStr type="string"></collectionStr>
+				<collection type="key"></collection>
+			</breakpointsV3>
+		</UDE.StdDbgSrv>
+	</Core4>
+	<Core5 type="key">
+		<ViewSrv type="key">
+			<UDECpuWin2 type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</UDECpuWin2>
+			<StdUDESymbolExplWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDESymbolExplWin>
+			<StdUDEProgWin type="key">
+				<OPEN_VIEW00 type="key">
+					<FrameCreated type="string">24.04.2025 20:35:09:595</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">..\CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI\Source\shell\shell.c</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW00>
+				<OPEN_VIEW01 type="key">
+					<FrameCreated type="string">25.04.2025 11:56:21:608</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">Source\shell\shell.c</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW01>
+				<SAVED_VIEW_OBJS type="int">2</SAVED_VIEW_OBJS>
+				<SAVED_VIEW00 type="int">0</SAVED_VIEW00>
+				<SAVED_VIEW01 type="int">1</SAVED_VIEW01>
+			</StdUDEProgWin>
+			<StdUDELocalsWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDELocalsWin>
+			<StdUDEWatchWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDEWatchWin>
+			<StdUDESimIOWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDESimIOWin>
+			<StdUDEHtmlDocWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDEHtmlDocWin>
+			<StdUDEGraphWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDEGraphWin>
+			<StdUDETimeSampleGraphWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDETimeSampleGraphWin>
+			<UDEProfilingWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</UDEProfilingWin>
+			<StdUDEMemWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDEMemWin>
+			<CodeCoverageView type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</CodeCoverageView>
+			<StdUDEDataTraceGraphWin type="key"></StdUDEDataTraceGraphWin>
+			<UDETraceProfilingWin type="key"></UDETraceProfilingWin>
+			<UDEStackWin type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</UDEStackWin>
+			<StdUDESFRView type="key">
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+			</StdUDESFRView>
+		</ViewSrv>
+		<UDE.StdDbgSrv type="key">
+			<INI_SECTION type="key">
+				<System type="key">
+					<VIRTUAL_PATTERN_HANDLING type="int">0</VIRTUAL_PATTERN_HANDLING>
+					<DEFAULT_HW_BREAKPOINT type="string">ON</DEFAULT_HW_BREAKPOINT>
+					<PROGRAM1_SERVICE_MODE type="int">2</PROGRAM1_SERVICE_MODE>
+				</System>
+				<Monitor type="key">
+					<PROGRAM1_CRC_CHECK type="int">1</PROGRAM1_CRC_CHECK>
+				</Monitor>
+			</INI_SECTION>
+			<UDE.PowerPcArchSrv type="key">
+				<UDE.PpcJtagTargIntf type="key">
+					<NewWorkspace type="flag">0</NewWorkspace>
+				</UDE.PpcJtagTargIntf>
+			</UDE.PowerPcArchSrv>
+			<UDE.UDESymbol type="key">
+				<BinaryFiles type="key">
+					<Number type="int">1</Number>
+					<BinaryFile1 type="key">
+						<FullPath type="string">Project\CCFC3012PT_S32DS_SMP\ARCH3D12_M10I1R0\CCFC3012PT_DEBUG_FLASH\ARCH3D12_M10I1R0.elf</FullPath>
+					</BinaryFile1>
+				</BinaryFiles>
+				<ExpressionClipboard type="key">
+					<Number type="int">0</Number>
+				</ExpressionClipboard>
+			</UDE.UDESymbol>
+			<STG_ADDON_PROF type="key">
+				<UDE_Code_Coverage type="key" name="UDE Code Coverage">
+					<LOAD_STATE type="flag">1</LOAD_STATE>
+				</UDE_Code_Coverage>
+				<UDE_Graphwin_Trace_AddOn type="key" name="UDE Graphwin Trace AddOn">
+					<LOAD_STATE type="flag">0</LOAD_STATE>
+				</UDE_Graphwin_Trace_AddOn>
+				<UDELicense_Server type="key" name="UDELicense Server">
+					<LOAD_STATE type="flag">1</LOAD_STATE>
+				</UDELicense_Server>
+				<ADD_ON_DEL_FLAG type="flag">0</ADD_ON_DEL_FLAG>
+			</STG_ADDON_PROF>
+			<CommQueueHndlStg type="key">
+				<Beep type="flag">0</Beep>
+				<Retry type="flag">0</Retry>
+				<RetryPeriod type="int">0</RetryPeriod>
+			</CommQueueHndlStg>
+			<TargetStateHndlStg type="key"></TargetStateHndlStg>
+			<breakpointsV3 type="key">
+				<collectionStr type="string"></collectionStr>
+				<collection type="key"></collection>
+			</breakpointsV3>
+		</UDE.StdDbgSrv>
+	</Core5>
+	<RecentlyUsedRootNode type="key">
+		<ExportWatchContentStg type="string">D:\工作项目\电机项目\shijiancuo6.csv</ExportWatchContentStg>
+	</RecentlyUsedRootNode>
+	<Logging type="key">
+		<DontClearLogOnCloseWorkspace type="flag">0</DontClearLogOnCloseWorkspace>
+		<UdeApiLogging type="flag">0</UdeApiLogging>
+		<SaveAndCopyWithoutTimeStamps type="flag">0</SaveAndCopyWithoutTimeStamps>
+	</Logging>
+	<SessionManager type="key">
+		<SetDebuggerFocus type="flag">1</SetDebuggerFocus>
+		<ShowSymbolsOnHalt type="flag">1</ShowSymbolsOnHalt>
+		<UpdateDelay type="int">500</UpdateDelay>
+	</SessionManager>
+	<TargetInfoFile type="string">C:\Users\ccore\Documents\pls\UDE 2024\Targets\ccore_ccfc3012_debug_jtag.cfg</TargetInfoFile>
+	<TargInfoFlags type="key">
+		<Controller0 type="key">
+			<Core0 type="key">
+				<Enabled type="flag">1</Enabled>
+			</Core0>
+			<HSM type="key">
+				<Enabled type="flag">0</Enabled>
+			</HSM>
+			<Core1 type="key">
+				<Enabled type="flag">1</Enabled>
+			</Core1>
+			<Core2 type="key">
+				<Enabled type="flag">1</Enabled>
+			</Core2>
+			<Core3 type="key">
+				<Enabled type="flag">1</Enabled>
+			</Core3>
+			<Core4 type="key">
+				<Enabled type="flag">1</Enabled>
+			</Core4>
+			<Core5 type="key">
+				<Enabled type="flag">1</Enabled>
+			</Core5>
+			<GTM type="key">
+				<Enabled type="flag">0</Enabled>
+			</GTM>
+			<SYSTEM_RAM type="key">
+				<Enabled type="flag">1</Enabled>
+			</SYSTEM_RAM>
+			<PFLASH type="key">
+				<Enabled type="flag">1</Enabled>
+			</PFLASH>
+			<PFLASH0 type="key">
+				<Enabled type="flag">1</Enabled>
+			</PFLASH0>
+			<PFLASH1 type="key">
+				<Enabled type="flag">1</Enabled>
+			</PFLASH1>
+			<PFLASH2 type="key">
+				<Enabled type="flag">1</Enabled>
+			</PFLASH2>
+			<PFLASH3 type="key">
+				<Enabled type="flag">1</Enabled>
+			</PFLASH3>
+			<PFLASH4 type="key">
+				<Enabled type="flag">1</Enabled>
+			</PFLASH4>
+			<PFLASH5 type="key">
+				<Enabled type="flag">1</Enabled>
+			</PFLASH5>
+			<DFLASH type="key">
+				<Enabled type="flag">1</Enabled>
+			</DFLASH>
+			<HSMPFLASH type="key">
+				<Enabled type="flag">1</Enabled>
+			</HSMPFLASH>
+			<HSMDFLASH type="key">
+				<Enabled type="flag">1</Enabled>
+			</HSMDFLASH>
+			<UTEST type="key">
+				<Enabled type="flag">1</Enabled>
+			</UTEST>
+			<IMEM0 type="key">
+				<Enabled type="flag">1</Enabled>
+			</IMEM0>
+			<DMEM0 type="key">
+				<Enabled type="flag">1</Enabled>
+			</DMEM0>
+			<IMEM1 type="key">
+				<Enabled type="flag">1</Enabled>
+			</IMEM1>
+			<DMEM1 type="key">
+				<Enabled type="flag">1</Enabled>
+			</DMEM1>
+			<IMEM2 type="key">
+				<Enabled type="flag">1</Enabled>
+			</IMEM2>
+			<DMEM2 type="key">
+				<Enabled type="flag">1</Enabled>
+			</DMEM2>
+			<IMEM3 type="key">
+				<Enabled type="flag">1</Enabled>
+			</IMEM3>
+			<DMEM3 type="key">
+				<Enabled type="flag">1</Enabled>
+			</DMEM3>
+			<IMEM4 type="key">
+				<Enabled type="flag">1</Enabled>
+			</IMEM4>
+			<DMEM4 type="key">
+				<Enabled type="flag">1</Enabled>
+			</DMEM4>
+			<IMEM5 type="key">
+				<Enabled type="flag">1</Enabled>
+			</IMEM5>
+			<DMEM5 type="key">
+				<Enabled type="flag">1</Enabled>
+			</DMEM5>
+			<OVLMEM type="key">
+				<Enabled type="flag">1</Enabled>
+			</OVLMEM>
+			<BAF type="key">
+				<Enabled type="flag">1</Enabled>
+			</BAF>
+			<PFLASH_HSM type="key">
+				<Enabled type="flag">1</Enabled>
+			</PFLASH_HSM>
+			<DFLASH_HSM type="key">
+				<Enabled type="flag">1</Enabled>
+			</DFLASH_HSM>
+			<HSM_SRAM type="key">
+				<Enabled type="flag">1</Enabled>
+			</HSM_SRAM>
+			<BAMWriteFilter type="key">
+				<Enabled type="flag">1</Enabled>
+			</BAMWriteFilter>
+		</Controller0>
+	</TargInfoFlags>
+</stg>

@@ -1,0 +1,33 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../Pmsm/Rtw/binsearch_u32f.c \
+../Pmsm/Rtw/intrp1d_s16sfffu32fl.c \
+../Pmsm/Rtw/intrp2d_s16sfffu32fl.c \
+../Pmsm/Rtw/plook_u32ff_binx.c 
+
+OBJS += \
+./Pmsm/Rtw/binsearch_u32f.o \
+./Pmsm/Rtw/intrp1d_s16sfffu32fl.o \
+./Pmsm/Rtw/intrp2d_s16sfffu32fl.o \
+./Pmsm/Rtw/plook_u32ff_binx.o 
+
+C_DEPS += \
+./Pmsm/Rtw/binsearch_u32f.d \
+./Pmsm/Rtw/intrp1d_s16sfffu32fl.d \
+./Pmsm/Rtw/intrp2d_s16sfffu32fl.d \
+./Pmsm/Rtw/plook_u32ff_binx.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+Pmsm/Rtw/%.o: ../Pmsm/Rtw/%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Pmsm/Rtw/binsearch_u32f.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

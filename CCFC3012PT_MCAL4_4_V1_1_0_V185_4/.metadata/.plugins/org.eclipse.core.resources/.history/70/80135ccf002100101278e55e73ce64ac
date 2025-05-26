@@ -1,0 +1,74 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth_AutoSar_Wrapper.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth_EMAC_LLDriver.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth_GMAC_LLDriver.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth_HAL_Wrapper.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth_Irq.c 
+
+OBJS += \
+./Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth.o \
+./Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth_AutoSar_Wrapper.o \
+./Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth_EMAC_LLDriver.o \
+./Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth_GMAC_LLDriver.o \
+./Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth_HAL_Wrapper.o \
+./Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth_Irq.o 
+
+C_DEPS += \
+./Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth.d \
+./Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth_AutoSar_Wrapper.d \
+./Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth_EMAC_LLDriver.d \
+./Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth_GMAC_LLDriver.d \
+./Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth_HAL_Wrapper.d \
+./Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth_Irq.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth_AutoSar_Wrapper.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth_AutoSar_Wrapper.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth_AutoSar_Wrapper.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth_EMAC_LLDriver.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth_EMAC_LLDriver.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth_EMAC_LLDriver.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth_GMAC_LLDriver.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth_GMAC_LLDriver.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth_GMAC_LLDriver.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth_HAL_Wrapper.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth_HAL_Wrapper.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth_HAL_Wrapper.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth_Irq.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth_Irq.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/source/Eth_Irq.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

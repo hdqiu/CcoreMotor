@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.freescale.s32ds.cross.gnu.e200.exe.debug.1207505553">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.freescale.s32ds.cross.gnu.e200.exe.debug.1207505553" moduleId="org.eclipse.cdt.core.settings" name="CCFC3012PT_DEBUG_FLASH">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.freescale.s32ds.cdt.core.errorParsers.IcodeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.s32ds.cdt.core.errorParsers.MwfeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.s32ds.cdt.core.errorParsers.MwErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.s32ds.cdt.core.errorParsers.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.s32ds.cdt.core.errorParsers.S32DSGNULinkerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.s32ds.cdt.core.errorParsers.CobjErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.s32ds.cdt.core.errorParsers.AsmErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.s32ds.cdt.core.errorParsers.MPWErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.s32ds.cdt.core.errorParsers.LnkErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.s32ds.cdt.core.errorParsers.LltErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="com.freescale.s32ds.cross.gnu.e200.buildArtefact.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=com.freescale.s32ds.cross.gnu.e200.buildArtefact.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="${cross_rm}" description="" errorParsers="com.freescale.s32ds.cdt.core.errorParsers.GmakeErrorParser;com.freescale.s32ds.cdt.core.errorParsers.LnkErrorParser;com.freescale.s32ds.cdt.core.errorParsers.AsmErrorParser;com.freescale.s32ds.cdt.core.errorParsers.CobjErrorParser;com.freescale.s32ds.cdt.core.errorParsers.IcodeErrorParser;com.freescale.s32ds.cdt.core.errorParsers.LltErrorParser;com.freescale.s32ds.cdt.core.errorParsers.MwfeErrorParser;com.freescale.s32ds.cdt.core.errorParsers.MwErrorParser;com.freescale.s32ds.cdt.core.errorParsers.MPWErrorParser" id="com.freescale.s32ds.cross.gnu.e200.exe.debug.1207505553" name="CCFC3012PT_DEBUG_FLASH" parent="com.freescale.s32ds.cross.gnu.e200.exe.debug">
+					<folderInfo id="com.freescale.s32ds.cross.gnu.e200.exe.debug.1207505553." name="/" resourcePath="">
+						<toolChain id="com.freescale.s32ds.cross.gnu.e200.toolChain.debug.242966834" name="Standard S32DS toolchain for E200" superClass="com.freescale.s32ds.cross.gnu.e200.toolChain.debug">
+							<option defaultValue="true" id="com.freescale.s32ds.cross.gnu.e200.option.addtools.printsize.696957457" name="Print size" superClass="com.freescale.s32ds.cross.gnu.e200.option.addtools.printsize" useByScannerDiscovery="false" valueType="boolean"/>
+							<option id="com.freescale.s32ds.cross.gnu.e200.option.target.family.1566353181" name="Target processor" superClass="com.freescale.s32ds.cross.gnu.e200.option.target.family" useByScannerDiscovery="false" value="com.freescale.s32ds.cross.gnu.e200.option.target.family.e200z4" valueType="enumerated"/>
+							<option id="com.freescale.s32ds.cross.gnu.e200.option.target.fp.hard.1100038523" name="Use hardware floating point" superClass="com.freescale.s32ds.cross.gnu.e200.option.target.fp.hard" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+							<option id="com.freescale.s32ds.cross.gnu.e200.option.target.sysroot.18926889" name="Sysroot" superClass="com.freescale.s32ds.cross.gnu.e200.option.target.sysroot" useByScannerDiscovery="false" value="--sysroot=&quot;${VLE_EWL_DIR}&quot;" valueType="string"/>
+							<option id="com.freescale.s32ds.cross.gnu.e200.option.target.libraries.1761657558" name="Libraries support" superClass="com.freescale.s32ds.cross.gnu.e200.option.target.libraries" useByScannerDiscovery="false" value="com.freescale.s32ds.cross.gnu.e200.option.target.libraries.ewl_c9x_noio" valueType="enumerated"/>
+							<option id="com.freescale.s32ds.cross.gnu.e200.option.addtools.createlisting.165179817" name="Create extended listing" superClass="com.freescale.s32ds.cross.gnu.e200.option.addtools.createlisting" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+							<option id="com.freescale.s32ds.cross.gnu.e200.option.addtools.createflash.2080894301" name="Create flash image" superClass="com.freescale.s32ds.cross.gnu.e200.option.addtools.createflash" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.targetPlatform.gnu.cross.1438878312" isAbstract="false" osList="all" superClass="cdt.managedbuild.targetPlatform.gnu.cross"/>
+							<builder buildPath="${workspace_loc:/ARCH3D12_M10I1R0}/Debug" id="com.freescale.s32ds.cross.gnu.builder.1465004106" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="FSL Make Builder" superClass="com.freescale.s32ds.cross.gnu.builder"/>
+							<tool id="com.freescale.s32ds.cross.gnu.e200.tool.c.compiler.2107686989" name="Standard S32DS C Compiler" superClass="com.freescale.s32ds.cross.gnu.e200.tool.c.compiler">
+								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.1363343235" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.c.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.1482882023" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.optimization.functionsections.167891175" name="Function sections (-ffunction-sections)" superClass="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.optimization.functionsections" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.optimization.datasections.102301367" name="Data sections (-fdata-sections)" superClass="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.optimization.datasections" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.debugging.format.660388448" name="Debug format" superClass="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.debugging.format" useByScannerDiscovery="true"/>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1462552195" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="CCFC3012PT"/>
+									<listOptionValue builtIn="false" value="PMSM_DEBUG_MODE00"/>
+									<listOptionValue builtIn="false" value="SMP_ONLY_ONE_ELF"/>
+									<listOptionValue builtIn="false" value="ICACHE_ENABLE"/>
+									<listOptionValue builtIn="false" value="DCACHE_ENABLE"/>
+									<listOptionValue builtIn="false" value="MPU_ENABLE"/>
+									<listOptionValue builtIn="false" value="MCORE_INIT"/>
+									<listOptionValue builtIn="false" value="AUTOSAR_OS_NOT_USED"/>
+									<listOptionValue builtIn="false" value="__S32DS__"/>
+								</option>
+								<option id="gnu.c.compiler.option.include.paths.1150248158" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/Adc_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Pmsm}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Pmsm/MotA}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Pmsm/MotB}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Pmsm/Rtw}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/Base_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/Can_176_CanFD_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/CanIf_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/Dem_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/Det_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/Dio_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/EcuM_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/eMIOS_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/EthIf_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/EthSwt_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/EthTrcv_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/Fee_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/Icu_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/Intc_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/LinIf_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/Mcl_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/Mcu_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/Os_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/Port_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/SDAdc_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/Sent_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/Spi_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal/eclipse/plugins/WdgIf_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/tester/Adc/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/tester/Can/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/tester/CanFD/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/tester/Dio/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/tester/eDma/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/tester/Eth/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/tester/Fee/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/tester/Fls/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/tester/Gpt/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/tester/Icu/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/tester/Lin/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/tester/Mcu/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/tester/Port/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/tester/Pwm/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/tester/SDAdc/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/tester/Sent/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/tester/Spi/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/tester/Wdg/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/mcal_cfg/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/common/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source_FLASH/shell}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${VLE_EWL_DIR}/EWL_C/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${VLE_EWL_DIR}/EWL_C/include/pa&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/CDD}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/CDD/GTM_LLD}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/CDD/_sharedutils}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/CDD/mbd_api/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/CDD/resolver_app}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/CDD/mbd_api_b/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/CDD/resolver_app_b}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/CDD/CDD_A4911/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/CDD/CDD_HE9285}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/AMMCLIB/include}&quot;"/>
+								</option>
+								<option id="gnu.c.compiler.option.misc.other.1959149514" name="Other flags" superClass="gnu.c.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -fstrict-volatile-bitfields" valueType="string"/>
+								<option id="com.freescale.s32ds.cross.gnu.e200.tool.c.compiler.option.target.family.1370913830" name="Target Processor" superClass="com.freescale.s32ds.cross.gnu.e200.tool.c.compiler.option.target.family" useByScannerDiscovery="true" value="com.freescale.s32ds.cross.gnu.e200.tool.c.compiler.option.target.family.e200z4" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.e200.tool.c.compiler.option.target.fp.hard.1685509990" name="Use hardware floating point" superClass="com.freescale.s32ds.cross.gnu.e200.tool.c.compiler.option.target.fp.hard" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.e200.tool.c.compiler.option.target.sysroot.9381773" name="Sysroot" superClass="com.freescale.s32ds.cross.gnu.e200.tool.c.compiler.option.target.sysroot" useByScannerDiscovery="false" value="--sysroot=&quot;${VLE_EWL_DIR}&quot;" valueType="string"/>
+								<option id="com.freescale.s32ds.cross.gnu.e200.tool.c.compiler.option.target.libraries.1664607367" superClass="com.freescale.s32ds.cross.gnu.e200.tool.c.compiler.option.target.libraries" useByScannerDiscovery="false" value="com.freescale.s32ds.cross.gnu.e200.tool.c.compiler.option.target.libraries.ewl_c9x_noio" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.dialect.std.886987692" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.default" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.optimization.flags.758939004" name="Other optimization flags" superClass="gnu.c.compiler.option.optimization.flags" useByScannerDiscovery="false" value="-std=c99" valueType="string"/>
+								<option id="gnu.c.compiler.option.warnings.toerrors.1568178278" name="Warnings as errors (-Werror)" superClass="gnu.c.compiler.option.warnings.toerrors" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.warnings.other.834644094" name="Other warning flags" superClass="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.warnings.other" useByScannerDiscovery="true" value="-nostartfiles -nodefaultlibs -nostdlib" valueType="string"/>
+								<option id="gnu.c.compiler.option.warnings.extrawarn.437722157" name="Extra warnings (-Wextra)" superClass="gnu.c.compiler.option.warnings.extrawarn" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="gnu.c.compiler.option.warnings.wconversion.1048119974" name="Implicit conversion warnings (-Wconversion)" superClass="gnu.c.compiler.option.warnings.wconversion" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.warnings.uninitialized.482873400" name="Warn on uninitialized variables (-Wuninitialised)" superClass="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.warnings.uninitialized" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.warnings.unused.1155517433" name="Warn on various unused elements (-Wunused)" superClass="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.warnings.unused" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.warnings.floatequal.1005037248" name="Warn if floats are compared as equal (-Wfloat-equal)" superClass="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.warnings.floatequal" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.warnings.pointerarith.502339738" name="Warn if pointer arithmetic (-Wpointer-arith)" superClass="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.warnings.pointerarith" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.warnings.logicalop.914189613" name="Warn if suspicious logical ops (-Wlogical-op)" superClass="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.warnings.logicalop" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.warnings.missingdeclaration.614256205" name="Warn on undeclared global function (-Wmissing-declaration)" superClass="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.warnings.missingdeclaration" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.optimization.noinlinefunctions.1266383307" name="Do not inline functions (-fno-inline-functions)" superClass="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.optimization.noinlinefunctions" useByScannerDiscovery="true" value="false" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.900567171" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="com.freescale.s32ds.cross.gnu.e200.tool.c.linker.248793566" name="Standard S32DS C Linker" superClass="com.freescale.s32ds.cross.gnu.e200.tool.c.linker">
+								<option id="com.freescale.s32ds.cross.gnu.tool.c.linker.option.gcsections.59625468" name="Remove unused sections (-Xlinker --gc-sections)" superClass="com.freescale.s32ds.cross.gnu.tool.c.linker.option.gcsections" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.c.linker.option.scriptfile.1283241922" name="Script files (-T)" superClass="com.freescale.s32ds.cross.gnu.tool.c.linker.option.scriptfile" useByScannerDiscovery="false" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Project_Settings/Linker_Files/CCFC3012PT_flash.ld&quot;"/>
+								</option>
+								<option id="com.freescale.s32ds.cross.gnu.e200.tool.c.linker.option.target.family.1431522713" name="Target Processor" superClass="com.freescale.s32ds.cross.gnu.e200.tool.c.linker.option.target.family" useByScannerDiscovery="false" value="com.freescale.s32ds.cross.gnu.e200.tool.c.linker.option.target.family.e200z4" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.e200.tool.c.linker.option.target.fp.hard.1765915947" name="Use hardware floating point" superClass="com.freescale.s32ds.cross.gnu.e200.tool.c.linker.option.target.fp.hard" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.e200.tool.c.linker.option.target.sysroot.454114347" name="Sysroot" superClass="com.freescale.s32ds.cross.gnu.e200.tool.c.linker.option.target.sysroot" useByScannerDiscovery="false" value="--sysroot=&quot;${VLE_EWL_DIR}&quot;" valueType="string"/>
+								<option id="com.freescale.s32ds.cross.gnu.e200.tool.c.linker.option.target.libraries.1043638255" superClass="com.freescale.s32ds.cross.gnu.e200.tool.c.linker.option.target.libraries" useByScannerDiscovery="false" value="com.freescale.s32ds.cross.gnu.e200.tool.c.linker.option.target.libraries.ewl_c9x_noio" valueType="enumerated"/>
+								<option id="gnu.c.link.option.paths.907795224" name="Library search path (-L)" superClass="gnu.c.link.option.paths" useByScannerDiscovery="false" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/AMMCLIB/lib/s32ds_ppc/e200z7}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../Source/common/inc&quot;"/>
+								</option>
+								<option id="gnu.c.link.option.libs.1053224545" name="Libraries (-l)" superClass="gnu.c.link.option.libs" useByScannerDiscovery="false" valueType="libs">
+									<listOptionValue builtIn="false" value=":MPC577xM_AMMCLIB.a"/>
+								</option>
+								<inputType id="com.freescale.s32ds.cross.gnu.tool.c.linker.inputType.scriptfile.1798668946" superClass="com.freescale.s32ds.cross.gnu.tool.c.linker.inputType.scriptfile"/>
+							</tool>
+							<tool id="com.freescale.s32ds.cross.gnu.e200.tool.archiver.994852623" name="Standard S32DS Archiver" superClass="com.freescale.s32ds.cross.gnu.e200.tool.archiver"/>
+							<tool id="com.freescale.s32ds.cross.gnu.e200.tool.assembler.284280434" name="Standard S32DS Assembler" superClass="com.freescale.s32ds.cross.gnu.e200.tool.assembler">
+								<option id="com.freescale.s32ds.cross.gnu.tool.assembler.usepreprocessor.1094910740" name="Use preprocessor" superClass="com.freescale.s32ds.cross.gnu.tool.assembler.usepreprocessor" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.assembler.option.debugging.level.2005389143" name="Debug Level" superClass="com.freescale.s32ds.cross.gnu.tool.assembler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.assembler.option.defs.811501095" name="Defined symbols (-D)" superClass="com.freescale.s32ds.cross.gnu.tool.assembler.option.defs" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="SMP_ONLY_ONE_ELF"/>
+									<listOptionValue builtIn="false" value="ICACHE_ENABLE"/>
+									<listOptionValue builtIn="false" value="DCACHE_ENABLE"/>
+									<listOptionValue builtIn="false" value="DISABLE_SWT0"/>
+								</option>
+								<option id="gnu.both.asm.option.include.paths.138429953" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${VLE_EWL_DIR}/EWL_C/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${VLE_EWL_DIR}/EWL_C/include/pa&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../Source/&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../Source/common/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../${ProjName}/AMMCLIB/include&quot;"/>
+								</option>
+								<option id="com.freescale.s32ds.cross.gnu.e200.tool.assembler.option.target.family.1443120568" name="Target Processor" superClass="com.freescale.s32ds.cross.gnu.e200.tool.assembler.option.target.family" useByScannerDiscovery="true" value="com.freescale.s32ds.cross.gnu.e200.tool.assembler.option.target.family.e200z4" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.e200.tool.assembler.option.target.sysroot.1083637051" name="Sysroot" superClass="com.freescale.s32ds.cross.gnu.e200.tool.assembler.option.target.sysroot" useByScannerDiscovery="false" value="--sysroot=&quot;${VLE_EWL_DIR}&quot;" valueType="string"/>
+								<option id="com.freescale.s32ds.cross.gnu.e200.tool.assembler.option.target.libraries.698659559" superClass="com.freescale.s32ds.cross.gnu.e200.tool.assembler.option.target.libraries" useByScannerDiscovery="false" value="com.freescale.s32ds.cross.gnu.e200.tool.assembler.option.target.libraries.ewl_c9x_noio" valueType="enumerated"/>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1554667904" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.freescale.s32ds.cross.gnu.tool.assembler.inputType.asmfile.1276104312" superClass="com.freescale.s32ds.cross.gnu.tool.assembler.inputType.asmfile"/>
+							</tool>
+							<tool id="com.freescale.s32ds.cross.gnu.e200.tool.createflash.2052908914" name="Standard S32DS Create Flash Image" superClass="com.freescale.s32ds.cross.gnu.e200.tool.createflash"/>
+							<tool id="com.freescale.s32ds.cross.gnu.tool.createlisting.1513521257" name="Standard S32DS Create Listing" superClass="com.freescale.s32ds.cross.gnu.tool.createlisting">
+								<option id="com.freescale.s32ds.cross.gnu.option.createlisting.source.395365367" name="Display source (--source|-S)" superClass="com.freescale.s32ds.cross.gnu.option.createlisting.source" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.option.createlisting.allheaders.55303319" name="Display all headers (--all-headers|-x)" superClass="com.freescale.s32ds.cross.gnu.option.createlisting.allheaders" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.option.createlisting.demangle.1412722269" name="Demangle names (--demangle|-C)" superClass="com.freescale.s32ds.cross.gnu.option.createlisting.demangle" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.option.createlisting.linenumbers.1601205266" name="Display line numbers (--line-numbers|-l)" superClass="com.freescale.s32ds.cross.gnu.option.createlisting.linenumbers" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.option.createlisting.wide.981134718" name="Wide lines (--wide|-w)" superClass="com.freescale.s32ds.cross.gnu.option.createlisting.wide" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+							</tool>
+							<tool id="com.freescale.s32ds.cross.gnu.tool.printsize.1743046666" name="Standard S32DS Print Size" superClass="com.freescale.s32ds.cross.gnu.tool.printsize">
+								<option id="com.freescale.s32ds.cross.gnu.option.printsize.format.1497423086" name="Size format" superClass="com.freescale.s32ds.cross.gnu.option.printsize.format" useByScannerDiscovery="false"/>
+							</tool>
+							<tool id="com.freescale.s32ds.cross.gnu.c.preprocessor.200084475" name="Standard S32DS C Preprocessor" superClass="com.freescale.s32ds.cross.gnu.c.preprocessor"/>
+							<tool id="com.freescale.s32ds.cross.gnu.cpp.preprocessor.205522035" name="Standard S32DS C++ Preprocessor" superClass="com.freescale.s32ds.cross.gnu.cpp.preprocessor"/>
+							<tool id="com.freescale.s32ds.cross.gnu.disassembler.1218343203" name="Standard S32DS Disassembler" superClass="com.freescale.s32ds.cross.gnu.disassembler"/>
+							<tool id="com.freescale.s32ds.cross.gnu.e200.tool.spt.assembler.114020957" name="SPT Assembler" superClass="com.freescale.s32ds.cross.gnu.e200.tool.spt.assembler"/>
+							<tool id="com.freescale.s32ds.cross.gnu.e200.tool.spt.disassembler.840785818" name="SPT Disassembler" superClass="com.freescale.s32ds.cross.gnu.e200.tool.spt.disassembler"/>
+							<tool id="com.freescale.s32ds.cross.gnu.e200.tool.spt.preprocessor.509004625" name="SPT Preprocessor" superClass="com.freescale.s32ds.cross.gnu.e200.tool.spt.preprocessor"/>
+							<tool id="com.freescale.s32ds.cross.gnu.e200.tool.cpp.compiler.1676945619" name="Standard S32DS C++ Compiler" superClass="com.freescale.s32ds.cross.gnu.e200.tool.cpp.compiler">
+								<option id="com.freescale.s32ds.cross.gnu.e200.tool.cpp.compiler.option.target.sysroot.1542214431" name="Sysroot" superClass="com.freescale.s32ds.cross.gnu.e200.tool.cpp.compiler.option.target.sysroot" useByScannerDiscovery="false" value="--sysroot=&quot;${VLE_EWL_DIR}&quot;" valueType="string"/>
+								<option id="com.freescale.s32ds.cross.gnu.e200.tool.cpp.compiler.option.target.fp.hard.541471024" name="Use hardware floating point" superClass="com.freescale.s32ds.cross.gnu.e200.tool.cpp.compiler.option.target.fp.hard" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="gnu.cpp.compiler.option.include.paths.632656857" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${MPC577XM_AMMCLIB_Z4_1.1.15_PATH}/include&quot;"/>
+								</option>
+							</tool>
+							<tool id="com.freescale.s32ds.cross.gnu.e200.tool.cpp.linker.1786065744" name="Standard S32DS C++ Linker" superClass="com.freescale.s32ds.cross.gnu.e200.tool.cpp.linker">
+								<option id="com.freescale.s32ds.cross.gnu.e200.tool.cpp.linker.option.target.sysroot.642315968" name="Sysroot" superClass="com.freescale.s32ds.cross.gnu.e200.tool.cpp.linker.option.target.sysroot" value="--sysroot=&quot;${VLE_EWL_DIR}&quot;" valueType="string"/>
+								<option id="com.freescale.s32ds.cross.gnu.e200.tool.cpp.linker.option.target.fp.hard.628692849" name="Use hardware floating point" superClass="com.freescale.s32ds.cross.gnu.e200.tool.cpp.linker.option.target.fp.hard" value="true" valueType="boolean"/>
+								<option id="gnu.cpp.link.option.libs.1468145602" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value=":MPC577xM_AMMCLIB.a"/>
+								</option>
+								<option id="gnu.cpp.link.option.paths.1130166776" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${MPC577XM_AMMCLIB_Z4_1.1.15_PATH}/lib/s32ds_ppc/e200z4&quot;"/>
+								</option>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="CDD|Source_FLASH/mcal_cfg/include/CDD_Ssi_Cfg.h|Source_FLASH/mcal/eclipse/plugins/Fr_ARCH3D12M10I1R0/plugin.xml|Source_FLASH/mcal/eclipse/plugins/Fr_ARCH3D12M10I1R0/generate|Source_FLASH/mcal/eclipse/plugins/Fr_ARCH3D12M10I1R0/config|Source_FLASH/mcal/eclipse/plugins/Fr_ARCH3D12M10I1R0/META-INF|Source_FLASH/mcal/eclipse/plugins/CDD_DSpi_ARCH3D12M10I1R0/plugin.xml|Source_FLASH/mcal/eclipse/plugins/CDD_DSpi_ARCH3D12M10I1R0/generate|Source_FLASH/mcal/eclipse/plugins/CDD_DSpi_ARCH3D12M10I1R0/config|Source_FLASH/mcal/eclipse/plugins/CDD_DSpi_ARCH3D12M10I1R0/META-INF|Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/plugin.xml|Source_FLASH/mcal/eclipse/plugins/SDAdc_ARCH3D12M10I1R0/plugin.xml|Source_FLASH/mcal/eclipse/plugins/SDAdc_ARCH3D12M10I1R0/generate|Source_FLASH/mcal/eclipse/plugins/SDAdc_ARCH3D12M10I1R0/config|Source_FLASH/mcal/eclipse/plugins/SDAdc_ARCH3D12M10I1R0/META-INF|Source_FLASH/mcal/eclipse/plugins/Dio_ARCH3D12M10I1R0/plugin.xml|Source_FLASH/mcal/eclipse/plugins/Dio_ARCH3D12M10I1R0/generate|Source_FLASH/mcal/eclipse/plugins/Dio_ARCH3D12M10I1R0/META-INF|Source_FLASH/mcal/eclipse/plugins/Dio_ARCH3D12M10I1R0/Config|Source_FLASH/mcal/eclipse/plugins/Dio_ARCH3D12M10I1R0/AutoSar|Source_FLASH/tester/Icu/src/tester_icu_etpu.c|Source_FLASH/tester/Icu/include/tester_icu_etpu.h|Source_FLASH/mcal_cfg/include/sPwm_Cfg.h|Source_FLASH/mcal_cfg/include/eTPU_Cfg.h|Source_FLASH/mcal_cfg/include/EBPPA_Cfg.h|Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/config|Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/autosar|Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/anchors.xml|Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/META-INF|Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Ssi.c|Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Spwm.c|Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Ebppa.c|Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/include/SchM_Ssi.h|Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/include/SchM_Spwm.h|Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/include/SchM_Ebppa.h|Source_FLASH/mcal/eclipse/plugins/Icu_ARCH3D12M10I1R0/plugin.xml|Source_FLASH/mcal/eclipse/plugins/Icu_ARCH3D12M10I1R0/autosar|Source_FLASH/mcal/eclipse/plugins/Icu_ARCH3D12M10I1R0/META-INF|Source_FLASH/mcal/eclipse/plugins/eMIOS_ARCH3D12M10I1R0/plugin.xml|Source_FLASH/mcal/eclipse/plugins/eMIOS_ARCH3D12M10I1R0/generate|Source_FLASH/mcal/eclipse/plugins/eMIOS_ARCH3D12M10I1R0/config|Source_FLASH/mcal/eclipse/plugins/eMIOS_ARCH3D12M10I1R0/META-INF|Source_FLASH/mcal/eclipse/plugins/Adc_ARCH3D12M10I1R0/plugin.xml|Source_FLASH/mcal/eclipse/plugins/Adc_ARCH3D12M10I1R0/META-INF|Source_FLASH/mcal/eclipse/plugins/Adc_ARCH3D12M10I1R0/generate|Source_FLASH/mcal/eclipse/plugins/Adc_ARCH3D12M10I1R0/config|Source_FLASH/mcal/eclipse/plugins/Adc_ARCH3D12M10I1R0/autosar|Source_FLASH/mcal/eclipse/plugins/Icu_ARCH3D12M10I1R0/config|Source_FLASH/mcal/eclipse/plugins/Icu_ARCH3D12M10I1R0/generate|Source_FLASH/mcal/eclipse/plugins/Sent_ARCH3D12M10I1R0/plugin.xml|Source_FLASH/mcal/eclipse/plugins/Sent_ARCH3D12M10I1R0/META-INF|Source_FLASH/mcal/eclipse/plugins/Sent_ARCH3D12M10I1R0/generate|Source_FLASH/mcal/eclipse/plugins/Sent_ARCH3D12M10I1R0/config|Source_FLASH/mcal/eclipse/plugins/Port_ARCH3D12M10I1R0/generate|Source_FLASH/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/generate|Source_FLASH/mcal/eclipse/plugins/Can_176_CanFD_ARCH3D12M10I1R0/plugin.xml|Source_FLASH/mcal/eclipse/plugins/Can_176_CanFD_ARCH3D12M10I1R0/META-INF|Source_FLASH/mcal/eclipse/plugins/Can_176_CanFD_ARCH3D12M10I1R0/generate|Source_FLASH/mcal/eclipse/plugins/Can_176_CanFD_ARCH3D12M10I1R0/config|Source_FLASH/mcal/eclipse/plugins/Spi_ARCH3D12M10I1R0/plugin.xml|Source_FLASH/mcal/eclipse/plugins/Spi_ARCH3D12M10I1R0/generate|Source_FLASH/mcal/eclipse/plugins/Spi_ARCH3D12M10I1R0/config|Source_FLASH/mcal/eclipse/plugins/Spi_ARCH3D12M10I1R0/META-INF|Source_FLASH/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/plugin.xml|Source_FLASH/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/generate|Source_FLASH/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/config|Source_FLASH/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/autosar|Source_FLASH/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/anchors.xml|Source_FLASH/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/META-INF|Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/config|Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/plugin.xml|Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/anchors.xml|Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/META-INF|Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/autosar|Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/generate|Source_FLASH/tester/Fls/src/tester_fls_qspi.c|Source_FLASH/mcal/eclipse/plugins/Fee_ARCH3D12M10I1R0/plugin.xml|Source_FLASH/mcal/eclipse/plugins/Fee_ARCH3D12M10I1R0/anchors.xml|Source_FLASH/mcal/eclipse/plugins/Fee_ARCH3D12M10I1R0/META-INF|Source_FLASH/mcal/eclipse/plugins/Fee_ARCH3D12M10I1R0/generate|Source_FLASH/mcal/eclipse/plugins/Fee_ARCH3D12M10I1R0/config|Source_FLASH/mcal/eclipse/plugins/Fee_ARCH3D12M10I1R0/AutoSar|Source_FLASH/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/plugin.xml|Source_FLASH/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/anchors.xml|Source_FLASH/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/META-INF|Source_FLASH/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/generate|Source_FLASH/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/config|Source_FLASH/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/AutoSar|Source_FLASH/mcal/eclipse/plugins/eMIOS_ARCH3D12M10I1R0/generate/source/eMIOS_Cfg.c|Source_FLASH/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/generate/source/Pwm_Cfg.c|Source_FLASH/mcal/eclipse/plugins/Mcl_ARCH3D12M10I1R0/plugin.xml|Source_FLASH/mcal/eclipse/plugins/Mcl_ARCH3D12M10I1R0/generate|Source_FLASH/mcal/eclipse/plugins/Mcl_ARCH3D12M10I1R0/config|Source_FLASH/mcal/eclipse/plugins/Mcl_ARCH3D12M10I1R0/META-INF|Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/plugin.xml|Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/generate|Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/config|Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/META-INF|Source_FLASH/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/AutoSar|Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/plugin.xml|Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/anchors.xml|Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/META-INF|Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/generate|Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/config|Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/autosar|Source_FLASH/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/plugin.xml|Source_FLASH/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/META-INF|Source_FLASH/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/generate|Source_FLASH/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/config|Source_FLASH/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/AutoSar|Source_FLASH/tester/Ssi|Source_FLASH/tester/sPwm|Source_FLASH/tester/EBPPA|Source_FLASH/mcal/eclipse/plugins/Dem_ARCH3D12M10I1R0/plugin.xml|Source_FLASH/mcal/eclipse/plugins/Dem_ARCH3D12M10I1R0/generate_PC|Source_FLASH/mcal/eclipse/plugins/Dem_ARCH3D12M10I1R0/config_ext|Source_FLASH/mcal/eclipse/plugins/Dem_ARCH3D12M10I1R0/config|Source_FLASH/mcal/eclipse/plugins/Dem_ARCH3D12M10I1R0/autosar|Source_FLASH/mcal/eclipse/plugins/Dem_ARCH3D12M10I1R0/anchors.xml|Source_FLASH/mcal/eclipse/plugins/Dem_ARCH3D12M10I1R0/META-INF|Source_FLASH/mcal/eclipse/plugins/EcuM_ARCH3D12M10I1R0/plugin.xml|Source_FLASH/mcal/eclipse/plugins/EcuM_ARCH3D12M10I1R0/generate_PC|Source_FLASH/mcal/eclipse/plugins/EcuM_ARCH3D12M10I1R0/config|Source_FLASH/mcal/eclipse/plugins/EcuM_ARCH3D12M10I1R0/autosar|Source_FLASH/mcal/eclipse/plugins/EcuM_ARCH3D12M10I1R0/anchors.xml|Source_FLASH/mcal/eclipse/plugins/EcuM_ARCH3D12M10I1R0/META-INF|Source_FLASH/mcal/eclipse/plugins/Mcu_ARCH3D12M10I1R0/plugin.xml|Source_FLASH/mcal/eclipse/plugins/Mcu_ARCH3D12M10I1R0/generate|Source_FLASH/mcal/eclipse/plugins/Mcu_ARCH3D12M10I1R0/config|Source_FLASH/mcal/eclipse/plugins/Mcu_ARCH3D12M10I1R0/META-INF|Source_FLASH/mcal/eclipse/plugins/Os_ARCH3D12M10I1R0/plugin.xml|Source_FLASH/mcal/eclipse/plugins/Os_ARCH3D12M10I1R0/config|Source_FLASH/mcal/eclipse/plugins/Os_ARCH3D12M10I1R0/META-INF|Source_FLASH/mcal_cfg/src/sPwm_Cfg.c|Source_FLASH/mcal_cfg/src/eTPU_Cfg.c|Source_FLASH/mcal_cfg/src/EBPPA_Cfg.c|Source_FLASH/mcal_cfg/src/CDD_Ssi_Cfg.c|Source_FLASH/mcal/eclipse/plugins/eTPU_ARCH3D12M10I1R0|Source_FLASH/mcal/eclipse/plugins/Resource_ARCH3D12M10I1R0|Source_FLASH/mcal/eclipse/plugins/EcuC_ARCH3D12M10I1R0|Source_FLASH/mcal/eclipse/plugins/CDD_ARCH3D12M10I1R0|Project_Settings/Debugger" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name=""/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="CDD"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="ARCH3D12_M10I1R0.com.freescale.s32ds.cross.gnu.e200.exe.1917292038" name="E200 Executable" projectType="com.freescale.s32ds.cross.gnu.e200.exe"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="CCFC3012PT_DEBUG_FLASH">
+			<resource resourceType="PROJECT" workspacePath="/ARCH3D12_M10I1R0"/>
+		</configuration>
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/ARCH3D12_M10I1R0"/>
+		</configuration>
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/ARCH3D12_M10I1R0"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.embsys" parent_project="true" register_architecture="" register_board="---  none ---" register_chip="MPC5777M" register_core="Z4" register_vendor=""/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="com.freescale.s32ds.cross.gnu.e200.exe.debug.1207505553;com.freescale.s32ds.cross.gnu.e200.exe.debug.1207505553.;com.freescale.s32ds.cross.gnu.e200.tool.c.compiler.2107686989;cdt.managedbuild.tool.gnu.c.compiler.input.900567171">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.freescale.s32ds.cross.gnu.e200.exe.Debug_RAM;com.freescale.s32ds.cross.gnu.e200.exe.Debug_RAM.;com.freescale.s32ds.cross.gnu.e200.tool.c.compiler.2068402501;cdt.managedbuild.tool.gnu.c.compiler.input.1891725510">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.freescale.s32ds.cross.gnu.e200.exe.release.1542963579;com.freescale.s32ds.cross.gnu.e200.exe.release.1542963579.;com.freescale.s32ds.cross.gnu.e200.tool.c.compiler.1559261892;cdt.managedbuild.tool.gnu.c.compiler.input.611017969">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+</cproject>

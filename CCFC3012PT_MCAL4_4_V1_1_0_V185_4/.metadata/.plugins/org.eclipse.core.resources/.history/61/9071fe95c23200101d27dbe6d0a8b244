@@ -1,0 +1,30 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../CDD/CDD_HE9285/CDD_HE9285_Cfg.c \
+../CDD/CDD_HE9285/CDD_HE9285_Drv.c \
+../CDD/CDD_HE9285/CDD_HE9285_LLD.c 
+
+OBJS += \
+./CDD/CDD_HE9285/CDD_HE9285_Cfg.o \
+./CDD/CDD_HE9285/CDD_HE9285_Drv.o \
+./CDD/CDD_HE9285/CDD_HE9285_LLD.o 
+
+C_DEPS += \
+./CDD/CDD_HE9285/CDD_HE9285_Cfg.d \
+./CDD/CDD_HE9285/CDD_HE9285_Drv.d \
+./CDD/CDD_HE9285/CDD_HE9285_LLD.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+CDD/CDD_HE9285/%.o: ../CDD/CDD_HE9285/%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@CDD/CDD_HE9285/CDD_HE9285_Cfg.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

@@ -1,0 +1,24 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../Pmsm/Pmsm_If.c 
+
+OBJS += \
+./Pmsm/Pmsm_If.o 
+
+C_DEPS += \
+./Pmsm/Pmsm_If.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+Pmsm/%.o: ../Pmsm/%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Pmsm/Pmsm_If.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

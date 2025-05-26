@@ -1,0 +1,54 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/source/Lin.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/source/Lin_AutoSar_Wrapper.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/source/Lin_HAL_Wrapper.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/source/Lin_LLDriver.c 
+
+OBJS += \
+./Source_FLASH/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/source/Lin.o \
+./Source_FLASH/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/source/Lin_AutoSar_Wrapper.o \
+./Source_FLASH/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/source/Lin_HAL_Wrapper.o \
+./Source_FLASH/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/source/Lin_LLDriver.o 
+
+C_DEPS += \
+./Source_FLASH/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/source/Lin.d \
+./Source_FLASH/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/source/Lin_AutoSar_Wrapper.d \
+./Source_FLASH/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/source/Lin_HAL_Wrapper.d \
+./Source_FLASH/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/source/Lin_LLDriver.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+Source_FLASH/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/source/Lin.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/source/Lin.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/source/Lin.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/source/Lin_AutoSar_Wrapper.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/source/Lin_AutoSar_Wrapper.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/source/Lin_AutoSar_Wrapper.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/source/Lin_HAL_Wrapper.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/source/Lin_HAL_Wrapper.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/source/Lin_HAL_Wrapper.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/source/Lin_LLDriver.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/source/Lin_LLDriver.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/source/Lin_LLDriver.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

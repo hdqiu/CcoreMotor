@@ -1,0 +1,174 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_AutoSAR_Wrapper.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm410_Cmu_LLDriver.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm410_LLDriver.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm410_Tbu_LLDriver.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm_Cmu_LLDriver.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm_HAL_Wrapper.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm_LLDriver.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm_Tbu_LLDriver.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Irq.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Pit_HAL_Wrapper.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Pit_LLDriver.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Rtc_HAL_Wrapper.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Rtc_LLDriver.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Stm_HAL_Wrapper.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Stm_LLDriver.c 
+
+OBJS += \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt.o \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_AutoSAR_Wrapper.o \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm410_Cmu_LLDriver.o \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm410_LLDriver.o \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm410_Tbu_LLDriver.o \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm_Cmu_LLDriver.o \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm_HAL_Wrapper.o \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm_LLDriver.o \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm_Tbu_LLDriver.o \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Irq.o \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Pit_HAL_Wrapper.o \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Pit_LLDriver.o \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Rtc_HAL_Wrapper.o \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Rtc_LLDriver.o \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Stm_HAL_Wrapper.o \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Stm_LLDriver.o 
+
+C_DEPS += \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt.d \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_AutoSAR_Wrapper.d \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm410_Cmu_LLDriver.d \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm410_LLDriver.d \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm410_Tbu_LLDriver.d \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm_Cmu_LLDriver.d \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm_HAL_Wrapper.d \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm_LLDriver.d \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm_Tbu_LLDriver.d \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Irq.d \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Pit_HAL_Wrapper.d \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Pit_LLDriver.d \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Rtc_HAL_Wrapper.d \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Rtc_LLDriver.d \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Stm_HAL_Wrapper.d \
+./Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Stm_LLDriver.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_AutoSAR_Wrapper.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_AutoSAR_Wrapper.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_AutoSAR_Wrapper.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm410_Cmu_LLDriver.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm410_Cmu_LLDriver.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm410_Cmu_LLDriver.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm410_LLDriver.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm410_LLDriver.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm410_LLDriver.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm410_Tbu_LLDriver.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm410_Tbu_LLDriver.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm410_Tbu_LLDriver.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm_Cmu_LLDriver.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm_Cmu_LLDriver.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm_Cmu_LLDriver.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm_HAL_Wrapper.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm_HAL_Wrapper.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm_HAL_Wrapper.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm_LLDriver.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm_LLDriver.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm_LLDriver.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm_Tbu_LLDriver.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm_Tbu_LLDriver.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Gtm_Tbu_LLDriver.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Irq.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Irq.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Irq.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Pit_HAL_Wrapper.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Pit_HAL_Wrapper.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Pit_HAL_Wrapper.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Pit_LLDriver.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Pit_LLDriver.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Pit_LLDriver.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Rtc_HAL_Wrapper.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Rtc_HAL_Wrapper.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Rtc_HAL_Wrapper.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Rtc_LLDriver.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Rtc_LLDriver.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Rtc_LLDriver.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Stm_HAL_Wrapper.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Stm_HAL_Wrapper.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Stm_HAL_Wrapper.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Stm_LLDriver.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Stm_LLDriver.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/source/Gpt_Stm_LLDriver.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

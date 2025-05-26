@@ -1,0 +1,143 @@
+//############################################################
+// FILE: Res_SoftAngleCalc.c
+//############################################################
+
+#include "Res_SoftAngleCalc.h"
+
+
+__attribute__ ((section (".cpu0_dtcm_data"))) extern signed int exe_data_buf_a[32];
+__attribute__ ((section (".cpu0_dtcm_data"))) extern signed int sin_data_buf_a[32];
+__attribute__ ((section (".cpu0_dtcm_data"))) extern signed int cos_data_buf_a[32];
+
+
+__attribute__ ((section (".cpu0_dtcm_data"))) ResXB  ResXBPare_a = ResXB_DEFAULTS;   // 閸掓繂顫愰崠鏍у棘閺侊拷
+__attribute__ ((section (".cpu1_dtcm_data"))) ResXB  ResXBPare_b = ResXB_DEFAULTS;   // 閸掓繂顫愰崠鏍у棘閺侊拷
+
+void  Res_PWMCalcInit(void)
+{
+	// https://wenku.baidu.com/view/4b678e6e322b3169a45177232f60ddccda38e6b2.html?_wkts_=1684768034543&bdQuery=%E7%94%B5%E6%9C%BA%E9%9B%B6%E4%BD%8D%E5%88%9D%E5%A7%8B%E8%A7%92%E5%BA%A6
+//	ResXBPare.init_Angle=3120;
+}
+
+//SDADC采样完成中断调用，用于获取sin和cos包络
+void Res_Dsadcupdate(Sdadc_Rdc *handle, sint32 *sin_data, sint32 *cos_data)
+{
+	volatile sint32 sin = 0;
+	volatile sint32 cos = 0;
+	volatile int32_t delta = 0;
+	sint32 sin8 = sin_data[8];
+	sint32 cos8 = cos_data[8];
+	sint32 start_point = 0;
+	sint32 end_point = 16;
+	uint8 i = 0;
+
+    if(sin8*sin8 > cos8*cos8)
+    {
+    	if(sin8 < 0)
+    	{
+    		for(i = 8; i < 24; i++)
+    		{
+    			if(sin_data[i] > 0)
+    			{
+    				start_point = i - 16;
+    				end_point = start_point + 16;
+    				break;
+    			}
+    		}
+    	}
+    	else
+    	{
+    		for(i = 8; i < 24; i++)
+    		{
+    			if(sin_data[i] < 0)
+    			{
+    				start_point = i - 16;
+    				end_point = start_point + 16;
+    				break;
+    			}
+    		}
+    	}
+    }
+    else
+    {
+    	if(cos8 < 0)
+    	{
+    		for(i = 8; i < 24; i++)
+    		{
+    			if(cos_data[i] > 0)
+    			{
+    				start_point = i - 16;
+    				break;
+    			}
+    		}
+    	}
+    	else
+    	{
+    		for(i = 8; i < 24; i++)
+    		{
+    			if(cos_data[i] < 0)
+    			{
+    				start_point = i - 16;
+    				break;
+    			}
+    		}
+    	}
+    }
+
+    for(i = 0; i < 32; i++)
+    {
+    	if(i < start_point)
+    	{
+    		sin -= sin_data[i];
+    		cos -= cos_data[i];
+    	}
+    	else if(i < end_point)
+    	{
+    		sin += sin_data[i];
+    		cos += cos_data[i];
+    	}
+    	else
+    	{
+    		sin -= sin_data[i];
+    		cos -= cos_data[i];
+    	}
+    }
+
+    //璁板綍DSADC 96us鍛ㄦ湡涓柇锛屽綋鍓嶆棆鍙榮incos閲囨牱鍊�
+	handle->sinIn = (sin >> 4);
+	handle->cosIn = (cos >> 4);
+	// 鎻愬彇DSADC涓柇鏃堕棿鎴�
+    handle->timestamp.rdc = handle->hardware.rdcTimCh->GPR0.B.GPR0;
+}
+
+//
+void  Res_PWMupdateCalc(Sdadc_Rdc *handle, ResXB *ResXBPare)
+{
+    float32 TimeDelayAngle = 0.0F;
+
+    ResXBPare->speedEst = handle->angleTrk.speedLpf.out;
+    //鏃堕棿鎴宠ˉ鍋胯绠�
+    TimeDelayAngle = (handle->grpDelay+Sdadc_Rdc_getTimeStamp(handle)) *  ResXBPare->speedEst;
+    // expand to 32-bit data
+    ResXBPare->Ressin =handle->sinIn;
+    ResXBPare->Rescos =handle->cosIn;
+    // angleErr瑙掑害鍋忓樊杩涜PLL杩愮畻 KP  KI
+	AngleTrk_step(&(handle->angleTrk),   ResXBPare->Ressin, ResXBPare->Rescos, TimeDelayAngle);
+
+	// sin^2+cos^2  妫�娴嬫渶澶ф渶灏忛槇鍊煎垽鏂� 鍜岃搴﹁宸�
+	AngleTrk_updateStatus(&(handle->angleTrk), ResXBPare->Ressin,  ResXBPare->Rescos);
+	ResXBPare->Res_sincos2 =handle->angleTrk.cfg.sincos2;
+	ResXBPare->Res_Fault = handle->angleTrk.cfg.ResErr;
+
+	ResXBPare->Res_angle = (handle->angleTrk.angleEst)*AD2SXB_12Bit/(2*3.1415926F);
+    // 閺冨褰夌憴鎺戝娑撳海鏁搁張铏规暩鐟欐帒瀹虫潪顒佸床
+	ResXBPare->PM_angle =(uint16)( ResXBPare->Res_angle*Poles_Ratio_Coeff - ResXBPare->init_Angle)&(AD2SXB_12Bit);
+	// 闁喎瀹崇拋锛勭暬娑撳孩鎶ゅ▔锟�
+	ResXBPare->AD2S_SpdRPM = (int16)( ResXBPare->speedEst*60.0F/(Motor_Poles*2*3.1415926F));  // 閻㈠灚婧�閺嬩礁顕弫鏉挎嫲閺冨褰夐弸浣割嚠閺佹壆娈戠化缁樻殶鐠侊紕鐣�    AD2SXBPare.AD2S_Spd*60*1000/2048/3  3= 閺冨娴嗛崣妯哄竾閸ｃ劍鐎�佃鏆�
+	ResXBPare->AD2S_SpdRPMH =  ResXBPare->AD2S_SpdRPMH*GM_Low_Lass_A +  ResXBPare->AD2S_SpdRPM * GM_Low_Lass_B;  // 鏉烆剟锟界喍绔撮梼鏈电秵闁碍鎶ゅ▔锟�
+	ResXBPare->Abs_SpdRPM = Abs( ResXBPare->AD2S_SpdRPMH);
+}
+
+//===========================================================================
+// No more.
+//===========================================================================

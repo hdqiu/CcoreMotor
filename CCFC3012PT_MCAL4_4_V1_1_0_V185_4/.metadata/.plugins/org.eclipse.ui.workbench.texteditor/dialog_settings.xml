@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="Pmsm/" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="Pmsm/"/>
+			<item value="ioTestFlag"/>
+			<item value="duty_u_cnt"/>
+			<item value="PMSM_START_SEC_TRUSTED_DATA_32BITS_MOTB"/>
+			<item value="foc_0_vbus"/>
+			<item value="foc_0_vbus_b"/>
+			<item value="foc_do_1_cnt1"/>
+			<item value="duty_u_cnt_b"/>
+		</list>
+		<list key="replacehistory">
+			<item value=".FifoWaterMarker        = 10U,"/>
+			<item value="WaterMarker        = 10U,"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="260" key="DIALOG_WIDTH"/>
+		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-21|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
+		<item value="342" key="DIALOG_HEIGHT"/>
+		<item value="815" key="DIALOG_X_ORIGIN"/>
+		<item value="322" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

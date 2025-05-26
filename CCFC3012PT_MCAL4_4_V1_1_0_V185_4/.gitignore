@@ -1,0 +1,8 @@
+# failed report
+/*.txt
+!rd.md.txt
+
+#ignore
+/RemoteSystemsTempFiles
+/FreeRTOS_TAD_logs
+/.vscode

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\CCFC3011PT_MOTOR\CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515\Project\CCFC3012PT_S32DS_SMP\ARCH3D12_M10I1R0"/>
+			<item value="D:\CCFC3011PT_MOTOR\CCFC3012PT_MCAL4_4_V1_1_0_V185_4\Project\CCFC3012PT_S32DS_SMP"/>
+			<item value="D:\CCFC3011PT_MOTOR\CCFC3012PT_MCAL4_4_V1_1_0_V190_IRQHandler\Project\CCFC3012PT_S32DS_SMP"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+</section>

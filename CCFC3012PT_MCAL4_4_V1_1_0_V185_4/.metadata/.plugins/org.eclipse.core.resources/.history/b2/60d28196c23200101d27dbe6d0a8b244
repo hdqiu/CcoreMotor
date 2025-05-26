@@ -1,0 +1,224 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Adc.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Can.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Canfd.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Dio.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Dspi.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Edma.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Eth.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Fee.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Fls.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Fr.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Gpt.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Icu.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Lin.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Mcu.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Msc.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Port.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Pwm.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Sdadc.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Sent.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Spi.c \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Wdg.c 
+
+OBJS += \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Adc.o \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Can.o \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Canfd.o \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Dio.o \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Dspi.o \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Edma.o \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Eth.o \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Fee.o \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Fls.o \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Fr.o \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Gpt.o \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Icu.o \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Lin.o \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Mcu.o \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Msc.o \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Port.o \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Pwm.o \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Sdadc.o \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Sent.o \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Spi.o \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Wdg.o 
+
+C_DEPS += \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Adc.d \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Can.d \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Canfd.d \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Dio.d \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Dspi.d \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Edma.d \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Eth.d \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Fee.d \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Fls.d \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Fr.d \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Gpt.d \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Icu.d \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Lin.d \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Mcu.d \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Msc.d \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Port.d \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Pwm.d \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Sdadc.d \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Sent.d \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Spi.d \
+./Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Wdg.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Adc.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Adc.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Adc.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Can.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Can.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Can.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Canfd.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Canfd.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Canfd.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Dio.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Dio.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Dio.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Dspi.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Dspi.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Dspi.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Edma.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Edma.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Edma.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Eth.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Eth.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Eth.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Fee.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Fee.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Fee.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Fls.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Fls.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Fls.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Fr.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Fr.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Fr.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Gpt.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Gpt.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Gpt.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Icu.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Icu.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Icu.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Lin.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Lin.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Lin.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Mcu.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Mcu.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Mcu.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Msc.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Msc.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Msc.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Port.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Port.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Port.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Pwm.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Pwm.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Pwm.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Sdadc.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Sdadc.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Sdadc.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Sent.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Sent.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Sent.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Spi.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Spi.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Spi.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Wdg.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Wdg.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/source/SchM_Wdg.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

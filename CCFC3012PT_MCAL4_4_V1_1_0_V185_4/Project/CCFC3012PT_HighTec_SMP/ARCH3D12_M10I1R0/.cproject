@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.rt.hightec.buildsystem.powerpc.new.configuration.excutable.59148122">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.rt.hightec.buildsystem.powerpc.new.configuration.excutable.59148122" moduleId="org.eclipse.cdt.core.settings" name="CCFC3012PT_DEBUG_FLASH">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" description="CCFC3012PT_DEBUG_FLASH" id="com.rt.hightec.buildsystem.powerpc.new.configuration.excutable.59148122" name="CCFC3012PT_DEBUG_FLASH" parent="com.rt.hightec.buildsystem.powerpc.new.configuration.excutable">
+					<folderInfo id="com.rt.hightec.buildsystem.powerpc.new.configuration.excutable.59148122." name="/" resourcePath="">
+						<toolChain id="com.rt.hightec.buildsystem.powerpc.new.toolchain.executable.251931038" name="PowerPC Toolchain" superClass="com.rt.hightec.buildsystem.powerpc.new.toolchain.executable">
+							<option id="com.rt.hightec.buildsystem.powerpc.new.msoft.817075633" name="Do not use hardware floating point (-msoft-float)" superClass="com.rt.hightec.buildsystem.powerpc.new.msoft" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+							<option id="com.rt.hightec.buildsystem.powerpc.new.mvle.1026490956" name="Use PPC VLE instruction set (-mvle)" superClass="com.rt.hightec.buildsystem.powerpc.new.mvle" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+							<option id="com.rt.hightec.buildsystem.powerpc.new.mspe.1323112925" name="Generate SPE SIMD instructions on E500 (-mspe)" superClass="com.rt.hightec.buildsystem.powerpc.new.mspe" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+							<option id="com.rt.hightec.buildsystem.powerpc.new.mcpu.1177879643" name="CPU type (-mcpu)" superClass="com.rt.hightec.buildsystem.powerpc.new.mcpu" useByScannerDiscovery="false" value="com.rt.hightec.buildsystem.powerpc.new.enumeratedOptionValue.z425n3" valueType="enumerated"/>
+							<targetPlatform archList="PowerPC" binaryParser="org.eclipse.cdt.core.ELF" id="com.rt.hightec.buildsystem.powerpc.new.excutable.targetplatform.1971363824" isAbstract="false" name="Freescale-MPC5777M" superClass="com.rt.hightec.buildsystem.powerpc.new.excutable.targetplatform"/>
+							<builder buildPath="${workspace_loc:/ARCH3D12_M10I1R0_Z4_2}/core2" id="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.builder.1216983564" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.builder"/>
+							<tool id="com.rt.hightec.buildsystem.powerpc.new.compiler.cpp.1797258478" name="PowerPC C++ Compiler" superClass="com.rt.hightec.buildsystem.powerpc.new.compiler.cpp">
+								<option id="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.compiler.symbols.defined.952472888" name="Defined symbols (-D)" superClass="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.compiler.symbols.defined" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="PPC_MPC5777M"/>
+									<listOptionValue builtIn="false" value="USE_CORE=2"/>
+								</option>
+								<option id="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.compiler.miscellaneous.options.1308294387" name="Other options" superClass="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.compiler.miscellaneous.options" valueType="stringList">
+									<listOptionValue builtIn="false" value="-fstrict-volatile-bitfields"/>
+								</option>
+								<option id="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.compiler.general.paths.788001155" name="Include Paths" superClass="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.compiler.general.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;../h&quot;"/>
+								</option>
+							</tool>
+							<tool id="com.rt.hightec.buildsystem.powerpc.new.compiler.c.851502569" name="PowerPC C Compiler" superClass="com.rt.hightec.buildsystem.powerpc.new.compiler.c">
+								<option id="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.compiler.symbols.defined.1235088208" name="Defined symbols (-D)" superClass="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.compiler.symbols.defined" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="START_FROM_FLASH"/>
+									<listOptionValue builtIn="false" value="MPU_ENABLE"/>
+									<listOptionValue builtIn="false" value="SMP_ONLY_ONE_ELF"/>
+									<listOptionValue builtIn="false" value="AUTOSAR_OS_NOT_USED"/>
+									<listOptionValue builtIn="false" value="MCORE_INIT"/>
+									<listOptionValue builtIn="false" value="TURN_ON_CPU_Z7_0"/>
+									<listOptionValue builtIn="false" value="TURN_ON_CPU_Z7_1"/>
+									<listOptionValue builtIn="false" value="TURN_ON_CPU_Z4_2"/>
+									<listOptionValue builtIn="false" value="DEBUG_SECONDARY_CORES"/>
+									<listOptionValue builtIn="false" value="CPU_Z4_2"/>
+									<listOptionValue builtIn="false" value="CPU_Z7_0"/>
+									<listOptionValue builtIn="false" value="CPU_Z7_1"/>
+									<listOptionValue builtIn="false" value="CCFC3012PT"/>
+									<listOptionValue builtIn="false" value="ICACHE_ENABLE"/>
+									<listOptionValue builtIn="false" value="DCACHE_ENABLE"/>
+								</option>
+								<option id="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.compiler.miscellaneous.options.1580556978" name="Other options" superClass="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.compiler.miscellaneous.options" useByScannerDiscovery="false" valueType="stringList">
+									<listOptionValue builtIn="false" value="-fstrict-volatile-bitfields"/>
+								</option>
+								<option id="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.compiler.general.paths.716161178" name="Include Paths" superClass="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.compiler.general.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/tester/Adc/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/tester/Can/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/tester/CanFD/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/tester/Dio/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/tester/eDma/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/tester/Eth/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/tester/Fee/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/tester/Fls/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/tester/Gpt/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/tester/Icu/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/tester/Lin/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/tester/Mcu/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/tester/Port/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/tester/Pwm/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/tester/SDAdc/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/tester/Sent/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/tester/Spi/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/tester/Wdg/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/Adc_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/Base_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/Can_176_CanFD_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/CanIf_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/Dem_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/Det_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/Dio_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/EcuM_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/eMIOS_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/EthIf_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/EthTrcv_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/Fee_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/Icu_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/Intc_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/LinIf_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/Mcl_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/Mcu_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/Os_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/Port_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/Rte_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/SDAdc_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/Sent_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/Spi_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/WdgIf_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal/eclipse/plugins/EthSwt_ARCH3D12M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/common}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/common/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/mcal_cfg/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/shell}&quot;"/>
+								</option>
+								<option id="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.compiler.c.language.standard.212733188" name="C Standard (-std)" superClass="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.compiler.c.language.standard" useByScannerDiscovery="false" value="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.compiler.c.language.standard.c99" valueType="enumerated"/>
+								<option id="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.compiler.warnings.cast.align.2054244693" name="Warn whenever a pointer is cast such that the required alignment of the target is increased. (-Wcast-align)" superClass="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.compiler.warnings.cast.align" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+								<option id="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.compiler.warnings.nested.externs.1206175407" name="Warn if an extern declaration is encountered within a function. (-Wnested-externs)" superClass="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.compiler.warnings.nested.externs" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="com.rt.hightec.framework.buildsystemabstract.hightec.tool.compiler.warnings.doublepromotion.1380614504" name="Warn about implicit conversions from float to double (-Wdouble-promotion)" superClass="com.rt.hightec.framework.buildsystemabstract.hightec.tool.compiler.warnings.doublepromotion" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.compiler.optimization.optimization.98494111" name="Optimization Level" superClass="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.compiler.optimization.optimization" useByScannerDiscovery="false" value="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.compiler.code.optimization.none" valueType="enumerated"/>
+								<inputType id="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.compiler.c.inputType.388002296" name="Compiler Input (C)" superClass="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.compiler.c.inputType"/>
+							</tool>
+							<tool id="com.rt.hightec.buildsystem.powerpc.new.assembler.1047106739" name="PowerPC Assembler" superClass="com.rt.hightec.buildsystem.powerpc.new.assembler">
+								<option id="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.assembler.symbols.defined.294679487" name="Defined symbols (-D)" superClass="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.assembler.symbols.defined" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="CPU_Z4_2"/>
+									<listOptionValue builtIn="false" value="SMP_ONLY_ONE_ELF"/>
+									<listOptionValue builtIn="false" value="CPU_Z7_1"/>
+									<listOptionValue builtIn="false" value="CPU_Z7_0"/>
+									<listOptionValue builtIn="false" value="MCORE_INIT"/>
+									<listOptionValue builtIn="false" value="ICACHE_ENABLE"/>
+									<listOptionValue builtIn="false" value="DCACHE_ENABLE"/>
+									<listOptionValue builtIn="false" value="DISABLE_SWT2"/>
+								</option>
+								<option id="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.assembler.general.includepath.1404773020" name="Include Paths" superClass="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.assembler.general.includepath" useByScannerDiscovery="false"/>
+								<inputType id="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.assembler.input.717230833" name="Assembler Input NO GUI" superClass="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.assembler.input"/>
+							</tool>
+							<tool id="com.rt.hightec.buildsystem.powerpc.new.linker.c.702576413" name="PowerPC C Linker" superClass="com.rt.hightec.buildsystem.powerpc.new.linker.c">
+								<option id="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.linker.general.description.file.1900564474" name="Browse Linker Description File (-T)" superClass="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.linker.general.description.file" useByScannerDiscovery="false" value="&quot;..\Project_Settings\Linker_Files\CCFC3012PT_flash.ld&quot;" valueType="string"/>
+								<option id="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.linker.lib.Includepath.2123589689" name="Library search path (-L)" superClass="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.linker.lib.Includepath" useByScannerDiscovery="false" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Source/common/inc}&quot;"/>
+								</option>
+								<option id="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.linker.Optimization.rmUnrefSec.1598572436" name="Remove unreferenced sections (-Wl,--gc-sections)" superClass="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.linker.Optimization.rmUnrefSec" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.linker.miscellaneous.options.816453117" name="Other options" superClass="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.linker.miscellaneous.options" useByScannerDiscovery="false" valueType="stringList">
+									<listOptionValue builtIn="false" value="-Wl,-n"/>
+								</option>
+								<option id="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.linker.memholes.37440345" name="Assign input sections to the next output section, if the memory region is full (-Wl,--mem-holes)" superClass="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.linker.memholes" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+								<option id="com.rt.hightec.buildsystem.powerpc.new.linker.c.miscellaneous.options.nostartfiles.1868167146" name="Skip standard system startup files when linking (-nostartfiles)" superClass="com.rt.hightec.buildsystem.powerpc.new.linker.c.miscellaneous.options.nostartfiles" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.linker.general.description.objectFiles.2023185565" name="Object file order" superClass="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.linker.general.description.objectFiles" useByScannerDiscovery="false"/>
+								<inputType id="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.linker.input.53994808" name="Abstract Linker Input NO GUI" superClass="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+									<additionalInput kind="additionalinputdependency" paths="$(ASM)"/>
+								</inputType>
+							</tool>
+							<tool id="com.rt.hightec.buildsystem.powerpc.new.linker.cpp.1259341636" name="PowerPC C++ Linker" superClass="com.rt.hightec.buildsystem.powerpc.new.linker.cpp">
+								<option id="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.linker.general.description.file.1761131254" name="Browse Linker Description File (-T)" superClass="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.linker.general.description.file" value="../ld/core2.ld" valueType="string"/>
+								<option id="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.linker.lib.Includepath.45136603" name="Library search path (-L)" superClass="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.linker.lib.Includepath" valueType="libPaths">
+									<listOptionValue builtIn="false" value="../ld"/>
+								</option>
+								<option id="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.linker.Optimization.rmUnrefSec.1456311130" name="Remove unreferenced sections (-Wl,--gc-sections)" superClass="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.linker.Optimization.rmUnrefSec" value="true" valueType="boolean"/>
+								<option id="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.linker.miscellaneous.options.1108571150" name="Other options" superClass="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.linker.miscellaneous.options" valueType="stringList">
+									<listOptionValue builtIn="false" value="-Wl,-n"/>
+								</option>
+								<option id="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.linker.memholes.826155755" name="Assign input sections to the next output section, if the memory region is full (-Wl,--mem-holes)" superClass="com.rt.hightec.framework.buildsystem.abstract.hightec.tool.linker.memholes" value="false" valueType="boolean"/>
+								<option id="com.rt.hightec.buildsystem.powerpc.new.linker.cpp.miscellaneous.options.nostartfiles.587403093" name="Skip standard system startup files when linking (-nostartfiles)" superClass="com.rt.hightec.buildsystem.powerpc.new.linker.cpp.miscellaneous.options.nostartfiles" value="true" valueType="boolean"/>
+							</tool>
+							<tool id="com.rt.hightec.buildsystem.powerpc.new.archiver.175916633" name="PowerPC Archiver" superClass="com.rt.hightec.buildsystem.powerpc.new.archiver"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="mcal_cfg/src/smpu_cfg.c|tester/EBPPA|tester/Ssi|tester/sPwm|mcal/eclipse/plugins/Resource_ARCH3D12M10I1R0|mcal/eclipse/plugins/eTPU_ARCH3D12M10I1R0|mcal/eclipse/plugins/EcuC_ARCH3D12M10I1R0|mcal/eclipse/plugins/CDD_ARCH3D12M10I1R0|mcal_cfg/src/sPwm_Cfg.c|mcal_cfg/src/eTPU_Cfg.c|mcal_cfg/src/CDD_Ssi_Cfg.c|mcal_cfg/src/EBPPA_Cfg.c|mcal/eclipse/plugins/Fr_ARCH3D12M10I1R0/generate|mcal/eclipse/plugins/Eth_ARCH3D12M10I1R0/generate|mcal/eclipse/plugins/SDAdc_ARCH3D12M10I1R0/META-INF|mcal/eclipse/plugins/SDAdc_ARCH3D12M10I1R0/config|mcal/eclipse/plugins/SDAdc_ARCH3D12M10I1R0/generate|mcal/eclipse/plugins/sPwm_ARCH3D12M10I1R0/generate|tester/Fls/src/tester_fls_qspi.c|mcal/eclipse/plugins/Sent_ARCH3D12M10I1R0/generate|mcal/eclipse/plugins/EBPPA_ARCH3D12M10I1R0/generate|mcal/eclipse/plugins/CDD_DSpi_ARCH3D12M10I1R0/generate|mcal/eclipse/plugins/CDD_ARCH3D12M10I1R0/generate|mcal/eclipse/plugins/Can_176_CanFD_ARCH3D12M10I1R0/generate|mcal/eclipse/plugins/eTPU_ARCH3D12M10I1R0/generate|mcal/eclipse/plugins/Wdg_ARCH3D12M10I1R0/generate|mcal/eclipse/plugins/Spi_ARCH3D12M10I1R0/generate|mcal/eclipse/plugins/Pwm_ARCH3D12M10I1R0/generate|mcal/eclipse/plugins/PowerCtrl_ARCH3D12M10I1R0/generate|mcal/eclipse/plugins/Port_ARCH3D12M10I1R0/generate|mcal/eclipse/plugins/Mcu_ARCH3D12M10I1R0/generate|mcal/eclipse/plugins/Mcl_ARCH3D12M10I1R0/generate|mcal/eclipse/plugins/Lin_ARCH3D12M10I1R0/generate|mcal/eclipse/plugins/Icu_ARCH3D12M10I1R0/generate|mcal/eclipse/plugins/Gpt_ARCH3D12M10I1R0/generate|mcal/eclipse/plugins/Fls_ARCH3D12M10I1R0/generate|mcal/eclipse/plugins/Fee_ARCH3D12M10I1R0/generate|mcal/eclipse/plugins/eMIOS_ARCH3D12M10I1R0/generate|mcal/eclipse/plugins/EcuM_ARCH3D12M10I1R0/generate_PC|mcal/eclipse/plugins/Dio_ARCH3D12M10I1R0/generate|mcal/eclipse/plugins/Dem_ARCH3D12M10I1R0/generate_PC|mcal/eclipse/plugins/Can_ARCH3D12M10I1R0/generate|mcal/eclipse/plugins/Adc_ARCH3D12M10I1R0/generate" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Source"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="ARCH3D12_M10I1R0_Z4_2.com.rt.hightec.buildsystem.powerpc.new.projectType.77063927" name="PowerPC Project" projectType="com.rt.hightec.buildsystem.powerpc.new.projectType"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets">
+		<buildTargets>
+			<target name="clean" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildArguments/>
+				<buildTarget>clean</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="all" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildArguments/>
+				<buildTarget>all</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="rebuild" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildArguments/>
+				<buildTarget>rebuild</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+		</buildTargets>
+	</storageModule>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="CCFC3007BC_DEBUG_FLASH">
+			<resource resourceType="PROJECT" workspacePath="/ARCH3D12_M10I1R0_Z4_2"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="com.rt.hightec.buildsystem.powerpc.new.configuration.excutable.59148122;com.rt.hightec.buildsystem.powerpc.new.configuration.excutable.59148122.;com.rt.hightec.buildsystem.powerpc.new.compiler.c.851502569;com.rt.hightec.framework.buildsystem.abstract.hightec.tool.compiler.c.inputType.388002296">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.rt.hightec.framework.buildsystem.HighTecGCCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+</cproject>

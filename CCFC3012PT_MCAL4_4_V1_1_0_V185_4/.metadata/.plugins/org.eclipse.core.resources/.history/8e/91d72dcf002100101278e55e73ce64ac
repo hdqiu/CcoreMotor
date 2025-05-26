@@ -1,0 +1,32 @@
+CDD/_sharedutils/plook_u32ff_evenx.o: \
+ ../CDD/_sharedutils/plook_u32ff_evenx.c \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/lib_c99.prefix \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/common.prefix \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/ewl_c_version.h \
+ ../CDD/_sharedutils/rtwtypes.h \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/stdbool.h \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/ansi_parms.h \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/ewlGlobals.h \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/pa/ansi_prefix.PA_EABI.bare.h \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/os_enum.h \
+ ../CDD/_sharedutils/plook_u32ff_evenx.h
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/lib_c99.prefix:
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/common.prefix:
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/ewl_c_version.h:
+
+../CDD/_sharedutils/rtwtypes.h:
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/stdbool.h:
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/ansi_parms.h:
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/ewlGlobals.h:
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/pa/ansi_prefix.PA_EABI.bare.h:
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/os_enum.h:
+
+../CDD/_sharedutils/plook_u32ff_evenx.h:

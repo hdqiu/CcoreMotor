@@ -1,0 +1,58 @@
+Pmsm/MotB/Pmsm_PhasCurrCalc_MotB.o: ../Pmsm/MotB/Pmsm_PhasCurrCalc_MotB.c \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/lib_c99.prefix \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/common.prefix \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/ewl_c_version.h \
+ D:/Project/Guoxin3011/src/MCAL/CCFC3012PT_MCAL4_4_V1_1_0/Project/CCFC3012PT_S32DS_SMP/ARCH3D12_M10I1R0/CDD/_sharedutils/rtwtypes.h \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/stdbool.h \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/ansi_parms.h \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/ewlGlobals.h \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/pa/ansi_prefix.PA_EABI.bare.h \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/os_enum.h \
+ ../Pmsm/MotB/Pmsm_PhasCurrCalc_MotB.h \
+ ../Pmsm/MotB/Pmsm_PhasCurrCalc_MotB_types.h \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/string.h \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/cstring \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/null.h \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/size_t.h \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/ewl_lib_ext1.h \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/ewl_rsize_t.h \
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/string_api.h \
+ D:/Project/Guoxin3011/src/MCAL/CCFC3012PT_MCAL4_4_V1_1_0/Project/CCFC3012PT_S32DS_SMP/ARCH3D12_M10I1R0/Pmsm/Pmsm_MemMap.h
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/lib_c99.prefix:
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/common.prefix:
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/ewl_c_version.h:
+
+D:/Project/Guoxin3011/src/MCAL/CCFC3012PT_MCAL4_4_V1_1_0/Project/CCFC3012PT_S32DS_SMP/ARCH3D12_M10I1R0/CDD/_sharedutils/rtwtypes.h:
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/stdbool.h:
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/ansi_parms.h:
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/ewlGlobals.h:
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/pa/ansi_prefix.PA_EABI.bare.h:
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/os_enum.h:
+
+../Pmsm/MotB/Pmsm_PhasCurrCalc_MotB.h:
+
+../Pmsm/MotB/Pmsm_PhasCurrCalc_MotB_types.h:
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/string.h:
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/cstring:
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/null.h:
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/size_t.h:
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/ewl_lib_ext1.h:
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/ewl_rsize_t.h:
+
+C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/string_api.h:
+
+D:/Project/Guoxin3011/src/MCAL/CCFC3012PT_MCAL4_4_V1_1_0/Project/CCFC3012PT_S32DS_SMP/ARCH3D12_M10I1R0/Pmsm/Pmsm_MemMap.h:

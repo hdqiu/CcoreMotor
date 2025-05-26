@@ -1,0 +1,42 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../CDD/mbd_api_b/src/PiIoHwAbCSGetPhaseCur_C_PiIoHwAb_U_Cur_GetPhaseCur_b.c \
+../CDD/mbd_api_b/src/PiIoHwAbCSGetPhaseCur_C_PiIoHwAb_V_Cur_GetPhaseCur_b.c \
+../CDD/mbd_api_b/src/PiIoHwAbCSGetPhaseCur_C_PiIoHwAb_W_Cur_GetPhaseCur_b.c \
+../CDD/mbd_api_b/src/PiIoHwAbCSGetResolver_C_PiIoHwAbResolver_b.c \
+../CDD/mbd_api_b/src/PiIoHwAbCSGetRslvrSw_C_PiIoHwAbRslvrSw_lCalctiDifPwmStrtCnvn_b.c \
+../CDD/mbd_api_b/src/PiIoHwAbCSGetRslvrSw_C_PiIoHwAbRslvrSw_lGetDmaNxtIdx_b.c \
+../CDD/mbd_api_b/src/PpIoHwAbCSSetPWM_C_SetPWM_b.c 
+
+OBJS += \
+./CDD/mbd_api_b/src/PiIoHwAbCSGetPhaseCur_C_PiIoHwAb_U_Cur_GetPhaseCur_b.o \
+./CDD/mbd_api_b/src/PiIoHwAbCSGetPhaseCur_C_PiIoHwAb_V_Cur_GetPhaseCur_b.o \
+./CDD/mbd_api_b/src/PiIoHwAbCSGetPhaseCur_C_PiIoHwAb_W_Cur_GetPhaseCur_b.o \
+./CDD/mbd_api_b/src/PiIoHwAbCSGetResolver_C_PiIoHwAbResolver_b.o \
+./CDD/mbd_api_b/src/PiIoHwAbCSGetRslvrSw_C_PiIoHwAbRslvrSw_lCalctiDifPwmStrtCnvn_b.o \
+./CDD/mbd_api_b/src/PiIoHwAbCSGetRslvrSw_C_PiIoHwAbRslvrSw_lGetDmaNxtIdx_b.o \
+./CDD/mbd_api_b/src/PpIoHwAbCSSetPWM_C_SetPWM_b.o 
+
+C_DEPS += \
+./CDD/mbd_api_b/src/PiIoHwAbCSGetPhaseCur_C_PiIoHwAb_U_Cur_GetPhaseCur_b.d \
+./CDD/mbd_api_b/src/PiIoHwAbCSGetPhaseCur_C_PiIoHwAb_V_Cur_GetPhaseCur_b.d \
+./CDD/mbd_api_b/src/PiIoHwAbCSGetPhaseCur_C_PiIoHwAb_W_Cur_GetPhaseCur_b.d \
+./CDD/mbd_api_b/src/PiIoHwAbCSGetResolver_C_PiIoHwAbResolver_b.d \
+./CDD/mbd_api_b/src/PiIoHwAbCSGetRslvrSw_C_PiIoHwAbRslvrSw_lCalctiDifPwmStrtCnvn_b.d \
+./CDD/mbd_api_b/src/PiIoHwAbCSGetRslvrSw_C_PiIoHwAbRslvrSw_lGetDmaNxtIdx_b.d \
+./CDD/mbd_api_b/src/PpIoHwAbCSSetPWM_C_SetPWM_b.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+CDD/mbd_api_b/src/%.o: ../CDD/mbd_api_b/src/%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@CDD/mbd_api_b/src/PiIoHwAbCSGetPhaseCur_C_PiIoHwAb_U_Cur_GetPhaseCur_b.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

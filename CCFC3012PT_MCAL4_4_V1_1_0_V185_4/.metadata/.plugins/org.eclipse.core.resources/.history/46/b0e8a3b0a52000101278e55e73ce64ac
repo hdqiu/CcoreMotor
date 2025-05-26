@@ -1,0 +1,416 @@
+INCLUDE "memory_smp.h"
+
+/* Entry Point */
+ENTRY(_start)
+
+/* define stack size */
+STACK_SIZE = CPU_CORE_X_STACK_SIZE;
+
+/* Define FLASH Size */
+FLASH_SIZE = CPU_CORE_X_FLASH_SIZE;
+/* Define FLASH Base Address */
+FLASH_BASE_ADDR = CPU_CORE_X_FLASH_BASE_ADDR;
+
+/* Define SRAM Size */
+SRAM_SIZE = CPU_CORE_X_SRAM_SIZE + FLASH_AC_SIZE;
+/* Define SRAM Base Address */
+SRAM_BASE_ADDR = CPU_CORE_X_SRAM_BASE_ADDR;
+
+MEMORY
+{
+    boot_header : org = BOOT_RESET_VECTOR_BASE, len = BOOT_RESET_VECTOR_SIZE
+    cpu0_reset_vector : org = CPU_CORE_0_RESET_VECTOR, len = BOOT_RESET_VECTOR_SIZE
+    cpu0_reset_vector_addr : org = CPU_CORE_X_FLASH_BASE_ADDR, len = 0
+    cpu1_reset_vector : org = CPU_CORE_1_RESET_VECTOR, len = BOOT_RESET_VECTOR_SIZE
+    cpu1_reset_vector_addr : org = CPU_CORE_X_FLASH_BASE_ADDR, len = 0
+    cpu2_reset_vector : org = CPU_CORE_2_RESET_VECTOR, len = BOOT_RESET_VECTOR_SIZE
+    cpu2_reset_vector_addr : org = CPU_CORE_X_FLASH_BASE_ADDR, len = 0
+    cpu3_reset_vector : org = CPU_CORE_3_RESET_VECTOR, len = BOOT_RESET_VECTOR_SIZE
+    cpu3_reset_vector_addr : org = CPU_CORE_X_FLASH_BASE_ADDR, len = 0
+    cpu4_reset_vector : org = CPU_CORE_4_RESET_VECTOR, len = BOOT_RESET_VECTOR_SIZE
+    cpu4_reset_vector_addr : org = CPU_CORE_X_FLASH_BASE_ADDR, len = 0
+    cpu5_reset_vector : org = CPU_CORE_5_RESET_VECTOR, len = BOOT_RESET_VECTOR_SIZE
+    cpu5_reset_vector_addr : org = CPU_CORE_X_FLASH_BASE_ADDR, len = 0
+
+    hsm_parsave_addr : org = HSM_SECBOOT_PARSAVE_ADDR, len = 4
+    hsm_parstr_addr : org = HSM_SECBOOT_PARSTR_ADDR, len = 48
+    
+    cal_data_flash : org = MCORE_CAL_FLASH_BASE_ADDR, len = MCORE_CAL_FLASH_SIZE
+    cal_data_ram : org = MCORE_CAL_SRAM_BASE_ADDR, len = MCORE_CAL_SRAM_SIZE
+
+    m_text : org = FLASH_BASE_ADDR, len = FLASH_SIZE
+    m_data : org = SRAM_BASE_ADDR, len = CPU_CORE_X_SRAM_SIZE
+    m_data_share : org = MCORE_SHARE_BASE_ADDR, len = MCORE_SHARE_SRAM_SIZE
+
+    cpu0_local_imem : org = CPU_CORE_0_ITCM_BASE_ADDR, len = CPU_CORE_0_ITCM_SIZE
+    cpu0_local_dmem : org = CPU_CORE_0_DTCM_BASE_ADDR, len = CPU_CORE_0_DTCM_SIZE
+    cpu1_local_imem : org = CPU_CORE_1_ITCM_BASE_ADDR, len = CPU_CORE_1_ITCM_SIZE
+    cpu1_local_dmem : org = CPU_CORE_1_DTCM_BASE_ADDR, len = CPU_CORE_1_DTCM_SIZE
+    cpu2_local_imem : org = CPU_CORE_2_ITCM_BASE_ADDR, len = CPU_CORE_2_ITCM_SIZE
+    cpu2_local_dmem : org = CPU_CORE_2_DTCM_BASE_ADDR, len = CPU_CORE_2_DTCM_SIZE
+    cpu3_local_imem : org = CPU_CORE_3_ITCM_BASE_ADDR, len = CPU_CORE_3_ITCM_SIZE
+    cpu3_local_dmem : org = CPU_CORE_3_DTCM_BASE_ADDR, len = CPU_CORE_3_DTCM_SIZE
+    cpu4_local_imem : org = CPU_CORE_4_ITCM_BASE_ADDR, len = CPU_CORE_4_ITCM_SIZE
+    cpu4_local_dmem : org = CPU_CORE_4_DTCM_BASE_ADDR, len = CPU_CORE_4_DTCM_SIZE
+    cpu5_local_imem : org = CPU_CORE_5_ITCM_BASE_ADDR, len = CPU_CORE_5_ITCM_SIZE
+    cpu5_local_dmem : org = CPU_CORE_5_DTCM_BASE_ADDR, len = CPU_CORE_5_DTCM_SIZE
+
+    acload_memory : org = SRAM_BASE_ADDR + CPU_CORE_X_SRAM_SIZE, len = FLASH_AC_SIZE
+}
+
+ENTRY(_start);
+
+SECTIONS
+{
+    .boot_header   : 
+    {
+        KEEP(*(.boot_header))
+    } > boot_header
+    .cpu0_reset_vector  : 
+    {
+        KEEP(*(.cpu0_reset_vector))
+    } > cpu0_reset_vector
+    
+    .cpu0_reset_vector_addr  : 
+    {
+        __CPU_CORE_0_RESET_VECTOR_ADDR = . ;
+    } > cpu0_reset_vector_addr
+
+    .cpu1_reset_vector  : 
+    {
+        KEEP(*(.cpu1_reset_vector))
+    } > cpu1_reset_vector
+
+    .cpu1_reset_vector_addr  : 
+    {
+        __CPU_CORE_1_RESET_VECTOR_ADDR = . ;
+    } > cpu1_reset_vector_addr
+
+    .cpu2_reset_vector  : 
+    {
+        KEEP(*(.cpu2_reset_vector))
+    } > cpu2_reset_vector
+
+    .cpu2_reset_vector_addr  : 
+    {
+        __CPU_CORE_2_RESET_VECTOR_ADDR = . ;
+    } > cpu2_reset_vector_addr
+
+    .cpu3_reset_vector  : 
+    {
+        KEEP(*(.cpu3_reset_vector))
+    } > cpu3_reset_vector
+
+    .cpu3_reset_vector_addr  : 
+    {
+        __CPU_CORE_3_RESET_VECTOR_ADDR = . ;
+    } > cpu3_reset_vector_addr
+
+    .cpu4_reset_vector  : 
+    {
+        KEEP(*(.cpu4_reset_vector))
+    } > cpu4_reset_vector
+
+    .cpu4_reset_vector_addr  : 
+    {
+        __CPU_CORE_4_RESET_VECTOR_ADDR = . ;
+    } > cpu4_reset_vector_addr
+
+    .cpu5_reset_vector  : 
+    {
+        KEEP(*(.cpu5_reset_vector))
+    } > cpu5_reset_vector
+
+    .cpu5_reset_vector_addr  : 
+    {
+        __CPU_CORE_5_RESET_VECTOR_ADDR = . ;
+    } > cpu5_reset_vector_addr
+
+     .hsm_param_save_addr  : 
+    {
+        KEEP(*(.hsm_param_save_addr))
+    } > hsm_parsave_addr
+    
+     .hsm_param_store_addr  : 
+    {
+        __HSM_PARAM_BASE_ADDR = .;
+        KEEP(*(.hsm_param_store_addr))
+    } > hsm_parstr_addr
+
+    .startup : ALIGN(0x400)
+    {
+        *(.startup)
+    } > m_text
+    
+    .core_exceptions_table : ALIGN(4096)
+    {
+      __IVPR_VALUE = . ;
+      KEEP(*(.core_exceptions_table))
+    } > m_text
+    
+    .intc_vector_table : ALIGN(4096)
+    {
+      KEEP(*(.intc_vector_table))
+    } > m_data AT>m_text
+
+    .itcm0_fun :
+	{
+		*Pmsm_Foc.o(.text.*)
+		*Pmsm_PhasCurrCalc.o(.text.*)
+		*Pmsm_RdcCalcThetaSpeed.o(.text.*)
+		*Pmsm_SpdLpFlxWkn.o(.text.*)
+	} > cpu0_local_imem AT>m_text
+	
+	.itcm1_fun :
+	{
+		*Pmsm_Foc_MotB.o(.text.*)
+		*Pmsm_PhasCurrCalc_MotB.o(.text.*)
+		*Pmsm_RdcCalcThetaSpeed_MotB.o(.text.*)
+		*Pmsm_SpdLpFlxWkn_MotB.o(.text.*)
+	} > cpu1_local_imem AT>m_text
+
+	 .cal_section :
+    {
+        KEEP(*(.cal_section))
+        KEEP(*(.cal_section.*))
+    } > cal_data_flash
+
+    .text : 
+    {
+      *(.text.startup)
+      *(.text)      
+      *(.text.*)
+      KEEP (*(.init))
+      KEEP (*(.fini)) 
+      _shell_command_start = .;
+      KEEP (*(shellCommand))
+      _shell_command_end = .;           
+      . = ALIGN(16);
+    } > m_text
+
+    .ctors :
+    {
+      __CTOR_LIST__ = .;
+      /* gcc uses crtbegin.o to find the start of
+         the constructors, so we make sure it is
+         first.  Because this is a wildcard, it
+         doesn't matter if the user does not
+         actually link against crtbegin.o; the
+         linker won't look for a file to match a
+         wildcard.  The wildcard also means that it
+         doesn't matter which directory crtbegin.o
+         is in.  */
+      KEEP (*crtbegin.o(.ctors))
+      KEEP (*crtbegin?.o(.ctors))
+      /* We don't want to include the .ctor section from
+         from the crtend.o file until after the sorted ctors.
+         The .ctor section from the crtend file contains the
+         end of ctors marker and it must be last */
+      KEEP (*(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors))
+      KEEP (*(SORT(.ctors.*)))
+      KEEP (*(.ctors))
+      __CTOR_END__ = .;
+    } > m_text
+
+    .dtors :
+    {
+      __DTOR_LIST__ = .;
+      KEEP (*crtbegin.o(.dtors))
+      KEEP (*crtbegin?.o(.dtors))
+      KEEP (*(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors))
+      KEEP (*(SORT(.dtors.*)))
+      KEEP (*(.dtors))
+      __DTOR_END__ = .;
+    } > m_text
+        
+    .preinit_array :
+    {
+      PROVIDE_HIDDEN (__preinit_array_start = .);
+      KEEP (*(.preinit_array*))
+      PROVIDE_HIDDEN (__preinit_array_end = .);
+    } > m_text
+
+    .init_array :
+    {
+      PROVIDE_HIDDEN (__init_array_start = .);
+      KEEP (*(SORT(.init_array.*)))
+      KEEP (*(.init_array*))
+      PROVIDE_HIDDEN (__init_array_end = .);
+    } > m_text
+
+    .fini_array :
+    {
+      PROVIDE_HIDDEN (__fini_array_start = .);
+      KEEP (*(SORT(.fini_array.*)))
+      KEEP (*(.fini_array*))
+      PROVIDE_HIDDEN (__fini_array_end = .);
+    } > m_text
+          
+    .rodata :
+    {
+      *(.rodata)
+      *(.rodata.*)
+    } > m_text
+    
+    .eh_frame_hdr : { *(.eh_frame_hdr) } > m_text
+    .eh_frame     : { KEEP (*(.eh_frame)) } > m_text    
+   
+    .data : 
+    {
+      *(.data)
+      *(.data.*)
+    }  > m_data AT>m_text
+    
+    .data_share : 
+    {
+	  __DATA_SHARE_START = .;
+      *(.data_share)
+	  __DATA_SHARE_END = .;
+    }  > m_data_share AT>m_text
+
+    .sdata2 :
+    {  
+      *(.sdata2)
+      *(.sdata2.*)
+    } > m_data AT>m_text
+
+    .sbss2    (NOLOAD)   :
+    {
+      /* _SDA2_BASE_ = .; */ 
+      *(.sbss2)
+      *(.sbss2.*)
+    } > m_data
+    
+    .sdata  :
+    {
+      *(.sdata)
+      *(.sdata.*)
+    } > m_data AT>m_text
+    
+    .bss   (NOLOAD)  :
+    {
+      __BSS_START = .;
+      *(.sbss)
+      *(.sbss.*)    
+      *(.bss)
+      *(.bss.*)
+      *(COMMON)
+      __BSS_END = .;
+    } > m_data
+
+    .stack_0 (NOLOAD) : ALIGN(16) 
+    {
+      . +=  STACK_SIZE ;
+      __SP_ENTRY_0 = . ;
+    } > cpu0_local_dmem
+
+    .stack_1 (NOLOAD) : ALIGN(16) 
+    {
+      . +=  STACK_SIZE ;
+      __SP_ENTRY_1 = . ;
+    } > cpu1_local_dmem
+    
+    .stack_2 (NOLOAD) : ALIGN(16) 
+    {
+      . +=  STACK_SIZE ;
+      __SP_ENTRY_2 = . ;
+    } > cpu2_local_dmem
+
+    .stack_3 (NOLOAD) : ALIGN(16) 
+    {
+      . +=  STACK_SIZE ;
+      __SP_ENTRY_3 = . ;
+    } > cpu3_local_dmem
+    
+    .stack_4 (NOLOAD) : ALIGN(16) 
+    {
+      . +=  STACK_SIZE ;
+      __SP_ENTRY_4 = . ;
+    } > cpu4_local_dmem
+
+    .stack_5 (NOLOAD) : ALIGN(16) 
+    {
+      . +=  STACK_SIZE ;
+      __SP_ENTRY_5 = . ;
+    } > cpu5_local_dmem
+
+/*-------- LABELS USED IN CODE -------------------------------*/
+        
+/* Labels for Copying Initialised Data from Flash to RAM */
+__VECTOR_SRAM_ADDR  = ADDR(.intc_vector_table);
+__DATA_SRAM_ADDR  = ADDR(.data);
+__SDATA_SRAM_ADDR = ADDR(.sdata);
+__DATA_SHARE_SRAM_ADDR  = ADDR(.data_share);
+
+__VECTOR_SIZE   = SIZEOF(.intc_vector_table);
+__DATA_SIZE   = SIZEOF(.data);
+__SDATA_SIZE  = SIZEOF(.sdata);
+__DATA_SHARE_SIZE   = SIZEOF(.data_share);
+
+__VECTOR_ROM_ADDR  = LOADADDR(.intc_vector_table);
+__DATA_ROM_ADDR  = LOADADDR(.data);
+__SDATA_ROM_ADDR = LOADADDR(.sdata);
+__DATA_SHARE_ROM_ADDR  = LOADADDR(.data_share);
+
+/* Labels Used for ITCM0 FUN */
+__ITCM0_RAM_ADDR  = ADDR(.itcm0_fun);
+__ITCM0_ROM_ADDR  = LOADADDR(.itcm0_fun);
+__ITCM0_SIZE      = SIZEOF(.itcm0_fun);
+
+/* Labels Used for ITCM1 FUN */
+__ITCM1_RAM_ADDR  = ADDR(.itcm1_fun);
+__ITCM1_ROM_ADDR  = LOADADDR(.itcm1_fun);
+__ITCM1_SIZE      = SIZEOF(.itcm1_fun);
+
+
+/* Labels Used for Initialising SRAM ECC */
+__SRAM_SIZE = SRAM_SIZE;
+__SRAM_BASE_ADDR = SRAM_BASE_ADDR;
+
+__SHARE_SRAM_SIZE = MCORE_SHARE_SRAM_SIZE;
+__SHARE_SRAM_BASE_ADDR = MCORE_SHARE_BASE_ADDR;
+
+__CAL_SRAM_SIZE = MCORE_CAL_SRAM_SIZE;
+__CAL_SRAM_BASE_ADDR = MCORE_CAL_SRAM_BASE_ADDR;
+
+__BSS_SIZE    = __BSS_END - __BSS_START;      
+__DATA_SHARE_SIZE    = __DATA_SHARE_END - __DATA_SHARE_START;  
+
+__DTCM_SIZE_CORE_0 = CPU_CORE_0_DTCM_SIZE;
+__DTCM_BASE_ADDR_CORE_0 = CPU_CORE_0_DTCM_BASE_ADDR;
+
+__ITCM_SIZE_CORE_0 = CPU_CORE_0_ITCM_SIZE;
+__ITCM_BASE_ADDR_CORE_0 = CPU_CORE_0_ITCM_BASE_ADDR;
+
+__DTCM_SIZE_CORE_1 = CPU_CORE_1_DTCM_SIZE;
+__DTCM_BASE_ADDR_CORE_1 = CPU_CORE_1_DTCM_BASE_ADDR;
+
+__ITCM_SIZE_CORE_1 = CPU_CORE_1_ITCM_SIZE;
+__ITCM_BASE_ADDR_CORE_1 = CPU_CORE_1_ITCM_BASE_ADDR;
+
+__DTCM_SIZE_CORE_2 = CPU_CORE_2_DTCM_SIZE;
+__DTCM_BASE_ADDR_CORE_2 = CPU_CORE_2_DTCM_BASE_ADDR;
+
+__ITCM_SIZE_CORE_2 = CPU_CORE_2_ITCM_SIZE;
+__ITCM_BASE_ADDR_CORE_2 = CPU_CORE_2_ITCM_BASE_ADDR;
+
+__DTCM_SIZE_CORE_3 = CPU_CORE_3_DTCM_SIZE;
+__DTCM_BASE_ADDR_CORE_3 = CPU_CORE_3_DTCM_BASE_ADDR;
+
+__ITCM_SIZE_CORE_3 = CPU_CORE_3_ITCM_SIZE;
+__ITCM_BASE_ADDR_CORE_3 = CPU_CORE_3_ITCM_BASE_ADDR;
+
+__DTCM_SIZE_CORE_4 = CPU_CORE_4_DTCM_SIZE;
+__DTCM_BASE_ADDR_CORE_4 = CPU_CORE_4_DTCM_BASE_ADDR;
+
+__ITCM_SIZE_CORE_4 = CPU_CORE_4_ITCM_SIZE;
+__ITCM_BASE_ADDR_CORE_4 = CPU_CORE_4_ITCM_BASE_ADDR;
+
+__DTCM_SIZE_CORE_5 = CPU_CORE_5_DTCM_SIZE;
+__DTCM_BASE_ADDR_CORE_5 = CPU_CORE_5_DTCM_BASE_ADDR;
+
+__ITCM_SIZE_CORE_5 = CPU_CORE_5_ITCM_SIZE;
+__ITCM_BASE_ADDR_CORE_5 = CPU_CORE_5_ITCM_BASE_ADDR;
+}
+
+

@@ -1,0 +1,24 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/EthTrcv_ARCH3D12M10I1R0/source/EthTrcv.c 
+
+OBJS += \
+./Source_FLASH/mcal/eclipse/plugins/EthTrcv_ARCH3D12M10I1R0/source/EthTrcv.o 
+
+C_DEPS += \
+./Source_FLASH/mcal/eclipse/plugins/EthTrcv_ARCH3D12M10I1R0/source/EthTrcv.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+Source_FLASH/mcal/eclipse/plugins/EthTrcv_ARCH3D12M10I1R0/source/EthTrcv.o: D:/CCFC3011PT_MOTOR/CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515/Source/mcal/eclipse/plugins/EthTrcv_ARCH3D12M10I1R0/source/EthTrcv.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	powerpc-eabivle-gcc "@Source_FLASH/mcal/eclipse/plugins/EthTrcv_ARCH3D12M10I1R0/source/EthTrcv.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+
