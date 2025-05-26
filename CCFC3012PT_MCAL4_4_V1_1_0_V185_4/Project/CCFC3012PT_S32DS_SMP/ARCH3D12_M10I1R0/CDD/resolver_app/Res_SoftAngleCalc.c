@@ -19,7 +19,6 @@ void  Res_PWMCalcInit(void)
 //	ResXBPare.init_Angle=3120;
 }
 
-//SDADC采样完成中断调用，用于获取sin和cos包络
 void Res_Dsadcupdate(Sdadc_Rdc *handle, sint32 *sin_data, sint32 *cos_data)
 {
 	volatile sint32 sin = 0;

@@ -538,7 +538,6 @@ void Eqadc4_Adc8_RsltCallback(const  void *parameter, eDMAChnStatusType status, 
 
 		foc_do_0();
 
-
 //		IPhDmaCbFunction_P1();
 
 //		if(ioTestFlag == 0x11)

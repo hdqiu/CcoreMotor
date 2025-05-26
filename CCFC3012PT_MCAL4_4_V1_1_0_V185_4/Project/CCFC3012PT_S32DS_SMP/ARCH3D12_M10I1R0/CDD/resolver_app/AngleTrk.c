@@ -139,6 +139,7 @@ void AngleTrk_init(AngleTrk* aObsv, const AngleTrk_Config* config, float32 Ts)
     aObsv->base.direction = Std_Pos_Dir_unknown;
     aObsv->base.status.status = 0;
 
+
     aObsv->cfg = *config;
     if (!__neqf(config->Kp, 0) && !__neqf(config->Ki, 0) && !__neqf(config->Kp, 0))
     {   /* all gains are zero, use default */
@@ -245,7 +246,7 @@ float32 AngleTrk_step(AngleTrk* aObsv, sint32 sinIn, sint32 cosIn, float32 phase
 /** \brief Set the position offset (in ticks)
  * \param aObsv Pointer to the AngleTrk object
  * \param offset Position offset in ticks */
-void AngleTrk_setOffset(AngleTrk* aObsv, PosIf_Raw offset)
+void AngleTrk_setOffset(AngleTrk* aObsv, Pos_Raw offset)
 {
     PosIf* base = &aObsv->base;
     base->offset = offset;
@@ -278,7 +279,7 @@ sint32 AngleTrk_update(AngleTrk* aObsv)
 
     float32 angleEst = AngleTrk_step(aObsv, *aObsv->cfg.sinIn, *aObsv->cfg.cosIn, 0);
 
-    PosIf_Raw newPosition = (PosIf_Raw) (angleEst * (ANGLETRK_RESOLUTION / 2) / PI);
+    Pos_Raw newPosition = (Pos_Raw) (angleEst * (ANGLETRK_RESOLUTION / 2) / PI);
     newPosition = newPosition & (ANGLETRK_RESOLUTION - 1);
     base->position = newPosition;
 
@@ -293,10 +294,10 @@ sint32 AngleTrk_update(AngleTrk* aObsv)
 sint32 AngleTrk_resetOffset(AngleTrk* aObsv)
 {
     PosIf* base = &aObsv->base;
-    PosIf_Raw offset;
+    Pos_Raw offset;
     offset = (base->position - base->offset);
     /* -e639 Allow operation for fast rounding operation */
-    offset = -(PosIf_Raw)(offset & (ANGLETRK_RESOLUTION - 1));
+    offset = -(Pos_Raw)(offset & (ANGLETRK_RESOLUTION - 1));
     /* +e639 */
     AngleTrk_setOffset(aObsv, offset);
     offset = base->offset;
@@ -315,10 +316,11 @@ void AngleTrk_setupElAngleConst(AngleTrk* aObsv, sint32 motorPolePairs)
         ((float32)POSIF_ANGLE_RANGE / (base->periodPerRotation * ANGLETRK_RESOLUTION));
 }
 
+
 /** \brief Returns the actual position
  * \param aObsv Pointer to the AngleTrk object
  */
-PosIf_Raw AngleTrk_getPosition(AngleTrk* aObsv)
+Pos_Raw AngleTrk_getPosition(AngleTrk* aObsv)
 {
     PosIf* base = &aObsv->base;
     return base->position;

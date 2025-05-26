@@ -55,13 +55,13 @@
 
 #define ANGLETRK_DIRECT_SPEED   (0)  /** \brief if not zero, speed calculated from angle reference is used, else speed from tracking observer is used */
 
-#define POSIF_DATA_BITS         (16)
+#define POSIF_DATA_BITS         (12)
 #define POSIF_ANGLE_RANGE       (1UL << POSIF_DATA_BITS)
 #define PI                 (3.1415926535897932384626433832795F)
 
 //________________________________________________________________________________________
 // DATA STRUCTURES
-typedef sint32 PosIf_Raw;
+typedef sint32 Pos_Raw;
 
 /** \brief Angle Tracking Observer configuration */
 typedef struct
@@ -75,7 +75,7 @@ typedef struct
     sint32    sqrAmplMin;         /**< \brief Minimum value for square of signal amplitudes */
 //    sint32    periodPerRotation;  /**< \brief Number of electrical periods per mechanical rotation */
     boolean   reversed;           /**< \brief TRUE: reversed direction, FALSE: straight direction */
-    PosIf_Raw offset;             /**< \brief Offset in ticks. [0 .. (\ref ANGLETRK_RESOLUTION - 1)] */
+    Pos_Raw   offset;             /**< \brief Offset in ticks. [0 .. (\ref ANGLETRK_RESOLUTION - 1)] */
     sint16*   sinIn;              /**< \brief Pointer to SIN input variable */
     sint16*   cosIn;              /**< \brief Pointer to COS input variable */
     sint32    sincos2;
@@ -84,18 +84,18 @@ typedef struct
 
 typedef struct
 {
-    PosIf_Raw   position;           /**< \brief raw position in ticks. \note: the value already contains the offset */
+	Pos_Raw    position;           /**< \brief raw position in ticks. \note: the value already contains the offset */
 //    float32     speed;              /**< \brief mechanical speed in rad/s */
 //    sint32      turn;               /**< \brief number of mechanical turns */
     Std_Pos_Dir   direction;          /**< \brief rotation direction */
     Std_Pos_Status status;            /**< \brief error code (0 = no error) */
     //Std_Pos_Diag  diag;               /**< \brief diagnostic and statistic */
     /* configuration */
-    PosIf_Raw   offset;             /**< \brief raw position offset */
+    Pos_Raw     offset;             /**< \brief raw position offset */
     boolean     reversed;           /**< \brief reverse direction */
     sint32      periodPerRotation;  /**< \brief 'electrical' periods per mechanical rotation */
-//    sint32      motorPolePairs;     /**< \brief Number of motor pole pairs */
-    PosIf_Raw   resolution;         /**< \brief resolution of this position sensor interface */
+    sint32      motorPolePairs;     /**< \brief Number of motor pole pairs */
+    Pos_Raw     resolution;         /**< \brief resolution of this position sensor interface */
     float32     Ts;                 /**< \brief update period in seconds */
     float32     elAngleConst;       /**< \brief constant for calculating elAngle (in ticks) from raw position */
     float32     speedConst;         /**< \brief constant for calculating mechanical speed (in rad/s) from raw speed */
@@ -166,16 +166,16 @@ extern void    AngleTrk_initConfig  (AngleTrk_Config* config, sint16* sinIn, sin
  * \endcode
  * Prototypes:
  * \{ */
-extern PosIf_Raw AngleTrk_update      (AngleTrk* aObsv);
-extern void      AngleTrk_setupElAngleConst(AngleTrk* aObsv, sint32 motorPolePairs);
-extern PosIf_Raw AngleTrk_getPosition (AngleTrk* aObsv);
-extern float32   AngleTrk_getSpeed    (AngleTrk* aObsv, boolean update);
-extern sint32    AngleTrk_resetOffset (AngleTrk* aObsv);
-extern void      AngleTrk_setOffset   (AngleTrk* aObsv, PosIf_Raw offset);
-extern float32 AngleTrk_step        (AngleTrk* aObsv, sint32 sinIn, sint32 cosIn, float32 phase);
-extern void    AngleTrk_updateStatus(AngleTrk* aObsv, sint32 sinIn, sint32 cosIn);
-inline float32 AngleTrk_getLoopSpeed(AngleTrk* aObsv);
-inline float32 AngleTrk_getLoopSpeed(AngleTrk* aObsv)
+extern Pos_Raw  AngleTrk_update      (AngleTrk* aObsv);
+extern void     AngleTrk_setupElAngleConst(AngleTrk* aObsv, sint32 motorPolePairs);
+extern Pos_Raw  AngleTrk_getPosition (AngleTrk* aObsv);
+extern float32  AngleTrk_getSpeed    (AngleTrk* aObsv, boolean update);
+extern sint32   AngleTrk_resetOffset (AngleTrk* aObsv);
+extern void     AngleTrk_setOffset   (AngleTrk* aObsv, Pos_Raw offset);
+extern float32  AngleTrk_step        (AngleTrk* aObsv, sint32 sinIn, sint32 cosIn, float32 phase);
+extern void     AngleTrk_updateStatus(AngleTrk* aObsv, sint32 sinIn, sint32 cosIn);
+inline float32  AngleTrk_getLoopSpeed(AngleTrk* aObsv);
+inline float32  AngleTrk_getLoopSpeed(AngleTrk* aObsv)
 {
 #if ANGLETRK_DIRECT_SPEED == 0
 //    return aObsv->speedEstB;   // note: using speedEstB has better dynamic

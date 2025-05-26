@@ -264,13 +264,13 @@ void Core0Main(void)
 
 	//init rdc
 	Sdadc_Rdc_init(&g_RdcSdadc_a, &cfg_Pos_RdcDs_a);
-	Sdadc_Rdc_setupElAngleConst(&g_RdcSdadc_a, EMOTOR_POLE_PAIR);
+//	Sdadc_Rdc_setupElAngleConst(&g_RdcSdadc_a, EMOTOR_POLE_PAIR);
 	g_RdcSdadc_a.sdadc_sin = sin_data_buf_a;
 	g_RdcSdadc_a.sdadc_cos = cos_data_buf_a;
 	g_RdcSdadc_a.Sample_point = 32;
 
 	Sdadc_Rdc_init(&g_RdcSdadc_b, &cfg_Pos_RdcDs_b);
-	Sdadc_Rdc_setupElAngleConst(&g_RdcSdadc_b, EMOTOR_POLE_PAIR);
+//	Sdadc_Rdc_setupElAngleConst(&g_RdcSdadc_b, EMOTOR_POLE_PAIR);
 	g_RdcSdadc_b.sdadc_sin = sin_data_buf_b;
 	g_RdcSdadc_b.sdadc_cos = cos_data_buf_b;
 	g_RdcSdadc_b.Sample_point = 32;

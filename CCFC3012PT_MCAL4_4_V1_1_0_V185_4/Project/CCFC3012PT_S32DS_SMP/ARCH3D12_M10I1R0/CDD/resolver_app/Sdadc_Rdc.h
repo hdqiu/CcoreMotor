@@ -1,37 +1,3 @@
-/**
- * \file Sdadc_Rdc.h
- * \brief DSADC-based resolver-to-digital converter (RDC) support function
- * \ingroup IfxLld_Dsadc_rdc
- *
- *
- * \copyright Copyright (c) 2012 Infineon Technologies AG. All rights reserved.
- *
- * $Revision: 1559 $
- * $Date: 2013-06-24 14:20:02 +0200 (Mon, 24 Jun 2013) $
- *
- *                                 IMPORTANT NOTICE
- *
- *
- * Infineon Technologies AG (Infineon) is supplying this file for use
- * exclusively with Infineon's microcontroller products. This file can be freely
- * distributed within development tools that are supporting such microcontroller
- * products.
- *
- * THIS SOFTWARE IS PROVIDED "AS IS".  NO WARRANTIES, WHETHER EXPRESS, IMPLIED
- * OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF
- * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE APPLY TO THIS SOFTWARE.
- * INFINEON SHALL NOT, IN ANY CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL,
- * OR CONSEQUENTIAL DAMAGES, FOR ANY REASON WHATSOEVER.
- *
- * \author Dian Tresna Nugraha <Dian.Nugraha@Infineon.com>
- *
- * \defgroup IfxLld_Dsadc_rdc Resolver-to-digital converter with DSADC
- * Please refer to page \ref page_dsadc_rdc for more details.
- * This module uses the following modules:
- * - \ref IfxLld_Dsadc
- * - \ref mod_AngleTrk
- * \ingroup IfxLld_Dsadc
- */
 
 /* *INDENT-OFF* Note: this file was indented manually by the author. */
 
@@ -44,10 +10,6 @@
 #include "AngleTrk.h"
 #include "SineCalib.h"
 #include "derivative.h"
-//#include "Dsadc/Dsadc/Sdadc_Dsadc.h"
-//#include "Gtm/Std/IfxGtm_Tim.h"
-//#include "_PinMap/IfxGtm_PinMap.h"
-//#include "Dsadc/Std/Sdadc_oldEnum.h"
 //________________________________________________________________________________________
 // CONFIGURATION DEFINES
 
@@ -65,12 +27,6 @@
 /** DSADC timestamp helper using GTM */
 typedef struct
 {
-//	GTM4_tag*            gtm;
-//    IfxGtm_Tim           rdcTim;
-//    IfxGtm_Tim_Ch        rdcTimChannel;      /**< \brief TIM channel triggered by DSADC channel */
-//    uint32               rdcTimMuxValue;     /**< \brief Mux value used */
-//    IfxGtm_Tim_TinMap*   pwmTim;             /**< \brief TIM channel triggered by PWM trigger */
-
 	uint32                 rdcTim;
 	uint32                 rdcTimChannel;      /**< \brief TIM channel triggered by DSADC channel */
     uint32                 pwmTim;             /**< \brief TIM channel triggered by PWM trigger */
@@ -89,21 +45,9 @@ typedef struct
 /** DSADC RDC hardware configuration */
 typedef struct
 {
-//    /** \brief Default channel configuration for both SIN and COS input. */
-//    const Sdadc_Dsadc_ChannelConfig*   inputConfig;
-//
 //    Sdadc_ChannelId  inputSin;           /**< \brief Channel ID of DSADC used for SIN input. This will override value given in the inputConfig */
 //    Sdadc_ChannelId  inputCos;           /**< \brief Channel ID of DSADC used for COS input. This will override value given in the inputConfig */
-//    Ifx_Priority            servReqPriority;    /**< \brief Interrupt priority. NOTE: Only used by inputSin and will override value given in the inputConfig */
-//    IfxSrc_Tos          servReqProvider;    /**< \brief Service provider. NOTE: Only used by inputSin and will override value given in the inputConfig */
-//    boolean             startScan;          /**< \brief Specifies whether the conversion will be started as soon as the Sdadc_Rdc_initHw() is called */
-//
-//    /** \brief Pointer to the carrier signal generation configuration
-//     * \note If NULL_PTR, it is assumed that the carrier generation has been pre-configured */
-//    const Sdadc_Dsadc_CarrierGenConfig* carrierGen;
-//
-//    Sdadc_Cout_Out*  outputClock;      /**< \brief if not NULL_PTR, modulator clock output pin from inputSin channel will be configured */
-    Sdadc_GtmTimestamp gtmTimestamp;     /**< \brief Timestamp helper using GTM */
+   Sdadc_GtmTimestamp gtmTimestamp;     /**< \brief Timestamp helper using GTM */
 } Sdadc_Rdc_ConfigHw;
 
 typedef struct
@@ -152,8 +96,9 @@ typedef struct
     sint32        sqrAmplMax;         /**< \brief Maximum value for square of signal amplitudes */
     sint32        sqrAmplMin;         /**< \brief Minimum value for square of signal amplitudes */
     sint32        periodPerRotation;  /**< \brief Number of electrical periods per mechanical rotation */
+    sint32        motorPolePairs;     /**< \brief Number of motor pole pairs */
     boolean       reversed;           /**< \brief TRUE: reversed direction, FALSE: straight direction */
-    PosIf_Raw     offset;             /**< \brief Offset in ticks. [0 .. (\ref ANGLETRK_RESOLUTION - 1)] */
+    Pos_Raw       offset;             /**< \brief Offset in ticks. [0 .. (\ref ANGLETRK_RESOLUTION - 1)] */
 
     const Sdadc_Rdc_ConfigHw* hardware;     /**< \brief Pointer to hardware config. */
 } Sdadc_Rdc_Config;
@@ -166,17 +111,6 @@ typedef struct
 /** \name Main functions
  *
  * Initialisation shall be done by using Sdadc_Rdc_init().
- * \code
- * extern Sdadc_Rdc rdcHandle;
- * extern const Sdadc_Rdc_Config rdcConfig;
- *
- * Sdadc_Rdc_init(&rdcHandle, &rdcConfig);
- * Sdadc_Rdc_startConversion(&rdcHandle);
- *
- * // Setup el.angle constant if PosIf is needed:
- * PosIf_setupElAngleConst((PosIf*)&rdcHandle, motorPolePairs);
- *
- * \endcode
  *
  * After successful initialisation, one DSADC channel may generate interrupt request to CPU.
  * Function Sdadc_Rdc_updateStep1() shall be called in the interrupt service routine.
@@ -190,7 +124,7 @@ typedef struct
 extern void      Sdadc_Rdc_init              (Sdadc_Rdc *handle, const Sdadc_Rdc_Config *config);
 extern void      Sdadc_Rdc_startConversion   (Sdadc_Rdc *handle);
 extern void      Sdadc_Rdc_updateStep1       (Sdadc_Rdc *handle);
-extern PosIf_Raw Sdadc_Rdc_updateStep2       (Sdadc_Rdc *handle);
+extern Pos_Raw   Sdadc_Rdc_updateStep2       (Sdadc_Rdc *handle);
 /** \} */
 /**
  * \name Getting result functions
@@ -229,11 +163,12 @@ extern PosIf_Raw Sdadc_Rdc_updateStep2       (Sdadc_Rdc *handle);
  *
  * Prototypes:
  * \{ */
-inline PosIf_Raw Sdadc_Rdc_getPosition     (Sdadc_Rdc *handle);
+inline Pos_Raw   Sdadc_Rdc_getPosition     (Sdadc_Rdc *handle);
 inline float32   Sdadc_Rdc_getMechSpeed    (Sdadc_Rdc *handle);
 inline boolean   Sdadc_Rdc_isErrorOccurred (Sdadc_Rdc *handle);
 inline Std_Pos_Status Sdadc_Rdc_getErrorStatus(Sdadc_Rdc *handle);
 inline sint32    Sdadc_Rdc_getPeriodsPerRotation(Sdadc_Rdc *handle);
+inline sint32    Sdadc_Rdc_getMotorPolePairs(Sdadc_Rdc *handle);
 void Sdadc_Rdc_setupElAngleConst(Sdadc_Rdc *handle, sint32 motorPolePairs);
 
 
@@ -258,25 +193,41 @@ extern float32   Sdadc_Rdc_getTimeStamp    (Sdadc_Rdc *handle);
  * \param handle Pointer to Sdadc_Rdc object (RAM location)
  * \return actual position. Range is within 0 .. (\ref ANGLETRK_RESOLUTION - 1)
  */
-inline PosIf_Raw Sdadc_Rdc_getPosition(Sdadc_Rdc *handle)
+inline Pos_Raw Sdadc_Rdc_getPosition(Sdadc_Rdc *handle)
 {
     return AngleTrk_getPosition(&handle->angleTrk);
-}
-
-/** Get the actual mechanical speed.
- *
- * \param handle Pointer to Sdadc_Rdc object (RAM location)
- * \return actual mechanical speed in rad/s
- */
-inline float32 Sdadc_Rdc_getMechSpeed(Sdadc_Rdc *handle)
-{
-    return AngleTrk_getSpeed(&handle->angleTrk, FALSE);
 }
 
 /** Get the number of periods per rotation as configured during initialisation */
 inline sint32 Sdadc_Rdc_getPeriodsPerRotation(Sdadc_Rdc *handle)
 {
     return handle->angleTrk.base.periodPerRotation;
+}
+
+/** Get Number of motor pole pairs as configured during initialisation */
+inline sint32 Sdadc_Rdc_getMotorPolePairs(Sdadc_Rdc *handle)
+{
+    return handle->angleTrk.base.motorPolePairs;
+}
+
+/** Get the actual electrical speed.
+ *
+ * \param handle Pointer to Sdadc_Rdc object (RAM location)
+ * \return actual electrical speed in rad/s
+ */
+inline float32 Sdadc_Rdc_getElecSpeed(Sdadc_Rdc *handle)
+{
+    return AngleTrk_getLoopSpeed((AngleTrk *)&handle->angleTrk)*Sdadc_Rdc_getMotorPolePairs(handle)/Sdadc_Rdc_getPeriodsPerRotation(handle);
+}
+
+/** Get the actual mechanical speed.
+ *
+ * \param handle Pointer to Sdadc_Rdc object (RAM location)
+ * \return actual  mechanical speed in rad/s
+ */
+inline float32 Sdadc_Rdc_getMechSpeed(Sdadc_Rdc *handle)
+{
+    return Sdadc_Rdc_getElecSpeed(handle)/Sdadc_Rdc_getMotorPolePairs(handle);
 }
 
 /** Return TRUE if at least one error has occurred */
@@ -290,8 +241,6 @@ inline Std_Pos_Status Sdadc_Rdc_getErrorStatus(Sdadc_Rdc *handle)
 {
     return handle->angleTrk.base.status;
 }
-
-
 
 
 #endif /* IFX_RDC_DSADC_H_ */

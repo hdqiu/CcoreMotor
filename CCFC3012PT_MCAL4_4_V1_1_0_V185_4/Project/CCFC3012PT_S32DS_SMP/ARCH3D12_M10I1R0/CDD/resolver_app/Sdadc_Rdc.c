@@ -5,7 +5,7 @@ extern inline void SineCalib_init(SineCalib *sc);
 extern Sdadc_Rdc g_DdcDsadc_b;
 extern Sdadc_Rdc g_DdcDsadc_a;
 
-float32 IfxGtm_Tbu_getClockFrequency()
+float32 Gtm_Tbu_getClockFrequency()
 {
     float32 result = 200*1000*1000.0F;
     return result;
@@ -80,56 +80,6 @@ float32 Sdadc_Rdc_getUpdatePeriod(Sdadc_Rdc_Hw *hwHandle)
 
 boolean Sdadc_Rdc_initHwChannels(Sdadc_Rdc_Hw *hwHandle, const Sdadc_Rdc_ConfigHw *config)
 {
-//    Ifx_DSADC *module = config->inputConfig->module;
-//    boolean    result = (module != NULL_PTR) ? TRUE : FALSE;
-//
-//    if (result != FALSE)
-//    {
-//        Sdadc_Dsadc dsadc;
-//        if (Sdadc_isModuleEnabled(module) == FALSE)
-//        {
-//            Sdadc_Dsadc_Config modCfg;
-//            Sdadc_Dsadc_initModuleConfig(&modCfg, &MODULE_DSADC);
-//            Sdadc_Dsadc_initModule(&dsadc, &modCfg);
-//        }
-//
-//        {   /* Initialise input channels */
-//            Sdadc_Dsadc_ChannelConfig channelConfig = *config->inputConfig;
-//            channelConfig.channelId       = config->inputCos;
-//            Sdadc_Dsadc_initChannel(&hwHandle->inputCos, &channelConfig);
-//
-//            channelConfig.channelId       = config->inputSin;
-//            Sdadc_Dsadc_initChannel(&hwHandle->inputSin, &channelConfig);
-//
-//            if (config->servReqPriority != 0)
-//            {
-//                Sdadc_ChannelId ch = channelConfig.channelId;
-//                volatile Ifx_SRC_SRCR *srcr = &MODULE_SRC.DSADC.DSADC[ch].SRM;
-//                IfxSrc_init(srcr, config->servReqProvider, config->servReqPriority);
-//                IfxSrc_enable(srcr);
-//            }
-//        }
-//
-//        if (config->carrierGen != NULL_PTR)
-//        {   /* Initialise excitation channel */
-//            Sdadc_Dsadc_initCarrierGen(&dsadc, config->carrierGen);
-//        }
-//
-//        if (config->startScan != FALSE)
-//        {
-//            uint32 mask = (1U << config->inputCos) | (1U << config->inputSin);
-//            Sdadc_startScan(module, mask, mask);
-//        }
-//
-//        if (config->outputClock != NULL_PTR)
-//        {
-//            const IfxPort_Pin *clkPin = &(config->outputClock->pin);
-//            IfxPort_setPinModeOutput(clkPin->port, clkPin->pinIndex, config->carrierGen->pinMode, config->outputClock->select);
-//            IfxPort_setPinPadDriver(clkPin->port, clkPin->pinIndex, IfxPort_PadDriver_cmosAutomotiveSpeed1);
-//        }
-//    }
-
-//    return result;
 	return 0;
 }
 
@@ -152,13 +102,17 @@ void Sdadc_Rdc_init(Sdadc_Rdc *handle, const Sdadc_Rdc_Config *config)
     Sdadc_Rdc_initHwTimestamp(&(handle->hardware), config->hardware);
 
     /* Initialise the software resources */
-//    Ifx_DSADC *dsadc = handle->hardware.inputSin.module;
     handle->tSample  = Sdadc_Rdc_getUpdatePeriod(&(handle->hardware));
     handle->grpDelay = 0;
     handle->timestamp.enabled = TRUE;
-//
-//    Ifx_GTM *gtm = config->hardware->gtmTimestamp.gtm;
-    handle->timestamp.clockPeriod = 1.0F / IfxGtm_Tbu_getClockFrequency();
+
+
+    handle->angleTrk.base.periodPerRotation = config->periodPerRotation;
+    handle->angleTrk.base.motorPolePairs = config->motorPolePairs;
+    Sdadc_Rdc_setupElAngleConst(handle, config->motorPolePairs);
+
+
+    handle->timestamp.clockPeriod = 1.0F / Gtm_Tbu_getClockFrequency();
     handle->timestamp.maxTicks    = handle->tSample / handle->timestamp.clockPeriod;
 
     {   /* Initialise angle-tracking observer */
@@ -303,7 +257,7 @@ void Sdadc_Rdc_updateStep1(Sdadc_Rdc *handle)
  * task.
  * \param handle Driver's handle, i.e. pointer to \ref Sdadc_Rdc RAM location
  * */
-PosIf_Raw Sdadc_Rdc_updateStep2(Sdadc_Rdc *handle)
+Pos_Raw Sdadc_Rdc_updateStep2(Sdadc_Rdc *handle)
 {
     PosIf  *base = &(handle->angleTrk).base;
     float32 groupDelayAngle;
@@ -343,7 +297,7 @@ PosIf_Raw Sdadc_Rdc_updateStep2(Sdadc_Rdc *handle)
 #endif
 
     {   // final output angle estimation
-        PosIf_Raw newPosition = (PosIf_Raw)(angleOut * (ANGLETRK_RESOLUTION / 2) / PI);
+    	Pos_Raw  newPosition = (Pos_Raw)(angleOut * (ANGLETRK_RESOLUTION / 2) / PI);
         newPosition    = (newPosition + base->offset) & (ANGLETRK_RESOLUTION - 1);
         base->position = newPosition;
         return newPosition;
@@ -356,9 +310,5 @@ PosIf_Raw Sdadc_Rdc_updateStep2(Sdadc_Rdc *handle)
  */
 void Sdadc_Rdc_startConversion(Sdadc_Rdc *handle)
 {
-//    Ifx_DSADC *module = handle->hardware.inputSin.module;
-//    uint32     mask   =
-//        (1U << handle->hardware.inputCos.channelId) |
-//        (1U << handle->hardware.inputSin.channelId);
-//    Sdadc_startScan(module, mask, mask);
+
 }
