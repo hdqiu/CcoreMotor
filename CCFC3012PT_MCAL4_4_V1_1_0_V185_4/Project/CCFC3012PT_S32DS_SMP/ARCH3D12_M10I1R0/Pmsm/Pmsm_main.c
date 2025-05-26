@@ -614,7 +614,7 @@ void foc_do_1(void)
 #if 1
     time_stamp_test = g_RdcSdadc_b.timestamp.inSeconds*1000000;
 
-    g_speedB_test = AngleTrk_getLoopSpeed(&g_RdcSdadc_b.angleTrk)*60.0F/(Motor_Poles*2*3.1415926F);
+    g_speedB_test = Sdadc_Rdc_getMechSpeed(&g_RdcSdadc_b)*60.0F/(2*3.1415926F);
     g_speedB_testh =  g_speedB_testh*GM_Low_Lass_A +  g_speedB_test * GM_Low_Lass_B;
 
     g_angleB_test = g_RdcSdadc_b.angleTrk.angleEst/PI*180.0f;
@@ -623,8 +623,6 @@ void foc_do_1(void)
     	g_angleB_test += 360.0f;
     }
 #endif
-
-
 	SIUL.GPDO[PQ6].R = 1;
 
 	Adc_ReadGroup(1, &resultForFOC2_1[2][0]);
