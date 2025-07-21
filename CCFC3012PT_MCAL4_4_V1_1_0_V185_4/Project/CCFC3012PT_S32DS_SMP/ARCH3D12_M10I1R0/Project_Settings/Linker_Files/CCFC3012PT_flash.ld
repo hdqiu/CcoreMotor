@@ -167,7 +167,39 @@ SECTIONS
 		/* *Pmsm_PhasCurrCalc_MotB.o(.text.*)    */
 		/* *Pmsm_RdcCalcThetaSpeed_MotB.o(.text. */
 		/* *Pmsm_SpdLpFlxWkn_MotB.o(.text.*)     */
-	} > cpu1_local_imem AT>m_text            
+	} > cpu1_local_imem AT>m_text       
+	
+	.itcm2_fun :                             
+	{                                         */
+		/* *Pmsm_Foc.o(.text.*)               */  
+		/* *Pmsm_PhasCurrCalc.o(.text.*)      */  
+		/* *Pmsm_RdcCalcThetaSpeed.o(.text.*) */  
+		/* *Pmsm_SpdLpFlxWkn.o(.text.*)       */  
+	} > cpu2_local_imem AT>m_text            
+	                                         
+	.itcm3_fun :                             
+	{                                            
+		/* *Pmsm_Foc_MotB.o(.text.*)             */
+		/* *Pmsm_PhasCurrCalc_MotB.o(.text.*)    */
+		/* *Pmsm_RdcCalcThetaSpeed_MotB.o(.text. */
+		/* *Pmsm_SpdLpFlxWkn_MotB.o(.text.*)     */
+	} > cpu3_local_imem AT>m_text  
+	
+	.itcm4_fun :                             
+	{                                         */
+		/* *Pmsm_Foc.o(.text.*)               */  
+		/* *Pmsm_PhasCurrCalc.o(.text.*)      */  
+		/* *Pmsm_RdcCalcThetaSpeed.o(.text.*) */  
+		/* *Pmsm_SpdLpFlxWkn.o(.text.*)       */  
+	} > cpu4_local_imem AT>m_text            
+	                                         
+	.itcm5_fun :                             
+	{                                            
+		/* *Pmsm_Foc_MotB.o(.text.*)             */
+		/* *Pmsm_PhasCurrCalc_MotB.o(.text.*)    */
+		/* *Pmsm_RdcCalcThetaSpeed_MotB.o(.text. */
+		/* *Pmsm_SpdLpFlxWkn_MotB.o(.text.*)     */
+	} > cpu5_local_imem AT>m_text       
 
 	 .cal_section :
     {
@@ -307,6 +339,26 @@ SECTIONS
     {
       *(.cpu1_dtcm_data)
     }  > cpu1_local_dmem AT>m_text
+    
+    .cpu2_local_data : 
+    {
+      *(.cpu2_dtcm_data)
+    }  > cpu2_local_dmem AT>m_text
+    
+    .cpu3_local_data : 
+    {
+      *(.cpu3_dtcm_data)
+    }  > cpu3_local_dmem AT>m_text    
+
+    .cpu4_local_data : 
+    {
+      *(.cpu4_dtcm_data)
+    }  > cpu4_local_dmem AT>m_text
+    
+    .cpu5_local_data : 
+    {
+      *(.cpu5_dtcm_data)
+    }  > cpu5_local_dmem AT>m_text        
 
     .stack_0 (NOLOAD) : ALIGN(16) 
     {
@@ -372,6 +424,27 @@ __ITCM1_RAM_ADDR  = ADDR(.itcm1_fun);
 __ITCM1_ROM_ADDR  = LOADADDR(.itcm1_fun);
 __ITCM1_SIZE      = SIZEOF(.itcm1_fun);
 
+/* Labels Used for ITCM2 FUN */
+__ITCM2_RAM_ADDR  = ADDR(.itcm2_fun);
+__ITCM2_ROM_ADDR  = LOADADDR(.itcm2_fun);
+__ITCM2_SIZE      = SIZEOF(.itcm2_fun);
+
+/* Labels Used for ITCM3 FUN */
+__ITCM3_RAM_ADDR  = ADDR(.itcm3_fun);
+__ITCM3_ROM_ADDR  = LOADADDR(.itcm3_fun);
+__ITCM3_SIZE      = SIZEOF(.itcm3_fun);
+
+/* Labels Used for ITCM2 FUN */
+__ITCM4_RAM_ADDR  =     ADDR(.itcm4_fun);
+__ITCM4_ROM_ADDR  = LOADADDR(.itcm4_fun);
+__ITCM4_SIZE      =   SIZEOF(.itcm4_fun);
+
+/* Labels Used for ITCM3 FUN */
+__ITCM5_RAM_ADDR  =     ADDR(.itcm5_fun);
+__ITCM5_ROM_ADDR  = LOADADDR(.itcm5_fun);
+__ITCM5_SIZE      =   SIZEOF(.itcm5_fun);
+
+
 /* Labels Used for DTCM0 DATA */
 __DTCM0_DATA_RAM_ADDR  = ADDR(.cpu0_local_data);
 __DTCM0_DATA_ROM_ADDR  = LOADADDR(.cpu0_local_data);
@@ -382,6 +455,25 @@ __DTCM1_DATA_RAM_ADDR  = ADDR(.cpu1_local_data);
 __DTCM1_DATA_ROM_ADDR  = LOADADDR(.cpu1_local_data);
 __DTCM1_DATA_SIZE      = SIZEOF(.cpu1_local_data);
 
+/* Labels Used for DTCM2 DATA */
+__DTCM2_DATA_RAM_ADDR  = ADDR(.cpu2_local_data);
+__DTCM2_DATA_ROM_ADDR  = LOADADDR(.cpu2_local_data);
+__DTCM2_DATA_SIZE      = SIZEOF(.cpu2_local_data);
+
+/* Labels Used for DTCM3 DATA */
+__DTCM3_DATA_RAM_ADDR  =     ADDR(.cpu3_local_data);
+__DTCM3_DATA_ROM_ADDR  = LOADADDR(.cpu3_local_data);
+__DTCM3_DATA_SIZE      =   SIZEOF(.cpu3_local_data);
+
+/* Labels Used for DTCM4 DATA */
+__DTCM4_DATA_RAM_ADDR  =     ADDR(.cpu4_local_data);
+__DTCM4_DATA_ROM_ADDR  = LOADADDR(.cpu4_local_data);
+__DTCM4_DATA_SIZE      =   SIZEOF(.cpu4_local_data);
+
+/* Labels Used for DTCM5 DATA */
+__DTCM5_DATA_RAM_ADDR  =     ADDR(.cpu5_local_data);
+__DTCM5_DATA_ROM_ADDR  = LOADADDR(.cpu5_local_data);
+__DTCM5_DATA_SIZE      =   SIZEOF(.cpu5_local_data);
 
 /* Labels Used for Initialising SRAM ECC */
 __SRAM_SIZE = SRAM_SIZE;

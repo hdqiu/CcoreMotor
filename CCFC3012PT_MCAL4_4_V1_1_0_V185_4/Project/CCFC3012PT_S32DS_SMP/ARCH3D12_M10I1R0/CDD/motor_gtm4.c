@@ -400,17 +400,14 @@ void GTM_ATOM_PWM_Init(GTM_ATOM_Type GTM_ATOMn, GTM_ATOM_Channel_Type CHn, uint3
 	GTM_ATOM_LLD_Channel_SetShadowRegister_lld(GTM_ATOMn,CHn,cnt1,cnt2);
 }
 
+
 void GTM_ATOM_PWM_OUTPUT(void)
 {
 	uint32_t freq = 0U;
 
-	(void)GTM_LLD_IsEnableClsDiv_lld(GTM_CLS0, ClsEnableWithoutDiv);
-	(void)GTM_LLD_IsEnableClsDiv_lld(GTM_CLS1, ClsEnableWithoutDiv);
-	(void)GTM_LLD_IsEnableClsDiv_lld(GTM_CLS2, ClsEnableWithoutDiv);
-	(void)GTM_LLD_IsEnableClsDiv_lld(GTM_CLS3, ClsEnableWithoutDiv);
+	(void)GTM_LLD_IsEnableModule_lld(Enable);
 	(void)GTM_LLD_IsEnableClsDiv_lld(GTM_CLS4, ClsEnableWithoutDiv);
 	(void)GTM_LLD_IsEnableClsDiv_lld(GTM_CLS5, ClsEnableWithoutDiv);
-	(void)GTM_LLD_IsEnableModule_lld(Enable);
 
 #ifdef RESOURCE_SUPPORT_SIUL_IP
     /* ATOM4 CH0 PO12 */
@@ -547,7 +544,6 @@ void GTM_ATOM_PWM_OUTPUT(void)
 	GTM4.GLS[4].CDTM.DTM[5].CH_CTRL2.B.DT0_0 = 1U;
 	GTM4.GLS[4].CDTM.DTM[5].CH_CTRL2.B.DT1_0 = 1U;
 
-
 	GTM4.GLS[4].ATOM.CH[0].CTRL_SR.B.SL_SR = 1u;
 	GTM4.GLS[4].ATOM.CH[1].CTRL_SR.B.SL_SR = 1u;
 	GTM4.GLS[4].ATOM.CH[2].CTRL_SR.B.SL_SR = 1u;
@@ -571,6 +567,11 @@ void GTM_ATOM_PWM_OUTPUT(void)
 	GTM4.GLS[5].ATOM.CH[1].CTRL.B.UDMODE = 1u;
 	GTM4.GLS[5].ATOM.CH[2].CTRL.B.UDMODE = 1u;
 	GTM4.GLS[5].ATOM.CH[4].CTRL.B.UDMODE = 0u;
+
+	GTM4.GLS[5].ATOM.CH[0].CN0.R = freq/2;
+	GTM4.GLS[5].ATOM.CH[1].CN0.R = freq/2;
+	GTM4.GLS[5].ATOM.CH[2].CN0.R = freq/2;
+	GTM4.GLS[5].ATOM.CH[4].CN0.R = freq/2;
 
 	GTM4.GLS[5].ATOM.AGC.GLB_CTRL.R = 0x022a0000u;
 	GTM4.GLS[5].ATOM.AGC.ENDIS_CTRL.R = 0x0000022au;

@@ -72,7 +72,7 @@ typedef struct
     sint32        *sdadc_sin;
     sint32        *sdadc_cos;
     uint8_t       Sample_point; //per Period
-    uint8_t       zero_offset;
+    sint8         zero_offset;
     sint32        sinIn;
     sint32        cosIn;
     float32       tSample;
@@ -163,12 +163,12 @@ extern Pos_Raw   Sdadc_Rdc_updateStep2       (Sdadc_Rdc *handle);
  *
  * Prototypes:
  * \{ */
-inline Pos_Raw   Sdadc_Rdc_getPosition     (Sdadc_Rdc *handle);
-inline float32   Sdadc_Rdc_getMechSpeed    (Sdadc_Rdc *handle);
-inline boolean   Sdadc_Rdc_isErrorOccurred (Sdadc_Rdc *handle);
-inline Std_Pos_Status Sdadc_Rdc_getErrorStatus(Sdadc_Rdc *handle);
-inline sint32    Sdadc_Rdc_getPeriodsPerRotation(Sdadc_Rdc *handle);
-inline sint32    Sdadc_Rdc_getMotorPolePairs(Sdadc_Rdc *handle);
+static inline Pos_Raw   Sdadc_Rdc_getPosition     (Sdadc_Rdc *handle);
+static inline float32   Sdadc_Rdc_getMechSpeed    (Sdadc_Rdc *handle);
+static inline boolean   Sdadc_Rdc_isErrorOccurred (Sdadc_Rdc *handle);
+static inline Std_Pos_Status Sdadc_Rdc_getErrorStatus(Sdadc_Rdc *handle);
+static inline sint32    Sdadc_Rdc_getPeriodsPerRotation(Sdadc_Rdc *handle);
+static inline sint32    Sdadc_Rdc_getMotorPolePairs(Sdadc_Rdc *handle);
 void Sdadc_Rdc_setupElAngleConst(Sdadc_Rdc *handle, sint32 motorPolePairs);
 
 
@@ -183,7 +183,7 @@ extern float32   Sdadc_Rdc_getTimeStamp    (Sdadc_Rdc *handle);
 /** \} */
 /** \} */
 //________________________________________________________________________________________
-// INLINE FUNCTION IMPLEMENTATIONS
+// static inline FUNCTION IMPLEMENTATIONS
 
 /** Get the actual position.
  *
@@ -193,19 +193,19 @@ extern float32   Sdadc_Rdc_getTimeStamp    (Sdadc_Rdc *handle);
  * \param handle Pointer to Sdadc_Rdc object (RAM location)
  * \return actual position. Range is within 0 .. (\ref ANGLETRK_RESOLUTION - 1)
  */
-inline Pos_Raw Sdadc_Rdc_getPosition(Sdadc_Rdc *handle)
+static inline Pos_Raw Sdadc_Rdc_getPosition(Sdadc_Rdc *handle)
 {
     return AngleTrk_getPosition(&handle->angleTrk);
 }
 
 /** Get the number of periods per rotation as configured during initialisation */
-inline sint32 Sdadc_Rdc_getPeriodsPerRotation(Sdadc_Rdc *handle)
+static inline sint32 Sdadc_Rdc_getPeriodsPerRotation(Sdadc_Rdc *handle)
 {
     return handle->angleTrk.base.periodPerRotation;
 }
 
 /** Get Number of motor pole pairs as configured during initialisation */
-inline sint32 Sdadc_Rdc_getMotorPolePairs(Sdadc_Rdc *handle)
+static inline sint32 Sdadc_Rdc_getMotorPolePairs(Sdadc_Rdc *handle)
 {
     return handle->angleTrk.base.motorPolePairs;
 }
@@ -215,7 +215,7 @@ inline sint32 Sdadc_Rdc_getMotorPolePairs(Sdadc_Rdc *handle)
  * \param handle Pointer to Sdadc_Rdc object (RAM location)
  * \return actual electrical speed in rad/s
  */
-inline float32 Sdadc_Rdc_getElecSpeed(Sdadc_Rdc *handle)
+static inline float32 Sdadc_Rdc_getElecSpeed(Sdadc_Rdc *handle)
 {
     return AngleTrk_getLoopSpeed((AngleTrk *)&handle->angleTrk)*Sdadc_Rdc_getMotorPolePairs(handle)/Sdadc_Rdc_getPeriodsPerRotation(handle);
 }
@@ -225,19 +225,19 @@ inline float32 Sdadc_Rdc_getElecSpeed(Sdadc_Rdc *handle)
  * \param handle Pointer to Sdadc_Rdc object (RAM location)
  * \return actual  mechanical speed in rad/s
  */
-inline float32 Sdadc_Rdc_getMechSpeed(Sdadc_Rdc *handle)
+static inline float32 Sdadc_Rdc_getMechSpeed(Sdadc_Rdc *handle)
 {
     return Sdadc_Rdc_getElecSpeed(handle)/Sdadc_Rdc_getMotorPolePairs(handle);
 }
 
 /** Return TRUE if at least one error has occurred */
-inline boolean Sdadc_Rdc_isErrorOccurred(Sdadc_Rdc *handle)
+static inline boolean Sdadc_Rdc_isErrorOccurred(Sdadc_Rdc *handle)
 {
     return (handle->angleTrk.base.status.status != 0);
 }
 
 /** Return fault state. \see PosIf_Status fields for more details */
-inline Std_Pos_Status Sdadc_Rdc_getErrorStatus(Sdadc_Rdc *handle)
+static inline Std_Pos_Status Sdadc_Rdc_getErrorStatus(Sdadc_Rdc *handle)
 {
     return handle->angleTrk.base.status;
 }

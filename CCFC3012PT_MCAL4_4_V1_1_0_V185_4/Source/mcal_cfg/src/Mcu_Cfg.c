@@ -1595,11 +1595,16 @@ static CONST(Mcu_ClockConfigType, MCU_CONST) Mcu_ClockConfiguration[] =
 {
     {
     .cgmConfig = {
-        .sc_dc0 = (Mcu_CgmClkDivType)(2U << 16U),
-        .sc_dc1 = (Mcu_CgmClkDivType)(5U << 16U),
-        .sc_dc2 = (Mcu_CgmClkDivType)(11U << 16U),
-        .sc_dc3 = (Mcu_CgmClkDivType)(1U << 16U),
-        .sc_dc4 = (Mcu_CgmClkDivType)(8U << 16U),
+//        .sc_dc0 = (Mcu_CgmClkDivType)(2U << 16U),
+//        .sc_dc1 = (Mcu_CgmClkDivType)(5U << 16U),
+//        .sc_dc2 = (Mcu_CgmClkDivType)(11U << 16U),
+//        .sc_dc3 = (Mcu_CgmClkDivType)(1U << 16U),
+//        .sc_dc4 = (Mcu_CgmClkDivType)(8U << 16U),
+        .sc_dc0 = (Mcu_CgmClkDivType)(3U  << 16U),
+        .sc_dc1 = (Mcu_CgmClkDivType)(7U  << 16U),
+        .sc_dc2 = (Mcu_CgmClkDivType)(15U << 16U),
+        .sc_dc3 = (Mcu_CgmClkDivType)(1U  <<  16U),
+        .sc_dc4 = (Mcu_CgmClkDivType)(8U  << 16U),
         .ac0_sc = (Mcu_CgmClkSelType)(CGM_SYSTEM_CLOCK_SRC_PLL0_PHI0<< 24U),
         .ac0_dc0 = (Mcu_CgmClkDivType)( (1U<< 31U) |
                                         (1U << 16U) ),
@@ -1702,8 +1707,16 @@ static CONST(Mcu_ClockConfigType, MCU_CONST) Mcu_ClockConfiguration[] =
             .phi1Divider = (Mcu_PlldigClkoutDivType) 8
             },
         .pll1Config = { 
-            .mulFactorDiv = (uint8) 30,
-            .phi0Divider = (Mcu_PlldigClkPredivType) 1,
+//            .mulFactorDiv = (uint8) 15,
+//            .phi0Divider = (Mcu_PlldigClkPredivType) 0,
+//            .modulation = (uint8)FALSE,
+//            .modulationType = (Mcu_PlldigModType)DOWN_SPREAD_MODULATION,
+//            .modulationPeriod = (uint16) 0,
+//            .incrementStep = (uint16) 0,
+//            .fracDivider = (uint8)FALSE,
+//            .fracDividerValue = (uint16) 0
+            .mulFactorDiv = (uint8) 20,
+            .phi0Divider = (Mcu_PlldigClkPredivType) 0,
             .modulation = (uint8)FALSE,
             .modulationType = (Mcu_PlldigModType)DOWN_SPREAD_MODULATION,
             .modulationPeriod = (uint16) 0,

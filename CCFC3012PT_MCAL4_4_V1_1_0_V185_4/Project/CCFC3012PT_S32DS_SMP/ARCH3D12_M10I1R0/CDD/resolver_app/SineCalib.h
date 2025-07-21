@@ -1,8 +1,6 @@
 /*
  * SineCalib.h
  *
- *  Created on: 9 May 2014
- *      Author: NugrahaD
  */
 
 #ifndef SINECALIB_H_
@@ -31,7 +29,7 @@ typedef struct
 } SineCalib;
 
 
-inline void SineCalib_init(SineCalib *sc)
+static inline void SineCalib_init(SineCalib *sc)
 {
     sc->ampl = 1.0;
     sc->offs = 0.0;
@@ -43,7 +41,7 @@ inline void SineCalib_init(SineCalib *sc)
 }
 
 
-inline sint32 SineCalib_update(SineCalib *sc, sint32 input)
+static inline sint32 SineCalib_update(SineCalib *sc, sint32 input)
 {
     if (sc->state == SineCalib_State_ready)
     {

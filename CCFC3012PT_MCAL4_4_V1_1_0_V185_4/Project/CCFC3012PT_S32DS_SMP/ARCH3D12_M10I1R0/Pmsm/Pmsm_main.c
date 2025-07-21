@@ -14,8 +14,8 @@
 #include "tester_adc.h"
 #include "Adc_Cfg.h"
 #include "Pmsm_If.h"
-
-#include "Res_SoftAngleCalc.h"
+#include "Sdadc_Rdc.h"
+#include "Pmsm_PhasCurrCalc_MotB.h"
 
 extern Sdadc_Rdc g_RdcSdadc_a;
 extern Sdadc_Rdc g_RdcSdadc_b;
@@ -106,17 +106,20 @@ extern volatile uint8 initOk;
 //#pragma GCC optimize ("O0")
 #pragma GCC diagnostic ignored "-Wmissing-declarations"
 
-Adc_ValueGroupType resultForFOC2_0[ADC_CONFIG_GROUPS/2][10];
-Adc_ValueGroupType resultForFOC2_1[ADC_CONFIG_GROUPS/2][10];
-Adc_ValueGroupType resultForBusA[10];//18V:16384;0V:0
-Adc_ValueGroupType resultForBusB[10];
+extern Adc_ValueGroupType resultbuffer[500];
+extern Adc_ValueGroupType resultbuffer_1[100];
 
-uint8 timer_1ms_cnts = 0u;
-uint16 duty_u_cnt = 5000u;
-uint16 duty_v_cnt = 5000u;
-uint16 duty_w_cnt = 5000u;
-volatile uint32 foc_do_0_cnt0 = 0ul;
-volatile float32 foc_vbus = 12.0F;
+__attribute__ ((section (".cpu0_dtcm_data"))) Adc_ValueGroupType resultForFOC2_0[ADC_CONFIG_GROUPS/2][10];
+__attribute__ ((section (".cpu1_dtcm_data"))) Adc_ValueGroupType resultForFOC2_1[ADC_CONFIG_GROUPS/2][10];
+__attribute__ ((section (".cpu0_dtcm_data"))) Adc_ValueGroupType resultForBusA[10];//18V:16384;0V:0
+__attribute__ ((section (".cpu1_dtcm_data"))) Adc_ValueGroupType resultForBusB[10];
+
+__attribute__ ((section (".cpu0_dtcm_data"))) uint8 timer_1ms_cnts = 0u;
+__attribute__ ((section (".cpu0_dtcm_data"))) uint16 duty_u_cnt = 5000u;
+__attribute__ ((section (".cpu0_dtcm_data"))) uint16 duty_v_cnt = 5000u;
+__attribute__ ((section (".cpu0_dtcm_data"))) uint16 duty_w_cnt = 5000u;
+__attribute__ ((section (".cpu0_dtcm_data"))) volatile uint32 foc_do_0_cnt0 = 0ul;
+__attribute__ ((section (".cpu0_dtcm_data"))) volatile float32 foc_vbus = 12.0F;
 
 void motor0_can_rec()
 {
@@ -331,26 +334,42 @@ void motor0_can_send()
 	/*******************CAN*********************/
 }
 
+#if 0
+__attribute__ ((section (".cpu0_dtcm_data"))) uint16 A_Cur = 1948;
+__attribute__ ((section (".cpu0_dtcm_data"))) uint16 B_Cur = 2048;
+__attribute__ ((section (".cpu0_dtcm_data"))) uint16 C_Cur = 2148;
+__attribute__ ((section (".cpu0_dtcm_data"))) uint16 Angle = 0;
+__attribute__ ((section (".cpu0_dtcm_data"))) float32 Speed = 0;
+Pmsm_100us_Task(A_Cur, B_Cur,\
+				C_Cur, \
+				Angle, \
+				Speed, \
+				12.0f, &duty_u_cnt, &duty_v_cnt, &duty_w_cnt);
+
+#endif
+
 void foc_do_0(void)
 {
 	foc_do_0_cnt0++;
 
-//	motor0_can_rec();
+	motor0_can_rec();
 
 	SIUL.GPDO[PC7].R = 0;
+
 	//计算旋变角度
 	SuspendAllInterrupts();
 	Sdadc_Rdc_updateStep2(&g_RdcSdadc_a);
-//	Res_PWMupdateCalc(&g_RdcSdadc_a, &ResXBPare_a);
     ResumeAllInterrupts();
 
 	SIUL.GPDO[PC7].R = 1;
 
     //获取电流
-	Adc_ReadGroup(0, &resultForFOC2_0[0][0]);
-	Adc_ReadGroup(2, &resultForFOC2_0[1][0]);
-	Adc_ReadGroup(4, &resultForFOC2_0[2][0]);
-	Adc_ReadGroup(6, &resultForBusA[0]);
+	resultForFOC2_0[0][0] = resultbuffer[0]>>2;
+	resultForFOC2_0[1][0] = resultbuffer[20]>>2;
+	resultForFOC2_0[2][0] = resultbuffer[40]>>2;
+	resultForBusA[0]      = resultbuffer[60]>>2;
+
+	SIUL.GPDO[PC7].R = 0;
 
 	foc_vbus = (float32)resultForBusA[0] * 0.010986328125F; // resultForBusA[0]/4/4096*18*10
 	Pmsm_100us_Task(resultForFOC2_0[0][0], resultForFOC2_0[1][0],\
@@ -358,9 +377,12 @@ void foc_do_0(void)
 				    g_RdcSdadc_a.angleTrk.base.position, \
 				    g_RdcSdadc_a.angleTrk.speedLpf.out, \
 					12.0f, &duty_u_cnt, &duty_v_cnt, &duty_w_cnt);
+
+
 	(void)GTM_ATOM_LLD_Channel_SetShadowRegister_lld(GTM_ATOM4,GTM_ATOM_CH0,PWM_PERIOD+1,duty_u_cnt);
 	(void)GTM_ATOM_LLD_Channel_SetShadowRegister_lld(GTM_ATOM4,GTM_ATOM_CH1,PWM_PERIOD+1,duty_v_cnt);
 	(void)GTM_ATOM_LLD_Channel_SetShadowRegister_lld(GTM_ATOM4,GTM_ATOM_CH2,PWM_PERIOD+1,duty_w_cnt);
+
 	timer_1ms_cnts++;
 	if (timer_1ms_cnts >= 10u)
 	{
@@ -368,17 +390,16 @@ void foc_do_0(void)
 		Pmsm_1ms_Task();
 	}
 
-//	motor0_can_send();
+	motor0_can_send();
 }
 
 
-
-uint8 timer_1ms_cnts_b = 0u;
-uint16 duty_u_cnt_b = 5000u;
-uint16 duty_v_cnt_b = 5000u;
-uint16 duty_w_cnt_b = 5000u;
-volatile uint32 foc_do_1_cnt1 = 0ul;
-volatile float32 foc_vbus_b = 12.0F;
+__attribute__ ((section (".cpu1_dtcm_data"))) uint8 timer_1ms_cnts_b = 0u;
+__attribute__ ((section (".cpu1_dtcm_data"))) uint16 duty_u_cnt_b = 5000u;
+__attribute__ ((section (".cpu1_dtcm_data"))) uint16 duty_v_cnt_b = 5000u;
+__attribute__ ((section (".cpu1_dtcm_data"))) uint16 duty_w_cnt_b = 5000u;
+__attribute__ ((section (".cpu1_dtcm_data"))) volatile uint32 foc_do_1_cnt1 = 0ul;
+__attribute__ ((section (".cpu1_dtcm_data"))) volatile float32 foc_vbus_b = 12.0F;
 
 void motor1_can_rec()
 {
@@ -593,42 +614,57 @@ void motor1_can_send()
 	/*******************CAN*********************/
 }
 
-float g_angleB_test = 0.0f;
-float g_speedB_test = 0.0f;
-float g_speedB_testh = 0.0f;
-float time_stamp_test = 0.0f;
+__attribute__ ((section (".cpu1_dtcm_data"))) float g_angleB_test = 0.0f;
+__attribute__ ((section (".cpu1_dtcm_data"))) float g_speedB_test = 0.0f;
+__attribute__ ((section (".cpu1_dtcm_data"))) float g_speedB_testh = 0.0f;
+__attribute__ ((section (".cpu1_dtcm_data"))) float time_stamp_test = 0.0f;
+__attribute__ ((section (".cpu1_dtcm_data"))) float g_angleB[5000] = {0.0f};
+__attribute__ ((section (".cpu1_dtcm_data"))) float g_speedB[5000] = {0.0f};
+__attribute__ ((section (".cpu1_dtcm_data"))) float g_time_stamp[5000] = {0.0f};
+__attribute__ ((section (".cpu1_dtcm_data"))) uint32_t g_cnt = 0;
+__attribute__ ((section (".cpu1_dtcm_data"))) float g_PhasU[5000] = {0.0f};
+__attribute__ ((section (".cpu1_dtcm_data"))) float g_PhasV[5000] = {0.0f};
+__attribute__ ((section (".cpu1_dtcm_data"))) float g_PhasW[5000] = {0.0f};
+
 
 void foc_do_1(void)
 {
 	foc_do_1_cnt1++;
-//	motor1_can_rec();
-	SIUL.GPDO[PQ6].R = 0;
+	motor1_can_rec();
+//	SIUL.GPDO[PQ6].R = 0;
 
 	//计算旋变角度
 	SuspendAllInterrupts();
 	Sdadc_Rdc_updateStep2(&g_RdcSdadc_b);
-//	Res_PWMupdateCalc(&g_RdcSdadc_b,  &ResXBPare_b);
-    ResumeAllInterrupts();
-
     //for test
 #if 1
     time_stamp_test = g_RdcSdadc_b.timestamp.inSeconds*1000000;
-
     g_speedB_test = Sdadc_Rdc_getMechSpeed(&g_RdcSdadc_b)*60.0F/(2*3.1415926F);
-    g_speedB_testh =  g_speedB_testh*GM_Low_Lass_A +  g_speedB_test * GM_Low_Lass_B;
+    g_speedB_testh =  g_speedB_testh*0.95 +  g_speedB_test * 0.05;
 
     g_angleB_test = g_RdcSdadc_b.angleTrk.angleEst/PI*180.0f;
     if(g_angleB_test < 0)
     {
     	g_angleB_test += 360.0f;
     }
+    if(g_cnt < 5000)
+    {
+        g_angleB[g_cnt] = g_angleB_test;
+        g_speedB[g_cnt] = g_speedB_testh;
+        g_time_stamp[g_cnt] = time_stamp_test;
+//        g_cnt++;
+    }
 #endif
-	SIUL.GPDO[PQ6].R = 1;
+    ResumeAllInterrupts();
 
-	Adc_ReadGroup(1, &resultForFOC2_1[2][0]);
-	Adc_ReadGroup(3, &resultForFOC2_1[1][0]);
-	Adc_ReadGroup(5, &resultForFOC2_1[0][0]);
-	Adc_ReadGroup(7, &resultForBusB[0]);
+//	SIUL.GPDO[PQ6].R = 1;
+
+	resultForFOC2_1[2][0] = resultbuffer_1[0]>>2;
+	resultForFOC2_1[1][0] = resultbuffer_1[20]>>2;
+	resultForFOC2_1[0][0] = resultbuffer_1[40]>>2;
+	resultForBusB[0]      = resultbuffer_1[60]>>2;
+
+//	SIUL.GPDO[PQ6].R = 0;
 
 	foc_vbus_b = (float32)resultForBusB[0] * 0.010986328125F; // resultForBusB[0]/4/4096*18*10
 	Pmsm_100us_Task_MotB(resultForFOC2_1[0][0], resultForFOC2_1[1][0],
@@ -640,12 +676,15 @@ void foc_do_1(void)
 	(void)GTM_ATOM_LLD_Channel_SetShadowRegister_lld(GTM_ATOM5,GTM_ATOM_CH1,PWM_PERIOD+1,duty_v_cnt_b);
 	(void)GTM_ATOM_LLD_Channel_SetShadowRegister_lld(GTM_ATOM5,GTM_ATOM_CH2,PWM_PERIOD+1,duty_w_cnt_b);
 	timer_1ms_cnts_b++;
+	
 	if (timer_1ms_cnts_b >= 10u) {
 		timer_1ms_cnts_b = 0;
 		Pmsm_1ms_Task_MOTB();
 	}
 
-//	motor1_can_send();
+//	SIUL.GPDO[PQ6].R = 1;
+
+	motor1_can_send();
 }
 
 
@@ -653,10 +692,16 @@ extern volatile uint8 initOk2;
 real32_T TestBBB = 1000.0;
 uint8 *pp;
 uint8 *p;
+
 void Gpt_Pit0Ch6_Cbk_Notification(void)
 {
 	uint8 i;
 	pit0ch6_total_cnt++;
+
+	if((pit0ch6_total_cnt%100) == 0)
+	{
+		SIUL.GPDO[PD2].R ^= 1;
+	}
 
    if(initOk2 == 0)
    {

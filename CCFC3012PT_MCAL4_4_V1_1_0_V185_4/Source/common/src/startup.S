@@ -486,13 +486,13 @@ CPUITCMCOPYEND:
     e_cmp16i    r9, 1
     e_beq       CPU1DTCMCOPY
     e_cmp16i    r9, 2
-    e_beq       CPUDTCMCOPYEND
+    e_beq       CPU2DTCMCOPY
     e_cmp16i    r9, 3
-    e_beq       CPUDTCMCOPYEND
+    e_beq       CPU3DTCMCOPY
     e_cmp16i    r9, 4
-    e_beq       CPUDTCMCOPYEND
+    e_beq       CPU4DTCMCOPY
     e_cmp16i    r9, 5
-    e_beq       CPUDTCMCOPYEND
+    e_beq       CPU5DTCMCOPY
     ;#
 
 ;# Initialised DTCM Data - ".dtcm_data"
@@ -515,7 +515,7 @@ CPU0DTCMCOPY:
     e_beq       CPUDTCMCOPYEND               # Skip to SDATA copy if addresses is equal (no need to copy data)
     e_b       CPUDTCMCPYLOOP
 
-;# Initialised Data Share - ".itcm_data"
+;# Initialised DTCM data - ".dtcm_data"
 CPU1DTCMCOPY:
     e_lis       r9, __DTCM1_DATA_SIZE@h           # Load upper SRAM load size (# of bytes) into R9
     e_or2i      r9, __DTCM1_DATA_SIZE@l           # Load lower SRAM load size into R9
@@ -530,6 +530,86 @@ CPU1DTCMCOPY:
 
     e_lis       r5, __DTCM1_DATA_RAM_ADDR@h       # Load upper SRAM address into R5 (from linker file)
     e_or2i      r5, __DTCM1_DATA_RAM_ADDR@l       # Load lower SRAM address into R5 (from linker file)
+    e_subi      r5, r5, 1                    # Decrement address to prepare for ROMCPYLOOP
+    cmp         cr0,r5, r10
+    e_beq       CPUDTCMCOPYEND               # Skip to SDATA copy if addresses is equal (no need to copy data)
+    e_b       CPUDTCMCPYLOOP
+
+;# Initialised DTCM Data - ".dtcm_data"
+CPU2DTCMCOPY:
+    e_lis       r9, __DTCM2_DATA_SIZE@h           # Load upper SRAM load size (# of bytes) into R9
+    e_or2i      r9, __DTCM2_DATA_SIZE@l           # Load lower SRAM load size into R9
+    e_cmp16i    r9,0                         # Compare to see if equal to 0
+    e_beq       CPUDTCMCOPYEND               # Exit cfg_ROMCPY if size is zero (no data to initialise)
+
+    mtctr       r9                           # Store no. of bytes to be moved in counter
+
+    e_lis       r10, __DTCM2_DATA_ROM_ADDR@h      # Load address of first SRAM load into R10
+    e_or2i      r10, __DTCM2_DATA_ROM_ADDR@l      # Load lower address of SRAM load into R10
+    e_subi      r10,r10, 1                   # Decrement address to prepare for ROMCPYLOOP
+
+    e_lis       r5, __DTCM2_DATA_RAM_ADDR@h       # Load upper SRAM address into R5 (from linker file)
+    e_or2i      r5, __DTCM2_DATA_RAM_ADDR@l       # Load lower SRAM address into R5 (from linker file)
+    e_subi      r5, r5, 1                    # Decrement address to prepare for ROMCPYLOOP
+    cmp         cr0,r5, r10
+    e_beq       CPUDTCMCOPYEND               # Skip to SDATA copy if addresses is equal (no need to copy data)
+    e_b       CPUDTCMCPYLOOP
+
+;# Initialised DTCM Data - ".dtcm_data"
+CPU3DTCMCOPY:
+    e_lis       r9, __DTCM3_DATA_SIZE@h           # Load upper SRAM load size (# of bytes) into R9
+    e_or2i      r9, __DTCM3_DATA_SIZE@l           # Load lower SRAM load size into R9
+    e_cmp16i    r9,0                         # Compare to see if equal to 0
+    e_beq       CPUDTCMCOPYEND               # Exit cfg_ROMCPY if size is zero (no data to initialise)
+
+    mtctr       r9                           # Store no. of bytes to be moved in counter
+
+    e_lis       r10, __DTCM3_DATA_ROM_ADDR@h      # Load address of first SRAM load into R10
+    e_or2i      r10, __DTCM3_DATA_ROM_ADDR@l      # Load lower address of SRAM load into R10
+    e_subi      r10,r10, 1                   # Decrement address to prepare for ROMCPYLOOP
+
+    e_lis       r5, __DTCM3_DATA_RAM_ADDR@h       # Load upper SRAM address into R5 (from linker file)
+    e_or2i      r5, __DTCM3_DATA_RAM_ADDR@l       # Load lower SRAM address into R5 (from linker file)
+    e_subi      r5, r5, 1                    # Decrement address to prepare for ROMCPYLOOP
+    cmp         cr0,r5, r10
+    e_beq       CPUDTCMCOPYEND               # Skip to SDATA copy if addresses is equal (no need to copy data)
+    e_b       CPUDTCMCPYLOOP
+
+;# Initialised DTCM Data - ".dtcm_data"
+CPU4DTCMCOPY:
+    e_lis       r9, __DTCM4_DATA_SIZE@h           # Load upper SRAM load size (# of bytes) into R9
+    e_or2i      r9, __DTCM4_DATA_SIZE@l           # Load lower SRAM load size into R9
+    e_cmp16i    r9,0                         # Compare to see if equal to 0
+    e_beq       CPUDTCMCOPYEND               # Exit cfg_ROMCPY if size is zero (no data to initialise)
+
+    mtctr       r9                           # Store no. of bytes to be moved in counter
+
+    e_lis       r10, __DTCM4_DATA_ROM_ADDR@h      # Load address of first SRAM load into R10
+    e_or2i      r10, __DTCM4_DATA_ROM_ADDR@l      # Load lower address of SRAM load into R10
+    e_subi      r10,r10, 1                   # Decrement address to prepare for ROMCPYLOOP
+
+    e_lis       r5, __DTCM4_DATA_RAM_ADDR@h       # Load upper SRAM address into R5 (from linker file)
+    e_or2i      r5, __DTCM4_DATA_RAM_ADDR@l       # Load lower SRAM address into R5 (from linker file)
+    e_subi      r5, r5, 1                    # Decrement address to prepare for ROMCPYLOOP
+    cmp         cr0,r5, r10
+    e_beq       CPUDTCMCOPYEND               # Skip to SDATA copy if addresses is equal (no need to copy data)
+    e_b       CPUDTCMCPYLOOP
+
+;# Initialised DTCM Data - ".dtcm_data"
+CPU5DTCMCOPY:
+    e_lis       r9, __DTCM5_DATA_SIZE@h           # Load upper SRAM load size (# of bytes) into R9
+    e_or2i      r9, __DTCM5_DATA_SIZE@l           # Load lower SRAM load size into R9
+    e_cmp16i    r9,0                         # Compare to see if equal to 0
+    e_beq       CPUDTCMCOPYEND               # Exit cfg_ROMCPY if size is zero (no data to initialise)
+
+    mtctr       r9                           # Store no. of bytes to be moved in counter
+
+    e_lis       r10, __DTCM5_DATA_ROM_ADDR@h      # Load address of first SRAM load into R10
+    e_or2i      r10, __DTCM5_DATA_ROM_ADDR@l      # Load lower address of SRAM load into R10
+    e_subi      r10,r10, 1                   # Decrement address to prepare for ROMCPYLOOP
+
+    e_lis       r5, __DTCM5_DATA_RAM_ADDR@h       # Load upper SRAM address into R5 (from linker file)
+    e_or2i      r5, __DTCM5_DATA_RAM_ADDR@l       # Load lower SRAM address into R5 (from linker file)
     e_subi      r5, r5, 1                    # Decrement address to prepare for ROMCPYLOOP
     cmp         cr0,r5, r10
     e_beq       CPUDTCMCOPYEND               # Skip to SDATA copy if addresses is equal (no need to copy data)

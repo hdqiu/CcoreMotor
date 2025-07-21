@@ -132,16 +132,6 @@ status_t GTM_LLD_IsEnableClsDiv_lld(GTM_CLS_Type GTM_CLSn, GTM_ClsDivStatus_Type
     GTM4.GLS[0].ARCH.CLS_CLK_CFG.R |= (uint32_t)((uint32_t)status << 2u * (uint32_t)GTM_CLSn);
     GTM4.GLS[0].ARCH.CTRL.B.RF_PROT = 1;
 
-    GTM4.GLS[5].ARCH.CTRL.B.RF_PROT = 0;
-    GTM4.GLS[5].ARCH.CLS_CLK_CFG.R &= ~(uint32_t)(0x3u << 2u * (uint32_t)GTM_CLSn);
-    GTM4.GLS[5].ARCH.CLS_CLK_CFG.R |= (uint32_t)((uint32_t)status << 2u * (uint32_t)GTM_CLSn);
-    GTM4.GLS[5].ARCH.CTRL.B.RF_PROT = 1;
-
-    GTM4.GLS[4].ARCH.CTRL.B.RF_PROT = 0;
-    GTM4.GLS[4].ARCH.CLS_CLK_CFG.R &= ~(uint32_t)(0x3u << 2u * (uint32_t)GTM_CLSn);
-    GTM4.GLS[4].ARCH.CLS_CLK_CFG.R |= (uint32_t)((uint32_t)status << 2u * (uint32_t)GTM_CLSn);
-    GTM4.GLS[4].ARCH.CTRL.B.RF_PROT = 1;
-
     return STATUS_SUCCESS;
 }
 

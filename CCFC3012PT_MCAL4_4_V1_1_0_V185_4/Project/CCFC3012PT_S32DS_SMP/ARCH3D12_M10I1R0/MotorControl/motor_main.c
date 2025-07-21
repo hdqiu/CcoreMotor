@@ -15,7 +15,7 @@
 #include "MotorControl_Types.h"
 #include "pospe_sensor.h"
 #include "Sdadc_Rdc.h"
-#include "Res_SoftAngleCalc.h"
+#include "Mcal.h"
 
 __attribute__ ((section (".cpu0_dtcm_data"))) pmsmFOC_t FOC_P1;
 __attribute__ ((section (".cpu1_dtcm_data"))) pmsmFOC_t FOC_P3;
@@ -64,7 +64,7 @@ void IPhDmaCbFunction_P1(void)
 
 	//计算旋变角度
 	SuspendAllInterrupts();
-	Res_PWMupdateCalc(&g_RdcSdadc_a, &ResXBPare_a);
+	Sdadc_Rdc_updateStep2(&g_RdcSdadc_a);
     ResumeAllInterrupts();
 
 	GetMotorControlVariables(&FOC_P1);
@@ -102,7 +102,7 @@ void IPhDmaCbFunction_P3(void)
 
 	//计算旋变角度
 	SuspendAllInterrupts();
-	Res_PWMupdateCalc(&g_RdcSdadc_b, &ResXBPare_b);
+	Sdadc_Rdc_updateStep2(&g_RdcSdadc_b);
     ResumeAllInterrupts();
 
 	GetMotorControlVariables(&FOC_P3);

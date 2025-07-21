@@ -22,6 +22,7 @@
 #ifndef Pmsm_Foc_MotB_COMMON_INCLUDES_
 #define Pmsm_Foc_MotB_COMMON_INCLUDES_
 #include "rtwtypes.h"
+#include "gflib.h"
 #endif                                 /* Pmsm_Foc_MotB_COMMON_INCLUDES_ */
 
 #include "Pmsm_Foc_MotB_types.h"

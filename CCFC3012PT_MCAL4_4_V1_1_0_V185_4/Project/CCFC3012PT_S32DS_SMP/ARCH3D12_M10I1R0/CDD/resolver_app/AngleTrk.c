@@ -91,6 +91,7 @@ static inline float clamp(float val, float min, float max) {
 #define ATO_K   (39.05)
 #define ATO_PSI (1.5*PI)
 
+
 void AngleTrk_setControlGains(AngleTrk* aObsv, float32 K, float32 T, float32 psi)
 {
     aObsv->cfg.Kp = ((2 * K) + (psi * psi) + 1) / (T * T);
@@ -154,11 +155,11 @@ void AngleTrk_init(AngleTrk* aObsv, const AngleTrk_Config* config, float32 Ts)
     aObsv->angleRef = 0.0F;
     {
 #if ANGLETRK_SPEED_FILTER
-        Ifx_LowPassPt1_Config lpfConfig;
+        LowPassPt1_Config lpfConfig;
         lpfConfig.gain = 1.0F;
         lpfConfig.cutOffFrequency = (2*PI*config->speedLpfFc);
         lpfConfig.samplingTime = Ts;
-        Ifx_LowPassPt1_init(&aObsv->speedLpf, &lpfConfig);
+        LowPassPt1_init(&aObsv->speedLpf, &lpfConfig);
 #endif
 #if ANGLETRK_DIRECT_SPEED
         aObsv->angleHist = 0;
@@ -215,8 +216,8 @@ float32 AngleTrk_step(AngleTrk* aObsv, sint32 sinIn, sint32 cosIn, float32 phase
 
     // Acceleration, zero-order-hold integrator:
     dAccel = aObsv->cfg.Ki * aObsv->angleErr;
-//    aObsv->accelEst = aObsv->accelEst + (dAccel * aObsv->base.Ts);
-    aObsv->accelEst = clamp(aObsv->accelEst + (dAccel * aObsv->base.Ts), -100.0f, 100.0f);
+    aObsv->accelEst = aObsv->accelEst + (dAccel * aObsv->base.Ts);
+//    aObsv->accelEst = clamp(aObsv->accelEst + (dAccel * aObsv->base.Ts), -100.0f, 100.0f);
 
 
     // Speed, zero-order-hold integrator:
@@ -235,7 +236,7 @@ float32 AngleTrk_step(AngleTrk* aObsv, sint32 sinIn, sint32 cosIn, float32 phase
 
 #if ANGLETRK_SPEED_FILTER
     // Filter speed:
-    Ifx_LowPassPt1_do(&aObsv->speedLpf, aObsv->speedEstB);
+    LowPassPt1_do(&aObsv->speedLpf, aObsv->speedEstB);
 #endif
 
 //    aObsv->base.speed = AngleTrk_getLoopSpeed(aObsv) * aObsv->base.speedConst;

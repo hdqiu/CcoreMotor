@@ -26,6 +26,8 @@
 
 #include "Pmsm_Foc_types.h"
 #include <string.h>
+#include "gflib.h"
+#include "derivative.h"
 
 /* Storage class 'PmsmDefault', for system '<Root>' */
 typedef struct {

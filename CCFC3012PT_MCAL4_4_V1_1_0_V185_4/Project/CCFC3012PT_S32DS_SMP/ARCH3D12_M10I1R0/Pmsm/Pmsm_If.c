@@ -489,7 +489,7 @@ void Pmsm_Init(void)
 //    Pmsm_bl_FlxWknEnable = PMSM_TRUE;
     Pmsm_f32_SpdLp_OutMax = 0.34F;
 
-Pmsm_u8_MotCmdSelIn = 3u;
+Pmsm_u8_MotCmdSelIn = 2u;
 Pmsm_f32_DnSelSvm7Val = 0.64F;
 Pmsm_f32_Flux = 0.00755555555F;
 Pmsm_f32_Kt = 0.034F;
@@ -528,8 +528,8 @@ Pmsm_f32_FlxWkb_VbusFiltCoeff = 0.2F;
 Pmsm_f32_SpdLpFdbLpfCoeff_C = 1.0F;
 Pmsm_f32_SpdLpfCoeff_C = 0.05F;
 Pmsm_f32_SpdLpRefMax = 5000.0F;
-Pmsm_f32_SpdLp_Ki = 0.0001F;
-Pmsm_f32_SpdLp_Kp = 0.001F;
+Pmsm_f32_SpdLp_Ki = 0.00005F;
+Pmsm_f32_SpdLp_Kp = 0.0005F;
 Pmsm_f32_SpdLp_OutMax = 0.34F;
 Pmsm_f32_SpdRefStepper = 1.0F;
 Pmsm_bl_DbgTorqStepEnable = true;
@@ -573,7 +573,7 @@ void Pmsm_Init_MotB(void)
     Pmsm_f32_SpdLp_OutMax_B = 0.34F;
     Pmsm_f32_DbgIqRef_B = 0.0F;
 
-Pmsm_u8_MotCmdSelIn_B = 3u;
+Pmsm_u8_MotCmdSelIn_B = 2u;
 Pmsm_f32_DnSelSvm7Val_B = 0.64F;
 Pmsm_f32_Flux_B = 0.00755555555F;
 Pmsm_f32_Kt_B = 0.034F;
@@ -612,8 +612,8 @@ Pmsm_f32_FlxWkb_VbusFiltCoeff_B = 0.2F;
 Pmsm_f32_SpdLpFdbLpfCoeff_C_B = 1.0F;
 Pmsm_f32_SpdLpfCoeff_C_B = 0.05F;
 Pmsm_f32_SpdLpRefMax_B = 5000.0F;
-Pmsm_f32_SpdLp_Ki_B = 0.0001F;
-Pmsm_f32_SpdLp_Kp_B = 0.001F;
+Pmsm_f32_SpdLp_Ki_B = 0.00005F;
+Pmsm_f32_SpdLp_Kp_B = 0.0005F;
 Pmsm_f32_SpdLp_OutMax_B = 0.34F;
 Pmsm_f32_SpdRefStepper_B = 1.0F;
 Pmsm_bl_DbgTorqStepEnable_B = true;

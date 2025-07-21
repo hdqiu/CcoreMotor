@@ -219,7 +219,7 @@ CONST(Sdadc_ConfigType, SDADC_VAR) Sdadc_Config_1 =
     },
     .FifoCfg            = {
         .FifoSize               = 64U,    /* Max(default) is 0x40 */
-        .FifoWaterMarker        = 16U,
+        .FifoWaterMarker        = 8U,
         .InfoEn                 =FALSE,
         .SignEn                 =TRUE
     },
@@ -543,7 +543,7 @@ CONST(Sdadc_ConfigType, SDADC_VAR) Sdadc_Config_4 =
     },
     .FifoCfg            = {
         .FifoSize               = 64U,    /* Max(default) is 0x40 */
-        .FifoWaterMarker        = 16U,
+        .FifoWaterMarker        = 8U,
         .InfoEn                 =FALSE,
         .SignEn                 =TRUE
     },

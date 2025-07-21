@@ -12,7 +12,6 @@
 *
 *****************************************************************************/
 #include "main.h"
-
 #include <Cfg_Pos.h>
 #include "Mcu.h"
 #include "mpu_lldriver.h"
@@ -39,10 +38,10 @@
 #include "CDD_A4911_IF.h"
 #include "Spi.h"
 #include "CDD_HE9285_Drv.h"
-
 #include "Sdadc_Rdc.h"
-#include "Res_SoftAngleCalc.h"
 #include "SDAdc.h"
+
+#include "gflib.h"
 
 __attribute__ ((section (".cpu0_dtcm_data"))) signed int exe_data_buf_a[32]= {0};
 __attribute__ ((section (".cpu0_dtcm_data"))) signed int sin_data_buf_a[32]= {0};
@@ -114,18 +113,17 @@ void SDadc_ResultCallback_Ins1(const void *parameter, eDMAChnStatusType status, 
     (void) status;
     (void) mappedChannel;
 }
-//TODO: SDADCC采样完成计算 
+//SDADC采样完成计算
 void SDadc_ResultCallback_Ins2(const void *parameter, eDMAChnStatusType status, uint8 mappedChannel)
 {
     (void) parameter;
     (void) status;
     (void) mappedChannel;
-    SIUL.GPDO[PQ7].R = 1;
+    SIUL.GPDO[PC8].R = 1;
     SuspendAllInterrupts();
     Sdadc_Rdc_updateStep1(&g_RdcSdadc_a);
-//	Res_Dsadcupdate(&g_RdcSdadc_a, sin_data_buf_a, cos_data_buf_a);
     ResumeAllInterrupts();
-    SIUL.GPDO[PQ7].R = 0;
+    SIUL.GPDO[PC8].R = 0;
 }
 void SDadc_ResultCallback_Ins3(const void *parameter, eDMAChnStatusType status, uint8 mappedChannel)
 {
@@ -144,10 +142,11 @@ void SDadc_ResultCallback_Ins5(const void *parameter, eDMAChnStatusType status, 
     (void) parameter;
     (void) status;
     (void) mappedChannel;
+    SIUL.GPDO[PQ7].R = 1;
     SuspendAllInterrupts();
     Sdadc_Rdc_updateStep1(&g_RdcSdadc_b);
-//	Res_Dsadcupdate(&g_RdcSdadc_b, sin_data_buf_b, cos_data_buf_b);
     ResumeAllInterrupts();
+    SIUL.GPDO[PQ7].R = 0;
 }
 extern uint32_t cnt1_ATOM4;
 Adc_ValueGroupType result_main[ADC_CONFIG_GROUPS][10];
@@ -188,6 +187,7 @@ void Core0Main(void)
 //    Std_ReturnType u8Adc_TempReturn = (Std_ReturnType)E_NOT_OK;
     uint16 i = 0U;
     uint16 j = 0U;
+
     Std_ReturnType u8Adc_TempReturn = (Std_ReturnType)E_NOT_OK;
     uint8 tranbuffer[2] = {2,7};
     uint8 recbuffer[2] = {0};
@@ -213,7 +213,7 @@ void Core0Main(void)
     #endif
     Port_Init(&PortContainer);
     Console_Init();
-//
+
 //    gpt_init_test();
 
     (void)Gpt_STM_LLD_DelayInit(STM1);
@@ -235,10 +235,13 @@ void Core0Main(void)
     SIUL.PCR[PC8].R = 1<<7 | 7 <<2;
     SIUL.PCR[PC11].R = 1<<7 | 7 <<2;
     SIUL.PCR[PT9].R = 1<<7 | 7 <<2;
-
     SIUL.PCR[PS6].R = 1<<7 | 7 <<2;
     SIUL.PCR[PI7].R = 1<<7 | 7 <<2;
     SIUL.GPDO[PT9].R = 1;
+
+    //LED
+    SIUL.PCR[PD2].R = 1<<7 | 7 <<2;
+    SIUL.PCR[PD3].R = 1<<7 | 7 <<2;
 
     //SDADC2 DMA done
 	INTC_LLD_Set_IRQ_Handle(DMA0_CH17_IRQn, &EDMA_Ch17_IRQHandler);
@@ -254,23 +257,21 @@ void Core0Main(void)
 	Sdadc_Init(&SdAdc_TotalConfig);
 
 #if(MOTOR_LEFT_EN == MOTOR_ENABLE)
-//	Sdadc_SetupResultBuffer(0, &exe_data_buf_a[0], 32);
+	Sdadc_SetupResultBuffer(0, &exe_data_buf_a[0], 32);
 	Sdadc_SetupResultBuffer(3, &sin_data_buf_a[0], 32);
 	Sdadc_SetupResultBuffer(2, &cos_data_buf_a[0], 32);
 	Sdadc_StartModulation(2);
 	Sdadc_StartModulation(3);
-//	Sdadc_StartModulation(0);
+	Sdadc_StartModulation(0);
 #endif	//(MOTOR_LEFT_EN == MOTOR_ENABLE)
 
 	//init rdc
 	Sdadc_Rdc_init(&g_RdcSdadc_a, &cfg_Pos_RdcDs_a);
-//	Sdadc_Rdc_setupElAngleConst(&g_RdcSdadc_a, EMOTOR_POLE_PAIR);
 	g_RdcSdadc_a.sdadc_sin = sin_data_buf_a;
 	g_RdcSdadc_a.sdadc_cos = cos_data_buf_a;
 	g_RdcSdadc_a.Sample_point = 32;
 
 	Sdadc_Rdc_init(&g_RdcSdadc_b, &cfg_Pos_RdcDs_b);
-//	Sdadc_Rdc_setupElAngleConst(&g_RdcSdadc_b, EMOTOR_POLE_PAIR);
 	g_RdcSdadc_b.sdadc_sin = sin_data_buf_b;
 	g_RdcSdadc_b.sdadc_cos = cos_data_buf_b;
 	g_RdcSdadc_b.Sample_point = 32;
@@ -282,7 +283,6 @@ void Core0Main(void)
     	memset(&resultForFOC2_0[i][0], 0, 10U);
     	memset(&resultForFOC2_1[i][0], 0, 10U);
     }
-
     while(syncFlag == 1);
 
     SIUL.GPDO[PS6].R = 1;
@@ -309,8 +309,8 @@ void Core0Main(void)
     Spi_AsyncTransmit(14);
     while (0 != Spi_GetSequenceResult(14))
     {
-    }
 
+    }
 #if 1
 //	Gpt_Pit_SetIRQ();
 //	gpt_init_test();
@@ -371,12 +371,12 @@ void Core1Main(void)
 
 	Sdadc_Init(&SdAdc_TotalConfig);
 
-//	Sdadc_SetupResultBuffer(1, &exe_data_buf_b[0], 32);
+	Sdadc_SetupResultBuffer(1, &exe_data_buf_b[0], 32);
 	Sdadc_SetupResultBuffer(4, &sin_data_buf_b[0], 32);
 	Sdadc_SetupResultBuffer(5, &cos_data_buf_b[0], 32);
 	Sdadc_StartModulation(4);
 	Sdadc_StartModulation(5);
-//	 Sdadc_StartModulation(1);
+	Sdadc_StartModulation(1);
 
 //	SDADC5 DMA done
 	INTC_LLD_Set_IRQ_Handle(DMA0_CH37_IRQn, &EDMA_Ch37_IRQHandler);
@@ -459,6 +459,7 @@ void Core4Main(void)
 
     while(1)
     {
+
     }
 }
 

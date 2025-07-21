@@ -5,7 +5,7 @@
 	<ProdInfo type="bin" size="52">vQTv/gAAAQAFAOgH9E8AAAUA6Af0TwAAPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAA==</ProdInfo>
 	<ProdInfoString type="string">2024.5.0</ProdInfoString>
 	<CreationDate type="string">24.04.2025 18:46:29:000</CreationDate>
-	<LastWriteDate type="string">17.05.2025 13:12:59:000</LastWriteDate>
+	<LastWriteDate type="string">15.07.2025 21:46:53:000</LastWriteDate>
 	<UseWspCnt type="int">0</UseWspCnt>
 	<MainFrame type="key">
 		<NETPlacementRoot type="key">
@@ -35,8 +35,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>NewWorkspace</Id>
 												<Label>_New Workspace</Label>
+												<Id>NewWorkspace</Id>
 												<Tooltip>New Workspace</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -47,8 +47,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>OpenWorkspace</Id>
 												<Label>_Open Workspace...</Label>
+												<Id>OpenWorkspace</Id>
 												<Tooltip>Open workspace</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -59,8 +59,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>SaveWorkspace</Id>
 												<Label>_Save Workspace</Label>
+												<Id>SaveWorkspace</Id>
 												<Tooltip>Save workspace</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -71,8 +71,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>SaveWorkspaceAs</Id>
 												<Label>Save Workspace _As...</Label>
+												<Id>SaveWorkspaceAs</Id>
 												<Tooltip>Save workspace as</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -83,8 +83,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>SaveWorkspaceasTemplate</Id>
 												<Label>Save Workspace as _Template...</Label>
+												<Id>SaveWorkspaceasTemplate</Id>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
 											</MenuItem>
@@ -94,8 +94,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>SaveViewContentAs</Id>
 												<Label>Save _View Content As..</Label>
+												<Id>SaveViewContentAs</Id>
 												<Tooltip>Export view content</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -106,8 +106,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>CloseWorkspace</Id>
 												<Label>_Close Workspace</Label>
+												<Id>CloseWorkspace</Id>
 												<Tooltip>Close workspace</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -118,8 +118,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>DisconnectTargetSystem</Id>
 												<Label>_Disconnect Target System..</Label>
+												<Id>DisconnectTargetSystem</Id>
 												<Tooltip>Disconnect Target</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -130,8 +130,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>ConnectTargetSystem</Id>
 												<Label>_Connect Target System..</Label>
+												<Id>ConnectTargetSystem</Id>
 												<Tooltip>Connect Target</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -142,8 +142,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>LoadProgram</Id>
 												<Label>_Load Program</Label>
+												<Id>LoadProgram</Id>
 												<Tooltip>Load Program</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -154,8 +154,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>PrintSetup</Id>
 												<Label>Print Setup</Label>
+												<Id>PrintSetup</Id>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
 											</MenuItem>
@@ -165,8 +165,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>Print</Id>
 												<Label>_Print</Label>
+												<Id>Print</Id>
 												<Tooltip>Print</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -177,8 +177,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>RecentFiles</Id>
 												<Label>Recent _Files</Label>
+												<Id>RecentFiles</Id>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
 											</MenuItem>
@@ -192,8 +192,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>1DTricore_projectARCH3D12_M10I1R0ProjectCCFC3012PT_GHS_SMPFOCwsx</Id>
-														<Label>_1 D:\Tricore_project\ARCH3D12_M10I1R0\Project\CCFC3012PT_GHS_SMP\FOC.wsx</Label>
+														<Label>_1 D:\OS_BSW\FOC.wsx</Label>
+														<Id>1DOS_BSWFOCwsx</Id>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
 													</MenuItem>
@@ -203,8 +203,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>2DCCFC3011PT_MOTORCCFC3012PT_MCAL4_4_V1_1_0_V185_4_for_test_with_TC387Motorwsx</Id>
-														<Label>_2 D:\CCFC3011PT_MOTOR\CCFC3012PT_MCAL4_4_V1_1_0_V185_4_for_test_with_TC387\Motor.wsx</Label>
+														<Label>_2 D:\BENTCH_MARK\FOC.wsx</Label>
+														<Id>2DBENTCH_MARKFOCwsx</Id>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
 													</MenuItem>
@@ -214,8 +214,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>3DCCFC3011PT_MOTORCCFC3012PT_MCAL4_4_V1_1_0_V185_4Motorwsx</Id>
-														<Label>_3 D:\CCFC3011PT_MOTOR\CCFC3012PT_MCAL4_4_V1_1_0_V185_4\Motor.wsx</Label>
+														<Label>_3 D:\Motor_Project\CCFC3012PT_MCAL4_4_V1_1_0_V185_7\Motor.wsx</Label>
+														<Id>3DMotor_ProjectCCFC3012PT_MCAL4_4_V1_1_0_V185_7Motorwsx</Id>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
 													</MenuItem>
@@ -225,8 +225,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>4DCCFC3011PT_MOTORCCFC3012PT_MCAL4_4_V1_1_0_V185_41111wsx</Id>
-														<Label>_4 D:\CCFC3011PT_MOTOR\CCFC3012PT_MCAL4_4_V1_1_0_V185_4\1111.wsx</Label>
+														<Label>_4 D:\Customer_PROJECT\CCFC3007PT_292_Motor_20250611\Motor.wsx</Label>
+														<Id>4DCustomer_PROJECTCCFC3007PT_292_Motor_20250611Motorwsx</Id>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
 													</MenuItem>
@@ -236,8 +236,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>5DMotor_ProjectCCFC3007PT_292_DMBoost_V0P2_20250506testwsx</Id>
-														<Label>_5 D:\Motor_Project\CCFC3007PT_292_DMBoost_V0P2_20250506\test.wsx</Label>
+														<Label>_5 D:\Tricore_project\ARCH3D12_M10I1R0\Project\CCFC3012PT_GHS_SMP\FOC.wsx</Label>
+														<Id>5DTricore_projectARCH3D12_M10I1R0ProjectCCFC3012PT_GHS_SMPFOCwsx</Id>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
 													</MenuItem>
@@ -247,8 +247,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>6DCCFC3011PT_MOTORCCFC3012PT_MCAL4_4_V1_1_0_V190_IRQHandlerMotorwsx</Id>
-														<Label>_6 D:\CCFC3011PT_MOTOR\CCFC3012PT_MCAL4_4_V1_1_0_V190_IRQHandler\Motor.wsx</Label>
+														<Label>_6 D:\Tricore_project\ARCH3D07_M0I1C3007PT\Project\GHS_ELF\test.wsx</Label>
+														<Id>6DTricore_projectARCH3D07_M0I1C3007PTProjectGHS_ELFtestwsx</Id>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
 													</MenuItem>
@@ -258,8 +258,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>7DCCFC3011PT_MOTORCCFC3012PT_MOTOR_3wsx</Id>
-														<Label>_7 D:\CCFC3011PT_MOTOR\CCFC3012PT_MOTOR_3.wsx</Label>
+														<Label>_7 D:\Motor_Project\CCFC3007PT_292_DMBoost_V0P2_20250506\motor_test.wsx</Label>
+														<Id>7DMotor_ProjectCCFC3007PT_292_DMBoost_V0P2_20250506motor_testwsx</Id>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
 													</MenuItem>
@@ -269,8 +269,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>8DCCFC3011PT_MOTORCCFC3012PT_MOTOR_1wsx</Id>
-														<Label>_8 D:\CCFC3011PT_MOTOR\CCFC3012PT_MOTOR_1.wsx</Label>
+														<Label>_8 D:\Motor_Project\CCFC3007PT_292_DMBoost_V0P2_20250506\test.wsx</Label>
+														<Id>8DMotor_ProjectCCFC3007PT_292_DMBoost_V0P2_20250506testwsx</Id>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
 													</MenuItem>
@@ -280,8 +280,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>9DCCFC3011PT_MOTORCCFC3012PT_MOTORwsx</Id>
-														<Label>_9 D:\CCFC3011PT_MOTOR\CCFC3012PT_MOTOR.wsx</Label>
+														<Label>_9 C:\Users\ccore\Desktop\CCFC3007PT_292_DMBoost_V0P2_20250506\test.wsx</Label>
+														<Id>9CUsersccoreDesktopCCFC3007PT_292_DMBoost_V0P2_20250506testwsx</Id>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
 													</MenuItem>
@@ -291,16 +291,71 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>10DCCFC3008PTCCFC3008PT_TESTwsx</Id>
-														<Label>_10 D:\CCFC3008PT\CCFC3008PT_TEST.wsx</Label>
+														<Label>_10 C:\Users\ccore\Desktop\CCFC3007PT_292_DMBoost_V0P2_20250506\CCFC30XX\Project\CCFC3007PT_S32DS_SMP\ARCH3D07_CCFC3007PT\Motor.wsx</Label>
+														<Id>10CUsersccoreDesktopCCFC3007PT_292_DMBoost_V0P2_20250506CCFC30XXProjectCCFC3007PT_S32DS_SMPARCH3D07_CCFC3007PTMotorwsx</Id>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Label>_11 D:\...\CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI\Project\CCFC3012PT_S32DS_SMP\ARCH3D12_M10I1R0\CCFC3012PT_DEBUG_FLASH\Motor.wsx</Label>
+														<Id>11DCCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUIProjectCCFC3012PT_S32DS_SMPARCH3D12_M10I1R0CCFC3012PT_DEBUG_FLASHMotorwsx</Id>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Label>_12 D:\工作项目\电机革路外协方案\双电控软件\CCFC3012PT_MCAL4_4_V1_1_0_V185_7_B电机CAN发送当前模式修正\Motor.wsx</Label>
+														<Id>12D工作项目电机革路外协方案双电控软件CCFC3012PT_MCAL4_4_V1_1_0_V185_7_B电机CAN发送当前模式修正Motorwsx</Id>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Label>_13 D:\Motor_Project\CCFC3007PT_292_DMBoost_V0P2_for_test_with_TC387\test.wsx</Label>
+														<Id>13DMotor_ProjectCCFC3007PT_292_DMBoost_V0P2_for_test_with_TC387testwsx</Id>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Label>_14 D:\CCFC3011PT_MOTOR\CCFC3012PT_MCAL4_4_V1_1_0_V185_4_for_test_with_TC387\Motor.wsx</Label>
+														<Id>14DCCFC3011PT_MOTORCCFC3012PT_MCAL4_4_V1_1_0_V185_4_for_test_with_TC387Motorwsx</Id>
+														<ItemType>Command</ItemType>
+														<isVisible>true</isVisible>
+													</MenuItem>
+													<MenuItem>
+														<canAutoInsert>false</canAutoInsert>
+														<isControl>false</isControl>
+														<SubItems></SubItems>
+														<Band>0</Band>
+														<BandIndex>0</BandIndex>
+														<Label>_15 D:\CCFC3011PT_MOTOR\CCFC3012PT_MCAL4_4_V1_1_0_V185_4\Motor.wsx</Label>
+														<Id>15DCCFC3011PT_MOTORCCFC3012PT_MCAL4_4_V1_1_0_V185_4Motorwsx</Id>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
 													</MenuItem>
 												</SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>RecentWorkspaces</Id>
 												<Label>Recent _Workspaces</Label>
+												<Id>RecentWorkspaces</Id>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
 											</MenuItem>
@@ -310,16 +365,16 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>Exit</Id>
 												<Label>_Exit</Label>
+												<Id>Exit</Id>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
 											</MenuItem>
 										</SubItems>
 										<Band>0</Band>
 										<BandIndex>0</BandIndex>
-										<Id>FileMenu</Id>
 										<Label>_File</Label>
+										<Id>FileMenu</Id>
 										<ItemType>Command</ItemType>
 										<isVisible>true</isVisible>
 									</MenuItem>
@@ -333,8 +388,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>Undo</Id>
 												<Label>_Undo</Label>
+												<Id>Undo</Id>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
 											</MenuItem>
@@ -344,8 +399,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>Cut</Id>
 												<Label>Cu_t</Label>
+												<Id>Cut</Id>
 												<Tooltip>Cut</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -356,8 +411,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>Copy</Id>
 												<Label>_Copy</Label>
+												<Id>Copy</Id>
 												<Tooltip>Copy</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -368,8 +423,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>Paste</Id>
 												<Label>_Paste</Label>
+												<Id>Paste</Id>
 												<Tooltip>Paste</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -380,8 +435,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>PasteSpecial</Id>
 												<Label>Paste _Special...</Label>
+												<Id>PasteSpecial</Id>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
 											</MenuItem>
@@ -391,16 +446,16 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>SelectAll</Id>
 												<Label>Select A_ll</Label>
+												<Id>SelectAll</Id>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
 											</MenuItem>
 										</SubItems>
 										<Band>0</Band>
 										<BandIndex>0</BandIndex>
-										<Id>EditMenu</Id>
 										<Label>_Edit</Label>
+										<Id>EditMenu</Id>
 										<ItemType>Command</ItemType>
 										<isVisible>true</isVisible>
 									</MenuItem>
@@ -414,8 +469,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>Rotatecorefocus</Id>
 												<Label>Rotate _core focus</Label>
+												<Id>Rotatecorefocus</Id>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
 											</MenuItem>
@@ -425,8 +480,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>StartProgramExecution</Id>
 												<Label>_Start Program Execution</Label>
+												<Id>StartProgramExecution</Id>
 												<Tooltip>Start Program</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -437,8 +492,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>StepoverSubroutine</Id>
 												<Label>S_tep over Subroutine</Label>
+												<Id>StepoverSubroutine</Id>
 												<Tooltip>Step Over</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -449,8 +504,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>StepintoSubroutine</Id>
 												<Label>Step _into Subroutine</Label>
+												<Id>StepintoSubroutine</Id>
 												<Tooltip>Step Into</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -461,8 +516,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>StepoutofSubroutine</Id>
 												<Label>Step _out of Subroutine</Label>
+												<Id>StepoutofSubroutine</Id>
 												<Tooltip>Step Out</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -473,8 +528,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>RunProgramtoCursor</Id>
 												<Label>_Run Program to Cursor</Label>
+												<Id>RunProgramtoCursor</Id>
 												<Tooltip>Run Cursor</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -485,8 +540,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>BreakProgramExecution</Id>
 												<Label>_Break Program Execution</Label>
+												<Id>BreakProgramExecution</Id>
 												<Tooltip>Break Program</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -497,8 +552,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>Resettarget</Id>
 												<Label>Reset _target</Label>
+												<Id>Resettarget</Id>
 												<Tooltip>Reset</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -509,8 +564,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>RestartProgramExecution</Id>
 												<Label>Restart Program _Execution</Label>
+												<Id>RestartProgramExecution</Id>
 												<Tooltip>Restart Program</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -521,8 +576,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>Setuptriggerunit</Id>
 												<Label>_Setup trigger unit</Label>
+												<Id>Setuptriggerunit</Id>
 												<Tooltip>Trigger setup</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -530,8 +585,8 @@
 										</SubItems>
 										<Band>0</Band>
 										<BandIndex>0</BandIndex>
-										<Id>DebugMenu</Id>
 										<Label>_Debug</Label>
+										<Id>DebugMenu</Id>
 										<ItemType>Command</ItemType>
 										<isVisible>true</isVisible>
 									</MenuItem>
@@ -545,8 +600,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>ShowIP</Id>
 												<Label>Show _IP</Label>
+												<Id>ShowIP</Id>
 												<Tooltip>Show IP</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -557,8 +612,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>ShowCode</Id>
 												<Label>Show _Code</Label>
+												<Id>ShowCode</Id>
 												<Tooltip>Show Code</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -569,16 +624,16 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>ShowMMUSettings</Id>
 												<Label>Show MMU Settings</Label>
+												<Id>ShowMMUSettings</Id>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
 											</MenuItem>
 										</SubItems>
 										<Band>0</Band>
 										<BandIndex>0</BandIndex>
-										<Id>ShowMenu</Id>
 										<Label>_Show</Label>
+										<Id>ShowMenu</Id>
 										<ItemType>Command</ItemType>
 										<isVisible>true</isVisible>
 									</MenuItem>
@@ -592,8 +647,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>Breakpoints</Id>
 												<Label>_Breakpoints</Label>
+												<Id>Breakpoints</Id>
 												<Tooltip>Breakpoints</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -604,8 +659,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>CallStack</Id>
 												<Label>_Call Stack</Label>
+												<Id>CallStack</Id>
 												<Tooltip>Call Stack</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -616,8 +671,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>CoreRegisters</Id>
 												<Label>_Core Registers</Label>
+												<Id>CoreRegisters</Id>
 												<Tooltip>Core Registers</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -628,8 +683,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>Disassembly</Id>
 												<Label>Disassembl_y</Label>
+												<Id>Disassembly</Id>
 												<Tooltip>Disassembly</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -640,8 +695,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>Disassemblycompleterange</Id>
 												<Label>Disassembly (complete range)</Label>
+												<Id>Disassemblycompleterange</Id>
 												<Tooltip>Disassembly (complete range)</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -652,8 +707,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>Locals</Id>
 												<Label>_Locals</Label>
+												<Id>Locals</Id>
 												<Tooltip>Locals</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -664,8 +719,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>Memory</Id>
 												<Label>_Memory</Label>
+												<Id>Memory</Id>
 												<Tooltip>Memory</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -676,8 +731,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>PeripheralRegisters</Id>
 												<Label>_Peripheral Registers</Label>
+												<Id>PeripheralRegisters</Id>
 												<Tooltip>Peripheral Registers</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -688,8 +743,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>SourceCode</Id>
 												<Label>_Source Code</Label>
+												<Id>SourceCode</Id>
 												<Tooltip>Source Code</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -700,8 +755,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>Symbols</Id>
 												<Label>_Symbols</Label>
+												<Id>Symbols</Id>
 												<Tooltip>Symbols</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -712,8 +767,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>TargetManager</Id>
 												<Label>_Target Manager</Label>
+												<Id>TargetManager</Id>
 												<Tooltip>Target Manager</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -724,8 +779,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>Watches</Id>
 												<Label>_Watches</Label>
+												<Id>Watches</Id>
 												<Tooltip>Watches</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -740,8 +795,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>µCOSAwareness</Id>
 														<Label>_µC/OS Awareness</Label>
+														<Id>µCOSAwareness</Id>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
 													</MenuItem>
@@ -751,8 +806,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>A2LFileSupport</Id>
 														<Label>A2L File Support</Label>
+														<Id>A2LFileSupport</Id>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
 													</MenuItem>
@@ -762,8 +817,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>CANRecords</Id>
 														<Label>_CAN Records</Label>
+														<Id>CANRecords</Id>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
 													</MenuItem>
@@ -773,8 +828,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>CMXAwareness</Id>
 														<Label>_CMX Awareness</Label>
+														<Id>CMXAwareness</Id>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
 													</MenuItem>
@@ -784,8 +839,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>OSEKAwareness</Id>
 														<Label>_OSEK Awareness</Label>
+														<Id>OSEKAwareness</Id>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
 													</MenuItem>
@@ -795,8 +850,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>PXROSAwareness</Id>
 														<Label>P_XROS Awareness</Label>
+														<Id>PXROSAwareness</Id>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
 													</MenuItem>
@@ -806,8 +861,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>PXROSHRAwareness</Id>
 														<Label>PXROS-HR Awareness</Label>
+														<Id>PXROSHRAwareness</Id>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
 													</MenuItem>
@@ -817,8 +872,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>rcXAwareness</Id>
 														<Label>rcX Awareness</Label>
+														<Id>rcXAwareness</Id>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
 													</MenuItem>
@@ -828,8 +883,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>RTXAwareness</Id>
 														<Label>RTX Awareness</Label>
+														<Id>RTXAwareness</Id>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
 													</MenuItem>
@@ -839,8 +894,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>SAFERTOSFreeRTOSAwareness</Id>
 														<Label>SAFERTOS/FreeRTOS Awareness</Label>
+														<Id>SAFERTOSFreeRTOSAwareness</Id>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
 													</MenuItem>
@@ -850,16 +905,16 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>TTFRecords</Id>
 														<Label>_TTF Records</Label>
+														<Id>TTFRecords</Id>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
 													</MenuItem>
 												</SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>AddInWindows</Id>
 												<Label>_Add-In Windows</Label>
+												<Id>AddInWindows</Id>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
 											</MenuItem>
@@ -873,8 +928,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>ArrayChart</Id>
 														<Label>_Array Chart</Label>
+														<Id>ArrayChart</Id>
 														<Tooltip>Array Chart</Tooltip>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
@@ -885,8 +940,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>CallGraph</Id>
 														<Label>Call Graph</Label>
+														<Id>CallGraph</Id>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
 													</MenuItem>
@@ -896,8 +951,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>CodeCoveragetrace</Id>
 														<Label>Code Coverage (trace)</Label>
+														<Id>CodeCoveragetrace</Id>
 														<Tooltip>Code Coverage (trace)</Tooltip>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
@@ -908,8 +963,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>DataSequences</Id>
 														<Label>_Data Sequences</Label>
+														<Id>DataSequences</Id>
 														<Tooltip>Data Sequences</Tooltip>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
@@ -920,8 +975,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>ExecutionSequenceChart</Id>
 														<Label>_Execution Sequence Chart</Label>
+														<Id>ExecutionSequenceChart</Id>
 														<Tooltip>Execution Sequence Chart</Tooltip>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
@@ -932,8 +987,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>Markers</Id>
 														<Label>Markers</Label>
+														<Id>Markers</Id>
 														<Tooltip>Markers</Tooltip>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
@@ -944,8 +999,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>PersistentTraces</Id>
 														<Label>_Persistent Traces</Label>
+														<Id>PersistentTraces</Id>
 														<Tooltip>Persistent Traces</Tooltip>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
@@ -956,8 +1011,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>Profilingstats</Id>
 														<Label>_Profiling (stats)</Label>
+														<Id>Profilingstats</Id>
 														<Tooltip>Profiling (stats)</Tooltip>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
@@ -968,8 +1023,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>TimeValueChart</Id>
 														<Label>_Time / Value Chart</Label>
+														<Id>TimeValueChart</Id>
 														<Tooltip>Time / Value Chart</Tooltip>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
@@ -977,8 +1032,8 @@
 												</SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>TraceAnalyzeWindows</Id>
 												<Label>_Trace &amp; Analyze Windows</Label>
+												<Id>TraceAnalyzeWindows</Id>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
 											</MenuItem>
@@ -992,8 +1047,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>Console</Id>
 														<Label>_Console</Label>
+														<Id>Console</Id>
 														<Tooltip>Console</Tooltip>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
@@ -1004,8 +1059,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>HTMLDocument</Id>
 														<Label>_HTML Document</Label>
+														<Id>HTMLDocument</Id>
 														<Tooltip>HTML Document</Tooltip>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
@@ -1016,8 +1071,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>Messages</Id>
 														<Label>_Messages</Label>
+														<Id>Messages</Id>
 														<Tooltip>Messages</Tooltip>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
@@ -1028,8 +1083,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>Progress</Id>
 														<Label>_Progress</Label>
+														<Id>Progress</Id>
 														<Tooltip>Progress</Tooltip>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
@@ -1040,8 +1095,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>PythonScriptConsole</Id>
 														<Label>P_ython Script Console</Label>
+														<Id>PythonScriptConsole</Id>
 														<Tooltip>Python Script Console</Tooltip>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
@@ -1052,8 +1107,8 @@
 														<SubItems></SubItems>
 														<Band>0</Band>
 														<BandIndex>0</BandIndex>
-														<Id>SimulatedIO</Id>
 														<Label>_Simulated I/O</Label>
+														<Id>SimulatedIO</Id>
 														<Tooltip>Simulated I/O</Tooltip>
 														<ItemType>Command</ItemType>
 														<isVisible>true</isVisible>
@@ -1061,8 +1116,8 @@
 												</SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>OtherWindows</Id>
 												<Label>_Other Windows</Label>
+												<Id>OtherWindows</Id>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
 											</MenuItem>
@@ -1072,8 +1127,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>SimplyTrace</Id>
 												<Label>_SimplyTrace</Label>
+												<Id>SimplyTrace</Id>
 												<Tooltip>SimplyTrace</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -1084,8 +1139,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>GlobalTime</Id>
 												<Label>Global _Time</Label>
+												<Id>GlobalTime</Id>
 												<Tooltip>Global Time</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -1096,8 +1151,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>ArchitectureSupport</Id>
 												<Label>_Architecture Support</Label>
+												<Id>ArchitectureSupport</Id>
 												<Tooltip>Architecture Support</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -1105,8 +1160,8 @@
 										</SubItems>
 										<Band>0</Band>
 										<BandIndex>0</BandIndex>
-										<Id>ViewsMenu</Id>
 										<Label>_Views</Label>
+										<Id>ViewsMenu</Id>
 										<ItemType>Command</ItemType>
 										<isVisible>true</isVisible>
 									</MenuItem>
@@ -1120,8 +1175,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>SaveTraceStream</Id>
 												<Label>Save Trace Stream ...</Label>
+												<Id>SaveTraceStream</Id>
 												<Tooltip>Save Trace Stream ...</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -1132,8 +1187,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>LoadTraceStream</Id>
 												<Label>Load Trace Stream ...</Label>
+												<Id>LoadTraceStream</Id>
 												<Tooltip>Load Trace Stream ...</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -1144,8 +1199,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>SaveTraceStreamAs</Id>
 												<Label>Save Trace Stream As ...</Label>
+												<Id>SaveTraceStreamAs</Id>
 												<Tooltip>Save Trace Stream As...</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -1156,8 +1211,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>AnalyzeExecutionSequence</Id>
 												<Label>Analyze Execution Sequence</Label>
+												<Id>AnalyzeExecutionSequence</Id>
 												<Tooltip>Analyze Execution Sequence</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -1168,8 +1223,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>ConfigureDataSequences</Id>
 												<Label>_Configure Data Sequences...</Label>
+												<Id>ConfigureDataSequences</Id>
 												<Tooltip>Configure Data Sequences</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -1180,8 +1235,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>StartAnalyzingDataSequences</Id>
 												<Label>_Start Analyzing Data Sequences</Label>
+												<Id>StartAnalyzingDataSequences</Id>
 												<Tooltip>Start Analyzing Data Sequences</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -1192,8 +1247,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>StopAnalyzingDataSequences</Id>
 												<Label>_Stop Analyzing Data Sequences</Label>
+												<Id>StopAnalyzingDataSequences</Id>
 												<Tooltip>Stop Analyzing Data Sequences</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -1204,8 +1259,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>Macros</Id>
 												<Label>Macros...</Label>
+												<Id>Macros</Id>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
 											</MenuItem>
@@ -1215,8 +1270,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>ManageMacroStorage</Id>
 												<Label>Manage Macro Storage...</Label>
+												<Id>ManageMacroStorage</Id>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
 											</MenuItem>
@@ -1226,8 +1281,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>RunselectedMacro</Id>
 												<Label>_Run selected Macro</Label>
+												<Id>RunselectedMacro</Id>
 												<Tooltip>Run Macro</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -1238,8 +1293,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>DebugselectedMacro</Id>
 												<Label>_Debug selected Macro</Label>
+												<Id>DebugselectedMacro</Id>
 												<Tooltip>Debug Macro</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -1250,8 +1305,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>BreakMacro</Id>
 												<Label>Break Macro</Label>
+												<Id>BreakMacro</Id>
 												<Tooltip>Break Macro</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -1262,8 +1317,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>ReloadselectedMacro</Id>
 												<Label>Re_load selected Macro</Label>
+												<Id>ReloadselectedMacro</Id>
 												<Tooltip>Reload Macro</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -1274,8 +1329,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>FLASHProgramming</Id>
 												<Label>FLASH Programming ...</Label>
+												<Id>FLASHProgramming</Id>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
 											</MenuItem>
@@ -1285,8 +1340,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>ExecutionTimeSetup</Id>
 												<Label>_Execution Time Setup</Label>
+												<Id>ExecutionTimeSetup</Id>
 												<Tooltip>Execution Time Setup</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -1294,8 +1349,8 @@
 										</SubItems>
 										<Band>0</Band>
 										<BandIndex>0</BandIndex>
-										<Id>ToolsMenu</Id>
 										<Label>_Tools</Label>
+										<Id>ToolsMenu</Id>
 										<ItemType>Command</ItemType>
 										<isVisible>true</isVisible>
 									</MenuItem>
@@ -1309,8 +1364,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>TargetConfiguration</Id>
 												<Label>Target Configuration</Label>
+												<Id>TargetConfiguration</Id>
 												<Tooltip>Target Configuration</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -1321,8 +1376,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>SetupHTMLBrowser</Id>
 												<Label>Setup _HTML Browser</Label>
+												<Id>SetupHTMLBrowser</Id>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
 											</MenuItem>
@@ -1332,8 +1387,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>ArchitectureSupportSetup</Id>
 												<Label>_Architecture Support Setup ...</Label>
+												<Id>ArchitectureSupportSetup</Id>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
 											</MenuItem>
@@ -1343,8 +1398,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>PythonScriptInterpreterSetup</Id>
 												<Label>_Python Script Interpreter Setup ...</Label>
+												<Id>PythonScriptInterpreterSetup</Id>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
 											</MenuItem>
@@ -1354,8 +1409,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>AddInComponents</Id>
 												<Label>_Add-In Components</Label>
+												<Id>AddInComponents</Id>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
 											</MenuItem>
@@ -1365,8 +1420,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>DebugServerConfiguration</Id>
 												<Label>_Debug Server Configuration</Label>
+												<Id>DebugServerConfiguration</Id>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
 											</MenuItem>
@@ -1376,8 +1431,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>TargetInterface</Id>
 												<Label>_Target Interface...</Label>
+												<Id>TargetInterface</Id>
 												<Tooltip>Setup Target Interface</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -1388,8 +1443,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>MultiCoreRunControlConfiguration</Id>
 												<Label>MultiCore Run Control Configuration</Label>
+												<Id>MultiCoreRunControlConfiguration</Id>
 												<Tooltip>MCU Run Control</Tooltip>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
@@ -1397,8 +1452,8 @@
 										</SubItems>
 										<Band>0</Band>
 										<BandIndex>0</BandIndex>
-										<Id>ConfigMenu</Id>
 										<Label>_Config</Label>
+										<Id>ConfigMenu</Id>
 										<ItemType>Command</ItemType>
 										<isVisible>true</isVisible>
 									</MenuItem>
@@ -1408,8 +1463,8 @@
 										<SubItems></SubItems>
 										<Band>0</Band>
 										<BandIndex>0</BandIndex>
-										<Id>WindowMenu</Id>
 										<Label>_Window</Label>
+										<Id>WindowMenu</Id>
 										<ItemType>Command</ItemType>
 										<isVisible>true</isVisible>
 									</MenuItem>
@@ -1419,8 +1474,8 @@
 										<SubItems></SubItems>
 										<Band>0</Band>
 										<BandIndex>0</BandIndex>
-										<Id>MacroMenu</Id>
 										<Label>_Macro</Label>
+										<Id>MacroMenu</Id>
 										<ItemType>Command</ItemType>
 										<isVisible>true</isVisible>
 									</MenuItem>
@@ -1434,8 +1489,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>HelpIndex</Id>
 												<Label>Help _Index</Label>
+												<Id>HelpIndex</Id>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
 											</MenuItem>
@@ -1445,8 +1500,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>LicenseManager</Id>
 												<Label>_License Manager</Label>
+												<Id>LicenseManager</Id>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
 											</MenuItem>
@@ -1456,8 +1511,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>AboutUDE</Id>
 												<Label>_About UDE...</Label>
+												<Id>AboutUDE</Id>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
 											</MenuItem>
@@ -1467,8 +1522,8 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>UDELicenseKeyRequestForm</Id>
 												<Label>UDE _License Key Request Form</Label>
+												<Id>UDELicenseKeyRequestForm</Id>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
 											</MenuItem>
@@ -1478,24 +1533,24 @@
 												<SubItems></SubItems>
 												<Band>0</Band>
 												<BandIndex>0</BandIndex>
-												<Id>UDESupportRequestForm</Id>
 												<Label>UDE _Support Request Form</Label>
+												<Id>UDESupportRequestForm</Id>
 												<ItemType>Command</ItemType>
 												<isVisible>true</isVisible>
 											</MenuItem>
 										</SubItems>
 										<Band>0</Band>
 										<BandIndex>0</BandIndex>
-										<Id>HelpMenu</Id>
 										<Label>_Help</Label>
+										<Id>HelpMenu</Id>
 										<ItemType>Command</ItemType>
 										<isVisible>true</isVisible>
 									</MenuItem>
 								</SubItems>
 								<Band>0</Band>
 								<BandIndex>0</BandIndex>
-								<Id>mainmenu</Id>
 								<Label>_Main</Label>
+								<Id>mainmenu</Id>
 								<ItemType>Command</ItemType>
 								<isVisible>true</isVisible>
 							</MainMenu>
@@ -1512,8 +1567,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>customizeToolbar</Id>
 											<Label>Customize Toolbar</Label>
+											<Id>customizeToolbar</Id>
 											<ItemType>PlatformCommand</ItemType>
 											<isVisible>true</isVisible>
 										</MenuItem>
@@ -1523,8 +1578,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>NewWorkspace</Id>
 											<Label>_New Workspace</Label>
+											<Id>NewWorkspace</Id>
 											<Tooltip>New Workspace</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -1535,8 +1590,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>OpenWorkspace</Id>
 											<Label>_Open Workspace...</Label>
+											<Id>OpenWorkspace</Id>
 											<Tooltip>Open workspace</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -1547,8 +1602,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>SaveWorkspace</Id>
 											<Label>_Save Workspace</Label>
+											<Id>SaveWorkspace</Id>
 											<Tooltip>Save workspace</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -1559,8 +1614,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>SaveWorkspaceAs</Id>
 											<Label>Save Workspace _As...</Label>
+											<Id>SaveWorkspaceAs</Id>
 											<Tooltip>Save workspace as</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -1571,8 +1626,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>SaveViewContentAs</Id>
 											<Label>Save _View Content As..</Label>
+											<Id>SaveViewContentAs</Id>
 											<Tooltip>Export view content</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -1583,8 +1638,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>CloseWorkspace</Id>
 											<Label>_Close Workspace</Label>
+											<Id>CloseWorkspace</Id>
 											<Tooltip>Close workspace</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>false</isVisible>
@@ -1606,8 +1661,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>LoadProgram</Id>
 											<Label>_Load Program</Label>
+											<Id>LoadProgram</Id>
 											<Tooltip>Load Program</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -1615,8 +1670,8 @@
 									</SubItems>
 									<Band>0</Band>
 									<BandIndex>0</BandIndex>
-									<Id>FileToolbar</Id>
 									<Label>_File</Label>
+									<Id>FileToolbar</Id>
 									<ItemType>Command</ItemType>
 									<isVisible>true</isVisible>
 								</MenuItem>
@@ -1630,8 +1685,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>customizeToolbar</Id>
 											<Label>Customize Toolbar</Label>
+											<Id>customizeToolbar</Id>
 											<ItemType>PlatformCommand</ItemType>
 											<isVisible>true</isVisible>
 										</MenuItem>
@@ -1641,8 +1696,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>Cut</Id>
 											<Label>Cu_t</Label>
+											<Id>Cut</Id>
 											<Tooltip>Cut</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -1653,8 +1708,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>Copy</Id>
 											<Label>_Copy</Label>
+											<Id>Copy</Id>
 											<Tooltip>Copy</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -1665,8 +1720,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>Paste</Id>
 											<Label>_Paste</Label>
+											<Id>Paste</Id>
 											<Tooltip>Paste</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -1674,8 +1729,8 @@
 									</SubItems>
 									<Band>0</Band>
 									<BandIndex>1</BandIndex>
-									<Id>EditToolbar</Id>
 									<Label>Edit</Label>
+									<Id>EditToolbar</Id>
 									<ItemType>Command</ItemType>
 									<isVisible>true</isVisible>
 								</MenuItem>
@@ -1689,8 +1744,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>customizeToolbar</Id>
 											<Label>Customize Toolbar</Label>
+											<Id>customizeToolbar</Id>
 											<ItemType>PlatformCommand</ItemType>
 											<isVisible>true</isVisible>
 										</MenuItem>
@@ -1700,8 +1755,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>ShowIP</Id>
 											<Label>Show _IP</Label>
+											<Id>ShowIP</Id>
 											<Tooltip>Show IP</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -1712,8 +1767,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>ShowCode</Id>
 											<Label>Show _Code</Label>
+											<Id>ShowCode</Id>
 											<Tooltip>Show Code</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -1724,8 +1779,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>StartProgramExecution</Id>
 											<Label>_Start Program Execution</Label>
+											<Id>StartProgramExecution</Id>
 											<Tooltip>Start Program</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -1736,8 +1791,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>StepoverSubroutine</Id>
 											<Label>S_tep over Subroutine</Label>
+											<Id>StepoverSubroutine</Id>
 											<Tooltip>Step Over</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -1748,8 +1803,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>StepintoSubroutine</Id>
 											<Label>Step _into Subroutine</Label>
+											<Id>StepintoSubroutine</Id>
 											<Tooltip>Step Into</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -1760,8 +1815,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>StepoutofSubroutine</Id>
 											<Label>Step _out of Subroutine</Label>
+											<Id>StepoutofSubroutine</Id>
 											<Tooltip>Step Out</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -1772,8 +1827,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>RunProgramtoCursor</Id>
 											<Label>_Run Program to Cursor</Label>
+											<Id>RunProgramtoCursor</Id>
 											<Tooltip>Run Cursor</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -1784,8 +1839,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>BreakProgramExecution</Id>
 											<Label>_Break Program Execution</Label>
+											<Id>BreakProgramExecution</Id>
 											<Tooltip>Break Program</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -1796,8 +1851,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>Resettarget</Id>
 											<Label>Reset _target</Label>
+											<Id>Resettarget</Id>
 											<Tooltip>Reset</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -1808,8 +1863,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>RestartProgramExecution</Id>
 											<Label>Restart Program _Execution</Label>
+											<Id>RestartProgramExecution</Id>
 											<Tooltip>Restart Program</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -1831,8 +1886,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>Setuptriggerunit</Id>
 											<Label>_Setup trigger unit</Label>
+											<Id>Setuptriggerunit</Id>
 											<Tooltip>Trigger setup</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -1895,8 +1950,8 @@
 									</SubItems>
 									<Band>1</Band>
 									<BandIndex>0</BandIndex>
-									<Id>DebugToolbar</Id>
 									<Label>Debug</Label>
+									<Id>DebugToolbar</Id>
 									<ItemType>Command</ItemType>
 									<isVisible>true</isVisible>
 								</MenuItem>
@@ -1910,8 +1965,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>customizeToolbar</Id>
 											<Label>Customize Toolbar</Label>
+											<Id>customizeToolbar</Id>
 											<ItemType>PlatformCommand</ItemType>
 											<isVisible>true</isVisible>
 										</MenuItem>
@@ -1921,8 +1976,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>TargetManager</Id>
 											<Label>_Target Manager</Label>
+											<Id>TargetManager</Id>
 											<Tooltip>Target Manager</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -1933,8 +1988,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>Messages</Id>
 											<Label>_Messages</Label>
+											<Id>Messages</Id>
 											<Tooltip>Messages</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -1945,8 +2000,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>Console</Id>
 											<Label>_Console</Label>
+											<Id>Console</Id>
 											<Tooltip>Console</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -1957,8 +2012,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>Progress</Id>
 											<Label>_Progress</Label>
+											<Id>Progress</Id>
 											<Tooltip>Progress</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -1969,8 +2024,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>ExecutionSequenceChart</Id>
 											<Label>_Execution Sequence Chart</Label>
+											<Id>ExecutionSequenceChart</Id>
 											<Tooltip>Execution Sequence Chart</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -1981,8 +2036,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>Breakpoints</Id>
 											<Label>_Breakpoints</Label>
+											<Id>Breakpoints</Id>
 											<Tooltip>Breakpoints</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -1993,8 +2048,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>SimplyTrace</Id>
 											<Label>_SimplyTrace</Label>
+											<Id>SimplyTrace</Id>
 											<Tooltip>SimplyTrace</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2005,8 +2060,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>GlobalTime</Id>
 											<Label>Global _Time</Label>
+											<Id>GlobalTime</Id>
 											<Tooltip>Global Time</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2017,8 +2072,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>Trace</Id>
 											<Label>_Trace</Label>
+											<Id>Trace</Id>
 											<Tooltip>Trace</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2029,8 +2084,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>PersistentTraces</Id>
 											<Label>_Persistent Traces</Label>
+											<Id>PersistentTraces</Id>
 											<Tooltip>Persistent Traces</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2041,8 +2096,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>DataSequences</Id>
 											<Label>_Data Sequences</Label>
+											<Id>DataSequences</Id>
 											<Tooltip>Data Sequences</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2053,8 +2108,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>ArchitectureSupport</Id>
 											<Label>_Architecture Support</Label>
+											<Id>ArchitectureSupport</Id>
 											<Tooltip>Architecture Support</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2065,8 +2120,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>PythonScriptConsole</Id>
 											<Label>P_ython Script Console</Label>
+											<Id>PythonScriptConsole</Id>
 											<Tooltip>Python Script Console</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2077,8 +2132,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>Markers</Id>
 											<Label>Markers</Label>
+											<Id>Markers</Id>
 											<Tooltip>Markers</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2089,8 +2144,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>CoreRegisters</Id>
 											<Label>Core Registers</Label>
+											<Id>CoreRegisters</Id>
 											<Tooltip>Core Registers</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2101,8 +2156,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>Symbols</Id>
 											<Label>_Symbols</Label>
+											<Id>Symbols</Id>
 											<Tooltip>Symbols</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2113,8 +2168,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>SourceCode</Id>
 											<Label>_Source Code</Label>
+											<Id>SourceCode</Id>
 											<Tooltip>Source Code</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2125,8 +2180,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>Disassemblycompleterange</Id>
 											<Label>Disassembly (complete range)</Label>
+											<Id>Disassemblycompleterange</Id>
 											<Tooltip>Disassembly (complete range)</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2137,8 +2192,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>Disassembly</Id>
 											<Label>Disassembl_y</Label>
+											<Id>Disassembly</Id>
 											<Tooltip>Disassembly</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2149,8 +2204,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>Locals</Id>
 											<Label>_Locals</Label>
+											<Id>Locals</Id>
 											<Tooltip>Locals</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2161,8 +2216,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>Watches</Id>
 											<Label>_Watches</Label>
+											<Id>Watches</Id>
 											<Tooltip>Watches</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2173,8 +2228,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>SimulatedIO</Id>
 											<Label>_Simulated I/O</Label>
+											<Id>SimulatedIO</Id>
 											<Tooltip>Simulated I/O</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2185,8 +2240,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>HTMLDocument</Id>
 											<Label>_HTML Document</Label>
+											<Id>HTMLDocument</Id>
 											<Tooltip>HTML Document</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2197,8 +2252,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>ArrayChart</Id>
 											<Label>_Array Chart</Label>
+											<Id>ArrayChart</Id>
 											<Tooltip>Array Chart</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2209,8 +2264,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>TimeValueChart</Id>
 											<Label>_Time / Value Chart</Label>
+											<Id>TimeValueChart</Id>
 											<Tooltip>Time / Value Chart</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2221,8 +2276,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>Profilingstats</Id>
 											<Label>_Profiling (stats)</Label>
+											<Id>Profilingstats</Id>
 											<Tooltip>Profiling (stats)</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2233,8 +2288,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>Memory</Id>
 											<Label>_Memory</Label>
+											<Id>Memory</Id>
 											<Tooltip>Memory</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2245,8 +2300,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>CodeCoveragetrace</Id>
 											<Label>Code Coverage (trace)</Label>
+											<Id>CodeCoveragetrace</Id>
 											<Tooltip>Code Coverage (trace)</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2257,8 +2312,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>DataTraceChart</Id>
 											<Label>_Data Trace Chart</Label>
+											<Id>DataTraceChart</Id>
 											<Tooltip>Data Trace Chart</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2269,8 +2324,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>Profilingtrace</Id>
 											<Label>Profiling (trace)</Label>
+											<Id>Profilingtrace</Id>
 											<Tooltip>Profiling (trace)</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2281,8 +2336,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>CallStack</Id>
 											<Label>_Call Stack</Label>
+											<Id>CallStack</Id>
 											<Tooltip>Call Stack</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2293,8 +2348,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>PeripheralRegisters</Id>
 											<Label>_Peripheral Registers</Label>
+											<Id>PeripheralRegisters</Id>
 											<Tooltip>Peripheral Registers</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2302,8 +2357,8 @@
 									</SubItems>
 									<Band>2</Band>
 									<BandIndex>0</BandIndex>
-									<Id>ViewsToolbar</Id>
 									<Label>Views</Label>
+									<Id>ViewsToolbar</Id>
 									<ItemType>Command</ItemType>
 									<isVisible>true</isVisible>
 								</MenuItem>
@@ -2317,8 +2372,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>customizeToolbar</Id>
 											<Label>Customize Toolbar</Label>
+											<Id>customizeToolbar</Id>
 											<ItemType>PlatformCommand</ItemType>
 											<isVisible>true</isVisible>
 										</MenuItem>
@@ -2328,8 +2383,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>SaveTraceStream</Id>
 											<Label>Save Trace Stream ...</Label>
+											<Id>SaveTraceStream</Id>
 											<Tooltip>Save Trace Stream ...</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2340,8 +2395,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>LoadTraceStream</Id>
 											<Label>Load Trace Stream ...</Label>
+											<Id>LoadTraceStream</Id>
 											<Tooltip>Load Trace Stream ...</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2352,8 +2407,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>SaveTraceStreamAs</Id>
 											<Label>Save Trace Stream As ...</Label>
+											<Id>SaveTraceStreamAs</Id>
 											<Tooltip>Save Trace Stream As...</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2364,8 +2419,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>AnalyzeExecutionSequence</Id>
 											<Label>Analyze Execution Sequence</Label>
+											<Id>AnalyzeExecutionSequence</Id>
 											<Tooltip>Analyze Execution Sequence</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2376,8 +2431,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>ConfigureDataSequences</Id>
 											<Label>_Configure Data Sequences...</Label>
+											<Id>ConfigureDataSequences</Id>
 											<Tooltip>Configure Data Sequences</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2388,8 +2443,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>StartAnalyzingDataSequences</Id>
 											<Label>_Start Analyzing Data Sequences</Label>
+											<Id>StartAnalyzingDataSequences</Id>
 											<Tooltip>Start Analyzing Data Sequences</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2400,8 +2455,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>StopAnalyzingDataSequences</Id>
 											<Label>_Stop Analyzing Data Sequences</Label>
+											<Id>StopAnalyzingDataSequences</Id>
 											<Tooltip>Stop Analyzing Data Sequences</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2412,8 +2467,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>Starttrace</Id>
 											<Label>Start trace...</Label>
+											<Id>Starttrace</Id>
 											<Tooltip>Start trace</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2424,8 +2479,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>Stoptrace</Id>
 											<Label>Stop trace...</Label>
+											<Id>Stoptrace</Id>
 											<Tooltip>Stop trace</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2436,8 +2491,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>Cleartrace</Id>
 											<Label>Clear trace...</Label>
+											<Id>Cleartrace</Id>
 											<Tooltip>Clear trace data</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2448,8 +2503,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>Configuretrace</Id>
 											<Label>Configure trace...</Label>
+											<Id>Configuretrace</Id>
 											<Tooltip>Configure trace</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2460,8 +2515,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>Traceusecasemananger</Id>
 											<Label>Trace use case mananger...</Label>
+											<Id>Traceusecasemananger</Id>
 											<Tooltip>Trace use cases</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2483,8 +2538,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>ExecutionTimeSetup</Id>
 											<Label>_Execution Time Setup</Label>
+											<Id>ExecutionTimeSetup</Id>
 											<Tooltip>Execution Time Setup</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2547,8 +2602,8 @@
 									</SubItems>
 									<Band>2</Band>
 									<BandIndex>1</BandIndex>
-									<Id>ToolsToolbar</Id>
 									<Label>Tools</Label>
+									<Id>ToolsToolbar</Id>
 									<ItemType>Command</ItemType>
 									<isVisible>true</isVisible>
 								</MenuItem>
@@ -2562,8 +2617,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>customizeToolbar</Id>
 											<Label>Customize Toolbar</Label>
+											<Id>customizeToolbar</Id>
 											<ItemType>PlatformCommand</ItemType>
 											<isVisible>true</isVisible>
 										</MenuItem>
@@ -2573,8 +2628,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>TargetConfiguration</Id>
 											<Label>Target Configuration</Label>
+											<Id>TargetConfiguration</Id>
 											<Tooltip>Target Configuration</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2585,8 +2640,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>ConnectTargetSystem</Id>
 											<Label>_Connect Target System..</Label>
+											<Id>ConnectTargetSystem</Id>
 											<Tooltip>Connect Target</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2597,8 +2652,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>DisconnectTargetSystem</Id>
 											<Label>_Disconnect Target System..</Label>
+											<Id>DisconnectTargetSystem</Id>
 											<Tooltip>Disconnect Target</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2609,8 +2664,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>TargetInterface</Id>
 											<Label>_Target Interface...</Label>
+											<Id>TargetInterface</Id>
 											<Tooltip>Setup Target Interface</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2621,8 +2676,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>MultiCoreRunControlConfiguration</Id>
 											<Label>MultiCore Run Control Configuration</Label>
+											<Id>MultiCoreRunControlConfiguration</Id>
 											<Tooltip>MCU Run Control</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2630,8 +2685,8 @@
 									</SubItems>
 									<Band>2</Band>
 									<BandIndex>2</BandIndex>
-									<Id>ConfigToolbar</Id>
 									<Label>Config</Label>
+									<Id>ConfigToolbar</Id>
 									<ItemType>Command</ItemType>
 									<isVisible>true</isVisible>
 								</MenuItem>
@@ -2645,8 +2700,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>customizeToolbar</Id>
 											<Label>Customize Toolbar</Label>
+											<Id>customizeToolbar</Id>
 											<ItemType>PlatformCommand</ItemType>
 											<isVisible>true</isVisible>
 										</MenuItem>
@@ -2656,8 +2711,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>RunselectedMacro</Id>
 											<Label>_Run selected Macro</Label>
+											<Id>RunselectedMacro</Id>
 											<Tooltip>Run Macro</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2668,8 +2723,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>DebugselectedMacro</Id>
 											<Label>_Debug selected Macro</Label>
+											<Id>DebugselectedMacro</Id>
 											<Tooltip>Debug Macro</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2680,8 +2735,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>BreakMacro</Id>
 											<Label>Break Macro</Label>
+											<Id>BreakMacro</Id>
 											<Tooltip>Break Macro</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2692,8 +2747,8 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>ReloadselectedMacro</Id>
 											<Label>Re_load selected Macro</Label>
+											<Id>ReloadselectedMacro</Id>
 											<Tooltip>Reload Macro</Tooltip>
 											<ItemType>Command</ItemType>
 											<isVisible>true</isVisible>
@@ -2712,8 +2767,8 @@
 									</SubItems>
 									<Band>3</Band>
 									<BandIndex>0</BandIndex>
-									<Id>MacroToolbar</Id>
 									<Label>Macro</Label>
+									<Id>MacroToolbar</Id>
 									<ItemType>Command</ItemType>
 									<isVisible>true</isVisible>
 								</MenuItem>
@@ -2727,16 +2782,16 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>customizeToolbar</Id>
 											<Label>Customize Toolbar</Label>
+											<Id>customizeToolbar</Id>
 											<ItemType>PlatformCommand</ItemType>
 											<isVisible>true</isVisible>
 										</MenuItem>
 									</SubItems>
 									<Band>4</Band>
 									<BandIndex>0</BandIndex>
-									<Id>ShowToolbar</Id>
 									<Label>Show</Label>
+									<Id>ShowToolbar</Id>
 									<ItemType>Command</ItemType>
 									<isVisible>true</isVisible>
 								</MenuItem>
@@ -2750,16 +2805,16 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>customizeToolbar</Id>
 											<Label>Customize Toolbar</Label>
+											<Id>customizeToolbar</Id>
 											<ItemType>PlatformCommand</ItemType>
 											<isVisible>true</isVisible>
 										</MenuItem>
 									</SubItems>
 									<Band>4</Band>
 									<BandIndex>1</BandIndex>
-									<Id>WindowToolbar</Id>
 									<Label>Window</Label>
+									<Id>WindowToolbar</Id>
 									<ItemType>Command</ItemType>
 									<isVisible>true</isVisible>
 								</MenuItem>
@@ -2773,16 +2828,16 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>customizeToolbar</Id>
 											<Label>Customize Toolbar</Label>
+											<Id>customizeToolbar</Id>
 											<ItemType>PlatformCommand</ItemType>
 											<isVisible>true</isVisible>
 										</MenuItem>
 									</SubItems>
 									<Band>4</Band>
 									<BandIndex>2</BandIndex>
-									<Id>WorkspaceToolbar</Id>
 									<Label>Workspace</Label>
+									<Id>WorkspaceToolbar</Id>
 									<ItemType>Command</ItemType>
 									<isVisible>true</isVisible>
 								</MenuItem>
@@ -2796,16 +2851,16 @@
 											<SubItems></SubItems>
 											<Band>0</Band>
 											<BandIndex>0</BandIndex>
-											<Id>customizeToolbar</Id>
 											<Label>Customize Toolbar</Label>
+											<Id>customizeToolbar</Id>
 											<ItemType>PlatformCommand</ItemType>
 											<isVisible>true</isVisible>
 										</MenuItem>
 									</SubItems>
 									<Band>4</Band>
 									<BandIndex>3</BandIndex>
-									<Id>HelpToolbar</Id>
 									<Label>Help</Label>
+									<Id>HelpToolbar</Id>
 									<ItemType>Command</ItemType>
 									<isVisible>true</isVisible>
 								</MenuItem>
@@ -2815,110 +2870,62 @@
 									<ContentId>Core0.ViewSrv.StdUDESymbolExplWin.OPEN_VIEW</ContentId>
 								</View>
 								<View>
+									<ContentId>Core2.ViewSrv.StdUDESymbolExplWin.OPEN_VIEW</ContentId>
+								</View>
+								<View>
+									<ContentId>Core1.ViewSrv.StdUDESymbolExplWin.OPEN_VIEW</ContentId>
+								</View>
+								<View>
+									<ContentId>Core0.ViewSrv.StdUDEWatchWin.OPEN_VIEW00</ContentId>
+								</View>
+								<View>
+									<ContentId>Core0.ViewSrv.StdUDEWatchWin.OPEN_VIEW01</ContentId>
+								</View>
+								<View>
+									<ContentId>Core0.ViewSrv.StdUDEWatchWin.OPEN_VIEW02</ContentId>
+								</View>
+								<View>
 									<ContentId>Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW00</ContentId>
 								</View>
 								<View>
 									<ContentId>Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW01</ContentId>
 								</View>
 								<View>
-									<ContentId>Core0.ViewSrv.StdUDEWatchWin.OPEN_VIEW00</ContentId>
-								</View>
-								<View>
-									<ContentId>Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW02</ContentId>
-								</View>
-								<View>
-									<ContentId>Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW03</ContentId>
+									<ContentId>Core0.ViewSrv.StdUDESFRView.OPEN_VIEW00</ContentId>
 								</View>
 								<View>
 									<ContentId>Core1.ViewSrv.StdUDEProgWin.OPEN_VIEW00</ContentId>
 								</View>
 								<View>
-									<ContentId>Core3.ViewSrv.StdUDEProgWin.OPEN_VIEW00</ContentId>
-								</View>
-								<View>
-									<ContentId>Core5.ViewSrv.StdUDEProgWin.OPEN_VIEW00</ContentId>
-								</View>
-								<View>
-									<ContentId>Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW04</ContentId>
-								</View>
-								<View>
-									<ContentId>Core4.ViewSrv.StdUDEProgWin.OPEN_VIEW00</ContentId>
-								</View>
-								<View>
 									<ContentId>Core2.ViewSrv.StdUDEProgWin.OPEN_VIEW00</ContentId>
 								</View>
 								<View>
-									<ContentId>Core2.ViewSrv.StdUDEProgWin.OPEN_VIEW01</ContentId>
+									<ContentId>Core3.ViewSrv.StdUDEProgWin.OPEN_VIEW00</ContentId>
 								</View>
 								<View>
-									<ContentId>Core5.ViewSrv.StdUDEProgWin.OPEN_VIEW01</ContentId>
-								</View>
-								<View>
-									<ContentId>Core3.ViewSrv.StdUDEProgWin.OPEN_VIEW01</ContentId>
-								</View>
-								<View>
-									<ContentId>Core4.ViewSrv.StdUDEProgWin.OPEN_VIEW01</ContentId>
-								</View>
-								<View>
-									<ContentId>Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW05</ContentId>
-								</View>
-								<View>
-									<ContentId>Core1.ViewSrv.StdUDEProgWin.OPEN_VIEW01</ContentId>
-								</View>
-								<View>
-									<ContentId>Core2.ViewSrv.StdUDEProgWin.OPEN_VIEW02</ContentId>
-								</View>
-								<View>
-									<ContentId>Core4.ViewSrv.StdUDEProgWin.OPEN_VIEW02</ContentId>
-								</View>
-								<View>
-									<ContentId>Core2.ViewSrv.StdUDEProgWin.OPEN_VIEW03</ContentId>
-								</View>
-								<View>
-									<ContentId>Core2.ViewSrv.StdUDEProgWin.OPEN_VIEW04</ContentId>
-								</View>
-								<View>
-									<ContentId>Core3.ViewSrv.StdUDEProgWin.OPEN_VIEW02</ContentId>
-								</View>
-								<View>
-									<ContentId>Core1.ViewSrv.StdUDEProgWin.OPEN_VIEW02</ContentId>
-								</View>
-								<View>
-									<ContentId>Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW06</ContentId>
+									<ContentId>Core0.ViewSrv.StdUDETimeSampleGraphWin.OPEN_VIEW00</ContentId>
 								</View>
 							</Views>
 							<Layout>
 								<RootPanel Orientation="Horizontal">
-									<LayoutAnchorablePane DockWidth="200" DockHeight="200">
-										<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Core0 Symbols" IsSelected="True" ContentId="Core0.ViewSrv.StdUDESymbolExplWin.OPEN_VIEW" CanClose="True" LastActivationTimeStamp="05/17/2025 13:04:42"></LayoutAnchorable>
+									<LayoutAnchorablePane DockWidth="140.571428571428" DockHeight="200">
+										<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Core0 Symbols" IsSelected="True" ContentId="Core0.ViewSrv.StdUDESymbolExplWin.OPEN_VIEW" CanClose="True" LastActivationTimeStamp="07/15/2025 14:18:48"></LayoutAnchorable>
+										<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Core2 Symbols" ContentId="Core2.ViewSrv.StdUDESymbolExplWin.OPEN_VIEW" CanClose="True" LastActivationTimeStamp="06/13/2025 16:15:46"></LayoutAnchorable>
+										<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Core1 Symbols" ContentId="Core1.ViewSrv.StdUDESymbolExplWin.OPEN_VIEW" CanClose="True" LastActivationTimeStamp="07/04/2025 17:17:47"></LayoutAnchorable>
 									</LayoutAnchorablePane>
-									<LayoutPanel Orientation="Horizontal">
+									<LayoutPanel Orientation="Horizontal" DockWidth="1.05548886221155*">
 										<LayoutDocumentPaneGroup Orientation="Horizontal">
-											<LayoutDocumentPane Id="b45b69d7-077f-4e18-8b3d-854c763d79a3" DockWidth="0.571338512662377*">
-												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\main.c" ContentId="Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW00" CanClose="True" LastActivationTimeStamp="05/17/2025 13:04:42"></LayoutAnchorable>
-												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\common\src\startup.S" ContentId="Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW01" CanClose="True" LastActivationTimeStamp="05/17/2025 13:04:42"></LayoutAnchorable>
-												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Watches 1" IsSelected="True" IsLastFocusedDocument="True" ContentId="Core0.ViewSrv.StdUDEWatchWin.OPEN_VIEW00" CanClose="True" LastActivationTimeStamp="05/17/2025 13:04:47"></LayoutAnchorable>
-												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\main.c" ContentId="Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW02" CanClose="True" LastActivationTimeStamp="04/24/2025 20:35:12"></LayoutAnchorable>
-												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\common\src\startup.S" ContentId="Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW03" CanClose="True" LastActivationTimeStamp="04/24/2025 20:35:12"></LayoutAnchorable>
-												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\main.c" ContentId="Core1.ViewSrv.StdUDEProgWin.OPEN_VIEW00" CanClose="True" LastActivationTimeStamp="05/13/2025 19:22:20"></LayoutAnchorable>
-												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\shell\shell.c" ContentId="Core3.ViewSrv.StdUDEProgWin.OPEN_VIEW00" CanClose="True" LastActivationTimeStamp="04/24/2025 20:35:09"></LayoutAnchorable>
-												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\shell\shell.c" ContentId="Core5.ViewSrv.StdUDEProgWin.OPEN_VIEW00" CanClose="True" LastActivationTimeStamp="04/24/2025 20:35:09"></LayoutAnchorable>
-												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\resolver_app\Resolver.c" ContentId="Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW04" CanClose="True" LastActivationTimeStamp="04/24/2025 20:35:10"></LayoutAnchorable>
-												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\shell\shell.c" ContentId="Core4.ViewSrv.StdUDEProgWin.OPEN_VIEW00" CanClose="True" LastActivationTimeStamp="04/24/2025 20:35:10"></LayoutAnchorable>
-												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\main.c" ContentId="Core2.ViewSrv.StdUDEProgWin.OPEN_VIEW00" CanClose="True" LastActivationTimeStamp="04/24/2025 20:35:10"></LayoutAnchorable>
-												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\main.c" ContentId="Core2.ViewSrv.StdUDEProgWin.OPEN_VIEW01" CanClose="True" LastActivationTimeStamp="04/25/2025 11:56:21"></LayoutAnchorable>
-												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\shell\shell.c" ContentId="Core5.ViewSrv.StdUDEProgWin.OPEN_VIEW01" CanClose="True" LastActivationTimeStamp="04/25/2025 11:56:21"></LayoutAnchorable>
-												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\shell\shell.c" ContentId="Core3.ViewSrv.StdUDEProgWin.OPEN_VIEW01" CanClose="True" LastActivationTimeStamp="04/25/2025 11:56:21"></LayoutAnchorable>
-												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\main.c" ContentId="Core4.ViewSrv.StdUDEProgWin.OPEN_VIEW01" CanClose="True" LastActivationTimeStamp="04/25/2025 11:57:57"></LayoutAnchorable>
-												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\resolver_app\AngleTrk.c" ContentId="Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW05" CanClose="True" LastActivationTimeStamp="04/25/2025 11:59:20"></LayoutAnchorable>
-												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\resolver_app\AngleTrk.c" ContentId="Core1.ViewSrv.StdUDEProgWin.OPEN_VIEW01" CanClose="True" LastActivationTimeStamp="04/25/2025 11:56:22"></LayoutAnchorable>
-												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\common\src\irq_handle.S" ContentId="Core2.ViewSrv.StdUDEProgWin.OPEN_VIEW02" CanClose="True" LastActivationTimeStamp="04/25/2025 11:56:57"></LayoutAnchorable>
-												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\shell\shell.c" ContentId="Core4.ViewSrv.StdUDEProgWin.OPEN_VIEW02" CanClose="True" LastActivationTimeStamp="04/25/2025 11:56:57"></LayoutAnchorable>
-												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\source\Gpt_Irq.c" ContentId="Core2.ViewSrv.StdUDEProgWin.OPEN_VIEW03" CanClose="True" LastActivationTimeStamp="04/25/2025 11:58:53"></LayoutAnchorable>
-												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\source\Gpt_Pit_LLDriver.c" ContentId="Core2.ViewSrv.StdUDEProgWin.OPEN_VIEW04" CanClose="True" LastActivationTimeStamp="04/25/2025 11:58:55"></LayoutAnchorable>
-												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\main.c" ContentId="Core3.ViewSrv.StdUDEProgWin.OPEN_VIEW02" CanClose="True" LastActivationTimeStamp="04/25/2025 18:51:18"></LayoutAnchorable>
-												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\main.c" ContentId="Core1.ViewSrv.StdUDEProgWin.OPEN_VIEW02" CanClose="True" LastActivationTimeStamp="04/25/2025 18:51:18"></LayoutAnchorable>
-												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\common\src\startup.S" ContentId="Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW06" CanClose="True" LastActivationTimeStamp="05/15/2025 13:07:14"></LayoutAnchorable>
+											<LayoutDocumentPane Id="b45b69d7-077f-4e18-8b3d-854c763d79a3" DockWidth="0.847254979922301*">
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Watches 1" ContentId="Core0.ViewSrv.StdUDEWatchWin.OPEN_VIEW00" CanClose="True" LastActivationTimeStamp="07/14/2025 18:48:49"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Watches 2" ContentId="Core0.ViewSrv.StdUDEWatchWin.OPEN_VIEW01" CanClose="True" LastActivationTimeStamp="07/14/2025 14:14:48"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Watches 3" ContentId="Core0.ViewSrv.StdUDEWatchWin.OPEN_VIEW02" CanClose="True" LastActivationTimeStamp="07/15/2025 14:19:16"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\main.c" ContentId="Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW00" CanClose="True" LastActivationTimeStamp="07/15/2025 14:19:04"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\common\src\startup.S" ContentId="Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW01" CanClose="True" LastActivationTimeStamp="07/15/2025 14:19:04"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Peripheral Registers" ContentId="Core0.ViewSrv.StdUDESFRView.OPEN_VIEW00" CanClose="True" LastActivationTimeStamp="07/14/2025 19:01:13"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\main.c" ContentId="Core1.ViewSrv.StdUDEProgWin.OPEN_VIEW00" CanClose="True" LastActivationTimeStamp="07/14/2025 18:58:49"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\main.c" ContentId="Core2.ViewSrv.StdUDEProgWin.OPEN_VIEW00" CanClose="True" LastActivationTimeStamp="07/14/2025 18:58:49"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="D:\...\Source\main.c" ContentId="Core3.ViewSrv.StdUDEProgWin.OPEN_VIEW00" CanClose="True" LastActivationTimeStamp="07/14/2025 18:58:49"></LayoutAnchorable>
+												<LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Time / Value Chart" IsSelected="True" IsLastFocusedDocument="True" ContentId="Core0.ViewSrv.StdUDETimeSampleGraphWin.OPEN_VIEW00" CanClose="True" LastActivationTimeStamp="07/15/2025 14:19:30"></LayoutAnchorable>
 											</LayoutDocumentPane>
 										</LayoutDocumentPaneGroup>
 									</LayoutPanel>
@@ -3092,14 +3099,25 @@
 		<PLACEMENT type="key">
 			<MULTICORELOADERDLG type="string">499,1741,434,882</MULTICORELOADERDLG>
 			<EnumSelectDlg type="string">807,1433,364,953</EnumSelectDlg>
+			<WatchSelectDlg type="string">686,1312,292,881</WatchSelectDlg>
 		</PLACEMENT>
 		<EXTRAVALUE type="key">
 			<MULTICORELOADERDLG type="int">0</MULTICORELOADERDLG>
 			<EnumSelectDlg type="int">0</EnumSelectDlg>
+			<WatchSelectDlg type="int">0</WatchSelectDlg>
 		</EXTRAVALUE>
 		<Loader type="key">
 			<LOADER_REGKEY_WSP type="string">{fd6e6ad8-f4a1-4122-8e21-2262293e14bb}</LOADER_REGKEY_WSP>
 		</Loader>
+		<UDESFRWin type="key">
+			<RunningPeriod type="int">25</RunningPeriod>
+		</UDESFRWin>
+		<UDEWatchView type="key">
+			<Normal type="string">;MS Sans Serif;7.7143;0;0;0;0;400;0;000000;FFFFFF</Normal>
+			<Changed type="string">;MS Sans Serif;7.7143;1;0;0;0;700;0;0000FF;FFFFFF</Changed>
+			<Selection type="string">;MS Sans Serif;7.7143;0;0;0;0;400;0;FFFFFF;D77800</Selection>
+			<Infotip type="string">;MS Sans Serif;7.7143;0;0;0;0;400;0;000000;E1FFFF</Infotip>
+		</UDEWatchView>
 	</INI_SECTION>
 	<AddOns type="key">
 		<UDE.ArchSupportAddOn type="key"></UDE.ArchSupportAddOn>
@@ -3127,7 +3145,7 @@
 		<UDE.Script type="key">
 			<MacroGuiEntries type="key">
 				<LastScriptFilePath type="string">C:\Users\ccore\Documents\pls\UDE 2024</LastScriptFilePath>
-				<Macro_16_05_25_08_59_28_0 type="key">
+				<Macro_14_07_25_19_20_00_0 type="key">
 					<ScriptDescription type="string"></ScriptDescription>
 					<ScriptPath type="string">U:\ude_work\2022\ude\Ude\AddOns\Macro\MacroLibrary\StdMacros1.dsm</ScriptPath>
 					<ScriptSource type="string">'	
@@ -3407,7 +3425,7 @@ End Sub</ScriptSource>
 					<ScriptFromStg type="flag">1</ScriptFromStg>
 					<LocalComputerName type="string">TG-WORK6</LocalComputerName>
 					<ExternalScriptPath type="string"></ExternalScriptPath>
-					<NextNodeName type="string">Macro_17_05_25_13_12_59_0</NextNodeName>
+					<NextNodeName type="string">Macro_15_07_25_21_46_53_0</NextNodeName>
 					<UnAss type="key">
 						<FuncParameterCnt type="int">2</FuncParameterCnt>
 						<GUIEntryDescription type="string"></GUIEntryDescription>
@@ -3429,7 +3447,7 @@ End Sub</ScriptSource>
 						<GUIEntryDescription type="string"></GUIEntryDescription>
 					</FillDWord>
 					<NoOfFunctions type="int">5</NoOfFunctions>
-				</Macro_16_05_25_08_59_28_0>
+				</Macro_14_07_25_19_20_00_0>
 			</MacroGuiEntries>
 			<LastSelectedMacro type="string"></LastSelectedMacro>
 		</UDE.Script>
@@ -3504,7 +3522,7 @@ End Sub</ScriptSource>
 			</StdUDESymbolExplWin>
 			<StdUDEProgWin type="key">
 				<OPEN_VIEW00 type="key">
-					<FrameCreated type="string">24.04.2025 19:53:20:422</FrameCreated>
+					<FrameCreated type="string">14.07.2025 08:40:38:974</FrameCreated>
 					<ViewSrv type="key">
 						<AnimateQueue type="key">
 							<RunningPeriod type="int">0</RunningPeriod>
@@ -3516,7 +3534,7 @@ End Sub</ScriptSource>
 					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
 				</OPEN_VIEW00>
 				<OPEN_VIEW01 type="key">
-					<FrameCreated type="string">24.04.2025 19:53:20:560</FrameCreated>
+					<FrameCreated type="string">14.07.2025 08:40:39:082</FrameCreated>
 					<ViewSrv type="key">
 						<AnimateQueue type="key">
 							<RunningPeriod type="int">0</RunningPeriod>
@@ -3528,7 +3546,7 @@ End Sub</ScriptSource>
 					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
 				</OPEN_VIEW01>
 				<OPEN_VIEW02 type="key">
-					<FrameCreated type="string">24.04.2025 19:57:35:909</FrameCreated>
+					<FrameCreated type="string">18.06.2025 09:20:50:395</FrameCreated>
 					<ViewSrv type="key">
 						<AnimateQueue type="key">
 							<RunningPeriod type="int">0</RunningPeriod>
@@ -3536,7 +3554,7 @@ End Sub</ScriptSource>
 						</AnimateQueue>
 					</ViewSrv>
 					<FrameUserTitle type="string"></FrameUserTitle>
-					<SourceFile type="string">..\CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI\Source\main.c</SourceFile>
+					<SourceFile type="string">Project\CCFC3012PT_S32DS_SMP\ARCH3D12_M10I1R0\CDD\CarSigGen.c</SourceFile>
 					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
 				</OPEN_VIEW02>
 				<OPEN_VIEW03 type="key">
@@ -3575,15 +3593,15 @@ End Sub</ScriptSource>
 					<SourceFile type="string">Project\CCFC3012PT_S32DS_SMP\ARCH3D12_M10I1R0\CDD\resolver_app\AngleTrk.c</SourceFile>
 					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
 				</OPEN_VIEW05>
-				<SAVED_VIEW_OBJS type="int">7</SAVED_VIEW_OBJS>
+				<SAVED_VIEW_OBJS type="int">2</SAVED_VIEW_OBJS>
 				<SAVED_VIEW00 type="int">0</SAVED_VIEW00>
 				<SAVED_VIEW01 type="int">1</SAVED_VIEW01>
-				<SAVED_VIEW02 type="int">2</SAVED_VIEW02>
-				<SAVED_VIEW03 type="int">3</SAVED_VIEW03>
-				<SAVED_VIEW04 type="int">4</SAVED_VIEW04>
-				<SAVED_VIEW05 type="int">5</SAVED_VIEW05>
+				<SAVED_VIEW02 type="int">3</SAVED_VIEW02>
+				<SAVED_VIEW03 type="int">4</SAVED_VIEW03>
+				<SAVED_VIEW04 type="int">5</SAVED_VIEW04>
+				<SAVED_VIEW05 type="int">2</SAVED_VIEW05>
 				<OPEN_VIEW06 type="key">
-					<FrameCreated type="string">15.05.2025 11:42:50:036</FrameCreated>
+					<FrameCreated type="string">04.07.2025 17:17:47:377</FrameCreated>
 					<ViewSrv type="key">
 						<AnimateQueue type="key">
 							<RunningPeriod type="int">0</RunningPeriod>
@@ -3591,38 +3609,52 @@ End Sub</ScriptSource>
 						</AnimateQueue>
 					</ViewSrv>
 					<FrameUserTitle type="string"></FrameUserTitle>
-					<SourceFile type="string">..\CCFC3012PT_MCAL4_4_V1_1_0_V185_4\Source\common\src\startup.S</SourceFile>
+					<SourceFile type="string">Project\CCFC3012PT_S32DS_SMP\ARCH3D12_M10I1R0\CDD\GTM_LLD\gtm4_atom_lld.c</SourceFile>
 					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
 				</OPEN_VIEW06>
 				<SAVED_VIEW06 type="int">6</SAVED_VIEW06>
+				<OPEN_VIEW07 type="key">
+					<FrameCreated type="string">04.07.2025 17:18:07:547</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">Project\CCFC3012PT_S32DS_SMP\ARCH3D12_M10I1R0\MotorControl\motor_open.c</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW07>
+				<SAVED_VIEW07 type="int">7</SAVED_VIEW07>
 			</StdUDEProgWin>
 			<StdUDELocalsWin type="key">
 				<OPEN_VIEW type="key">
-					<FrameCreated type="string">25.04.2025 11:56:32:620</FrameCreated>
+					<FrameCreated type="string">04.07.2025 17:18:26:959</FrameCreated>
 					<ViewSrv type="key">
-						<NameWidth type="int">550</NameWidth>
+						<NameWidth type="int">560</NameWidth>
 						<AddressWidth type="int">0</AddressWidth>
-						<ValueWidth type="int">367</ValueWidth>
+						<ValueWidth type="int">375</ValueWidth>
 						<Value2Width type="int">0</Value2Width>
 						<MinMaxWidth type="int">0</MinMaxWidth>
 					</ViewSrv>
 					<FrameUserTitle type="string"></FrameUserTitle>
 				</OPEN_VIEW>
 				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+				<SAVED_VIEW type="int">0</SAVED_VIEW>
 			</StdUDELocalsWin>
 			<StdUDEWatchWin type="key">
 				<OPEN_VIEW00 type="key">
-					<FrameCreated type="string">24.04.2025 19:54:01:162</FrameCreated>
+					<FrameCreated type="string">11.07.2025 09:53:23:376</FrameCreated>
 					<ViewSrv type="key">
 						<TopIndex type="int">0</TopIndex>
-						<CaretIndex type="int">10</CaretIndex>
+						<CaretIndex type="int">9</CaretIndex>
 						<ExportContentFlags type="int">139</ExportContentFlags>
 						<LastSelectedPropPage type="string"></LastSelectedPropPage>
-						<NameWidth type="int">610</NameWidth>
+						<NameWidth type="int">700</NameWidth>
 						<AddressWidth type="int">0</AddressWidth>
-						<ValueWidth type="int">610</ValueWidth>
+						<ValueWidth type="int">609</ValueWidth>
 						<Value2Width type="int">0</Value2Width>
-						<MinMaxWidth type="int">610</MinMaxWidth>
+						<MinMaxWidth type="int">545</MinMaxWidth>
 						<Watches type="key">
 							<IntegralFormatForValue1 type="int">3</IntegralFormatForValue1>
 							<IntegralFormatForValue2 type="int">3</IntegralFormatForValue2>
@@ -3652,28 +3684,27 @@ End Sub</ScriptSource>
 								<HoldedPeriod4 type="int">0</HoldedPeriod4>
 							</Watch4>
 							<Watch5 type="key">
-								<Name type="string">Pmsm_f32_SpdRef_B (global) @1</Name>
+								<Name type="string">Pmsm_f32_DbgIdRef_B (global) @1</Name>
 								<RunningPeriod5 type="int">25</RunningPeriod5>
 								<HoldedPeriod5 type="int">0</HoldedPeriod5>
 							</Watch5>
 							<Watch6 type="key">
-								<Name type="string">Pmsm_f32_SpdRef (global) @1</Name>
+								<Name type="string">Pmsm_f32_SpdRef_B (global) @1</Name>
 								<RunningPeriod6 type="int">25</RunningPeriod6>
 								<HoldedPeriod6 type="int">0</HoldedPeriod6>
 							</Watch6>
 							<Watch7 type="key">
-								<Name type="string">g_RdcSdadc_a (global) @1</Name>
+								<Name type="string">Pmsm_f32_SpdRef (global) @1</Name>
 								<RunningPeriod7 type="int">25</RunningPeriod7>
 								<HoldedPeriod7 type="int">0</HoldedPeriod7>
 							</Watch7>
 							<Watch8 type="key">
-								<Name type="string">g_RdcSdadc_b (global) @1</Name>
+								<Name type="string">g_RdcSdadc_a (global) @1</Name>
 								<RunningPeriod8 type="int">25</RunningPeriod8>
 								<HoldedPeriod8 type="int">0</HoldedPeriod8>
 							</Watch8>
 							<Watch9 type="key">
-								<Name type="string">ResXBPare_a (global) @1</Name>
-								<Status type="string">#0#</Status>
+								<Name type="string">g_RdcSdadc_b (global) @1</Name>
 								<RunningPeriod9 type="int">25</RunningPeriod9>
 								<HoldedPeriod9 type="int">0</HoldedPeriod9>
 							</Watch9>
@@ -3703,52 +3734,183 @@ End Sub</ScriptSource>
 								<HoldedPeriod14 type="int">0</HoldedPeriod14>
 							</Watch14>
 							<Watch15 type="key">
-								<Name type="string">Pmsm_f32_DbgIdRef_B (global) @1</Name>
+								<Name type="string">FOC_P1 (global) @1</Name>
 								<RunningPeriod15 type="int">25</RunningPeriod15>
 								<HoldedPeriod15 type="int">0</HoldedPeriod15>
 							</Watch15>
 							<Watch16 type="key">
-								<Name type="string">FOC_P1 (global) @1</Name>
+								<Name type="string">FOC_P3 (global) @1</Name>
 								<RunningPeriod16 type="int">25</RunningPeriod16>
 								<HoldedPeriod16 type="int">0</HoldedPeriod16>
 							</Watch16>
 							<Watch17 type="key">
-								<Name type="string">ResXBPare_b (global) @1</Name>
-								<Status type="string">#0#</Status>
+								<Name type="string">Pmsm_f32_MotSpdFdb (global) @1</Name>
 								<RunningPeriod17 type="int">25</RunningPeriod17>
 								<HoldedPeriod17 type="int">0</HoldedPeriod17>
 							</Watch17>
 							<Watch18 type="key">
-								<Name type="string">FOC_P3 (global) @1</Name>
+								<Name type="string">Pmsm_f32_FlxWknMotSpd (global) @1</Name>
 								<RunningPeriod18 type="int">25</RunningPeriod18>
 								<HoldedPeriod18 type="int">0</HoldedPeriod18>
 							</Watch18>
 							<Watch19 type="key">
-								<Name type="string">Pmsm_f32_MotSpdFdb (global) @1</Name>
+								<Name type="string">sin_data_buf_a (global) @1</Name>
+								<Status type="string">#0#</Status>
 								<RunningPeriod19 type="int">25</RunningPeriod19>
 								<HoldedPeriod19 type="int">0</HoldedPeriod19>
 							</Watch19>
 							<Watch20 type="key">
-								<Name type="string">Pmsm_f32_FlxWknMotSpd (global) @1</Name>
+								<Name type="string">sin_data_buf_b (global) @1</Name>
 								<RunningPeriod20 type="int">25</RunningPeriod20>
 								<HoldedPeriod20 type="int">0</HoldedPeriod20>
 							</Watch20>
 							<Watch21 type="key">
-								<Name type="string">Pmsm_f32_SpdLpfCoeff_C (global) @1</Name>
+								<Name type="string">cos_data_buf_a (global) @1</Name>
 								<RunningPeriod21 type="int">25</RunningPeriod21>
 								<HoldedPeriod21 type="int">0</HoldedPeriod21>
 							</Watch21>
 							<Watch22 type="key">
-								<Name type="string">Pmsm_f32_SpdLpfCoeff_C_B (global) @1</Name>
+								<Name type="string">cos_data_buf_b (global) @1</Name>
 								<RunningPeriod22 type="int">25</RunningPeriod22>
 								<HoldedPeriod22 type="int">0</HoldedPeriod22>
 							</Watch22>
+							<Watch23 type="key">
+								<Name type="string">Pmsm_f32_SpdLp_Kp (global) @1</Name>
+								<RunningPeriod23 type="int">25</RunningPeriod23>
+								<HoldedPeriod23 type="int">0</HoldedPeriod23>
+							</Watch23>
+							<Watch24 type="key">
+								<Name type="string">Pmsm_f32_SpdLp_Ki (global) @1</Name>
+								<RunningPeriod24 type="int">25</RunningPeriod24>
+								<HoldedPeriod24 type="int">0</HoldedPeriod24>
+							</Watch24>
+							<Watch25 type="key">
+								<Name type="string">Pmsm_f32_VfSpeed_C (global) @1</Name>
+								<RunningPeriod25 type="int">25</RunningPeriod25>
+								<HoldedPeriod25 type="int">0</HoldedPeriod25>
+							</Watch25>
+							<Watch26 type="key">
+								<Name type="string">g_angleB_test (global) @1</Name>
+								<RunningPeriod26 type="int">25</RunningPeriod26>
+								<HoldedPeriod26 type="int">0</HoldedPeriod26>
+							</Watch26>
+							<Watch27 type="key">
+								<Name type="string">g_speedB_testh (global) @1</Name>
+								<RunningPeriod27 type="int">25</RunningPeriod27>
+								<HoldedPeriod27 type="int">0</HoldedPeriod27>
+							</Watch27>
+							<Watch28 type="key">
+								<Name type="string">exe_data_buf_a (global) @1</Name>
+								<RunningPeriod28 type="int">25</RunningPeriod28>
+								<HoldedPeriod28 type="int">0</HoldedPeriod28>
+							</Watch28>
+							<Watch29 type="key">
+								<Name type="string">exe_data_buf_b (global) @1</Name>
+								<RunningPeriod29 type="int">25</RunningPeriod29>
+								<HoldedPeriod29 type="int">0</HoldedPeriod29>
+							</Watch29>
+							<Watch30 type="key">
+								<Name type="string">Motor_open (global) @1</Name>
+								<RunningPeriod30 type="int">25</RunningPeriod30>
+								<HoldedPeriod30 type="int">0</HoldedPeriod30>
+							</Watch30>
+							<Watch31 type="key">
+								<Name type="string">Pmsm_bl_FlxWknEnable (global) @1</Name>
+								<RunningPeriod31 type="int">25</RunningPeriod31>
+								<HoldedPeriod31 type="int">0</HoldedPeriod31>
+							</Watch31>
+							<Watch32 type="key">
+								<Name type="string">Pmsm_bl_FlxWknEnable_B (global) @1</Name>
+							</Watch32>
 						</Watches>
 					</ViewSrv>
 					<FrameUserTitle type="string"></FrameUserTitle>
 				</OPEN_VIEW00>
-				<SAVED_VIEW_OBJS type="int">1</SAVED_VIEW_OBJS>
+				<SAVED_VIEW_OBJS type="int">3</SAVED_VIEW_OBJS>
 				<SAVED_VIEW00 type="int">0</SAVED_VIEW00>
+				<OPEN_VIEW01 type="key">
+					<FrameCreated type="string">11.07.2025 09:53:30:874</FrameCreated>
+					<ViewSrv type="key">
+						<TopIndex type="int">0</TopIndex>
+						<CaretIndex type="int">0</CaretIndex>
+						<ExportContentFlags type="int">139</ExportContentFlags>
+						<NameWidth type="int">1111</NameWidth>
+						<AddressWidth type="int">0</AddressWidth>
+						<ValueWidth type="int">772</ValueWidth>
+						<Value2Width type="int">0</Value2Width>
+						<MinMaxWidth type="int">0</MinMaxWidth>
+						<Watches type="key">
+							<IntegralFormatForValue1 type="int">3</IntegralFormatForValue1>
+							<IntegralFormatForValue2 type="int">3</IntegralFormatForValue2>
+							<ASCIIForValue1 type="int">0</ASCIIForValue1>
+							<ASCIIForValue2 type="int">0</ASCIIForValue2>
+							<FloatFormatForValue1 type="int">3</FloatFormatForValue1>
+							<FloatFormatForValue2 type="int">3</FloatFormatForValue2>
+							<RefreshPeriodGlobalEnable type="int">1</RefreshPeriodGlobalEnable>
+							<Watch1 type="key">
+								<Name type="string">g_cnt (global) @1</Name>
+								<RunningPeriod1 type="int">25</RunningPeriod1>
+								<HoldedPeriod1 type="int">0</HoldedPeriod1>
+							</Watch1>
+							<Watch2 type="key">
+								<Name type="string">g_angleB (global) @1</Name>
+								<RunningPeriod2 type="int">25</RunningPeriod2>
+								<HoldedPeriod2 type="int">0</HoldedPeriod2>
+							</Watch2>
+							<Watch3 type="key">
+								<Name type="string">g_speedB (global) @1</Name>
+								<RunningPeriod3 type="int">25</RunningPeriod3>
+								<HoldedPeriod3 type="int">0</HoldedPeriod3>
+							</Watch3>
+						</Watches>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+				</OPEN_VIEW01>
+				<OPEN_VIEW02 type="key">
+					<FrameCreated type="string">11.07.2025 09:53:58:432</FrameCreated>
+					<ViewSrv type="key">
+						<TopIndex type="int">0</TopIndex>
+						<CaretIndex type="int">1</CaretIndex>
+						<NameWidth type="int">1139</NameWidth>
+						<AddressWidth type="int">0</AddressWidth>
+						<ValueWidth type="int">824</ValueWidth>
+						<Value2Width type="int">0</Value2Width>
+						<MinMaxWidth type="int">0</MinMaxWidth>
+						<ExportContentFlags type="int">139</ExportContentFlags>
+						<Watches type="key">
+							<IntegralFormatForValue1 type="int">3</IntegralFormatForValue1>
+							<IntegralFormatForValue2 type="int">3</IntegralFormatForValue2>
+							<ASCIIForValue1 type="int">0</ASCIIForValue1>
+							<ASCIIForValue2 type="int">0</ASCIIForValue2>
+							<FloatFormatForValue1 type="int">3</FloatFormatForValue1>
+							<FloatFormatForValue2 type="int">3</FloatFormatForValue2>
+							<RefreshPeriodGlobalEnable type="int">1</RefreshPeriodGlobalEnable>
+							<Watch1 type="key">
+								<Name type="string">g_cnt (global) @1</Name>
+								<RunningPeriod1 type="int">25</RunningPeriod1>
+								<HoldedPeriod1 type="int">0</HoldedPeriod1>
+							</Watch1>
+							<Watch2 type="key">
+								<Name type="string">g_PhasU (global) @1</Name>
+								<RunningPeriod2 type="int">25</RunningPeriod2>
+								<HoldedPeriod2 type="int">0</HoldedPeriod2>
+							</Watch2>
+							<Watch3 type="key">
+								<Name type="string">g_PhasV (global) @1</Name>
+								<RunningPeriod3 type="int">25</RunningPeriod3>
+								<HoldedPeriod3 type="int">0</HoldedPeriod3>
+							</Watch3>
+							<Watch4 type="key">
+								<Name type="string">g_PhasW (global) @1</Name>
+								<RunningPeriod4 type="int">25</RunningPeriod4>
+								<HoldedPeriod4 type="int">0</HoldedPeriod4>
+							</Watch4>
+						</Watches>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+				</OPEN_VIEW02>
+				<SAVED_VIEW01 type="int">1</SAVED_VIEW01>
+				<SAVED_VIEW02 type="int">2</SAVED_VIEW02>
 			</StdUDEWatchWin>
 			<StdUDESimIOWin type="key">
 				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
@@ -3758,9 +3920,514 @@ End Sub</ScriptSource>
 			</StdUDEHtmlDocWin>
 			<StdUDEGraphWin type="key">
 				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+				<OPEN_VIEW00 type="key">
+					<FrameCreated type="string">14.07.2025 14:15:41:432</FrameCreated>
+					<ViewSrv type="key">
+						<LastSelectedPropPage type="string"></LastSelectedPropPage>
+						<GraphStgNode type="key">
+							<Comm_Mananger_GUID type="string">{6DE08EE5-E20C-42A4-896B-6821C2489841}</Comm_Mananger_GUID>
+							<InnnerColor type="string">240,240,240</InnnerColor>
+							<GraphColor type="string">255,255,255</GraphColor>
+							<DoubleBuffer type="flag">1</DoubleBuffer>
+							<ShowLegend type="flag">1</ShowLegend>
+							<Interaction type="flag">1</Interaction>
+							<SnapCursor type="flag">1</SnapCursor>
+							<SnapCursorAlways type="flag">0</SnapCursorAlways>
+							<SnapRange type="int">50</SnapRange>
+							<DrawMarkerAtCursorPos type="flag">1</DrawMarkerAtCursorPos>
+							<LegendAlignment type="int">1</LegendAlignment>
+							<PrintHeader type="string"></PrintHeader>
+							<PrintFooter type="string"></PrintFooter>
+							<NoOfCurves type="int">1</NoOfCurves>
+							<NoOfXAsis type="int">1</NoOfXAsis>
+							<NoOfYAsis type="int">1</NoOfYAsis>
+							<StgMode type="int">0</StgMode>
+							<StoragePath type="string"></StoragePath>
+							<UIntAsDecFlag type="flag">0</UIntAsDecFlag>
+							<DataStgFmtObj type="key">
+								<DataStgFmt type="key">
+									<FmtStgObj_0 type="key">
+										<VarType type="int">17</VarType>
+										<NodeFmt type="string">%Xh</NodeFmt>
+									</FmtStgObj_0>
+									<FmtStgObj_1 type="key">
+										<VarType type="int">2</VarType>
+										<NodeFmt type="string">%d</NodeFmt>
+									</FmtStgObj_1>
+									<FmtStgObj_2 type="key">
+										<VarType type="int">18</VarType>
+										<NodeFmt type="string">%Xh</NodeFmt>
+									</FmtStgObj_2>
+									<FmtStgObj_3 type="key">
+										<VarType type="int">3</VarType>
+										<NodeFmt type="string">%d</NodeFmt>
+									</FmtStgObj_3>
+									<FmtStgObj_4 type="key">
+										<VarType type="int">19</VarType>
+										<NodeFmt type="string">%Xh</NodeFmt>
+									</FmtStgObj_4>
+									<FmtStgObj_5 type="key">
+										<VarType type="int">4</VarType>
+										<NodeFmt type="string">%f</NodeFmt>
+									</FmtStgObj_5>
+									<FmtStgObj_6 type="key">
+										<VarType type="int">5</VarType>
+										<NodeFmt type="string">%f</NodeFmt>
+									</FmtStgObj_6>
+									<FmtStgObj_7 type="key">
+										<VarType type="int">7</VarType>
+										<NodeFmt type="string">%d.%m.%Y %H:%M:%S:%MS	%H:%M:%S:%MS</NodeFmt>
+										<AbsoluteTimeMode type="flag">0</AbsoluteTimeMode>
+										<TimeAxisRes type="int">0</TimeAxisRes>
+									</FmtStgObj_7>
+									<FmtStgObjCount type="int">8</FmtStgObjCount>
+								</DataStgFmt>
+							</DataStgFmtObj>
+							<CompressedDataStgFmtObj type="key">
+								<DataStgFmt type="key">
+									<FmtStgObj_0 type="key">
+										<VarType type="int">17</VarType>
+										<NodeFmt type="string">%Xh</NodeFmt>
+									</FmtStgObj_0>
+									<FmtStgObj_1 type="key">
+										<VarType type="int">2</VarType>
+										<NodeFmt type="string">%d</NodeFmt>
+									</FmtStgObj_1>
+									<FmtStgObj_2 type="key">
+										<VarType type="int">18</VarType>
+										<NodeFmt type="string">%Xh</NodeFmt>
+									</FmtStgObj_2>
+									<FmtStgObj_3 type="key">
+										<VarType type="int">3</VarType>
+										<NodeFmt type="string">%d</NodeFmt>
+									</FmtStgObj_3>
+									<FmtStgObj_4 type="key">
+										<VarType type="int">19</VarType>
+										<NodeFmt type="string">%Xh</NodeFmt>
+									</FmtStgObj_4>
+									<FmtStgObj_5 type="key">
+										<VarType type="int">4</VarType>
+										<NodeFmt type="string">%f</NodeFmt>
+									</FmtStgObj_5>
+									<FmtStgObj_6 type="key">
+										<VarType type="int">5</VarType>
+										<NodeFmt type="string">%f</NodeFmt>
+									</FmtStgObj_6>
+									<FmtStgObj_7 type="key">
+										<VarType type="int">7</VarType>
+										<NodeFmt type="string">%d.%m.%Y %H:%M:%S:%MS	%H:%M:%S:%MS</NodeFmt>
+										<AbsoluteTimeMode type="flag">0</AbsoluteTimeMode>
+										<TimeAxisRes type="int">0</TimeAxisRes>
+									</FmtStgObj_7>
+									<FmtStgObjCount type="int">8</FmtStgObjCount>
+								</DataStgFmt>
+							</CompressedDataStgFmtObj>
+							<Curve_0 type="key">
+								<Expression type="string">exe_data_buf_a</Expression>
+								<VarDisabled type="flag">0</VarDisabled>
+								<Scope type="string">*</Scope>
+								<Name type="string">qq</Name>
+								<TraceBufferSize type="int">4096</TraceBufferSize>
+								<Label type="string">qq</Label>
+								<BaseObject type="key">
+									<Selected type="flag">0</Selected>
+									<Resize type="flag">0</Resize>
+									<CanMove type="flag">0</CanMove>
+									<Sizing type="flag">0</Sizing>
+									<Editing type="flag">0</Editing>
+									<Visible type="flag">1</Visible>
+									<CanEdit type="flag">1</CanEdit>
+									<Rect type="string">0,0,0,0</Rect>
+									<Color type="string">255,0,0</Color>
+								</BaseObject>
+								<LineSize type="int">1</LineSize>
+								<FillStyle type="int">6</FillStyle>
+								<MarkerType type="int">0</MarkerType>
+								<Marker type="int">0</Marker>
+								<MarkerSize type="int">10</MarkerSize>
+								<LineStyle type="int">0</LineStyle>
+								<ShowMarker type="flag">0</ShowMarker>
+								<FillBeneath type="flag">0</FillBeneath>
+								<FillTransparent type="flag">1</FillTransparent>
+								<CurveColor type="string">255,0,0</CurveColor>
+								<Type type="int">0</Type>
+								<XAxisIndex type="int">0</XAxisIndex>
+								<YAxisIndex type="int">0</YAxisIndex>
+							</Curve_0>
+							<XAxis_0 type="key">
+								<Visible type="flag">1</Visible>
+								<Placement type="int">2</Placement>
+								<ShowMarker type="flag">1</ShowMarker>
+								<DateTime type="flag">0</DateTime>
+								<ShowGrid type="flag">1</ShowGrid>
+								<AutoScale type="flag">1</AutoScale>
+								<ArcSize type="int">5</ArcSize>
+								<MarkerSize type="int">10</MarkerSize>
+								<TickSize type="int">5</TickSize>
+								<GridStyle type="int">2</GridStyle>
+								<GridColor type="string">150,150,150</GridColor>
+								<AxisColor type="string">0,0,0</AxisColor>
+								<MinRange type="double">-1</MinRange>
+								<MaxRange type="double">1</MaxRange>
+								<Font type="string">Arial,Dh,0,0,0,400,0,0,0,1,2,1,4,0</Font>
+								<TitleFont type="string">Arial,Eh,0,0,0,700,0,0,0,1,2,1,4,0</TitleFont>
+								<DisplayFmt type="string">%5.2f</DisplayFmt>
+								<Label type="string"></Label>
+								<FmtSwitchPower type="int">6</FmtSwitchPower>
+								<ValueAxisFmtMode type="int">0</ValueAxisFmtMode>
+								<ScalePrecision type="int">2</ScalePrecision>
+								<UserDefinedDisplayFmt type="flag">1</UserDefinedDisplayFmt>
+							</XAxis_0>
+							<YAxis_0 type="key">
+								<Visible type="flag">1</Visible>
+								<Placement type="int">0</Placement>
+								<ShowMarker type="flag">1</ShowMarker>
+								<DateTime type="flag">0</DateTime>
+								<ShowGrid type="flag">1</ShowGrid>
+								<AutoScale type="flag">1</AutoScale>
+								<ArcSize type="int">5</ArcSize>
+								<MarkerSize type="int">10</MarkerSize>
+								<TickSize type="int">5</TickSize>
+								<GridStyle type="int">2</GridStyle>
+								<GridColor type="string">150,150,150</GridColor>
+								<AxisColor type="string">0,0,0</AxisColor>
+								<MinRange type="double">-1</MinRange>
+								<MaxRange type="double">1</MaxRange>
+								<Font type="string">Arial,Dh,0,0,0,400,0,0,0,1,2,1,4,0</Font>
+								<TitleFont type="string">Arial,Eh,0,0,0,700,0,0,0,1,2,1,4,0</TitleFont>
+								<DisplayFmt type="string">%5.2f</DisplayFmt>
+								<Label type="string"></Label>
+								<FmtSwitchPower type="int">6</FmtSwitchPower>
+								<ValueAxisFmtMode type="int">0</ValueAxisFmtMode>
+								<ScalePrecision type="int">2</ScalePrecision>
+								<UserDefinedDisplayFmt type="flag">1</UserDefinedDisplayFmt>
+							</YAxis_0>
+							<GraphTitle type="string"></GraphTitle>
+							<NoOfObjects type="int">0</NoOfObjects>
+							<AnimateQueue type="key">
+								<RunningPeriod type="int">0</RunningPeriod>
+								<HoldedPeriod type="int">0</HoldedPeriod>
+							</AnimateQueue>
+							<Mode_GUID type="string">{A9EAEABD-F574-486F-9B50-4EA4960DD2A7}</Mode_GUID>
+							<CurveGUID type="string">{1DC51D03-5E6D-4FB4-A62D-5B8A6CAAC532}</CurveGUID>
+						</GraphStgNode>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+				</OPEN_VIEW00>
 			</StdUDEGraphWin>
 			<StdUDETimeSampleGraphWin type="key">
-				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+				<SAVED_VIEW_OBJS type="int">1</SAVED_VIEW_OBJS>
+				<OPEN_VIEW00 type="key">
+					<FrameCreated type="string">15.07.2025 14:19:30:235</FrameCreated>
+					<ViewSrv type="key">
+						<LastSelectedPropPage type="string">Curve 01</LastSelectedPropPage>
+						<GraphStgNode type="key">
+							<Comm_Mananger_GUID type="string">{6DE08EE5-E20C-42A4-896B-6821C2489841}</Comm_Mananger_GUID>
+							<InnnerColor type="string">240,240,240</InnnerColor>
+							<GraphColor type="string">255,255,255</GraphColor>
+							<DoubleBuffer type="flag">1</DoubleBuffer>
+							<ShowLegend type="flag">1</ShowLegend>
+							<Interaction type="flag">1</Interaction>
+							<SnapCursor type="flag">1</SnapCursor>
+							<SnapCursorAlways type="flag">0</SnapCursorAlways>
+							<SnapRange type="int">50</SnapRange>
+							<DrawMarkerAtCursorPos type="flag">1</DrawMarkerAtCursorPos>
+							<LegendAlignment type="int">1</LegendAlignment>
+							<PrintHeader type="string"></PrintHeader>
+							<PrintFooter type="string"></PrintFooter>
+							<NoOfCurves type="int">3</NoOfCurves>
+							<NoOfXAsis type="int">1</NoOfXAsis>
+							<NoOfYAsis type="int">3</NoOfYAsis>
+							<StgMode type="int">0</StgMode>
+							<StoragePath type="string"></StoragePath>
+							<UIntAsDecFlag type="flag">0</UIntAsDecFlag>
+							<DataStgFmtObj type="key">
+								<DataStgFmt type="key">
+									<FmtStgObj_0 type="key">
+										<VarType type="int">17</VarType>
+										<NodeFmt type="string">%Xh</NodeFmt>
+									</FmtStgObj_0>
+									<FmtStgObj_1 type="key">
+										<VarType type="int">2</VarType>
+										<NodeFmt type="string">%d</NodeFmt>
+									</FmtStgObj_1>
+									<FmtStgObj_2 type="key">
+										<VarType type="int">18</VarType>
+										<NodeFmt type="string">%Xh</NodeFmt>
+									</FmtStgObj_2>
+									<FmtStgObj_3 type="key">
+										<VarType type="int">3</VarType>
+										<NodeFmt type="string">%d</NodeFmt>
+									</FmtStgObj_3>
+									<FmtStgObj_4 type="key">
+										<VarType type="int">19</VarType>
+										<NodeFmt type="string">%Xh</NodeFmt>
+									</FmtStgObj_4>
+									<FmtStgObj_5 type="key">
+										<VarType type="int">4</VarType>
+										<NodeFmt type="string">%f</NodeFmt>
+									</FmtStgObj_5>
+									<FmtStgObj_6 type="key">
+										<VarType type="int">5</VarType>
+										<NodeFmt type="string">%f</NodeFmt>
+									</FmtStgObj_6>
+									<FmtStgObj_7 type="key">
+										<VarType type="int">7</VarType>
+										<NodeFmt type="string">%d.%m.%Y %H:%M:%S:%MS	%H:%M:%S:%MS</NodeFmt>
+										<AbsoluteTimeMode type="flag">0</AbsoluteTimeMode>
+										<TimeAxisRes type="int">0</TimeAxisRes>
+									</FmtStgObj_7>
+									<FmtStgObjCount type="int">8</FmtStgObjCount>
+								</DataStgFmt>
+							</DataStgFmtObj>
+							<CompressedDataStgFmtObj type="key">
+								<DataStgFmt type="key">
+									<FmtStgObj_0 type="key">
+										<VarType type="int">17</VarType>
+										<NodeFmt type="string">%Xh</NodeFmt>
+									</FmtStgObj_0>
+									<FmtStgObj_1 type="key">
+										<VarType type="int">2</VarType>
+										<NodeFmt type="string">%d</NodeFmt>
+									</FmtStgObj_1>
+									<FmtStgObj_2 type="key">
+										<VarType type="int">18</VarType>
+										<NodeFmt type="string">%Xh</NodeFmt>
+									</FmtStgObj_2>
+									<FmtStgObj_3 type="key">
+										<VarType type="int">3</VarType>
+										<NodeFmt type="string">%d</NodeFmt>
+									</FmtStgObj_3>
+									<FmtStgObj_4 type="key">
+										<VarType type="int">19</VarType>
+										<NodeFmt type="string">%Xh</NodeFmt>
+									</FmtStgObj_4>
+									<FmtStgObj_5 type="key">
+										<VarType type="int">4</VarType>
+										<NodeFmt type="string">%f</NodeFmt>
+									</FmtStgObj_5>
+									<FmtStgObj_6 type="key">
+										<VarType type="int">5</VarType>
+										<NodeFmt type="string">%f</NodeFmt>
+									</FmtStgObj_6>
+									<FmtStgObj_7 type="key">
+										<VarType type="int">7</VarType>
+										<NodeFmt type="string">%d.%m.%Y %H:%M:%S:%MS	%H:%M:%S:%MS</NodeFmt>
+										<AbsoluteTimeMode type="flag">0</AbsoluteTimeMode>
+										<TimeAxisRes type="int">0</TimeAxisRes>
+									</FmtStgObj_7>
+									<FmtStgObjCount type="int">8</FmtStgObjCount>
+								</DataStgFmt>
+							</CompressedDataStgFmtObj>
+							<Curve_0 type="key">
+								<Expression type="string">duty_u_cnt</Expression>
+								<PollPeriod type="int">1</PollPeriod>
+								<VarDisabled type="flag">0</VarDisabled>
+								<Scope type="string">*</Scope>
+								<Name type="string">qqq</Name>
+								<TraceBufferSize type="int">150000</TraceBufferSize>
+								<Label type="string">duty_u_cnt</Label>
+								<BaseObject type="key">
+									<Selected type="flag">0</Selected>
+									<Resize type="flag">0</Resize>
+									<CanMove type="flag">0</CanMove>
+									<Sizing type="flag">0</Sizing>
+									<Editing type="flag">0</Editing>
+									<Visible type="flag">1</Visible>
+									<CanEdit type="flag">1</CanEdit>
+									<Rect type="string">0,0,0,0</Rect>
+									<Color type="string">255,0,0</Color>
+								</BaseObject>
+								<LineSize type="int">1</LineSize>
+								<FillStyle type="int">6</FillStyle>
+								<MarkerType type="int">0</MarkerType>
+								<Marker type="int">0</Marker>
+								<MarkerSize type="int">10</MarkerSize>
+								<LineStyle type="int">0</LineStyle>
+								<ShowMarker type="flag">0</ShowMarker>
+								<FillBeneath type="flag">0</FillBeneath>
+								<FillTransparent type="flag">1</FillTransparent>
+								<CurveColor type="string">255,0,0</CurveColor>
+								<Type type="int">0</Type>
+								<XAxisIndex type="int">0</XAxisIndex>
+								<YAxisIndex type="int">0</YAxisIndex>
+							</Curve_0>
+							<XAxis_0 type="key">
+								<Visible type="flag">1</Visible>
+								<Placement type="int">2</Placement>
+								<ShowMarker type="flag">1</ShowMarker>
+								<DateTime type="flag">1</DateTime>
+								<ShowGrid type="flag">1</ShowGrid>
+								<AutoScale type="flag">1</AutoScale>
+								<ArcSize type="int">5</ArcSize>
+								<MarkerSize type="int">10</MarkerSize>
+								<TickSize type="int">5</TickSize>
+								<GridStyle type="int">2</GridStyle>
+								<GridColor type="string">150,150,150</GridColor>
+								<AxisColor type="string">0,0,0</AxisColor>
+								<TimeRange type="int">150</TimeRange>
+								<TimeWindowMode type="int">1</TimeWindowMode>
+								<TimeWindow type="double">5.7870370370370372579E-05</TimeWindow>
+								<Font type="string">Arial,Dh,0,0,0,400,0,0,0,1,2,1,4,0</Font>
+								<TitleFont type="string">Arial,Eh,0,0,0,700,0,0,0,1,2,1,4,0</TitleFont>
+								<DisplayFmt type="string">%H:%M.
+%S.%MS</DisplayFmt>
+								<Label type="string"></Label>
+								<UserDefinedDisplayFmt type="flag">0</UserDefinedDisplayFmt>
+								<TimeAxisResolution type="int">0</TimeAxisResolution>
+							</XAxis_0>
+							<YAxis_0 type="key">
+								<Visible type="flag">1</Visible>
+								<Placement type="int">0</Placement>
+								<ShowMarker type="flag">1</ShowMarker>
+								<DateTime type="flag">0</DateTime>
+								<ShowGrid type="flag">1</ShowGrid>
+								<AutoScale type="flag">1</AutoScale>
+								<ArcSize type="int">5</ArcSize>
+								<MarkerSize type="int">10</MarkerSize>
+								<TickSize type="int">5</TickSize>
+								<GridStyle type="int">2</GridStyle>
+								<GridColor type="string">150,150,150</GridColor>
+								<AxisColor type="string">0,0,0</AxisColor>
+								<MinRange type="double">4613</MinRange>
+								<MaxRange type="double">5386</MaxRange>
+								<Font type="string">Arial,Dh,0,0,0,400,0,0,0,1,2,1,4,0</Font>
+								<TitleFont type="string">Arial,Eh,0,0,0,700,0,0,0,1,2,1,4,0</TitleFont>
+								<DisplayFmt type="string">%5.2f</DisplayFmt>
+								<Label type="string"></Label>
+								<FmtSwitchPower type="int">6</FmtSwitchPower>
+								<ValueAxisFmtMode type="int">0</ValueAxisFmtMode>
+								<ScalePrecision type="int">2</ScalePrecision>
+								<UserDefinedDisplayFmt type="flag">1</UserDefinedDisplayFmt>
+							</YAxis_0>
+							<GraphTitle type="string"></GraphTitle>
+							<NoOfObjects type="int">0</NoOfObjects>
+							<AnimateQueue type="key">
+								<RunningPeriod type="int">0</RunningPeriod>
+								<HoldedPeriod type="int">0</HoldedPeriod>
+							</AnimateQueue>
+							<Mode_GUID type="string">{795DCAD7-3B73-459C-83BE-1CA9AA384C0D}</Mode_GUID>
+							<CurveGUID type="string">{8F8C21F4-A6AC-492F-9DE8-08883F68F03C}</CurveGUID>
+							<AbsoluteTimeMode type="flag">1</AbsoluteTimeMode>
+							<Curve_1 type="key">
+								<Expression type="string">duty_v_cnt</Expression>
+								<PollPeriod type="int">1</PollPeriod>
+								<VarDisabled type="flag">0</VarDisabled>
+								<Scope type="string">*</Scope>
+								<Name type="string">duty_v_cnt</Name>
+								<TraceBufferSize type="int">150000</TraceBufferSize>
+								<Label type="string">duty_v_cnt</Label>
+								<BaseObject type="key">
+									<Selected type="flag">0</Selected>
+									<Resize type="flag">0</Resize>
+									<CanMove type="flag">0</CanMove>
+									<Sizing type="flag">0</Sizing>
+									<Editing type="flag">0</Editing>
+									<Visible type="flag">1</Visible>
+									<CanEdit type="flag">1</CanEdit>
+									<Rect type="string">0,0,0,0</Rect>
+									<Color type="string">128,128,0</Color>
+								</BaseObject>
+								<LineSize type="int">1</LineSize>
+								<FillStyle type="int">6</FillStyle>
+								<MarkerType type="int">0</MarkerType>
+								<Marker type="int">0</Marker>
+								<MarkerSize type="int">10</MarkerSize>
+								<LineStyle type="int">0</LineStyle>
+								<ShowMarker type="flag">0</ShowMarker>
+								<FillBeneath type="flag">0</FillBeneath>
+								<FillTransparent type="flag">1</FillTransparent>
+								<CurveColor type="string">128,128,0</CurveColor>
+								<Type type="int">0</Type>
+								<XAxisIndex type="int">0</XAxisIndex>
+								<YAxisIndex type="int">1</YAxisIndex>
+							</Curve_1>
+							<Curve_2 type="key">
+								<Expression type="string">duty_w_cnt</Expression>
+								<PollPeriod type="int">1</PollPeriod>
+								<VarDisabled type="flag">0</VarDisabled>
+								<Scope type="string">*</Scope>
+								<Name type="string">duty_w_cnt</Name>
+								<TraceBufferSize type="int">150000</TraceBufferSize>
+								<Label type="string">duty_w_cnt</Label>
+								<BaseObject type="key">
+									<Selected type="flag">0</Selected>
+									<Resize type="flag">0</Resize>
+									<CanMove type="flag">0</CanMove>
+									<Sizing type="flag">0</Sizing>
+									<Editing type="flag">0</Editing>
+									<Visible type="flag">1</Visible>
+									<CanEdit type="flag">1</CanEdit>
+									<Rect type="string">0,0,0,0</Rect>
+									<Color type="string">255,255,0</Color>
+								</BaseObject>
+								<LineSize type="int">1</LineSize>
+								<FillStyle type="int">6</FillStyle>
+								<MarkerType type="int">0</MarkerType>
+								<Marker type="int">0</Marker>
+								<MarkerSize type="int">10</MarkerSize>
+								<LineStyle type="int">0</LineStyle>
+								<ShowMarker type="flag">0</ShowMarker>
+								<FillBeneath type="flag">0</FillBeneath>
+								<FillTransparent type="flag">1</FillTransparent>
+								<CurveColor type="string">255,255,0</CurveColor>
+								<Type type="int">0</Type>
+								<XAxisIndex type="int">0</XAxisIndex>
+								<YAxisIndex type="int">2</YAxisIndex>
+							</Curve_2>
+							<YAxis_1 type="key">
+								<Visible type="flag">1</Visible>
+								<Placement type="int">0</Placement>
+								<ShowMarker type="flag">1</ShowMarker>
+								<DateTime type="flag">0</DateTime>
+								<ShowGrid type="flag">1</ShowGrid>
+								<AutoScale type="flag">1</AutoScale>
+								<ArcSize type="int">5</ArcSize>
+								<MarkerSize type="int">10</MarkerSize>
+								<TickSize type="int">5</TickSize>
+								<GridStyle type="int">2</GridStyle>
+								<GridColor type="string">150,150,150</GridColor>
+								<AxisColor type="string">0,0,0</AxisColor>
+								<MinRange type="double">4600</MinRange>
+								<MaxRange type="double">5396</MaxRange>
+								<Font type="string">Arial,Dh,0,0,0,400,0,0,0,1,2,1,4,0</Font>
+								<TitleFont type="string">Arial,Eh,0,0,0,700,0,0,0,1,2,1,4,0</TitleFont>
+								<DisplayFmt type="string">%5.2f</DisplayFmt>
+								<Label type="string"></Label>
+								<FmtSwitchPower type="int">6</FmtSwitchPower>
+								<ValueAxisFmtMode type="int">0</ValueAxisFmtMode>
+								<ScalePrecision type="int">2</ScalePrecision>
+								<UserDefinedDisplayFmt type="flag">1</UserDefinedDisplayFmt>
+							</YAxis_1>
+							<YAxis_2 type="key">
+								<Visible type="flag">1</Visible>
+								<Placement type="int">0</Placement>
+								<ShowMarker type="flag">1</ShowMarker>
+								<DateTime type="flag">0</DateTime>
+								<ShowGrid type="flag">1</ShowGrid>
+								<AutoScale type="flag">1</AutoScale>
+								<ArcSize type="int">5</ArcSize>
+								<MarkerSize type="int">10</MarkerSize>
+								<TickSize type="int">5</TickSize>
+								<GridStyle type="int">2</GridStyle>
+								<GridColor type="string">150,150,150</GridColor>
+								<AxisColor type="string">0,0,0</AxisColor>
+								<MinRange type="double">4603</MinRange>
+								<MaxRange type="double">5399</MaxRange>
+								<Font type="string">Arial,Dh,0,0,0,400,0,0,0,1,2,1,4,0</Font>
+								<TitleFont type="string">Arial,Eh,0,0,0,700,0,0,0,1,2,1,4,0</TitleFont>
+								<DisplayFmt type="string">%5.2f</DisplayFmt>
+								<Label type="string"></Label>
+								<FmtSwitchPower type="int">6</FmtSwitchPower>
+								<ValueAxisFmtMode type="int">0</ValueAxisFmtMode>
+								<ScalePrecision type="int">2</ScalePrecision>
+								<UserDefinedDisplayFmt type="flag">1</UserDefinedDisplayFmt>
+							</YAxis_2>
+						</GraphStgNode>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+				</OPEN_VIEW00>
+				<SAVED_VIEW00 type="int">0</SAVED_VIEW00>
 			</StdUDETimeSampleGraphWin>
 			<UDEProfilingWin type="key">
 				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
@@ -3799,7 +4466,166 @@ End Sub</ScriptSource>
 				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
 			</UDEStackWin>
 			<StdUDESFRView type="key">
-				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+				<SAVED_VIEW_OBJS type="int">1</SAVED_VIEW_OBJS>
+				<OPEN_VIEW00 type="key">
+					<FrameCreated type="string">14.07.2025 16:50:40:778</FrameCreated>
+					<ViewSrv type="key">
+						<StdUDESFRView type="key">
+							<Version type="key">
+								<Version type="int">2</Version>
+							</Version>
+							<Layout type="key">
+								<FontSettings type="key">
+									<FontFamily type="string">Courier New</FontFamily>
+									<FontSize type="double">12</FontSize>
+									<FontStretch type="int">5</FontStretch>
+									<Faces type="key">
+										<collection type="key">
+											<_0 type="key">
+												<FaceKey type="string">Normal</FaceKey>
+												<FontStyle type="string">Normal</FontStyle>
+												<FontWeight type="string">Normal</FontWeight>
+												<Foreground type="string">Black</Foreground>
+												<Background type="string">Transparent</Background>
+											</_0>
+											<_1 type="key">
+												<FaceKey type="string">Invalid</FaceKey>
+												<FontStyle type="string">Normal</FontStyle>
+												<FontWeight type="string">Normal</FontWeight>
+												<Foreground type="string">Black</Foreground>
+												<Background type="string">Transparent</Background>
+											</_1>
+											<_2 type="key">
+												<FaceKey type="string">Changed</FaceKey>
+												<FontStyle type="string">Normal</FontStyle>
+												<FontWeight type="string">Normal</FontWeight>
+												<Foreground type="string">Red</Foreground>
+												<Background type="string">Transparent</Background>
+											</_2>
+											<_3 type="key">
+												<FaceKey type="string">Modified</FaceKey>
+												<FontStyle type="string">Normal</FontStyle>
+												<FontWeight type="string">Normal</FontWeight>
+												<Foreground type="string">Blue</Foreground>
+												<Background type="string">Transparent</Background>
+											</_3>
+											<_4 type="key">
+												<FaceKey type="string">Selected</FaceKey>
+												<FontStyle type="string">Normal</FontStyle>
+												<FontWeight type="string">Normal</FontWeight>
+												<Foreground type="string">White</Foreground>
+												<Background type="string">DodgerBlue</Background>
+											</_4>
+										</collection>
+										<collectionStr type="string">_0,_1,_2,_3,_4</collectionStr>
+									</Faces>
+								</FontSettings>
+								<Columns type="key">
+									<collection type="key">
+										<_0 type="key">
+											<Key type="string">WriteThrough</Key>
+											<Visible type="flag">0</Visible>
+											<Width type="string">Auto</Width>
+										</_0>
+										<_1 type="key">
+											<Key type="string">BitFieldName0</Key>
+											<Visible type="flag">1</Visible>
+											<Width type="string">148.571428571429</Width>
+										</_1>
+										<_2 type="key">
+											<Key type="string">BitFieldValue0</Key>
+											<Visible type="flag">1</Visible>
+											<Width type="string">106.857142857143</Width>
+										</_2>
+										<_3 type="key">
+											<Key type="string">BitFieldName1</Key>
+											<Visible type="flag">1</Visible>
+											<Width type="string">149.142857142857</Width>
+										</_3>
+										<_4 type="key">
+											<Key type="string">BitFieldValue1</Key>
+											<Visible type="flag">1</Visible>
+											<Width type="string">191.428571428571</Width>
+										</_4>
+										<_5 type="key">
+											<Key type="string">BitFieldName2</Key>
+											<Visible type="flag">1</Visible>
+											<Width type="string">120</Width>
+										</_5>
+										<_6 type="key">
+											<Key type="string">BitFieldValue2</Key>
+											<Visible type="flag">1</Visible>
+											<Width type="string">80</Width>
+										</_6>
+										<_7 type="key">
+											<Key type="string">BitFieldName3</Key>
+											<Visible type="flag">1</Visible>
+											<Width type="string">120</Width>
+										</_7>
+										<_8 type="key">
+											<Key type="string">BitFieldValue3</Key>
+											<Visible type="flag">1</Visible>
+											<Width type="string">80</Width>
+										</_8>
+										<_9 type="key">
+											<Key type="string">Value</Key>
+											<Visible type="flag">1</Visible>
+											<Width type="string">1026</Width>
+										</_9>
+										<_10 type="key">
+											<Key type="string">Address</Key>
+											<Visible type="flag">0</Visible>
+											<Width type="string">80</Width>
+										</_10>
+										<_11 type="key">
+											<Key type="string">Label</Key>
+											<Visible type="flag">1</Visible>
+											<Width type="string">174.942857142857</Width>
+										</_11>
+									</collection>
+									<collectionStr type="string">_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11</collectionStr>
+								</Columns>
+							</Layout>
+							<AnimateQueue type="key">
+								<RunningPeriod type="int">25</RunningPeriod>
+								<HoldedPeriod type="int">0</HoldedPeriod>
+								<RefreshEnabledRunning type="flag">1</RefreshEnabledRunning>
+								<RefreshEnabledHolded type="flag">0</RefreshEnabledHolded>
+							</AnimateQueue>
+							<Content type="key">
+								<collection type="key">
+									<_0 type="key">
+										<Protection_Off type="flag">1</Protection_Off>
+										<Format type="string">Hexadecimal</Format>
+										<Label type="string">SIUL_PCR50</Label>
+										<Expanded type="flag">1</Expanded>
+									</_0>
+									<_1 type="key">
+										<Protection_Off type="flag">1</Protection_Off>
+										<Format type="string">Hexadecimal</Format>
+										<Label type="string">SIUL_PCR51</Label>
+										<Expanded type="flag">1</Expanded>
+									</_1>
+									<_2 type="key">
+										<Protection_Off type="flag">1</Protection_Off>
+										<Format type="string">Hexadecimal</Format>
+										<Label type="string">SIUL_GPDO50</Label>
+										<Expanded type="flag">1</Expanded>
+									</_2>
+									<_3 type="key">
+										<Protection_Off type="flag">1</Protection_Off>
+										<Format type="string">Hexadecimal</Format>
+										<Label type="string">SIUL_GPDO51</Label>
+										<Expanded type="flag">1</Expanded>
+									</_3>
+								</collection>
+								<collectionStr type="string">_0,_1,_2,_3</collectionStr>
+							</Content>
+						</StdUDESFRView>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+				</OPEN_VIEW00>
+				<SAVED_VIEW00 type="int">0</SAVED_VIEW00>
 			</StdUDESFRView>
 		</ViewSrv>
 		<UDE.StdDbgSrv type="key">
@@ -3956,6 +4782,23 @@ SET8 RGM_DRET 0x00
 					<Number type="int">1</Number>
 					<BinaryFile1 type="key">
 						<FullPath type="string">Project\CCFC3012PT_S32DS_SMP\ARCH3D12_M10I1R0\CCFC3012PT_DEBUG_FLASH\ARCH3D12_M10I1R0.elf</FullPath>
+						<SourceAliases type="key">
+							<FullPath1 type="string">D:\CCFC3011PT_MOTOR\CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI\Source\shell\shell.c</FullPath1>
+							<EntryInFile1 type="string">D:\CCFC3011PT_MOTOR\CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515\Source\shell\shell.c</EntryInFile1>
+							<Number type="int">7</Number>
+							<FullPath2 type="string">D:\CCFC3011PT_MOTOR\CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0517\Source\main.c</FullPath2>
+							<EntryInFile2 type="string">D:\CCFC3011PT_MOTOR\CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515\Source\main.c</EntryInFile2>
+							<FullPath3 type="string">&lt;Section&gt;</FullPath3>
+							<EntryInFile3 type="string">D:\CCFC3011PT_MOTOR\CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515\Source\common\src\startup.S</EntryInFile3>
+							<FullPath4 type="string">D:\CCFC3011PT_MOTOR\CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0517\Project\CCFC3012PT_S32DS_SMP\ARCH3D12_M10I1R0\CDD\resolver_app\AngleTrk.c</FullPath4>
+							<EntryInFile4 type="string">D:\CCFC3011PT_MOTOR\CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515\Project\CCFC3012PT_S32DS_SMP\ARCH3D12_M10I1R0\CDD\resolver_app\AngleTrk.c</EntryInFile4>
+							<FullPath5 type="string">D:\CCFC3011PT_MOTOR\CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0517\Source\common\src\irq_handle.S</FullPath5>
+							<EntryInFile5 type="string">D:\CCFC3011PT_MOTOR\CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515\Source\common\src\irq_handle.S</EntryInFile5>
+							<FullPath6 type="string">D:\CCFC3011PT_MOTOR\CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0517\Source\mcal\eclipse\plugins\Gpt_ARCH3D12M10I1R0\source\Gpt_Irq.c</FullPath6>
+							<EntryInFile6 type="string">D:\CCFC3011PT_MOTOR\CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515\Source\mcal\eclipse\plugins\Gpt_ARCH3D12M10I1R0\source\Gpt_Irq.c</EntryInFile6>
+							<FullPath7 type="string">D:\CCFC3011PT_MOTOR\CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0517\Source\mcal\eclipse\plugins\Gpt_ARCH3D12M10I1R0\source\Gpt_Pit_LLDriver.c</FullPath7>
+							<EntryInFile7 type="string">D:\CCFC3011PT_MOTOR\CCFC3012PT_MCAL4_4_V1_1_0_V185_4_0515\Source\mcal\eclipse\plugins\Gpt_ARCH3D12M10I1R0\source\Gpt_Pit_LLDriver.c</EntryInFile7>
+						</SourceAliases>
 					</BinaryFile1>
 				</BinaryFiles>
 				<ExpressionClipboard type="key">
@@ -4037,11 +4880,17 @@ SET8 RGM_DRET 0x00
 				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
 			</UDECpuWin2>
 			<StdUDESymbolExplWin type="key">
-				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+				<SAVED_VIEW_OBJS type="int">1</SAVED_VIEW_OBJS>
+				<OPEN_VIEW type="key">
+					<FrameCreated type="string">04.07.2025 17:17:42:352</FrameCreated>
+					<ViewSrv type="key"></ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+				</OPEN_VIEW>
+				<SAVED_VIEW type="int">0</SAVED_VIEW>
 			</StdUDESymbolExplWin>
 			<StdUDEProgWin type="key">
 				<OPEN_VIEW00 type="key">
-					<FrameCreated type="string">24.04.2025 20:35:09:063</FrameCreated>
+					<FrameCreated type="string">14.07.2025 18:58:49:356</FrameCreated>
 					<ViewSrv type="key">
 						<AnimateQueue type="key">
 							<RunningPeriod type="int">0</RunningPeriod>
@@ -4049,7 +4898,7 @@ SET8 RGM_DRET 0x00
 						</AnimateQueue>
 					</ViewSrv>
 					<FrameUserTitle type="string"></FrameUserTitle>
-					<SourceFile type="string">..\CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI\Source\main.c</SourceFile>
+					<SourceFile type="string">Source\main.c</SourceFile>
 					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
 				</OPEN_VIEW00>
 				<OPEN_VIEW01 type="key">
@@ -4076,10 +4925,62 @@ SET8 RGM_DRET 0x00
 					<SourceFile type="string">Source\main.c</SourceFile>
 					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
 				</OPEN_VIEW02>
-				<SAVED_VIEW_OBJS type="int">3</SAVED_VIEW_OBJS>
+				<SAVED_VIEW_OBJS type="int">1</SAVED_VIEW_OBJS>
 				<SAVED_VIEW00 type="int">0</SAVED_VIEW00>
 				<SAVED_VIEW01 type="int">1</SAVED_VIEW01>
 				<SAVED_VIEW02 type="int">2</SAVED_VIEW02>
+				<OPEN_VIEW03 type="key">
+					<FrameCreated type="string">04.07.2025 17:07:28:180</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">Source\tester\Adc\src\tester_adc.c</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW03>
+				<OPEN_VIEW04 type="key">
+					<FrameCreated type="string">04.07.2025 17:18:03:908</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">Source\mcal\eclipse\plugins\Mcl_ARCH3D12M10I1R0\source\eDma_LLDriver.c</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW04>
+				<OPEN_VIEW05 type="key">
+					<FrameCreated type="string">04.07.2025 17:18:07:125</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">Source\common\src\irq_handle.S</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW05>
+				<OPEN_VIEW06 type="key">
+					<FrameCreated type="string">04.07.2025 17:18:15:101</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">Project\CCFC3012PT_S32DS_SMP\ARCH3D12_M10I1R0\CDD\GTM_LLD\gtm4_atom_lld.c</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW06>
+				<SAVED_VIEW03 type="int">3</SAVED_VIEW03>
+				<SAVED_VIEW04 type="int">4</SAVED_VIEW04>
+				<SAVED_VIEW05 type="int">5</SAVED_VIEW05>
+				<SAVED_VIEW06 type="int">6</SAVED_VIEW06>
 			</StdUDEProgWin>
 			<StdUDELocalsWin type="key">
 				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
@@ -4174,11 +5075,17 @@ SET8 RGM_DRET 0x00
 				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
 			</UDECpuWin2>
 			<StdUDESymbolExplWin type="key">
-				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
+				<SAVED_VIEW_OBJS type="int">1</SAVED_VIEW_OBJS>
+				<OPEN_VIEW type="key">
+					<FrameCreated type="string">13.06.2025 16:15:34:063</FrameCreated>
+					<ViewSrv type="key"></ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+				</OPEN_VIEW>
+				<SAVED_VIEW type="int">0</SAVED_VIEW>
 			</StdUDESymbolExplWin>
 			<StdUDEProgWin type="key">
 				<OPEN_VIEW00 type="key">
-					<FrameCreated type="string">24.04.2025 20:35:10:271</FrameCreated>
+					<FrameCreated type="string">14.07.2025 18:58:49:479</FrameCreated>
 					<ViewSrv type="key">
 						<AnimateQueue type="key">
 							<RunningPeriod type="int">0</RunningPeriod>
@@ -4186,7 +5093,7 @@ SET8 RGM_DRET 0x00
 						</AnimateQueue>
 					</ViewSrv>
 					<FrameUserTitle type="string"></FrameUserTitle>
-					<SourceFile type="string">..\CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI\Source\main.c</SourceFile>
+					<SourceFile type="string">Source\main.c</SourceFile>
 					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
 				</OPEN_VIEW00>
 				<OPEN_VIEW01 type="key">
@@ -4237,12 +5144,51 @@ SET8 RGM_DRET 0x00
 					<SourceFile type="string">Source\mcal\eclipse\plugins\Gpt_ARCH3D12M10I1R0\source\Gpt_Pit_LLDriver.c</SourceFile>
 					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
 				</OPEN_VIEW04>
-				<SAVED_VIEW_OBJS type="int">5</SAVED_VIEW_OBJS>
+				<SAVED_VIEW_OBJS type="int">1</SAVED_VIEW_OBJS>
 				<SAVED_VIEW00 type="int">0</SAVED_VIEW00>
 				<SAVED_VIEW01 type="int">1</SAVED_VIEW01>
 				<SAVED_VIEW02 type="int">2</SAVED_VIEW02>
 				<SAVED_VIEW03 type="int">3</SAVED_VIEW03>
 				<SAVED_VIEW04 type="int">4</SAVED_VIEW04>
+				<OPEN_VIEW05 type="key">
+					<FrameCreated type="string">18.06.2025 09:15:20:215</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">Project\CCFC3012PT_S32DS_SMP\ARCH3D12_M10I1R0\Pmsm\Pmsm_main.c</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW05>
+				<SAVED_VIEW05 type="int">5</SAVED_VIEW05>
+				<OPEN_VIEW06 type="key">
+					<FrameCreated type="string">04.07.2025 17:18:07:653</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">Source\mcal\eclipse\plugins\Can_176_CanFD_ARCH3D12M10I1R0\source\Can_176_CanFD_HAL_Wrapper.c</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW06>
+				<OPEN_VIEW07 type="key">
+					<FrameCreated type="string">04.07.2025 17:18:15:597</FrameCreated>
+					<ViewSrv type="key">
+						<AnimateQueue type="key">
+							<RunningPeriod type="int">0</RunningPeriod>
+							<HoldedPeriod type="int">0</HoldedPeriod>
+						</AnimateQueue>
+					</ViewSrv>
+					<FrameUserTitle type="string"></FrameUserTitle>
+					<SourceFile type="string">Source\mcal\eclipse\plugins\Can_176_CanFD_ARCH3D12M10I1R0\source\Can_176_CanFD_LLDriver.c</SourceFile>
+					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
+				</OPEN_VIEW07>
+				<SAVED_VIEW06 type="int">6</SAVED_VIEW06>
+				<SAVED_VIEW07 type="int">7</SAVED_VIEW07>
 			</StdUDEProgWin>
 			<StdUDELocalsWin type="key">
 				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
@@ -4341,7 +5287,7 @@ SET8 RGM_DRET 0x00
 			</StdUDESymbolExplWin>
 			<StdUDEProgWin type="key">
 				<OPEN_VIEW00 type="key">
-					<FrameCreated type="string">24.04.2025 20:35:09:414</FrameCreated>
+					<FrameCreated type="string">14.07.2025 18:58:49:576</FrameCreated>
 					<ViewSrv type="key">
 						<AnimateQueue type="key">
 							<RunningPeriod type="int">0</RunningPeriod>
@@ -4349,7 +5295,7 @@ SET8 RGM_DRET 0x00
 						</AnimateQueue>
 					</ViewSrv>
 					<FrameUserTitle type="string"></FrameUserTitle>
-					<SourceFile type="string">..\CCFC3012PT_MCAL4_4_V1_1_0_V185_4_GUI\Source\shell\shell.c</SourceFile>
+					<SourceFile type="string">Source\main.c</SourceFile>
 					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
 				</OPEN_VIEW00>
 				<OPEN_VIEW01 type="key">
@@ -4376,7 +5322,7 @@ SET8 RGM_DRET 0x00
 					<SourceFile type="string">Source\main.c</SourceFile>
 					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
 				</OPEN_VIEW02>
-				<SAVED_VIEW_OBJS type="int">3</SAVED_VIEW_OBJS>
+				<SAVED_VIEW_OBJS type="int">1</SAVED_VIEW_OBJS>
 				<SAVED_VIEW00 type="int">0</SAVED_VIEW00>
 				<SAVED_VIEW01 type="int">1</SAVED_VIEW01>
 				<SAVED_VIEW02 type="int">2</SAVED_VIEW02>
@@ -4513,7 +5459,7 @@ SET8 RGM_DRET 0x00
 					<SourceFile type="string">Source\shell\shell.c</SourceFile>
 					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
 				</OPEN_VIEW02>
-				<SAVED_VIEW_OBJS type="int">3</SAVED_VIEW_OBJS>
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
 				<SAVED_VIEW00 type="int">0</SAVED_VIEW00>
 				<SAVED_VIEW01 type="int">1</SAVED_VIEW01>
 				<SAVED_VIEW02 type="int">2</SAVED_VIEW02>
@@ -4638,7 +5584,7 @@ SET8 RGM_DRET 0x00
 					<SourceFile type="string">Source\shell\shell.c</SourceFile>
 					<SourceFileInstFlag type="int">1</SourceFileInstFlag>
 				</OPEN_VIEW01>
-				<SAVED_VIEW_OBJS type="int">2</SAVED_VIEW_OBJS>
+				<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
 				<SAVED_VIEW00 type="int">0</SAVED_VIEW00>
 				<SAVED_VIEW01 type="int">1</SAVED_VIEW01>
 			</StdUDEProgWin>
@@ -4730,7 +5676,7 @@ SET8 RGM_DRET 0x00
 		</UDE.StdDbgSrv>
 	</Core5>
 	<RecentlyUsedRootNode type="key">
-		<ExportWatchContentStg type="string">D:\工作项目\电机项目\shijiancuo6.csv</ExportWatchContentStg>
+		<ExportWatchContentStg type="string">D:\工作项目\电机项目\角度数据\电流曲线1.csv</ExportWatchContentStg>
 	</RecentlyUsedRootNode>
 	<Logging type="key">
 		<DontClearLogOnCloseWorkspace type="flag">0</DontClearLogOnCloseWorkspace>

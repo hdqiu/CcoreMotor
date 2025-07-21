@@ -1201,7 +1201,7 @@ void Pmsm_Foc_step(void)
      *  Product: '<S33>/Product2'
      *  Sum: '<S33>/Add'
      */
-    Pmsm_f32_PIVoltCmd = sqrtf(rtb_Gain1_e * rtb_Gain1_e + rtb_Add1_l *
+    Pmsm_f32_PIVoltCmd = GFLIB_Sqrt(rtb_Gain1_e * rtb_Gain1_e + rtb_Add1_l *
       rtb_Add1_l);
 
     /* RelationalOperator: '<S30>/Relational Operator' */
@@ -1468,6 +1468,7 @@ void Pmsm_Foc_step(void)
    */
   rtb_Gain_p = -0.866025388F * Pmsm_f32_AlphaVoltCmd - 0.5F *
     Pmsm_f32_BetaVoltCmd;
+
 
   /* Switch: '<S52>/Switch1' incorporates:
    *  Constant: '<S52>/Constant2'
@@ -1822,7 +1823,7 @@ void Pmsm_Foc_step(void)
    *  Product: '<S10>/Product1'
    *  Sum: '<S10>/Add1'
    */
-  Pmsm_f32_Is = sqrtf(Pmsm_f32_Id * Pmsm_f32_Id + Pmsm_f32_Iq * Pmsm_f32_Iq);
+  Pmsm_f32_Is = GFLIB_Sqrt(Pmsm_f32_Id * Pmsm_f32_Id + Pmsm_f32_Iq * Pmsm_f32_Iq);
 
   /* Product: '<S3>/Product' incorporates:
    *  Constant: '<S3>/Constant'

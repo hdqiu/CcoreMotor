@@ -15,8 +15,6 @@
 #include "Adc_Cfg.h"
 #include "Pmsm_If.h"
 
-#include "Res_SoftAngleCalc.h"
-
 static void RTC_SetupIrq(void);
 GPT_CONFIG_DECLARATION
 #define GPT_TEST_CASE_MAX 172

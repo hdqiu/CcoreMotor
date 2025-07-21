@@ -5,7 +5,6 @@
 #include "motor_gtm4.h"
 #include "tester_gpt.h"
 #include "Sdadc_Rdc.h"
-#include "Res_SoftAngleCalc.h"
 
 __attribute__ ((section (".cpu0_dtcm_data"))) extern Sdadc_Rdc g_DdcDsadc_a;
 __attribute__ ((section (".cpu1_dtcm_data"))) extern Sdadc_Rdc g_DdcDsadc_b;
@@ -14,16 +13,9 @@ extern CONST(Adc_ConfigType, ADC_CONST) Adc_Config;
 extern VAR(Adc_RunningGroupType, ADC_VAR) sAdc_RunningGroup[ADC_CORE_NUM][ADC_CONFIG_GROUPS];
 #define ADC_TEST_CASE_MAX sizeof(adc_funcs) / sizeof(AdcfuncMachine)
 
-#define SDADC_START_SEC_VAR_SHARED_INIT
-#include "Sdadc_MemMap.h"
-Adc_ValueGroupType resultbuffer[500] = {0U};
-#define SDADC_STOP_SEC_VAR_SHARED_INIT
-#include "Sdadc_MemMap.h"
-#define SDADC_START_SEC_VAR_SHARED_INIT
-#include "Sdadc_MemMap.h"
-Adc_ValueGroupType resultbuffer_1[100] = {0U};
-#define SDADC_STOP_SEC_VAR_SHARED_INIT
-#include "Sdadc_MemMap.h"
+
+__attribute__ ((section (".cpu0_dtcm_data")))  Adc_ValueGroupType resultbuffer[500] = {0U};
+__attribute__ ((section (".cpu1_dtcm_data")))  Adc_ValueGroupType resultbuffer_1[100] = {0U};
 
 static const  AdcfuncMachine adc_funcs[] =
 {
@@ -516,6 +508,9 @@ extern Adc_ValueGroupType resultForFOC2_0[ADC_CONFIG_GROUPS/2][10];
 extern Adc_ValueGroupType resultForFOC2_1[ADC_CONFIG_GROUPS/2][10];
 extern Adc_ValueGroupType resultForBusA[10];
 extern Adc_ValueGroupType resultForBusB[10];
+
+
+
 void Eqadc4_Adc8_RsltCallback(const  void *parameter, eDMAChnStatusType status, uint8 mappedChannel)
 {
     (void) parameter; /* PRQA S 3119 */
@@ -531,19 +526,15 @@ void Eqadc4_Adc8_RsltCallback(const  void *parameter, eDMAChnStatusType status, 
 //	if( (eqadc_rsltCallback_counter_2 & 0x1) == 1)
 	{
 #if(MOTOR_LEFT_EN == MOTOR_ENABLE)
-//		if(ioTestFlag == 0x11)
-		{
-			SIUL.GPDO[PC7].R = 1;
-		}
+
+		SIUL.GPDO[PC7].R = 1;
 
 		foc_do_0();
 
 //		IPhDmaCbFunction_P1();
 
-//		if(ioTestFlag == 0x11)
-		{
-			SIUL.GPDO[PC7].R = 0;
-		}
+		SIUL.GPDO[PC7].R = 0;
+
 #endif	//(MOTOR_LEFT_EN == MOTOR_ENABLE)
 	}
 
@@ -564,24 +555,18 @@ void Eqadc4_Adc9_RsltCallback(const  void *parameter, eDMAChnStatusType status, 
 //	if( (eqadc_rsltCallback_counter_3 & 0x1) == 1)
 	{
 #if(MOTOR_RIGHT_EN == MOTOR_ENABLE)
-//		if(ioTestFlag == 0x12)//todo
-		{
-			SIUL.GPDO[PQ6].R = 1;
-		}
+
+		SIUL.GPDO[PQ6].R = 1;
 
 		foc_do_1();
 
 //		IPhDmaCbFunction_P3();
 
-//		if(ioTestFlag == 0x12)//todo
-		{
-			SIUL.GPDO[PQ6].R = 0;
-		}
+		SIUL.GPDO[PQ6].R = 0;
 #endif	//(MOTOR_RIGHT_EN == MOTOR_ENABLE)
 	}
 
 }
-
 
 #include "eDma.h"
 EDMA_PB_CONFIG_DECLARATION

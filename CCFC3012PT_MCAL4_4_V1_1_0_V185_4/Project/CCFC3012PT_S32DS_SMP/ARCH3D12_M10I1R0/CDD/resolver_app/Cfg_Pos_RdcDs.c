@@ -17,8 +17,8 @@ const Sdadc_Rdc_Config cfg_Pos_RdcDs_a =
 {
     .speedLpfFc             = 100,
     .errorThreshold         = 20.0/180*PI,
-    .sqrAmplMax             = 20000*20000,
-    .sqrAmplMin             = 16000*16000,
+    .sqrAmplMax             = 18000*18000,
+    .sqrAmplMin             = 15000*15000,
     .periodPerRotation      = 4,
 	.motorPolePairs         = 4,
     .reversed               = FALSE, //TRUE,
@@ -49,8 +49,8 @@ const Sdadc_Rdc_Config cfg_Pos_RdcDs_b =
 {
     .speedLpfFc             = 100,
     .errorThreshold         = 20.0/180*PI,
-    .sqrAmplMax             = 20000*20000,
-    .sqrAmplMin             = 16000*16000,
+    .sqrAmplMax             = 18000*18000,
+    .sqrAmplMin             = 15000*15000,
     .periodPerRotation      = 4,
 	.motorPolePairs         = 4,
     .reversed               = FALSE, //TRUE,

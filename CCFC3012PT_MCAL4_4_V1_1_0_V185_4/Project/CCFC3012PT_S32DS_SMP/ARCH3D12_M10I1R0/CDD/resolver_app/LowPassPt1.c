@@ -1,27 +1,3 @@
-/**
- * \file Ifx_LowPassPt1.c
- * \brief Low pass filter PT1
- *
- * \version iLLD_1_0_0_4_0
- * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
- *
- *
- *                                 IMPORTANT NOTICE
- *
- *
- * Infineon Technologies AG (Infineon) is supplying this file for use
- * exclusively with Infineon's microcontroller products. This file can be freely
- * distributed within development tools that are supporting such microcontroller
- * products.
- *
- * THIS SOFTWARE IS PROVIDED "AS IS".  NO WARRANTIES, WHETHER EXPRESS, IMPLIED
- * OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF
- * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE APPLY TO THIS SOFTWARE.
- * INFINEON SHALL NOT, IN ANY CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL,
- * OR CONSEQUENTIAL DAMAGES, FOR ANY REASON WHATSOEVER.
- *
- */
-
 //------------------------------------------------------------------------------
 #include <LowPassPt1.h>
 //------------------------------------------------------------------------------
@@ -35,7 +11,7 @@
  *
  * \return None
  */
-void Ifx_LowPassPt1_init (Ifx_LowPassPt1 * filter, const Ifx_LowPassPt1_Config * config)
+void LowPassPt1_init (LowPassPt1 * filter, const LowPassPt1_Config * config)
 {
     float32 tStar;
     float32 T = 1 / config->cutOffFrequency;
@@ -52,7 +28,7 @@ void Ifx_LowPassPt1_init (Ifx_LowPassPt1 * filter, const Ifx_LowPassPt1_Config *
  *
  * \return Returns the filter output
  */
-float32 Ifx_LowPassPt1_do (Ifx_LowPassPt1 * filter, float32 input)
+float32 LowPassPt1_do (LowPassPt1 * filter, float32 input)
 {
     filter->out = filter->out + filter->a * input - filter->b * filter->out;
     return filter->out;

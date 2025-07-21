@@ -18,6 +18,7 @@
  */
 
 #include <math.h>
+#include "gflib.h"
 #include "rtwtypes.h"
 #include "Pmsm_SpdLpFlxWkn_private.h"
 #include "plook_u32ff_binx.h"
@@ -841,7 +842,7 @@ void Pmsm_SpdLpFlxWkn_step(void)
        *  Product: '<S11>/Product1'
        *  Sum: '<S11>/Add'
        */
-      Pmsm_f32_FlxWkn_IsRef = sqrtf(rtb_Abs * rtb_Abs + rtb_Switch2_j *
+      Pmsm_f32_FlxWkn_IsRef = GFLIB_Sqrt(rtb_Abs * rtb_Abs + rtb_Switch2_j *
         rtb_Switch2_j);
 
       /* Merge: '<S2>/Merge' incorporates:

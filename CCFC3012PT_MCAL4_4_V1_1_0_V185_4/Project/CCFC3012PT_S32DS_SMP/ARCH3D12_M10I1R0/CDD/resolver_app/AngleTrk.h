@@ -2,32 +2,6 @@
  * \file AngleTrk.h
  * \brief Angle-tracking observer for sin/cos analog position sensor
  * \ingroup mod_AngleTrk
- *
- *
- * \license
- * You can use this file under the terms of the IFX License.
- *
- * This file is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * IFX License for more details (IFX_License.txt).
- *
- * This file may be used, copied, and distributed, with or without
- * modification, provided that all copyright notices are retained;
- * that all modifications to this file are prominently noted in the
- * modified file; and that aObsv paragraph is not modified.
- *
- * \copyright Copyright (C) 2011 Infineon Technologies AG
- * \author Dian Tresna Nugraha <Dian.Nugraha@Infineon.com>
- *
- * $Revision: 1559 $
- * $Date: 2013-06-24 14:20:02 +0200 (Mon, 24 Jun 2013) $
- *
- * \defgroup mod_AngleTrk Angle-Tracking Observer
- * This driver implements \ref library_srvsw_if_posif using 3rd order Angle-Tracking Observer algorithm.
- * \ingroup library_srvsw_if_posif
- *
- * FIXME this is not an interface, it should be moved to the SysSe library
  */
 
 #ifndef ANGLETRK_H_
@@ -35,8 +9,7 @@
 
 //________________________________________________________________________________________
 // INCLUDES
-#include <LowPassPt1.h>
-#include "Platform_Types.h"
+#include "LowPassPt1.h"
 #include "Std_Pos.h"
 
 //________________________________________________________________________________________
@@ -116,7 +89,7 @@ typedef struct
     float32 accelEst;
     float32 angleErr;
 #if ANGLETRK_SPEED_FILTER
-    Ifx_LowPassPt1 speedLpf;
+    LowPassPt1 speedLpf;
 #endif
 #if ANGLETRK_DIRECT_SPEED
     LowPass_PT1 speedLpf2;
@@ -174,12 +147,12 @@ extern sint32   AngleTrk_resetOffset (AngleTrk* aObsv);
 extern void     AngleTrk_setOffset   (AngleTrk* aObsv, Pos_Raw offset);
 extern float32  AngleTrk_step        (AngleTrk* aObsv, sint32 sinIn, sint32 cosIn, float32 phase);
 extern void     AngleTrk_updateStatus(AngleTrk* aObsv, sint32 sinIn, sint32 cosIn);
-inline float32  AngleTrk_getLoopSpeed(AngleTrk* aObsv);
-inline float32  AngleTrk_getLoopSpeed(AngleTrk* aObsv)
+static inline float32  AngleTrk_getLoopSpeed(AngleTrk* aObsv);
+static inline float32  AngleTrk_getLoopSpeed(AngleTrk* aObsv)
 {
 #if ANGLETRK_DIRECT_SPEED == 0
-//    return aObsv->speedEstB;   // note: using speedEstB has better dynamic
-    return aObsv->speedLpf.out;
+    return aObsv->speedEstB;   // note: using speedEstB has better dynamic
+//    return aObsv->speedLpf.out;
 #else
     return aObsv->speedLpf2.out;
 #endif

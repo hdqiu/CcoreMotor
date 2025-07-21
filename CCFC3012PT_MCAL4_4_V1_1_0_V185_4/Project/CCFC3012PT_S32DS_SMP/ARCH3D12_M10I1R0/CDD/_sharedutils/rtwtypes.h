@@ -16,6 +16,11 @@
 #ifndef RTWTYPES_H
 #define RTWTYPES_H
 #include <stdbool.h>
+
+#include "gflib.h"
+#include "gmclib.h"
+#include "gdflib.h"
+
 /* Logical type definitions */
 //#if (!defined(__cplusplus))
 //#  ifndef false

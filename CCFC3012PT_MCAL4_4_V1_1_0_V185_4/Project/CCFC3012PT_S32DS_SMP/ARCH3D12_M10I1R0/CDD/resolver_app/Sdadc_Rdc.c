@@ -2,9 +2,6 @@
 
 extern inline void SineCalib_init(SineCalib *sc);
 
-extern Sdadc_Rdc g_DdcDsadc_b;
-extern Sdadc_Rdc g_DdcDsadc_a;
-
 float32 Gtm_Tbu_getClockFrequency()
 {
     float32 result = 200*1000*1000.0F;
@@ -76,6 +73,11 @@ float32 Sdadc_Rdc_getUpdatePeriod(Sdadc_Rdc_Hw *hwHandle)
 	return 1.0F * 48.0F / 16000000 * 32;
 }
 
+/** Return the SDADC Groupdelay in [seconds]*/
+float32 Sdadc_getMainGroupDelay(Sdadc_Rdc_Hw *hwHandle)
+{
+	return 1.0F * 48.0F / 16000000 * 23;
+}
 
 
 boolean Sdadc_Rdc_initHwChannels(Sdadc_Rdc_Hw *hwHandle, const Sdadc_Rdc_ConfigHw *config)
@@ -103,7 +105,7 @@ void Sdadc_Rdc_init(Sdadc_Rdc *handle, const Sdadc_Rdc_Config *config)
 
     /* Initialise the software resources */
     handle->tSample  = Sdadc_Rdc_getUpdatePeriod(&(handle->hardware));
-    handle->grpDelay = 0;
+    handle->grpDelay = Sdadc_getMainGroupDelay(&(handle->hardware));//23TD = 23*3= 69us
     handle->timestamp.enabled = TRUE;
 
 
@@ -150,37 +152,37 @@ void Sdadc_Rdc_updateStep1(Sdadc_Rdc *handle)
 {
 	volatile sint32 sin = 0;
 	volatile sint32 cos = 0;
-	volatile int32_t delta = 0;
 	sint32 *sin_data = handle->sdadc_sin;
 	sint32 *cos_data = handle->sdadc_cos;
-	sint32 sin8 = sin_data[handle->Sample_point/4];
-	sint32 cos8 = cos_data[handle->Sample_point/4];
-	sint32 start_point = 0;
-	sint32 end_point = handle->Sample_point/2;
+	sint32 sin0 = sin_data[0];
+	sint32 cos0 = cos_data[0];
+	sint32 start_point = handle->Sample_point/4;
+	sint32 end_point = handle->Sample_point*3/4;
+	sint32 half_point =  handle->Sample_point/2;
 	uint8 i = 0;
 
-    if(sin8*sin8 > cos8*cos8)
+    if(sin0*sin0 > cos0*cos0)
     {
-    	if(sin8 < 0)
+    	if(sin0 < 0)
     	{
-    		for(i = handle->Sample_point/4; i < handle->Sample_point*3/4; i++)
+    		for(i = 0; i < half_point; i++)
     		{
     			if(sin_data[i] > 0)
     			{
-    				start_point = i - handle->Sample_point/2;
-    				end_point = start_point + handle->Sample_point/2;
+    				start_point = i;
+    				end_point = start_point + half_point;
     				break;
     			}
     		}
     	}
     	else
     	{
-    		for(i = handle->Sample_point/4; i < handle->Sample_point*3/4; i++)
+    		for(i = 0; i < half_point; i++)
     		{
     			if(sin_data[i] < 0)
     			{
-    				start_point = i - handle->Sample_point/2;
-    				end_point = start_point + handle->Sample_point/2;
+    				start_point = i;
+    				end_point = start_point + half_point;
     				break;
     			}
     		}
@@ -188,50 +190,50 @@ void Sdadc_Rdc_updateStep1(Sdadc_Rdc *handle)
     }
     else
     {
-    	if(cos8 < 0)
+    	if(cos0 < 0)
     	{
-    		for(i = handle->Sample_point/4; i < handle->Sample_point*3/4; i++)
+    		for(i = 0; i < half_point; i++)
     		{
     			if(cos_data[i] > 0)
     			{
-    				start_point = i - handle->Sample_point/2;
-    				end_point = start_point + handle->Sample_point/2;
+    				start_point = i;
+    				end_point = start_point + half_point;
     				break;
     			}
     		}
     	}
     	else
     	{
-    		for(i = handle->Sample_point/4; i < handle->Sample_point*3/4; i++)
+    		for(i = 0; i < half_point; i++)
     		{
     			if(cos_data[i] < 0)
     			{
-    				start_point = i - handle->Sample_point/2;
-    				end_point = start_point + handle->Sample_point/2;
+    				start_point = i;
+    				end_point = start_point + half_point;
     				break;
     			}
     		}
     	}
     }
 
-    handle->zero_offset = start_point;
+    handle->zero_offset = (start_point - handle->Sample_point/4);
 
     for(i = 0; i < 32; i++)
     {
     	if(i < start_point)
     	{
-    		sin -= sin_data[i];
-    		cos -= cos_data[i];
-    	}
-    	else if(i < end_point)
-    	{
     		sin += sin_data[i];
     		cos += cos_data[i];
     	}
-    	else
+    	else if(i < end_point)
     	{
     		sin -= sin_data[i];
     		cos -= cos_data[i];
+    	}
+    	else
+    	{
+    		sin += sin_data[i];
+    		cos += cos_data[i];
     	}
     }
 
@@ -243,11 +245,11 @@ void Sdadc_Rdc_updateStep1(Sdadc_Rdc *handle)
 #endif
 #if Sdadc_RDC_PRE_OBSERVER_CORRECTION == 0
     {   // expand to 32-bit data
-        sint32 sinIn = (handle->sinIn << 16) / (1 << 16);
-        sint32 cosIn = (handle->cosIn << 16) / (1 << 16);
+//        sint32 sinIn = (handle->sinIn << 16) / (1 << 16);
+//        sint32 cosIn = (handle->cosIn << 16) / (1 << 16);
         // tracking observer (note: atan2 lookup function is available inside)
-        AngleTrk_step(&(handle->angleTrk), sinIn, cosIn, 0);
-        AngleTrk_updateStatus(&(handle->angleTrk), sinIn, cosIn);
+        AngleTrk_step(&(handle->angleTrk), handle->sinIn, handle->cosIn, 0);
+        AngleTrk_updateStatus(&(handle->angleTrk), handle->sinIn, handle->cosIn);
     }
 #endif
 }
@@ -283,19 +285,16 @@ Pos_Raw Sdadc_Rdc_updateStep2(Sdadc_Rdc *handle)
 
 #if Sdadc_RDC_PRE_OBSERVER_CORRECTION != 0
     {   // expand to 32-bit data
-        sint32 sinIn = (handle->sinIn << 16) / (1 << 16);
-        sint32 cosIn = (handle->cosIn << 16) / (1 << 16);
-        //sint32 sinIn = SineCalib_update(&handle->sinCal, handle->sinIn);
-        //sint32 cosIn = SineCalib_update(&handle->cosCal, handle->cosIn);
+//        sint32 sinIn = (handle->sinIn << 16) / (1 << 16);
+//        sint32 cosIn = (handle->cosIn << 16) / (1 << 16);
         // tracking observer (note: atan2 lookup function is available inside)
-        AngleTrk_step(&(handle->angleTrk), sinIn, cosIn, angleCorrection);
-        AngleTrk_updateStatus(&(handle->angleTrk), sinIn, cosIn);
+        AngleTrk_step(&(handle->angleTrk), handle->sinIn, handle->cosIn, angleCorrection);
+        AngleTrk_updateStatus(&(handle->angleTrk), handle->sinIn, handle->cosIn);
     }
     angleOut = handle->angleTrk.angleEst;
 #else
     angleOut = handle->angleTrk.angleEst + angleCorrection;
 #endif
-
     {   // final output angle estimation
     	Pos_Raw  newPosition = (Pos_Raw)(angleOut * (ANGLETRK_RESOLUTION / 2) / PI);
         newPosition    = (newPosition + base->offset) & (ANGLETRK_RESOLUTION - 1);

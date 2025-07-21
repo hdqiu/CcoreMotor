@@ -1,7 +1,6 @@
 eclipse.preferences.version=1
 encoding//CDD/CDD_A4911/src/CDD_A4911_LLD.c=UTF-8
-encoding//CDD/resolver_app/AngleTrk.c=UTF-8
-encoding//CDD/resolver_app/Res_SoftAngleCalc.c=UTF-8
+encoding//CDD/motor_gtm4.c=UTF-8
 encoding//Pmsm/Pmsm_main.c=UTF-8
 encoding//Source_FLASH/lld/src/psi5s_lld.c=UTF-8
 encoding//Source_FLASH/lld/src/vm8978_driver.c=UTF-8
